@@ -1,0 +1,655 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	  <ThingDef Name="KotORRangedWeapon" Abstract="True" ParentName="BaseWeapon">
+		<defName>KotORRangedWeapon</defName>
+		<techLevel>Spacer</techLevel>
+		<smeltable>false</smeltable>
+		<burnableByRecipe>false</burnableByRecipe>
+		<thingCategories>
+		  <li>guy762_blasters</li>
+		  <li>guy762_ThingCategory_KotORWeapons</li>
+		</thingCategories>
+		<statBases>
+		  <DeteriorationRate>0.025</DeteriorationRate>
+		  <Flammability>0.5</Flammability>
+		</statBases>
+		<weaponTags>
+		  <li>SpacerGun</li>
+		</weaponTags>
+		<weaponClasses>
+		  <li>Ranged</li>
+		</weaponClasses>
+		<comps>
+		  <li Class="Spinning_Projectile.ThingCompProperties_ReturningWeapon"/>
+		  <li Class="CompProperties_Biocodable"/>
+		</comps>
+		<tradeability>All</tradeability>
+	  </ThingDef>
+	  
+	  
+	  <ThingDef Name="KotORRangedMakeable" Abstract="True" ParentName="BaseWeapon">
+		<defName>KotORRangedMakeable</defName>
+		<techLevel>Spacer</techLevel>
+		<smeltable>true</smeltable>
+		<burnableByRecipe>true</burnableByRecipe>
+		<relicChance>1</relicChance>
+		<thingCategories>
+		  <li>guy762_blasters</li>
+		  <li>guy762_ThingCategory_KotORWeapons</li>
+		</thingCategories>
+		<weaponTags>
+		  <li>SpacerGun</li>
+		</weaponTags>
+		<weaponClasses>
+		  <li>Ranged</li>
+		</weaponClasses>
+		<inspectorTabs>
+		  <li>ITab_Art</li>
+		</inspectorTabs>
+		<statBases>
+		  <Flammability>0.5</Flammability>
+		</statBases>
+		<recipeMaker>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Crafting</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Smith</soundWorking>
+		  <recipeUsers Inherit="False">
+			<li>FabricationBench</li>
+			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+		  </recipeUsers>
+		  <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		</recipeMaker>
+		<comps>
+		  <li Class="Spinning_Projectile.ThingCompProperties_ReturningWeapon"/>
+		  <li>
+			<compClass>CompQuality</compClass>
+		  </li>
+		  <li Class="CompProperties_Art">
+			<nameMaker>NamerArtWeaponGun</nameMaker>
+			<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+			<minQualityForArtistic>Excellent</minQualityForArtistic>
+		  </li>
+		  <li Class="CompProperties_Biocodable"/>
+		</comps>
+	  </ThingDef>
+	  
+	  
+	  <ThingDef Name="KotORRangedModdable" Abstract="True" ParentName="KotORRangedWeapon">
+		<recipeMaker>
+		  <soundWorking>kotorsound_upgrade</soundWorking>
+		  <recipeUsers>
+			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+		  </recipeUsers>
+		  <researchPrerequisite>guy762_ResearchKotOR_uncraftable</researchPrerequisite>
+		</recipeMaker>
+		<statBases>
+		  <WorkToMake>100</WorkToMake>
+		</statBases>
+		<costList>
+			<KOTOR_UltraComponent>1</KOTOR_UltraComponent>
+		</costList>
+		<descriptionHyperlinks>
+			<ThingDef MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</ThingDef>
+		</descriptionHyperlinks>
+		<equippedStatOffsets> <!--these are required for pawn stats to be affected by modifiers added via ModularPartDefs-->
+		  <MoveSpeed>0.000001</MoveSpeed>
+		  <SocialImpact>0.000001</SocialImpact>
+		  <PainShockThreshold>0.000001</PainShockThreshold>
+		  <MentalBreakThreshold>0.000001</MentalBreakThreshold>
+		  <PsychicSensitivity>0.000001</PsychicSensitivity>
+		  <PsychicEntropyRecoveryRate>0.000001</PsychicEntropyRecoveryRate>
+		  <PsychicEntropyGain>0.000001</PsychicEntropyGain>
+		  <PsychicEntropyMax>0.000001</PsychicEntropyMax>
+		  <InjuryHealingFactor>0.000001</InjuryHealingFactor>
+		  <MeleeDodgeChance>0.000001</MeleeDodgeChance>
+		  <MeleeHitChance>0.000001</MeleeHitChance>
+		  <IncomingDamageFactor>0.000001</IncomingDamageFactor>
+		  <HuntingStealth>0.000001</HuntingStealth>
+		  <ToxicEnvironmentResistance>0.000001</ToxicEnvironmentResistance>
+		  <PawnTrapSpringChance>0.000001</PawnTrapSpringChance>
+		  <MortarMissRadiusFactor>0.000001</MortarMissRadiusFactor>
+		  <HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">0.000001</HackingSpeed>
+		</equippedStatOffsets>
+	  </ThingDef>
+	  
+	  
+	  
+	  <ThingDef Name="KotORRangedModdableMakeable" Abstract="True" ParentName="KotORRangedMakeable">
+		<recipeMaker>
+		  <soundWorking>kotorsound_upgrade</soundWorking>
+		  <recipeUsers Inherit="False">
+			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+		  </recipeUsers>
+		</recipeMaker>
+		
+		<weaponTags Inherit="False"/>
+		<inspectorTabs Inherit="False"/>
+		
+		<descriptionHyperlinks>
+			<ThingDef MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</ThingDef>
+		</descriptionHyperlinks>
+		
+		<equippedStatOffsets> <!--these are required for pawn stats to be affected by modifiers added via ModularPartDefs-->
+		  <MoveSpeed>0.000001</MoveSpeed>
+		  <SocialImpact>0.000001</SocialImpact>
+		  <PainShockThreshold>0.000001</PainShockThreshold>
+		  <MentalBreakThreshold>0.000001</MentalBreakThreshold>
+		  <PsychicSensitivity>0.000001</PsychicSensitivity>
+		  <PsychicEntropyRecoveryRate>0.000001</PsychicEntropyRecoveryRate>
+		  <PsychicEntropyGain>0.000001</PsychicEntropyGain>
+		  <PsychicEntropyMax>0.000001</PsychicEntropyMax>
+		  <InjuryHealingFactor>0.000001</InjuryHealingFactor>
+		  <MeleeDodgeChance>0.000001</MeleeDodgeChance>
+		  <MeleeHitChance>0.000001</MeleeHitChance>
+		  <IncomingDamageFactor>0.000001</IncomingDamageFactor>
+		  <HuntingStealth>0.000001</HuntingStealth>
+		  <ToxicEnvironmentResistance>0.000001</ToxicEnvironmentResistance>
+		  <PawnTrapSpringChance>0.000001</PawnTrapSpringChance>
+		  <MortarMissRadiusFactor>0.000001</MortarMissRadiusFactor>
+		  <HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">0.000001</HackingSpeed>
+		</equippedStatOffsets>
+	  </ThingDef>
+	  
+	  
+	  
+	  
+	  <ThingDef Name="KotORRangedMakeableNoQuality" Abstract="True" ParentName="BaseWeapon">
+		<defName>KotORRangedMakeableNoQuality</defName>
+		<techLevel>Spacer</techLevel>
+		<smeltable>true</smeltable>
+		<burnableByRecipe>true</burnableByRecipe>
+		<relicChance>1</relicChance>
+		<thingCategories>
+		  <li>guy762_blasters</li>
+		  <li>guy762_ThingCategory_KotORWeapons</li>
+		</thingCategories>
+		<weaponTags>
+		  <li>SpacerGun</li>
+		</weaponTags>
+		<weaponClasses>
+		  <li>Ranged</li>
+		</weaponClasses>
+		<inspectorTabs>
+		  <li>ITab_Art</li>
+		</inspectorTabs>
+		<statBases>
+		  <Flammability>0.5</Flammability>
+		</statBases>
+		<recipeMaker>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Crafting</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Smith</soundWorking>
+		  <recipeUsers Inherit="False">
+			<li>FabricationBench</li>
+			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+		  </recipeUsers>
+		  <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		</recipeMaker>
+		<comps>
+		  <li Class="CompProperties_Biocodable"/>
+		  <li Class="Spinning_Projectile.ThingCompProperties_ReturningWeapon"/>
+		</comps>
+	  </ThingDef>
+	  
+	  
+	  
+	  
+	  
+	  <ThingDef Name="KotORRangedNoQualityModMake" Abstract="True" ParentName="KotORRangedWeapon">		
+		<recipeMaker>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Crafting</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		  <soundWorking>kotorsound_upgrade</soundWorking>
+		  <recipeUsers Inherit="False">
+			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+		  </recipeUsers>
+		</recipeMaker>
+		
+		<weaponTags Inherit="False"/>
+		
+		<descriptionHyperlinks>
+			<ThingDef MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</ThingDef>
+		</descriptionHyperlinks>
+		
+		<equippedStatOffsets> <!--these are required for pawn stats to be affected by modifiers added via ModularPartDefs-->
+		  <MoveSpeed>0.000001</MoveSpeed>
+		  <SocialImpact>0.000001</SocialImpact>
+		  <PainShockThreshold>0.000001</PainShockThreshold>
+		  <MentalBreakThreshold>0.000001</MentalBreakThreshold>
+		  <PsychicSensitivity>0.000001</PsychicSensitivity>
+		  <PsychicEntropyRecoveryRate>0.000001</PsychicEntropyRecoveryRate>
+		  <PsychicEntropyGain>0.000001</PsychicEntropyGain>
+		  <PsychicEntropyMax>0.000001</PsychicEntropyMax>
+		  <InjuryHealingFactor>0.000001</InjuryHealingFactor>
+		  <MeleeDodgeChance>0.000001</MeleeDodgeChance>
+		  <MeleeHitChance>0.000001</MeleeHitChance>
+		  <IncomingDamageFactor>0.000001</IncomingDamageFactor>
+		  <HuntingStealth>0.000001</HuntingStealth>
+		  <ToxicEnvironmentResistance>0.000001</ToxicEnvironmentResistance>
+		  <PawnTrapSpringChance>0.000001</PawnTrapSpringChance>
+		  <MortarMissRadiusFactor>0.000001</MortarMissRadiusFactor>
+		  <HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">0.000001</HackingSpeed>
+		</equippedStatOffsets>
+	  </ThingDef>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <ThingDef Abstract="True" Name="KotORMeleeWeapon" ParentName="BaseWeapon">
+		<techLevel>Spacer</techLevel>
+		<smeltable>false</smeltable>
+		<burnableByRecipe>false</burnableByRecipe>
+		<thingCategories>
+		  <li>guy762_vibroweapons</li>
+		  <li>guy762_ThingCategory_KotORWeapons</li>
+		</thingCategories>
+		<weaponTags>
+		  <li>KotORMelee</li>
+		</weaponTags>
+		<weaponClasses>
+		  <li>Melee</li>
+		  <li>Ultratech</li>
+		</weaponClasses>
+		<comps>
+		  <li Class="CompProperties_Biocodable"/>
+		  <li Class="Spinning_Projectile.ThingCompProperties_ReturningWeapon"/>
+		</comps>
+		<tradeability>All</tradeability>
+	  </ThingDef>
+	  
+	  <ThingDef Abstract="True" Name="KotORMeleeMakeable" ParentName="BaseWeapon">
+		<techLevel>Spacer</techLevel>
+		<smeltable>true</smeltable>
+		<burnableByRecipe>true</burnableByRecipe>
+		<relicChance>1</relicChance>
+		<thingCategories>
+		  <li>guy762_vibroweapons</li>
+		  <li>guy762_ThingCategory_KotORWeapons</li>
+		</thingCategories>
+		<weaponTags>
+		  <li>KotORMelee</li>
+		</weaponTags>
+		<weaponClasses>
+		  <li>Melee</li>
+		  <li>Ultratech</li>
+		</weaponClasses>
+		<comps>
+		  <li Class="Spinning_Projectile.ThingCompProperties_ReturningWeapon"/>
+		  <li>
+			<compClass>CompQuality</compClass>
+		  </li>
+		  <li Class="CompProperties_Art">
+			<nameMaker>NamerArtWeaponMelee</nameMaker>
+			<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+			<minQualityForArtistic>Excellent</minQualityForArtistic>
+		  </li>
+		</comps>
+		<recipeMaker>
+		  <defaultIngredientFilter>
+			<categories>
+			  <li>Root</li>
+			</categories>
+			<disallowedThingDefs>
+			  <li>Silver</li>
+			  <li>Gold</li>
+			  <li>WoodLog</li>
+			</disallowedThingDefs>
+		  </defaultIngredientFilter>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Crafting</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Smith</soundWorking>
+		  <recipeUsers>
+			<li>FabricationBench</li>
+			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+		  </recipeUsers>
+		  <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
+		<inspectorTabs>
+		  <li>ITab_Art</li>
+		</inspectorTabs>
+	  </ThingDef>
+	  
+	  <ThingDef Name="KotORMeleeModdable" Abstract="True" ParentName="KotORMeleeWeapon">
+		<recipeMaker>
+		  <soundWorking>kotorsound_upgrade</soundWorking>
+		  <recipeUsers>
+			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+		  </recipeUsers>
+		  <researchPrerequisite>guy762_ResearchKotOR_uncraftable</researchPrerequisite>
+		</recipeMaker>
+		<statBases>
+		  <WorkToMake>100</WorkToMake>
+		</statBases>
+		<costList>
+			<KOTOR_UltraComponent>1</KOTOR_UltraComponent>
+		</costList>
+		<descriptionHyperlinks>
+			<ThingDef>guy762_KotORWorkbench</ThingDef>
+		</descriptionHyperlinks>
+		<equippedStatOffsets> <!--these are required for pawn stats to be affected by modifiers added via ModularPartDefs-->
+		  <MoveSpeed>0.000001</MoveSpeed>
+		  <SocialImpact>0.000001</SocialImpact>
+		  <PainShockThreshold>0.000001</PainShockThreshold>
+		  <MentalBreakThreshold>0.000001</MentalBreakThreshold>
+		  <PsychicSensitivity>0.000001</PsychicSensitivity>
+		  <PsychicEntropyRecoveryRate>0.000001</PsychicEntropyRecoveryRate>
+		  <PsychicEntropyGain>0.000001</PsychicEntropyGain>
+		  <PsychicEntropyMax>0.000001</PsychicEntropyMax>
+		  <InjuryHealingFactor>0.000001</InjuryHealingFactor>
+		  <MeleeDodgeChance>0.000001</MeleeDodgeChance>
+		  <MeleeHitChance>0.000001</MeleeHitChance>
+		  <IncomingDamageFactor>0.000001</IncomingDamageFactor>
+		  <HuntingStealth>0.000001</HuntingStealth>
+		  <ToxicEnvironmentResistance>0.000001</ToxicEnvironmentResistance>
+		  <PawnTrapSpringChance>0.000001</PawnTrapSpringChance>
+		  <MortarMissRadiusFactor>0.000001</MortarMissRadiusFactor>
+		  <HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">0.000001</HackingSpeed>
+		</equippedStatOffsets>
+	  </ThingDef>
+	  
+	  
+	  
+	  
+	  
+	  <ThingDef Name="KotORMeleeModdableMakeable" Abstract="True" ParentName="KotORMeleeMakeable">
+		<recipeMaker>
+		  <soundWorking>kotorsound_upgrade</soundWorking>
+		  <recipeUsers Inherit="False">
+			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+		  </recipeUsers>
+		</recipeMaker>
+		
+		<weaponTags Inherit="False"/>
+		<thingSetMakerTags Inherit="False"/>
+		<inspectorTabs Inherit="False"/>
+		
+		<descriptionHyperlinks>
+			<ThingDef MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</ThingDef>
+		</descriptionHyperlinks>
+		
+		<equippedStatOffsets> <!--these are required for pawn stats to be affected by modifiers added via ModularPartDefs-->
+		  <MoveSpeed>0.000001</MoveSpeed>
+		  <SocialImpact>0.000001</SocialImpact>
+		  <PainShockThreshold>0.000001</PainShockThreshold>
+		  <MentalBreakThreshold>0.000001</MentalBreakThreshold>
+		  <PsychicSensitivity>0.000001</PsychicSensitivity>
+		  <PsychicEntropyRecoveryRate>0.000001</PsychicEntropyRecoveryRate>
+		  <PsychicEntropyGain>0.000001</PsychicEntropyGain>
+		  <PsychicEntropyMax>0.000001</PsychicEntropyMax>
+		  <InjuryHealingFactor>0.000001</InjuryHealingFactor>
+		  <MeleeDodgeChance>0.000001</MeleeDodgeChance>
+		  <MeleeHitChance>0.000001</MeleeHitChance>
+		  <IncomingDamageFactor>0.000001</IncomingDamageFactor>
+		  <HuntingStealth>0.000001</HuntingStealth>
+		  <ToxicEnvironmentResistance>0.000001</ToxicEnvironmentResistance>
+		  <PawnTrapSpringChance>0.000001</PawnTrapSpringChance>
+		  <MortarMissRadiusFactor>0.000001</MortarMissRadiusFactor>
+		  <HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">0.000001</HackingSpeed>
+		</equippedStatOffsets>
+	  </ThingDef>
+	  
+	  
+	  
+	  
+	  <ThingDef Name="KotORMeleeNoQualityModMake" Abstract="True" ParentName="KotORMeleeWeapon">
+		<recipeMaker>
+		  <defaultIngredientFilter>
+			<categories>
+			  <li>Root</li>
+			</categories>
+			<disallowedThingDefs>
+			  <li>Silver</li>
+			  <li>Gold</li>
+			  <li>WoodLog</li>
+			</disallowedThingDefs>
+		  </defaultIngredientFilter>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Crafting</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>kotorsound_upgrade</soundWorking>
+		  <recipeUsers Inherit="False">
+			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+		  </recipeUsers>
+		  <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
+		<thingSetMakerTags Inherit="False"/>
+		
+		<descriptionHyperlinks>
+			<ThingDef MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</ThingDef>
+		</descriptionHyperlinks>
+		
+		<equippedStatOffsets> <!--these are required for pawn stats to be affected by modifiers added via ModularPartDefs-->
+		  <MoveSpeed>0.000001</MoveSpeed>
+		  <SocialImpact>0.000001</SocialImpact>
+		  <PainShockThreshold>0.000001</PainShockThreshold>
+		  <MentalBreakThreshold>0.000001</MentalBreakThreshold>
+		  <PsychicSensitivity>0.000001</PsychicSensitivity>
+		  <PsychicEntropyRecoveryRate>0.000001</PsychicEntropyRecoveryRate>
+		  <PsychicEntropyGain>0.000001</PsychicEntropyGain>
+		  <PsychicEntropyMax>0.000001</PsychicEntropyMax>
+		  <InjuryHealingFactor>0.000001</InjuryHealingFactor>
+		  <MeleeDodgeChance>0.000001</MeleeDodgeChance>
+		  <MeleeHitChance>0.000001</MeleeHitChance>
+		  <IncomingDamageFactor>0.000001</IncomingDamageFactor>
+		  <HuntingStealth>0.000001</HuntingStealth>
+		  <ToxicEnvironmentResistance>0.000001</ToxicEnvironmentResistance>
+		  <PawnTrapSpringChance>0.000001</PawnTrapSpringChance>
+		  <MortarMissRadiusFactor>0.000001</MortarMissRadiusFactor>
+		  <HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">0.000001</HackingSpeed>
+		</equippedStatOffsets>
+	  </ThingDef>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <ThingDef Name="KotORRangedModdable_OneHand" Abstract="True" ParentName="KotORRangedModdable">
+		<defName>KotORRangedModdable_OneHand</defName>
+	  </ThingDef>
+	  <ThingDef Name="KotORRangedModdable_OffHand" Abstract="True" ParentName="KotORRangedModdable">
+		<defName>KotORRangedModdable_OffHand</defName>
+	  </ThingDef>
+	  <ThingDef Name="KotORRangedModdable_TwoHand" Abstract="True" ParentName="KotORRangedModdable">
+		<defName>KotORRangedModdable_TwoHand</defName>
+	  </ThingDef>
+	  
+	  <ThingDef Name="KotORRangedMakeable_OneHand" Abstract="True" ParentName="KotORRangedMakeable">
+		<defName>KotORRangedMakeable_OneHand</defName>
+	  </ThingDef>
+	  <ThingDef Name="KotORRangedMakeable_OffHand" Abstract="True" ParentName="KotORRangedMakeable">
+		<defName>KotORRangedMakeable_OffHand</defName>
+	  </ThingDef>
+	  <ThingDef Name="KotORRangedMakeable_TwoHand" Abstract="True" ParentName="KotORRangedMakeable">
+		<defName>KotORRangedMakeable_TwoHand</defName>
+	  </ThingDef>
+	  
+	  <ThingDef Name="KotORRangedWeapon_OneHand" Abstract="True" ParentName="KotORRangedWeapon">
+		<defName>KotORRangedWeapon_OneHand</defName>
+	  </ThingDef>
+	  <ThingDef Name="KotORRangedWeapon_OffHand" Abstract="True" ParentName="KotORRangedWeapon">
+		<defName>KotORRangedWeapon_OffHand</defName>
+	  </ThingDef>
+	  <ThingDef Name="KotORRangedWeapon_TwoHand" Abstract="True" ParentName="KotORRangedWeapon">
+		<defName>KotORRangedWeapon_TwoHand</defName>
+	  </ThingDef>
+	  
+	  <ThingDef Name="KotORRangedModMakeable_OneHand" Abstract="True" ParentName="KotORRangedModdableMakeable">
+		<defName>KotORRangedModMakeable_OneHand</defName>
+	  </ThingDef>
+	  <ThingDef Name="KotORRangedModMakeable_OffHand" Abstract="True" ParentName="KotORRangedModdableMakeable">
+		<defName>KotORRangedModMakeable_OffHand</defName>
+	  </ThingDef>
+	  <ThingDef Name="KotORRangedModMakeable_TwoHand" Abstract="True" ParentName="KotORRangedModdableMakeable">
+		<defName>KotORRangedModMakeable_TwoHand</defName>
+	  </ThingDef>
+	  
+	  <ThingDef Name="KotORRangedNoQualityModMake_OneHand" Abstract="True" ParentName="KotORRangedNoQualityModMake">
+		<defName>KotORRangedNoQualityModMake_OneHand</defName>
+	  </ThingDef>
+	  <ThingDef Name="KotORRangedNoQualityModMake_OffHand" Abstract="True" ParentName="KotORRangedNoQualityModMake">
+		<defName>KotORRangedNoQualityModMake_OffHand</defName>
+	  </ThingDef>
+	  <ThingDef Name="KotORRangedNoQualityModMake_TwoHand" Abstract="True" ParentName="KotORRangedNoQualityModMake">
+		<defName>KotORRangedNoQualityModMake_TwoHand</defName>
+	  </ThingDef>
+	  
+	  <ThingDef Name="KotORRangedMakeableNoQuality_OneHand" Abstract="True" ParentName="KotORRangedMakeableNoQuality">
+		<defName>KotORRangedMakeableNoQuality_OneHand</defName>
+	  </ThingDef>
+	  <ThingDef Name="KotORRangedMakeableNoQuality_OffHand" Abstract="True" ParentName="KotORRangedMakeableNoQuality">
+		<defName>KotORRangedMakeableNoQuality_OffHand</defName>
+	  </ThingDef>
+	  <ThingDef Name="KotORRangedMakeableNoQuality_TwoHand" Abstract="True" ParentName="KotORRangedMakeableNoQuality">
+		<defName>KotORRangedMakeableNoQuality_TwoHand</defName>
+	  </ThingDef>
+	  
+	  
+	  
+	  
+	  <ThingDef Name="KotORMeleeModdable_OneHand" Abstract="True" ParentName="KotORMeleeModdable">
+		<defName>KotORMeleeModdable_OneHand</defName>
+	  </ThingDef>
+	  <ThingDef Name="KotORMeleeModdable_OffHand" Abstract="True" ParentName="KotORMeleeModdable">
+		<defName>KotORMeleeModdable_OffHand</defName>
+	  </ThingDef>
+	  <ThingDef Name="KotORMeleeModdable_TwoHand" Abstract="True" ParentName="KotORMeleeModdable">
+		<defName>KotORMeleeModdable_TwoHand</defName>
+	  </ThingDef>
+	  
+	  <ThingDef Name="KotORMeleeMakeable_OneHand" Abstract="True" ParentName="KotORMeleeMakeable">
+		<defName>KotORMeleeMakeable_OneHand</defName>
+	  </ThingDef>
+	  <ThingDef Name="KotORMeleeMakeable_OffHand" Abstract="True" ParentName="KotORMeleeMakeable">
+		<defName>KotORMeleeMakeable_OffHand</defName>
+	  </ThingDef>
+	  <ThingDef Name="KotORMeleeMakeable_TwoHand" Abstract="True" ParentName="KotORMeleeMakeable">
+		<defName>KotORMeleeMakeable_TwoHand</defName>
+	  </ThingDef>
+	  
+	  <ThingDef Name="KotORMeleeWeapon_OneHand" Abstract="True" ParentName="KotORMeleeWeapon">
+		<defName>KotORMeleeWeapon_OneHand</defName>
+	  </ThingDef>
+	  <ThingDef Name="KotORMeleeWeapon_OffHand" Abstract="True" ParentName="KotORMeleeWeapon">
+		<defName>KotORMeleeWeapon_OffHand</defName>
+	  </ThingDef>
+	  <ThingDef Name="KotORMeleeWeapon_TwoHand" Abstract="True" ParentName="KotORMeleeWeapon">
+		<defName>KotORMeleeWeapon_TwoHand</defName>
+	  </ThingDef>
+	  
+	  <ThingDef Name="KotORMeleeModMakeable_OneHand" Abstract="True" ParentName="KotORMeleeModdableMakeable">
+		<defName>KotORMeleeModMakeable_OneHand</defName>
+	  </ThingDef>
+	  <ThingDef Name="KotORMeleeModMakeable_OffHand" Abstract="True" ParentName="KotORMeleeModdableMakeable">
+		<defName>KotORMeleeModMakeable_OffHand</defName>
+	  </ThingDef>
+	  <ThingDef Name="KotORMeleeModMakeable_TwoHand" Abstract="True" ParentName="KotORMeleeModdableMakeable">
+		<defName>KotORMeleeModMakeable_TwoHand</defName>
+	  </ThingDef>
+	  
+	  <ThingDef Name="KotORMeleeNoQualityModMake_OneHand" Abstract="True" ParentName="KotORMeleeNoQualityModMake">
+		<defName>KotORMeleeNoQualityModMake_OneHand</defName>
+	  </ThingDef>
+	  <ThingDef Name="KotORMeleeNoQualityModMake_OffHand" Abstract="True" ParentName="KotORMeleeNoQualityModMake">
+		<defName>KotORMeleeNoQualityModMake_OffHand</defName>
+	  </ThingDef>
+	  <ThingDef Name="KotORMeleeNoQualityModMake_TwoHand" Abstract="True" ParentName="KotORMeleeNoQualityModMake">
+		<defName>KotORMeleeNoQualityModMake_TwoHand</defName>
+	  </ThingDef>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <ToolCapacityDef>
+		<defName>guy762_ToolCapacity_SaberSlash</defName>
+		<label>energy slash</label>
+	</ToolCapacityDef>
+	
+	<ToolCapacityDef>
+		<defName>guy762_ToolCapacity_SaberStab</defName>
+		<label>energy stab</label>
+	</ToolCapacityDef>
+  
+  <ManeuverDef>
+    <defName>guy762_Maneuver_SaberSlash</defName>
+    <requiredCapacity>guy762_ToolCapacity_SaberSlash</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>guy762_MeleeDamage_ecut</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+
+  <ManeuverDef>
+    <defName>guy762_Maneuver_SaberStab</defName>
+    <requiredCapacity>guy762_ToolCapacity_SaberStab</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>guy762_MeleeDamage_estab</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Stab_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Stab_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Stab_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Stab_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+  
+  
+  <ThingDef>
+    <defName>BulletDeflected</defName>
+    <category>Projectile</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <thingClass>Bullet</thingClass>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <label>deflected bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+	  
+	  
+	  
+
+</Defs>

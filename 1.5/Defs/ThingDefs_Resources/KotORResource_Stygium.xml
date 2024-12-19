@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="KOTOR_CrystalFormation_Base">
+		<defName>KOTOR_StygiumCrystal</defName>
+		<label>Stygium crystal formation</label>
+		<description>A rare Stygium crystal formation. It reflects light in a bizarre manner. It's almost as though you could see right through the formation, and it radiates strongly with Force energy.</description>
+		<graphicData>
+		  <texPath>Buildings/Crystal_Formations/colored/medium_stygium</texPath>
+		  <drawSize>(2.0,2.0)</drawSize>
+		  <color>RGBA(255,255,255,120)</color>
+		</graphicData>
+		<size>(1,2)</size>
+		<statBases>
+			<MaxHitPoints>4000</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<BeautyOutdoors>20</BeautyOutdoors>
+			<MeditationFocusStrength>3</MeditationFocusStrength>
+		</statBases>
+		<building>
+			<!--mineableThing>KotORChunk_durasteel</mineableThing>
+			<mineableYield>1</mineableYield>
+			<mineableScatterCommonality>0.25</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>10~25</mineableScatterLumpSizeRange-->
+		</building>
+		<comps>
+		  <li Class="CompProperties_Glower">
+			<glowRadius>4</glowRadius>
+			<glowColor>(150,75,150,0)</glowColor>
+		  </li>
+		</comps>
+		<modExtensions>
+		  <li Class="SecondaryMineableYield.ModExtension_SecondaryMineableYield">
+			<mineableDropChance>1.0</mineableDropChance>
+			<entries>
+
+			  <li>
+				<randomWeight>0.60</randomWeight>
+				<mineableThing>guy762_crystalitem_stygium</mineableThing>
+				<mineableYield>3</mineableYield>
+			  </li>
+			  <li>
+				<randomWeight>0.30</randomWeight>
+				<mineableThing>guy762_crystalitem_stygium</mineableThing>
+				<mineableYield>2</mineableYield>
+			  </li>
+			  <li>
+				<randomWeight>0.07</randomWeight>
+				<mineableThing>guy762_crystalitem_stygium</mineableThing>
+				<mineableYield>5</mineableYield>
+			  </li>
+			  <li>
+				<randomWeight>0.03</randomWeight>
+				<mineableThing>guy762_crystalitem_stygium</mineableThing>
+				<mineableYield>7</mineableYield>
+			  </li>
+
+			</entries>
+		  </li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_crystalbase">
+		<defName>guy762_crystalitem_stygium</defName>
+		<label>Crystal, Stygium</label>
+		<description>The Stygium crystal can be used to create "cloaking" effects that foil enemy sensors and prevents visible light from reflecting on an object, leading to a phenomenon colloquially known as "invisibility". In its pure crystal form it is suitable for use as a lightsaber upgrade, as well as in stealth field generators ranging from personnel to starship-scale.</description>
+		<graphicData>
+		  <texPath>raw_resources/stygium</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<statBases>
+		  <MarketValue>2980</MarketValue>
+		  <Mass>0.2</Mass>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<stackLimit>25</stackLimit><drawGUIOverlay>true</drawGUIOverlay>
+		<tradeTags>
+		  <li>guy762TT_sabermod_adv</li>
+		  <li>guy762TT_KotORRawMat_rare</li>
+		  <li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	
+  
+</Defs>

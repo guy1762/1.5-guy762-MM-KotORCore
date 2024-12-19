@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- Shield Recharger ================================================================ -->
+	<ThingDef ParentName="BenchBase">
+		<defName>KOTOR_ShieldBank</defName>
+		<label>shield recharger</label>
+		<description>An advanced energy bank capable of recharging personal energy shields. Energy shields must have at least one charge remaining in order to be recharged. Fully-depleted shields are still discarded as the burnt-out power cells within are unusable and cannot hold any new charges.Must have at least one charge remaining.\n\nNOTE: Do NOT set recipes on this to "do forever" as your pawns will be stuck in a loop of recharging the same shield forever!</description>
+		<graphicData>
+			<texPath>ResourceSys_Plasma/ShieldBank</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<drawRotated>false</drawRotated>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+			<shadowData>
+				<volume>(0.5, 0.25, 0.25)</volume>
+				<offset>(0,0,-0.35)</offset>
+			</shadowData>
+		</graphicData>
+		<thingClass>Building_WorkTable</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<statBases>
+			<MarketValue>3600</MarketValue>
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToBuild>3000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<researchPrerequisites>
+			<li>KOTOR_Research_UltraComponent</li>
+		</researchPrerequisites>
+		<costList>
+			<KOTOR_AlloyDurasteel>65</KOTOR_AlloyDurasteel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<ComponentSpacer>4</ComponentSpacer>
+			<KOTOR_UltraComponent>1</KOTOR_UltraComponent>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>200</basePowerConsumption>
+				<shortCircuitInRain>false</shortCircuitInRain>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(45,250,45,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+		</building>
+		<fillPercent>0.5</fillPercent>
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellIcon Inherit="False" />
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+
+		<designationCategory>KOTOR_BuildTab</designationCategory>
+		<surfaceType>Item</surfaceType>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+		</placeWorkers>
+		<tradeTags>
+		  <li>guy762TT_KotORWorkbench</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<WorkGiverDef>
+		<defName>KOTOR_WorkGiver_ShieldBank</defName>
+		<label>recharge shields at shield recharger</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>75</priorityInType>
+		<fixedBillGiverDefs>
+			<li>KOTOR_ShieldBank</li>
+		</fixedBillGiverDefs>
+		<verb>work</verb>
+		<gerund>working at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<RecipeDef Name="KotORRecipe_ShieldRecharge_base" Abstract="True">
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>kotorsound_JKshieldbank</soundWorking>
+		<workAmount>250</workAmount>
+		<workSkill>Crafting</workSkill>
+		<displayPriority>10</displayPriority>
+		<recipeUsers>
+			<li>KOTOR_ShieldBank</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	
+
+	
+	
+
+	
+  
+</Defs>

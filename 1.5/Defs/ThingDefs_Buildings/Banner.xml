@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Abstract template -->
+  <ThingDef ParentName="BuildingBase" Name="GS_Banner_Temp" Abstract="True">
+    <designationCategory>KOTOR_BuildTab</designationCategory>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.25</fillPercent>
+    <pathCost>0</pathCost>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>500</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>15</Beauty>
+    </statBases>
+	
+	
+	
+	 <building>
+	<isEdifice>true</isEdifice>
+	<paintable>true</paintable>
+	<destroySound>BuildingDestroyed_Metal_Small</destroySound>	
+      <deconstructible>true</deconstructible>
+      <claimable>true</claimable>
+	    </building>
+  
+  
+    <holdsRoof>false</holdsRoof>
+    <canOverlapZones>false</canOverlapZones>
+    <rotatable>false</rotatable>
+    <fertility>0</fertility>
+	
+
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <costStuffCount>20</costStuffCount>
+    <costList>
+      <Steel>50</Steel>
+    </costList>
+
+
+    <graphicData>
+      <drawSize>(2.5,2.5)</drawSize>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+	  
+      <shadowData>
+        <volume>(0.3, 0.5, 0.3)</volume>
+        <offset>(0,0,-0.23)</offset>
+      </shadowData>
+	  
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+	  
+    </graphicData>
+	
+    <uiIconScale>0.5</uiIconScale>
+    
+  </ThingDef>
+  
+
+ 
+ 
+<ThingDef ParentName="GS_Banner_Temp">
+    <defName>GS_Banner_Cult</defName>
+    <label>Imperial cult banner</label>
+     <graphicData>
+      <texPath>Furniture/Sovereign_ImperialDecor/Banner/BannerCult</texPath>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="GS_Banner_Temp">
+    <defName>GS_Banner_Forge</defName>
+    <label>Imperial forge banner</label>
+     <graphicData>
+      <texPath>Furniture/Sovereign_ImperialDecor/Banner/BannerForge</texPath>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="GS_Banner_Temp">
+    <defName>GS_Banner_Star</defName>
+    <label>Imperial star banner</label>
+     <graphicData>
+      <texPath>Furniture/Sovereign_ImperialDecor/Banner/BannerStar</texPath>
+    </graphicData>
+  </ThingDef>
+  
+  
+</Defs>

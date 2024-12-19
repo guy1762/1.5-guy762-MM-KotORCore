@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="LampBase">
+    <defName>GS_ImperialLamp</defName>
+    <label>Imperial outdoor lamp</label>
+    <fillPercent>0.30</fillPercent>
+    <graphicData>
+      <texPath>Furniture/Sovereign_ImperialDecor/Light/LightPost</texPath>
+      <drawSize>(2.5,2.5)</drawSize>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <tickerType>Rare</tickerType>
+	  <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <costStuffCount>20</costStuffCount>
+	
+    <costList>
+      <Steel>30</Steel>
+    </costList>
+	
+    <statBases>
+      <Mass>20</Mass>
+    </statBases>
+    <size>(1,2)</size>
+	
+	
+	 <building>
+	<isEdifice>true</isEdifice>
+	<paintable>true</paintable>
+	<destroySound>BuildingDestroyed_Metal_Small</destroySound>	
+      <deconstructible>true</deconstructible>
+      <claimable>true</claimable>
+	  </building>
+	
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <basePowerConsumption>30</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+      </li>
+	  
+      <li Class="CompProperties_Schedule">
+        <!-- Match plant growing times -->
+        <startTime>0.70</startTime>
+        <endTime>0.35</endTime>
+        <offMessage>Off during daylight hours</offMessage>
+      </li>
+	  
+      <li Class="CompProperties_Glower">
+        <glowRadius>20</glowRadius>
+        <glowColor>(252,187,113,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+	<uiIconScale>0.5</uiIconScale>
+	
+	<designationCategory>KOTOR_BuildTab</designationCategory>
+  </ThingDef>
+  
+  
+  </Defs>

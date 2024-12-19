@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GenStepDef>
+		<defName>KOTOR_JunkPileClusters</defName>
+		<order>1099</order>
+		<genStep Class="GenStep_ScatterGroup">
+			<allowInWaterBiome>false</allowInWaterBiome>
+			<minSpacing>5</minSpacing>
+			<countPer10kCellsRange>0.2~0.5</countPer10kCellsRange>
+			<spotMustBeStandable>true</spotMustBeStandable>
+			<allowRoofed>false</allowRoofed>
+			<validators>
+				<li Class="ScattererValidator_Buildable">
+				<radius>5</radius>
+				<affordance>Heavy</affordance>
+				</li>
+			</validators>
+			<groups>
+				<li>
+				  <things>
+					<KOTOR_MineableJunk>1</KOTOR_MineableJunk>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>3~4</coveredCellsPer10Cells>
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <clusterRectRadius>3~5</clusterRectRadius>
+				</li>
+				<li>
+				  <things>
+					<KOTOR_MineableJunk>0.35</KOTOR_MineableJunk>
+					<KOTOR_MineableDurasteel>0.1</KOTOR_MineableDurasteel>
+					<MineableComponentsIndustrial>0.05</MineableComponentsIndustrial>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>4~5</coveredCellsPer10Cells>
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <clusterRectRadius>4~5</clusterRectRadius>
+				</li>
+			</groups>
+		</genStep>
+	  </GenStepDef>
+	  
+
+</Defs>

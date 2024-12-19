@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- Gonk ================================================================ -->
+	<SoundDef>
+		<defName>kotor_gonkSFX</defName>
+			<context>MapOnly</context>
+			<sustain>True</sustain>
+			<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>kotor_ambient_building/Gonk</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>10</volumeRange>
+				<pitchRange>0.9~1.1</pitchRange>
+				<sustainLoop>False</sustainLoop>
+				<sustainIntervalRange>0.2~0.7</sustainIntervalRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+</Defs>

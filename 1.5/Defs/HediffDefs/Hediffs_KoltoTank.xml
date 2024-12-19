@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<defName>KoltoTank_Coma</defName>
+		<label>Artifically Induced coma</label>
+		<description>Using Kolto to artifically put the pawn into a coma for healing.</description>
+		<isBad>false</isBad>
+		<priceImpact>false</priceImpact>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<stages>
+			<li>
+				<minSeverity>0.8</minSeverity>
+				<painFactor>0</painFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.01</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>KoltoTank_Recovering</defName>
+		<label>Recovering from Coma</label>
+		<description>Getting out of the Kolto Tank has made them woozy, give them some time to regain their footing.</description>
+		<isBad>false</isBad>
+		<hediffClass>HediffWithComps</hediffClass>
+		<priceImpact>false</priceImpact>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<stages>
+			<li>
+				<minSeverity>0.8</minSeverity>
+				<painFactor>0</painFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.9</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		 <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>1000~2000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+	</HediffDef>
+	
+	
+	
+	<HediffDef>
+		<defName>guy762_hediff_kolto</defName>
+		<description>Covered in Kolto.</description>
+		<label>covered in Kolto</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<stages>
+		  <li>
+			<naturalHealingFactor>1000</naturalHealingFactor>
+			<totalBleedFactor>0.75</totalBleedFactor>
+		  </li>
+		</stages>
+		<comps>
+		  <li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>900</disappearsAfterTicks>
+		  </li>
+		</comps>
+	  </HediffDef>
+	  
+	  <ThingDef ParentName="BaseFilth">
+		<defName>guy762_filth_kolto</defName>
+		<label>Kolto</label>
+		<statBases>
+		  <Beauty>-30</Beauty>
+		  <Cleanliness>-5</Cleanliness>
+		</statBases>
+		<graphicData>
+		  <texPath>Filth/kolto</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		  <drawSize>2.5</drawSize>
+		  <color>(1,1,1,0.5)</color>
+		</graphicData>
+		<filth>
+		  <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+		  <disappearsInDays>35~40</disappearsInDays>
+		  <rainWashes>true</rainWashes>
+		  <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+		  <canFilthAttach>true</canFilthAttach>
+		  <maxThickness>1</maxThickness>
+		  <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	  </ThingDef>
+
+
+</Defs>

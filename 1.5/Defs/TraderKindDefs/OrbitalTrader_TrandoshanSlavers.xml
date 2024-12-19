@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+  <TraderKindDef>
+    <defName>guy762_TraderKind_TrandoSlaver</defName>
+    <label>Trandoshan slave ship</label>
+    <orbital>true</orbital>
+	<!--faction>guy762_KotORFaction_HuttCartel</faction-->
+    <permitRequiredForTrading MayRequire="guy762.KotORFactions">guy762_KotORPermit_BlackMarketOrbital</permitRequiredForTrading>
+    <commonalityMultFromPopulationIntent>
+      <points>
+        <li>(0.2, 0)</li>
+        <li>(1,   1)</li>
+        <li>(2,   3)</li>
+      </points>
+    </commonalityMultFromPopulationIntent>
+	<modExtensions>
+		<li MayRequire="Rick.FCP.Core.Tools" Class="FalloutCurrencies_NonReplacement.CurrencyReplacement">
+			<currency>Silver</currency>
+		</li>
+	</modExtensions>
+    <stockGenerators>
+
+      <!-- CURRENCY -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>1500~3000</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Gold</thingDef>
+        <countRange>50~200</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_SingleDef">
+		<thingDef>guy762_KotORcredits</thingDef>
+		<countRange>25000~50000</countRange>
+	  </li>
+	  <li Class="StockGenerator_BuyTradeTag">
+		<tag>guy762TT_credits</tag>
+	  </li>
+	  
+	  
+	  
+	  
+	  <!-- Drugs -->
+
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>KOTOR_Spice</thingDef>
+        <countRange>100~200</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_KotORStims</tradeTag>
+        <thingDefCountRange>2~4</thingDefCountRange>
+        <countRange>25~75</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_KotORHyperStims</tradeTag>
+        <thingDefCountRange>3~4</thingDefCountRange>
+        <countRange>25~75</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Luciferium</thingDef>
+        <countRange>20~60</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>WakeUp</thingDef>
+        <countRange>200~400</countRange>
+      </li>
+	  
+	  
+	  <!-- Implants -->
+
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>ImplantEmpireCommon</tradeTag>
+        <thingDefCountRange>4~6</thingDefCountRange>
+        <countRange>4~6</countRange>
+      </li>
+	  <li Class="StockGenerator_Category">
+        <categoryDef>BodyPartsNatural</categoryDef>
+        <thingDefCountRange>8~10</thingDefCountRange>
+        <countRange>8~16</countRange>
+      </li>
+	  
+	  
+	  
+	  <!-- Slaves & Apparel -->
+      <li Class="StockGenerator_Slaves">
+        <countRange>15~30</countRange>
+      </li>
+	  <li MayRequire ="guy762.KotORFactions" Class="StockGenerator_Slaves">
+        <slaveKindDef>KotORHutts_SlaveEntertainer</slaveKindDef>
+        <countRange>4~5</countRange>
+      </li>
+      
+	  <li MayRequire="guy762.KotORWeapons" Class="StockGenerator_SingleDef">
+        <thingDef>guy762_Bodysuit_Dyeable</thingDef>
+        <countRange>10~20</countRange>
+      </li>
+	  
+	  <li MayRequire="Ludeon.RimWorld.Ideology" Class="StockGenerator_SingleDef">
+        <thingDef>Apparel_BodyStrap</thingDef>
+        <countRange>10~20</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology" Class="StockGenerator_SingleDef">
+        <thingDef>Apparel_Collar</thingDef>
+        <countRange>10~20</countRange>
+      </li>
+	  
+	  <li MayRequire="lumi.slaveoutfit" Class="StockGenerator_SingleDef">
+        <thingDef>Apparel_SlaveBikini_Old</thingDef>
+        <countRange>2~4</countRange>
+      </li>
+	  
+	  <li MayRequire="s16.core" Class="StockGenerator_Category">
+        <categoryDef>S16_Apparel</categoryDef>
+		<thingDefCountRange>4~8</thingDefCountRange>
+        <totalPriceRange>500~1000</totalPriceRange>
+      </li>
+	  
+	  
+	  
+      <!-- Animals -->
+      <li Class="StockGenerator_Animals">
+        <checkTemperature>false</checkTemperature>
+        <tradeTagsSell>
+          <li>AnimalFighter</li>
+		  <li>AnimalExotic</li>
+          <li>AnimalPet</li>
+        </tradeTagsSell>
+        <tradeTagsBuy>
+          <li>AnimalUncommon</li>
+          <li>AnimalExotic</li>
+        </tradeTagsBuy>
+        <kindCountRange>3~4</kindCountRange>
+        <countRange>3~6</countRange>
+      </li>
+
+
+      
+      <!-- Buying -->
+      <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireCommon</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireRoyal</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
+
+    </stockGenerators>
+  </TraderKindDef>
+  
+  
+</Defs>

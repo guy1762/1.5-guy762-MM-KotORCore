@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<!-- Medpac Recipes -->
+	<RecipeDef>
+		<defName>KotORRecipe_medpac</defName>
+		<label>make 10 Medpacs</label>
+		<description>make 10 Medpacs</description>
+		<jobString>Making 10 Medpacs.</jobString>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<workAmount>5000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>KOTOR_kolto</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>KOTOR_kolto</li>
+				<li>Neutroamine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<guy762_medpac>10</guy762_medpac>
+		</products>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<workSkill>Medicine</workSkill>
+		<displayPriority>762</displayPriority>
+		<researchPrerequisite>KOTOR_Research_Kolto</researchPrerequisite>
+		<recipeUsers>
+			<li>kotor_DrugLab</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>KotORRecipe_medpac_adv</defName>
+		<label>make 10 Advanced Medpacs</label>
+		<description>make 10 Advanced Medpacs</description>
+		<jobString>Making 10 Adv. Medpacs.</jobString>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<workAmount>7500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>KOTOR_kolto</li>
+				</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>KOTOR_kolto</li>
+				<li>Neutroamine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<guy762_medpac_adv>10</guy762_medpac_adv>
+		</products>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<workSkill>Medicine</workSkill>
+		<displayPriority>763</displayPriority>
+		<researchPrerequisite>KOTOR_Research_Kolto</researchPrerequisite>
+		<recipeUsers>
+			<li>kotor_DrugLab</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>KotORRecipe_medpac_life</defName>
+		<label>make 10 Life Support Packs</label>
+		<description>make 10 life support packs</description>
+		<jobString>Making 10 life support packs.</jobString>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<workAmount>10000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>KOTOR_kolto</li>
+				</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>KOTOR_kolto</li>
+				<li>Neutroamine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<guy762_medpac_life>10</guy762_medpac_life>
+		</products>
+		<skillRequirements>
+			<Medicine>15</Medicine>
+		</skillRequirements>
+		<workSkill>Medicine</workSkill>
+		<displayPriority>764</displayPriority>
+		<researchPrerequisite>KOTOR_Research_Kolto</researchPrerequisite>
+		<recipeUsers>
+			<li>kotor_DrugLab</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>KotORRecipe_antidote</defName>
+		<label>make 10 Antidote Kits</label>
+		<description>make 10 antidote kits</description>
+		<jobString>Making 10 antidote kits.</jobString>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<workAmount>7500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>KOTOR_kolto</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>KOTOR_Spice</li>
+				</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>KOTOR_kolto</li>
+				<li>Neutroamine</li>
+				<li>KOTOR_Spice</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<guy762_medpac_antidote>10</guy762_medpac_antidote>
+		</products>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<researchPrerequisites>
+			<li>KOTOR_Research_Spice</li>
+			<li>KOTOR_Research_Kolto</li>
+		</researchPrerequisites>
+		<workSkill>Medicine</workSkill>
+		<displayPriority>765</displayPriority>
+		<recipeUsers>
+			<li>kotor_DrugLab</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	
+
+</Defs>

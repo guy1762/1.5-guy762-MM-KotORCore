@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- CzerkaTech Component ================================================================ -->
+	<!-- Thing -->
+	<ThingDef ParentName="ResourceBase">
+		<defName>KOTOR_UltraComponent</defName>
+		<label>ultra component</label>
+		<description>Intricate holotech computing and energy-directing technology made using advanced materials from across the galaxy.</description>
+		<graphicData>
+			<texPath>Items/czerka_component</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>50</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>0.4</Mass>
+			<Flammability>0.8</Flammability>
+			<DeteriorationRate>3.0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags><li>RewardStandardCore</li></thingSetMakerTags>
+		<allowedArchonexusCount>5</allowedArchonexusCount>
+	</ThingDef>
+	
+	<!-- Recipe -->
+	<RecipeDef>
+		<defName>KotORRecipe_UltraComponent</defName>
+		<label>make ultra component</label>
+		<description>Make an ultra component.</description>
+		<jobString>Making ultra component.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>15000</workAmount>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>KOTOR_AlloyDurasteel</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>KOTOR_IngotCortosis</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>KOTOR_PlasmaCartridge</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ComponentSpacer</li>
+				<li>KOTOR_AlloyDurasteel</li>
+				<li>KOTOR_IngotCortosis</li>
+				<li>KOTOR_PlasmaCartridge</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<KOTOR_UltraComponent>1</KOTOR_UltraComponent>
+		</products>
+		<researchPrerequisite>KOTOR_Research_UltraComponent</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<displayPriority>10</displayPriority>
+		<recipeUsers>
+			<li>FabricationBench</li>
+			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_crystalbase">
+		<defName>guy762_crystalitem_krayt</defName>
+		<label>Krayt Dragon Pearl</label>
+		<description>Taken from the gullet of a krayt dragon, this crystalline "pearl" appears to have refractory qualities that might allow it to function as a lightsaber crystal once properly adapted.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Lightsaber/crystal_pearl</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>TransparentPostLight</shaderType>
+		  <color>(255,255,180)</color>
+		</graphicData>
+		<statBases>
+		  <MarketValue>2500</MarketValue>
+		  <Mass>0.4</Mass>
+		</statBases>
+		<tradeTags>
+		  <li>guy762TT_sabermod_adv</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_crystalbase">
+		<defName>guy762_crystalitem_beskar</defName>
+		<label>Pride of Mandalore</label>
+		<description>A piece of crystallized Beskar ore discovered by the great Tarre Vizsla several centuries ago. It produces a unique "dark" colored blade when used as a lightsaber's primary color crystal.</description>
+		<graphicData>
+		  <texPath>Items/Upgrades/Lightsaber/crystal_17</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>TransparentPostLight</shaderType>
+		  <color>(235,245,255)</color>
+		</graphicData>
+		<statBases>
+		  <MarketValue>30000</MarketValue>
+		  <Mass>0.4</Mass>
+		</statBases>
+		<tradeTags>
+		  <li>guy762TT_KotORLegendary</li>
+		</tradeTags>
+	</ThingDef>
+
+
+
+
+
+
+
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>KOTOR_FabricArmorweave</defName>
+		<label>Armorweave</label>
+		<description>A thick, protective mesh suitable for tailoring suits of armor with. Though it is somewhat restrictive, it remains the top choice for military outfitters across the galaxy.</description>
+		<graphicData>
+		  <texPath>Items/Armorweave</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>1.35</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>6</MarketValue>
+		  <MaxHitPoints>175</MaxHitPoints>
+		  <Mass>0.25</Mass>
+		  <Flammability>0.3</Flammability>
+		  <DeteriorationRate>1</DeteriorationRate>
+		  <StuffPower_Armor_Sharp>1</StuffPower_Armor_Sharp>
+		  <StuffPower_Armor_Blunt>0.8</StuffPower_Armor_Blunt>
+		  <StuffPower_Armor_Heat>1.2</StuffPower_Armor_Heat>
+		  <StuffPower_Insulation_Cold>18</StuffPower_Insulation_Cold>
+		  <StuffPower_Insulation_Heat>18</StuffPower_Insulation_Heat>
+		</statBases>
+		<burnableByRecipe>true</burnableByRecipe>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<stuffProps>
+		  <categories>
+			<li>Fabric</li>
+		  </categories>
+		  <commonality>0.75</commonality>
+		  <color>(55,55,60)</color>
+		  <statFactors>
+			<Flammability>0.3</Flammability>
+			<MaxHitPoints>1.5</MaxHitPoints>
+			<Beauty>1</Beauty>
+			<MoveSpeed>-0.1</MoveSpeed>
+			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+		  </statFactors>
+		</stuffProps>
+		<thingCategories>
+		  <li>Textiles</li>
+		</thingCategories>
+		<tradeTags>
+		  <li>guy762TT_KotORRawMat_common</li>
+		</tradeTags>
+	  </ThingDef>
+	  
+	  <RecipeDef>
+		<defName>KotORRecipe_Armorweave</defName>
+		<label>make 50 Armorweave</label>
+		<description>Weave steel and other advanced materials into Synthread to create Armorweave.</description>
+		<jobString>Making 50 Armorweave.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>5000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Synthread</li>
+			  </thingDefs>
+			</filter>
+			<count>60</count>
+		  </li>
+		  <li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		  <li>
+			<filter>
+				<thingDefs>
+					<li>ComponentIndustrial</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Synthread</li>
+			<li>Steel</li>
+			<li>ComponentIndustrial</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <KOTOR_FabricArmorweave>50</KOTOR_FabricArmorweave>
+		</products>
+		<recipeUsers>
+			<li>FabricationBench</li>
+			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+		</recipeUsers>
+		<researchPrerequisite>KOTOR_Research_AdvMaterials</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+	  </RecipeDef>
+	  
+	  <RecipeDef>
+		<defName>KotORRecipe_2xArmorweave</defName>
+		<label>make 100 Armorweave</label>
+		<description>Weave steel and other advanced materials into Synthread to create Armorweave.</description>
+		<jobString>Making 100 Armorweave.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>10000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Synthread</li>
+			  </thingDefs>
+			</filter>
+			<count>120</count>
+		  </li>
+		  <li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>20</count>
+		  </li>
+		  <li>
+			<filter>
+				<thingDefs>
+					<li>ComponentIndustrial</li>
+				</thingDefs>
+			</filter>
+			<count>2</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Synthread</li>
+			<li>Steel</li>
+			<li>ComponentIndustrial</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <KOTOR_FabricArmorweave>100</KOTOR_FabricArmorweave>
+		</products>
+		<recipeUsers>
+			<li>FabricationBench</li>
+			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+		</recipeUsers>
+		<researchPrerequisite>KOTOR_Research_AdvMaterials</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+	  </RecipeDef>
+	  
+	  
+	  
+	  
+	  
+	  
+	
+	
+	
+	
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>KOTOR_Duracrete</defName>
+		<label>Duracrete</label>
+		<description>Concrete infused with steel. Ugly, but tougher than any natural stone type. Required by building codes across the galaxy.</description>
+		<graphicData>
+		  <texPath>raw_resources/uranium_blank</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <color>(170,160,170)</color>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<soundInteract>ChunkRock_Drop</soundInteract>
+		<soundDrop>ChunkRock_Drop</soundDrop>
+		<statBases>
+		  <MarketValue>2</MarketValue>
+		  <Mass>2</Mass>
+		  <SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+		  <BluntDamageMultiplier>1.0</BluntDamageMultiplier>
+		  <Beauty>-12</Beauty>
+		  <ConstructionSpeedFactor>0.8</ConstructionSpeedFactor>
+		</statBases>
+		<thingCategories>
+		  <li>StoneBlocks</li>
+		</thingCategories>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>false</smeltable>
+		<stuffProps>
+		  <categories>
+			<li>Stony</li>
+		  </categories>
+		  <commonality>0.40</commonality>
+		  <appearance>Metal</appearance>
+		  <color>(170,160,170)</color>
+		  <constructEffect>ConstructMetal</constructEffect>
+		  <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+		  <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+		  <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+		  <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+		  <stuffAdjective>Duracrete</stuffAdjective>
+		  <statOffsets>
+			<Beauty>-4</Beauty>
+		  </statOffsets>
+		  <statFactors>
+			<MaxHitPoints>2.5</MaxHitPoints>
+			<WorkToMake>1.6</WorkToMake>
+			<WorkToBuild>6.0</WorkToBuild>
+			<Flammability>0</Flammability>
+			<DoorOpenSpeed>0.40</DoorOpenSpeed>
+			<BedRestEffectiveness>0.9</BedRestEffectiveness>
+			<MeleeWeapon_CooldownMultiplier>1.40</MeleeWeapon_CooldownMultiplier>
+		  </statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<allowedArchonexusCount>80</allowedArchonexusCount>
+		<tradeTags>
+		  <li>guy762TT_KotORRawMat_common</li>
+		</tradeTags>
+	  </ThingDef>
+	  
+	  <RecipeDef ParentName="MakeStoneBlocksBase">
+		<defName>KotORRecipe_Duracrete</defName>
+		<label>make 20 Duracrete</label>
+		<description>Infuse rock chunks and steel into Duracrete.</description>
+		<jobString>Making 20 Duracrete.</jobString>
+		<workerCounterClass>RecipeWorkerCounter_MakeStoneBlocks</workerCounterClass>
+		<workAmount>3000</workAmount>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+		  <li>
+			<filter>
+			  <categories>
+				<li>StoneChunks</li>
+			  </categories>
+			</filter>
+			<count>1</count>
+		  </li>
+		  <li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>20</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <categories>
+			<li>StoneChunks</li>
+		  </categories>
+		  <thingDefs>
+			<li>Steel</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <KOTOR_Duracrete>20</KOTOR_Duracrete>
+		</products>
+		<recipeUsers Inherit="False">
+			<li>ElectricSmelter</li>
+			<li>kotor_PlasmaFurnace</li>
+		</recipeUsers>
+		<displayPriority>10</displayPriority>
+		<researchPrerequisite>KOTOR_Research_AdvMaterials</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+	  </RecipeDef>
+	  
+	  <RecipeDef ParentName="MakeStoneBlocksBase">
+		<defName>KotORRecipe_5xDuracrete</defName>
+		<label>make 100 Duracrete</label>
+		<description>Infuse rock chunks and steel into Duracrete.</description>
+		<jobString>Making 100 Duracrete.</jobString>
+		<workerCounterClass>RecipeWorkerCounter_MakeStoneBlocks</workerCounterClass>
+		<workAmount>15000</workAmount>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+		  <li>
+			<filter>
+			  <categories>
+				<li>StoneChunks</li>
+			  </categories>
+			</filter>
+			<count>5</count>
+		  </li>
+		  <li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>100</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <categories>
+			<li>StoneChunks</li>
+		  </categories>
+		  <thingDefs>
+			<li>Steel</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <KOTOR_Duracrete>100</KOTOR_Duracrete>
+		</products>
+		<recipeUsers Inherit="False">
+			<li>ElectricSmelter</li>
+			<li>kotor_PlasmaFurnace</li>
+		</recipeUsers>
+		<displayPriority>10</displayPriority>
+		<researchPrerequisite>KOTOR_Research_AdvMaterials</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+	  </RecipeDef>
+		
+</Defs>

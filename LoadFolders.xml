@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<loadFolders>
+	<v1.5>
+		<li>/</li>
+		<li>1.5</li>
+		<li IfModActive="erdelf.HumanoidAlienRaces">1.5/AdditionalMods/HAR</li>
+		
+		<li IfModNotActive="jecrell.jecstools">1.5/AdditionalMods/_BorrowedFromJecsTools</li>
+		<li IfModNotActive="Lee.Athena.PostFix">1.5/AdditionalMods/_NO_LeeAthenaFrameworkPostFix</li>
+		
+		<li IfModActive="Killathon.ArtificialBeings">1.5/AdditionalMods/MHC</li>
+		<li IfModActive="Killathon.ArtificialBeings.SynCore">1.5/AdditionalMods/ATC</li>
+		
+		<li IfModActive="sindre0830.rimnauts2">1.5/AdditionalMods/RimNauts2</li>
+		<li IfModActive="kentington.saveourship2">1.5/AdditionalMods/SoS2</li>
+	</v1.5>
+</loadFolders>

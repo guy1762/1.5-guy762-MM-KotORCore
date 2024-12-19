@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<DesignationCategoryDef>
+	<defName>KOTOR_BuildTab</defName>
+	<label>SWKotOR</label>
+	<description>Star Wars: Knights of the Outer Rim</description>
+	<order>0</order>
+	<specialDesignatorClasses>
+		<li>Designator_Cancel</li>
+		<li>Designator_Deconstruct</li>
+	</specialDesignatorClasses>
+</DesignationCategoryDef>
+ 
+</Defs>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Holo Terminal ================================================================ -->
+	<ThingDef Name="HoloTerminalBase" ParentName="BuildingBase" Abstract="True">
+		<description>Holographic recorded entertainment</description>
+		<size>(1,2)</size>
+		<graphicData>
+			<drawOffset>(0,0,0.25)</drawOffset>
+			<drawSize>(2.5,2.5)</drawSize>
+			<graphicClass>Graphic_Multi</graphicClass>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<rotatable>true</rotatable>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<fillPercent>0.40</fillPercent>
+		<thingCategories>
+			<li>BuildingsJoy</li>
+		</thingCategories>
+		<statBases>
+			<WorkToBuild>10000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>14</Mass>
+			<Flammability>1.0</Flammability>
+			<JoyGainFactor>1.5</JoyGainFactor>
+		</statBases>
+		<costList>
+			<Steel>80</Steel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<pathCost>42</pathCost>
+		<passability>PassThroughOnly</passability>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<building>
+			<joyKind>Television</joyKind>
+			<spawnedConceptLearnOpportunity>TVForSickPeople</spawnedConceptLearnOpportunity>
+			<boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
+			<watchBuildingStandDistanceRange>2~4</watchBuildingStandDistanceRange>
+			<watchBuildingStandRectWidth>5</watchBuildingStandRectWidth>
+			<watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+			<effectWatching>WatchingTelevision</effectWatching>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_WatchArea</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<shortCircuitInRain>true</shortCircuitInRain>
+			<basePowerConsumption>300</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<tradeTags>
+			<li>Television</li>
+		</tradeTags>
+		<constructEffect>ConstructMetal</constructEffect>
+		<designationCategory>KOTOR_BuildTab</designationCategory>
+		<researchPrerequisites><li>KOTOR_Research_HoloRec</li></researchPrerequisites>
+		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+		<uiIconScale>0.9</uiIconScale>
+	</ThingDef>
+	
+	<!-- Female Dancer ================================================================ -->
+	<ThingDef ParentName="HoloTerminalBase">
+		<defName>kotor_holo_dancerF</defName>
+		<label>Holo Terminal ( Dancer F )</label>
+		<graphicData>
+			<texPath>recreation/holo_entertainment/dancerF</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<!-- Male Dancer ================================================================ -->
+	<ThingDef ParentName="HoloTerminalBase">
+		<defName>kotor_holo_dancerM</defName>
+		<label>Holo Terminal ( Dancer M )</label>
+		<graphicData>
+			<texPath>recreation/holo_entertainment/dancerM</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<!-- Bith ================================================================ -->
+	<ThingDef ParentName="HoloTerminalBase">
+		<defName>kotor_holo_bith</defName>
+		<label>Holo Terminal ( Music )</label>
+		<graphicData>
+			<texPath>recreation/holo_entertainment/holo_bith</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<JoyGiverDef>
+		<defName>WatchHolo</defName>
+		<giverClass>JoyGiver_WatchBuilding</giverClass>
+		<baseChance>3.5</baseChance>
+		<canDoWhileInBed>true</canDoWhileInBed>
+		<thingDefs>
+			<li>kotor_holo_dancerF</li>
+			<li>kotor_holo_dancerM</li>
+			<li>kotor_holo_bith</li>
+		</thingDefs>
+		<jobDef>WatchTelevision</jobDef>
+		<joyKind>Television</joyKind>
+		<requiredCapacities>
+			<li>Sight</li>
+		</requiredCapacities>
+	</JoyGiverDef>
+	
+</Defs>

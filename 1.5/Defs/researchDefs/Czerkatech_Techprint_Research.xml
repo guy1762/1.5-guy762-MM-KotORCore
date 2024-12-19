@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	  
+	  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>guy762_ResearchKotOR_lightsabers</defName>
+		<label>Lightsaber assembly</label>
+		<description>Assemble the weapon of a Jedi Knight: the Lightsaber.</description>
+		<baseCost>800</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+		  <li>MicroelectronicsBasics</li>
+		</prerequisites>
+		<techprintCount>1</techprintCount>
+		<techprintCommonality>1</techprintCommonality>
+		<heldByFactionCategoryTags>
+		  <li>Empire</li>
+		</heldByFactionCategoryTags>
+		<researchViewX>3</researchViewX>
+		<researchViewY>7.5</researchViewY>
+	  </ResearchProjectDef>
+	  
+	  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>guy762_ResearchKotOR_advsabers</defName>
+		<label>Advanced Lightsaber assembly</label>
+		<description>Build double-bladed and crossguard Lightsabers.</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+		  <li>guy762_ResearchKotOR_lightsabers</li>
+		  <li>guy762_ResearchKotOR_workbench</li>
+		</prerequisites>
+		<researchViewX>4</researchViewX>
+		<researchViewY>7.5</researchViewY>
+	  </ResearchProjectDef>
+	  
+	  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>guy762_ResearchKotOR_saberparts</defName>
+		<label>Lightsaber components</label>
+		<description>Craft the individual pieces of a Lightsaber.</description>
+		<baseCost>16000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+		  <li>guy762_ResearchKotOR_bluntmelee</li>     
+		  <li>guy762_ResearchKotOR_exupgrade</li>
+		  <li>guy762_ResearchKotOR_advsabers</li>
+		</prerequisites>
+		<techprintCount>3</techprintCount>
+		<techprintCommonality>0.05</techprintCommonality>
+		<heldByFactionCategoryTags>
+		  <li>Empire</li>
+		</heldByFactionCategoryTags>
+		<requiredResearchFacilities>
+		  <li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>6</researchViewX>
+		<researchViewY>5</researchViewY>
+	  </ResearchProjectDef>
+  
+  
+  
+  
+  
+	  
+	  
+	  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>guy762_ResearchKotOR_jedi</defName>
+		<label>Jedi apparel</label>
+		<description>Craft the tunics and robes of the Jedi.</description>
+		<baseCost>800</baseCost>
+		<heldByFactionCategoryTags>
+		  <li>Empire</li>
+		</heldByFactionCategoryTags>
+		<prerequisites>
+		  <li MayRequire="VanillaExpanded.VPsycastsE">VPE_EltexGear</li>
+		</prerequisites>
+		<techprintCount>1</techprintCount>
+		<techprintCommonality>0.25</techprintCommonality>
+		<researchViewX>7</researchViewX>
+		<researchViewY>0</researchViewY>
+	  </ResearchProjectDef>
+	  
+	  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>guy762_ResearchKotOR_republic</defName>
+		<label>Republic equipment</label>
+		<description>Craft the weapons, uniforms, and armor of the Republic Military.</description>
+		<baseCost>2000</baseCost>
+		<heldByFactionCategoryTags>
+		  <li>Empire</li>
+		</heldByFactionCategoryTags>
+		<hiddenPrerequisites>
+		  <li>guy762_ResearchKotOR_lgtarmor</li>
+		  <li>guy762_ResearchKotOR_workbench</li>
+		</hiddenPrerequisites>
+		<techprintCount>2</techprintCount>
+		<techprintCommonality>0.25</techprintCommonality>
+		<researchViewX>7</researchViewX>
+		<researchViewY>0.5</researchViewY>
+	  </ResearchProjectDef>
+	  
+	  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>guy762_ResearchKotOR_sith</defName>
+		<label>Sith equipment</label>
+		<description>Craft the weapons, gadgets, uniforms, and armor of the Sith Empire.</description>
+		<baseCost>6000</baseCost>
+		<heldByFactionCategoryTags>
+		  <li>Outlander</li>
+		</heldByFactionCategoryTags>
+		<hiddenPrerequisites>
+		  <li>guy762_ResearchKotOR_vibroweapons</li>
+		  <li>guy762_ResearchKotOR_miniblasters</li>
+		  <li>guy762_ResearchKotOR_hvyblasters</li>
+		  <li>guy762_ResearchKotOR_midarmor</li>
+		</hiddenPrerequisites>
+		<techprintCount>3</techprintCount>
+		<techprintCommonality>0.25</techprintCommonality>
+		<researchViewX>7</researchViewX>
+		<researchViewY>1</researchViewY>
+	  </ResearchProjectDef>
+	  
+	  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>guy762_ResearchKotOR_mando</defName>
+		<label>Mandalorian equipment</label>
+		<description>Forge the armor and weapons of the Mandalorian warriors and refine the mythical Beskar metal.</description>
+		<baseCost>8000</baseCost>
+		<heldByFactionCategoryTags>
+		  <li>Pirate</li>
+		</heldByFactionCategoryTags>
+		<hiddenPrerequisites>
+		  <li>guy762_ResearchKotOR_hvyarmor</li>
+		  <li>guy762_ResearchKotOR_hvyblasters</li>
+		</hiddenPrerequisites>
+		<requiredResearchFacilities>
+		  <li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<techprintCount>4</techprintCount>
+		<techprintCommonality>0.25</techprintCommonality>
+		<researchViewX>7</researchViewX>
+		<researchViewY>1.5</researchViewY>
+	  </ResearchProjectDef>
+	  
+	  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>guy762_ResearchKotOR_czerka</defName>
+		<label>Czerka equipment</label>
+		<description>Craft the machinery, gadgets, uniforms, and armor of the Czerka Corporation.</description>
+		<baseCost>3000</baseCost>
+		<heldByFactionCategoryTags>
+		  <li>Outlander</li>
+		</heldByFactionCategoryTags>
+		<hiddenPrerequisites>
+		  <li>guy762_ResearchKotOR_hvyblasters</li>
+		  <li>guy762_ResearchKotOR_midarmor</li>
+		</hiddenPrerequisites>
+		<techprintCount>3</techprintCount>
+		<techprintCommonality>0.25</techprintCommonality>
+		<researchViewX>7</researchViewX>
+		<researchViewY>2</researchViewY>
+	  </ResearchProjectDef>
+	  
+	  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>guy762_ResearchKotOR_exchange</defName>
+		<label>Exchange equipment</label>
+		<description>Craft the gadgets and weapons of the elusive Exchange.</description>
+		<baseCost>4000</baseCost>
+		<heldByFactionCategoryTags>
+		  <li>Pirate</li>
+		</heldByFactionCategoryTags>
+		<!--prerequisites>
+		  <li>guy762_ResearchKotOR_hvyblasters</li>
+		  <li>guy762_ResearchKotOR_midarmor</li>
+		</prerequisites-->
+		<techprintCount>2</techprintCount>
+		<techprintCommonality>0.25</techprintCommonality>
+		<researchViewX>7</researchViewX>
+		<researchViewY>2.5</researchViewY>
+	  </ResearchProjectDef>
+	  
+	  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>guy762_ResearchKotOR_hutts</defName>
+		<label>Kajidic equipment</label>
+		<description>Craft the armors and weapons of the Hutt Kajidics.</description>
+		<baseCost>2000</baseCost>
+		<heldByFactionCategoryTags>
+		  <li>Pirate</li>
+		</heldByFactionCategoryTags>
+		<hiddenPrerequisites>
+		  <li>guy762_ResearchKotOR_lgtarmor</li>
+		  <li>guy762_ResearchKotOR_vibroweapons</li>
+		</hiddenPrerequisites>
+		<techprintCount>1</techprintCount>
+		<techprintCommonality>0.25</techprintCommonality>
+		<researchViewX>7</researchViewX>
+		<researchViewY>3</researchViewY>
+	  </ResearchProjectDef>
+	  
+	  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>guy762_ResearchKotOR_wookiee</defName>
+		<label>Wookiee equipment</label>
+		<description>Build traditional Wookiee Bowcasters, which hurl explosive energy quarrels at their targets.</description>
+		<baseCost>7000</baseCost>
+		<heldByFactionCategoryTags>
+		  <li>Outlander</li>
+		</heldByFactionCategoryTags>
+		<hiddenPrerequisites>
+		  <li>guy762_ResearchKotOR_hvyblasters</li>
+		</hiddenPrerequisites>
+		<requiredResearchFacilities>
+		  <li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<techprintCount>2</techprintCount>
+		<techprintCommonality>0.125</techprintCommonality>
+		<researchViewX>7</researchViewX>
+		<researchViewY>3.5</researchViewY>
+	  </ResearchProjectDef>
+	  
+	  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>guy762_ResearchKotOR_jawa</defName>
+		<label>Jawa equipment</label>
+		<description>Build specialized ion blasters utilized by Jawas.</description>
+		<baseCost>1000</baseCost>
+		<heldByFactionCategoryTags>
+		  <li>Outlander</li>
+		</heldByFactionCategoryTags>
+		<hiddenPrerequisites>
+		  <li>guy762_ResearchKotOR_ion</li>
+		</hiddenPrerequisites>
+		<techprintCount>1</techprintCount>
+		<techprintCommonality>0.125</techprintCommonality>
+		<researchViewX>7</researchViewX>
+		<researchViewY>4</researchViewY>
+	  </ResearchProjectDef>
+	  
+	  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>guy762_ResearchKotOR_tusken</defName>
+		<label>Tusken Raider equipment</label>
+		<description>Build the specialized slug-rifles, Gaffi sticks, and wrappings of the Tusken Raiders.</description>
+		<baseCost>800</baseCost>
+		<heldByFactionCategoryTags>
+		  <li>Raider</li>
+		</heldByFactionCategoryTags>
+		<hiddenPrerequisites>
+		  <li>PrecisionRifling</li>
+		</hiddenPrerequisites>
+		<techprintCount>1</techprintCount>
+		<techprintCommonality>0.125</techprintCommonality>
+		<researchViewX>7</researchViewX>
+		<researchViewY>4.5</researchViewY>
+	  </ResearchProjectDef>
+	  
+	  
+
+	
+</Defs>

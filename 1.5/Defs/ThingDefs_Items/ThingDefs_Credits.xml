@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="guy762_currencybase" ParentName="ResourceBase" Abstract="True">
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Silver_Drop</soundInteract>
+		<soundDrop>Silver_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<thingCategories>
+		  <li>ItemsMisc</li>
+		</thingCategories>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<tradeability>All</tradeability>
+		<techLevel>Spacer</techLevel>
+		<tickerType>Never</tickerType>
+	</ThingDef>
+	
+	
+	
+			<!--credits-->
+	
+	
+	
+	<ThingDef ParentName="guy762_currencybase">
+		<defName>guy762_KotORcredits</defName>
+		<label>credits</label>
+		<description>The fiat currency of the Galactic Republic, Republic Dataries (typically referred to as "credits") are counted on an electronic chip inside a plastic card issued by various banks operating under the Galactic Republic Federal Reserve. While it's considered the standard currency in the Core Worlds, the credit has far less influence in the Outer Rim, often being passed up in favor of the minted silver and gold coinage of the Hutts.</description>
+		<graphicData>
+		  <texPath>Items/Credits</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.75</drawSize>
+		</graphicData>
+		<stackLimit>1000000</stackLimit>
+		<statBases>
+		  <MarketValue>0.5</MarketValue>
+		  <Mass>0</Mass>
+		</statBases>
+		<tradeTags>
+		  <li>guy762TT_credits</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardCore</li>
+		</thingSetMakerTags>
+		<minRewardCount>1000</minRewardCount>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</Defs>

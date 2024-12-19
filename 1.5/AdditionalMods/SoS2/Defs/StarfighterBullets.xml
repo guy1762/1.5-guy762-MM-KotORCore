@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+
+
+
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORSFBullet_TIE</defName>
+		<label>laser bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/blaster_green</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_ExplosiveDamage_energy</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>50</speed>
+			<explosionRadius>0.25</explosionRadius>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORSFBullet_aurek</defName>
+		<label>laser bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/blaster_red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_ExplosiveDamage_energy</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>50</speed>
+			<explosionRadius>0.25</explosionRadius>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORSFBullet_starviper</defName>
+		<label>laser bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/sniper_green</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_ExplosiveDamage_energy</damageDef>
+			<damageAmountBase>35</damageAmountBase>
+			<armorPenetrationBase>0.375</armorPenetrationBase>
+			<speed>50</speed>
+			<explosionRadius>0.25</explosionRadius>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORSFBullet_onith</defName>
+		<label>laser bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/sniper_orange</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_ExplosiveDamage_energy</damageDef>
+			<damageAmountBase>35</damageAmountBase>
+			<armorPenetrationBase>0.375</armorPenetrationBase>
+			<speed>50</speed>
+			<explosionRadius>0.25</explosionRadius>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORSFBullet_ebonmain</defName>
+		<label>cannon bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/blaster_red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>4</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_ExplosiveDamage_energy</damageDef>
+			<damageAmountBase>45</damageAmountBase>
+			<armorPenetrationBase>0.5</armorPenetrationBase>
+			<speed>50</speed>
+			<explosionRadius>1</explosionRadius>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORSFBullet_ebonturret</defName>
+		<label>laser bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/sniper_red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_ExplosiveDamage_energy</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>50</speed>
+			<explosionRadius>0.25</explosionRadius>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+	</ThingDef>
+	
+	
+	
+	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORSFBullet_missileHX</defName>
+		<label>high-ex missile</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/missile_orange</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_GrenadeDamage_frag</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>0.375</armorPenetrationBase>
+			<speed>50</speed>
+			<explosionRadius>3</explosionRadius>
+			<soundAmbient>kotorsound_missileflying</soundAmbient>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+		<comps>
+			<li Class="VFECore.CompProperties_HomingProjectile">
+				<homingDistanceFractionPassed>0.7</homingDistanceFractionPassed>
+				<homingCorrectionTickRate>5</homingCorrectionTickRate>
+				<initialDispersionFromTarget>2.5</initialDispersionFromTarget>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORSFBullet_missileion</defName>
+		<label>ion missile</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/missile_cyan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_GrenadeDamage_ion</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>50</speed>
+			<explosionRadius>1.5</explosionRadius>
+			<extraDamages>
+				<li>
+					<def>EMP</def>
+					<amount>50</amount>
+				</li>
+			</extraDamages>
+			<soundAmbient>kotorsound_missileflying</soundAmbient>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+		<comps>
+			<li Class="VFECore.CompProperties_HomingProjectile">
+				<homingDistanceFractionPassed>0.7</homingDistanceFractionPassed>
+				<homingCorrectionTickRate>5</homingCorrectionTickRate>
+				<initialDispersionFromTarget>2.5</initialDispersionFromTarget>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORSFBullet_protorp</defName>
+		<label>proton torpedo</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/torp_pink</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>4</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_GrenadeDamage_thermaldet</damageDef>
+			<damageAmountBase>75</damageAmountBase>
+			<armorPenetrationBase>0.875</armorPenetrationBase>
+			<speed>25</speed>
+			<explosionRadius>2</explosionRadius>
+			<soundAmbient>kotorsound_missileflying</soundAmbient>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+		<comps>
+			<li Class="VFECore.CompProperties_HomingProjectile">
+				<homingDistanceFractionPassed>0.7</homingDistanceFractionPassed>
+				<homingCorrectionTickRate>5</homingCorrectionTickRate>
+				<initialDispersionFromTarget>2.5</initialDispersionFromTarget>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORSFBullet_bomblet</defName>
+		<label>energy bomblet</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/energybomb</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<thingClass>taranchuk_flightcombat.Bomb</thingClass>
+		<projectile>
+		  <damageDef>guy762_ExplosiveDamage_energy</damageDef>
+		  <damageAmountBase>45</damageAmountBase>
+		  <armorPenetrationBase>0.25</armorPenetrationBase>
+		  <speed>1</speed>
+		  <explosionRadius>5</explosionRadius>
+		  <explosionDamageFalloff>true</explosionDamageFalloff>
+		  <explosionEffect>GiantExplosion</explosionEffect>
+		  <flyOverhead>true</flyOverhead>
+		  <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+		  <soundExplode>kotorsound_bombletexplode</soundExplode>
+		  <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+		  <soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+	</ThingDef>
+	
+	
+	
+	
+
+
+	<!--ThingDef ParentName="BaseBullet">
+		<defName>KotORCannonBolt_blaster</defName>
+		<label>blaster bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/blaster_red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_ExplosiveDamage_energy</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>50</speed>
+			<explosionRadius>1</explosionRadius>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORCannonBolt_ion</defName>
+		<label>ion bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/heavyblaster_blue</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_ExplosiveDamage_ion</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>50</speed>
+			<explosionRadius>2</explosionRadius>
+			<extraDamages>
+				<li>
+					<def>EMP</def>
+					<amount>25</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+	</ThingDef-->
+
+
+
+
+	
+	
+	<!--ThingDef ParentName="BaseBullet">
+		<defName>KotORMissile_plasma</defName>
+		<label>plasma missile</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/missile_yellow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_GrenadeDamage_plasma</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>0.125</armorPenetrationBase>
+			<speed>50</speed>
+			<explosionRadius>4</explosionRadius>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+			<soundAmbient>kotorsound_missileflying</soundAmbient>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+		<comps>
+			<li Class="VFECore.CompProperties_HomingProjectile">
+				<homingDistanceFractionPassed>0.7</homingDistanceFractionPassed>
+				<homingCorrectionTickRate>5</homingCorrectionTickRate>
+				<initialDispersionFromTarget>2.5</initialDispersionFromTarget>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORMissile_ion</defName>
+		<label>ion missile</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/missile_cyan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_GrenadeDamage_ion</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>50</speed>
+			<explosionRadius>1.5</explosionRadius>
+			<extraDamages>
+				<li>
+					<def>EMP</def>
+					<amount>50</amount>
+				</li>
+			</extraDamages>
+			<soundAmbient>kotorsound_missileflying</soundAmbient>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+		<comps>
+			<li Class="VFECore.CompProperties_HomingProjectile">
+				<homingDistanceFractionPassed>0.7</homingDistanceFractionPassed>
+				<homingCorrectionTickRate>5</homingCorrectionTickRate>
+				<initialDispersionFromTarget>2.5</initialDispersionFromTarget>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORMissile_buster</defName>
+		<label>buster missile</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/missile_pink</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_GrenadeDamage_frag</damageDef>
+			<damageAmountBase>50</damageAmountBase>
+			<armorPenetrationBase>0.75</armorPenetrationBase>
+			<speed>50</speed>
+			<explosionRadius>1</explosionRadius>
+			<soundAmbient>kotorsound_missileflying</soundAmbient>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+		<comps>
+			<li Class="VFECore.CompProperties_HomingProjectile">
+				<homingDistanceFractionPassed>0.7</homingDistanceFractionPassed>
+				<homingCorrectionTickRate>5</homingCorrectionTickRate>
+				<initialDispersionFromTarget>2.5</initialDispersionFromTarget>
+			</li>
+		</comps>
+	</ThingDef-->
+  
+
+</Defs>

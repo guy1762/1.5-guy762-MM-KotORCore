@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_lgtarmor</defName>
+    <label>light armors</label>
+    <description>Craft light armored vests and helmets.</description>
+    <baseCost>2000</baseCost>
+    <prerequisites>
+      <li>FlakArmor</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>3.5</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_midarmor</defName>
+    <label>medium armors</label>
+    <description>Craft medium armored chestplates and full-body suits.</description>
+    <baseCost>4000</baseCost>
+    <prerequisites>
+      <li>guy762_ResearchKotOR_lgtarmor</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>3.5</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_hvyarmor</defName>
+    <label>heavy armors</label>
+    <description>Craft heavy armored suits.</description>
+    <baseCost>6000</baseCost>
+    <prerequisites>
+      <li>guy762_ResearchKotOR_midarmor</li>
+    </prerequisites>
+    <researchViewX>3</researchViewX>
+    <researchViewY>3.5</researchViewY>
+  </ResearchProjectDef>
+  
+  
+  
+  
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_vibroweapons</defName>
+    <label>vibration weaponry</label>
+    <description>Build bladed weapons that contain a vibration core, giving them extra cutting potential.</description>
+    <baseCost>3000</baseCost>
+    <prerequisites>
+      <li>Fabrication</li>
+    </prerequisites>
+    <researchViewX>0</researchViewX>
+    <researchViewY>5.5</researchViewY>
+  </ResearchProjectDef>
+  
+  
+  
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_blasters</defName>
+    <label>blaster weaponry</label>
+    <description>Build weapons which fire bolts of particle-beam energy.</description>
+    <baseCost>3000</baseCost>
+    <prerequisites>
+      <li>AdvancedFabrication</li>
+    </prerequisites>
+    <!--hiddenPrerequisites>
+      <li>KOTOR_Research_plasmaApplications</li>
+    </hiddenPrerequisites-->
+    <researchViewX>0</researchViewX>
+    <researchViewY>6</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_hvyblasters</defName>
+    <label>heavy blaster weaponry</label>
+    <description>Build weapons which fire heavier bolts of particle-beam energy.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>guy762_ResearchKotOR_blasters</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>6</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_miniblasters</defName>
+    <label>compact blaster weaponry</label>
+    <description>Build smaller weapons which fire bolts of particle-beam energy.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>guy762_ResearchKotOR_blasters</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>7</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_sonic</defName>
+    <label>sonic weaponry</label>
+    <description>Build weapons which fire waves of highly-focused sonic energy, capable of disorienting living targets and dealing severe damage to buildings and structures.</description>
+    <baseCost>2000</baseCost>
+    <prerequisites>
+      <li>guy762_ResearchKotOR_blasters</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>8</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_ion</defName>
+    <label>energy ionization</label>
+    <description>Build weapons which fire bolts of ionized energy, capable of disrupting the electronic systems of Droids and Mechanoids.</description>
+    <baseCost>4000</baseCost>
+    <prerequisites>
+      <li>guy762_ResearchKotOR_hvyblasters</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>2</researchViewX>
+    <researchViewY>6</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_disruptor</defName>
+    <label>disruptor weaponry</label>
+    <description>Build weapons which fire bolts of disruptive energy, reducing solid matter to its constituent molecules. Weapons of this variety ignore armor and many forms of personal shielding.</description>
+    <baseCost>6000</baseCost>
+    <prerequisites>
+      <li>guy762_ResearchKotOR_hvyblasters</li>
+    </prerequisites>
+	<hiddenPrerequisites>
+	  <li>KOTOR_Research_UltraComponent</li>
+	</hiddenPrerequisites>
+	<heldByFactionCategoryTags>
+	  <li>Pirate</li>
+	</heldByFactionCategoryTags>
+	<techprintCount>1</techprintCount>
+	<techprintCommonality>0.25</techprintCommonality>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>2</researchViewX>
+    <researchViewY>6.5</researchViewY>
+  </ResearchProjectDef>
+  
+  
+  
+  
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_droidblasters</defName>
+    <label>droid-mounted weapons</label>
+    <description>Build mounted weapons designed to be used by droids.</description>
+    <baseCost>1000</baseCost>
+    <prerequisites>
+      <li>guy762_ResearchKotOR_blasters</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>8.5</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_lgtcannons</defName>
+    <label>mounted cannons</label>
+    <description>Build heavy mounted weapons designed to be used by droids and vehicles.</description>
+    <baseCost>4000</baseCost>
+    <prerequisites>
+      <li>guy762_ResearchKotOR_droidblasters</li>
+	  <li>guy762_ResearchKotOR_hvyblasters</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>8.5</researchViewY>
+  </ResearchProjectDef>
+  
+  
+  
+  
+  
+  
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_eshields</defName>
+    <label>energy shielding</label>
+    <description>Craft limited-use personal energy shields capable of absorbing incoming energy damage.</description>
+    <baseCost>6000</baseCost>
+    <prerequisites>
+      <li>AdvancedFabrication</li>
+    </prerequisites>
+    <hiddenPrerequisites>
+      <li>KOTOR_Research_plasmaApplications</li>
+    </hiddenPrerequisites>
+    <researchViewX>0</researchViewX>
+    <researchViewY>4.5</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_echanishields</defName>
+    <label>Echani energy shielding</label>
+    <description>Craft advanced personal energy shields developed by the Echani.</description>
+    <baseCost>3000</baseCost>
+    <prerequisites>
+      <li>guy762_ResearchKotOR_eshields</li>
+    </prerequisites>
+	<techprintCount>1</techprintCount>
+	<techprintCommonality>0.25</techprintCommonality>
+	<heldByFactionCategoryTags>
+	  <li>Empire</li>
+	</heldByFactionCategoryTags>
+	<requiredResearchFacilities>
+	  <li>MultiAnalyzer</li>
+	</requiredResearchFacilities>
+    <researchViewX>1</researchViewX>
+    <researchViewY>4</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_bluntmelee</defName>
+    <label>energy field weaponry</label>
+    <description>Build blunt melee weapons enhanced by energy fields, giving them a variety of different effects.</description>
+    <baseCost>4000</baseCost>
+    <prerequisites>
+      <li>guy762_ResearchKotOR_eshields</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>5</researchViewY>
+  </ResearchProjectDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_workbench</defName>
+    <label>basic upgrading</label>
+    <description>Build Aratech workbenches, capable upgrading many different types of non-standard blasters, vibroweapons, and Lightsabers found throughout the galaxy.</description>
+    <baseCost>8000</baseCost>
+    <prerequisites>
+      <li>guy762_ResearchKotOR_blasters</li>
+	  <li>guy762_ResearchKotOR_vibroweapons</li>
+	  <li>guy762_ResearchKotOR_lgtarmor</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>5.5</researchViewY>
+    <discoveredLetterTitle>About: Upgrading weapons at the workbench</discoveredLetterTitle>
+    <discoveredLetterText>You now have the technology to build an Aratech workbench, allowing you to upgrade many higher-level blasters, vibroweapons, and even Lightsabers - provided you have also found the required upgrade item.\n\nNot all weapons can be upgraded; the fabrication patterns of common, base-level blasters and vibroweapons that you are capable of manufacturing in your own facilities are streamlined and simplistic, and modifying them in any meaningful capacity cannot reasonably be done. Weapons of more modular design found throughout the galaxy require highly advanced fabrication technology to manufacture, the specifics of which are closely-guarded corporate secrets. Weapons of this kind must be found - either bought from a trader, or looted from your enemies.\n\nSimilarly, upgrade items must also first be found or bought before they can be installed. Once installed, an upgrade cannot be salvaged, only replaced or removed. Ensure you are installing your upgrade on the weapon you want it on before completing the UI!</discoveredLetterText>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_advupgrade</defName>
+    <label>advanced upgrading</label>
+    <description>Craft basic equipment upgrades, and install more advanced upgrades such as major overhaul kits.</description>
+    <baseCost>4000</baseCost>
+    <prerequisites>
+      <li>guy762_ResearchKotOR_workbench</li>
+      <li>guy762_ResearchKotOR_midarmor</li>
+      <li>guy762_ResearchKotOR_hvyblasters</li>
+    </prerequisites>
+    <researchViewX>3</researchViewX>
+    <researchViewY>5.5</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_exupgrade</defName>
+    <label>expert upgrading</label>
+    <description>Craft advanced equipment upgrades.</description>
+    <baseCost>6000</baseCost>
+    <prerequisites>
+      <li>guy762_ResearchKotOR_advupgrade</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>4</researchViewX>
+    <researchViewY>5.5</researchViewY>
+  </ResearchProjectDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+</Defs>

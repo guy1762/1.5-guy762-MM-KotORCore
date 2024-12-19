@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORDart_stun</defName>
+		<label>paralysis dart</label>
+		<graphicData>
+			<texPath>Things/Projectile/Needle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Stun</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationBase>0</armorPenetrationBase>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="BaseBullet">
+		<defName>KotORDart_toxic</defName>
+		<label>toxic dart</label>
+		<graphicData>
+			<texPath>Things/Projectile/Needle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>BulletToxic</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>0</armorPenetrationBase>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORDart_saber</defName>
+		<label>Saber-dart</label>
+		<graphicData>
+			<texPath>Things/Projectile/Needle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_PoisonDamage_saber</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<armorPenetrationBase>0</armorPenetrationBase>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORDart_throwingknife</defName>
+		<label>throwing knife</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/throwingknife</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>RangedStab</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<stoppingPower>2.5</stoppingPower>
+			<armorPenetrationBase>0.1</armorPenetrationBase>
+			<speed>50</speed>
+		</projectile>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORSlugBolt</defName>
+		<label>slug bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/slug</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationBase>0.5</armorPenetrationBase>
+			<stoppingPower>1.5</stoppingPower>
+			<speed>100</speed>
+			<extraDamages>
+				<li>
+					<def>guy762_RangedDamage_energy</def>
+					<amount>8</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORRailgun</defName>
+		<label>rail shot</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/gauss</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_ExplosiveDamage_energy</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>0.75</armorPenetrationBase>
+			<stoppingPower>2</stoppingPower>
+			<speed>100</speed>
+			<explosionRadius>0.25</explosionRadius>
+			<extraDamages>
+				<li>
+					<def>Bullet</def>
+					<amount>16</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+	</ThingDef>
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORRocket_micro</defName>
+		<label>micro rocket</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/rocket_orange</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>0.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_GrenadeDamage_frag</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<speed>25</speed>
+			<explosionRadius>0.25</explosionRadius>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORRocket</defName>
+		<label>rocket</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/rocket_orange</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_GrenadeDamage_frag</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<speed>25</speed>
+			<explosionRadius>1</explosionRadius>
+			<soundAmbient>kotorsound_rocketflying</soundAmbient>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORMissile_whistlingbird</defName>
+		<label>micro missile</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/missile_whistlingbird</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>0.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_GrenadeDamage_frag</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationBase>0.875</armorPenetrationBase>
+			<speed>25</speed>
+			<explosionRadius>0.25</explosionRadius>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+		<comps>
+			<li Class="VFECore.CompProperties_HomingProjectile">
+				<homingDistanceFractionPassed>0.7</homingDistanceFractionPassed>
+				<homingCorrectionTickRate>5</homingCorrectionTickRate>
+				<initialDispersionFromTarget>2.5</initialDispersionFromTarget>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORMissile_seeker</defName>
+		<label>seeker missile</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/missile_pink</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_GrenadeDamage_frag</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<speed>25</speed>
+			<explosionRadius>1</explosionRadius>
+			<soundAmbient>kotorsound_rocketflying</soundAmbient>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+		<comps>
+			<li Class="VFECore.CompProperties_HomingProjectile">
+				<homingDistanceFractionPassed>0.7</homingDistanceFractionPassed>
+				<homingCorrectionTickRate>5</homingCorrectionTickRate>
+				<initialDispersionFromTarget>2.5</initialDispersionFromTarget>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORMissile_highex</defName>
+		<label>high-ex missile</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/missile_orange</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_GrenadeDamage_frag</damageDef>
+			<damageAmountBase>50</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>50</speed>
+			<explosionRadius>3</explosionRadius>
+			<soundAmbient>kotorsound_missileflying</soundAmbient>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+		<comps>
+			<li Class="VFECore.CompProperties_HomingProjectile">
+				<homingDistanceFractionPassed>0.7</homingDistanceFractionPassed>
+				<homingCorrectionTickRate>5</homingCorrectionTickRate>
+				<initialDispersionFromTarget>2.5</initialDispersionFromTarget>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORMissile_plasma</defName>
+		<label>plasma missile</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/missile_yellow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_GrenadeDamage_plasma</damageDef>
+			<damageAmountBase>50</damageAmountBase>
+			<armorPenetrationBase>0.125</armorPenetrationBase>
+			<speed>50</speed>
+			<explosionRadius>4</explosionRadius>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+			<soundAmbient>kotorsound_missileflying</soundAmbient>
+			<extraDamages>
+				<li>
+					<def>guy762_GrenadeDamage_ion</def>
+					<amount>25</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+		<comps>
+			<li Class="VFECore.CompProperties_HomingProjectile">
+				<homingDistanceFractionPassed>0.7</homingDistanceFractionPassed>
+				<homingCorrectionTickRate>5</homingCorrectionTickRate>
+				<initialDispersionFromTarget>2.5</initialDispersionFromTarget>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORMissile_ion</defName>
+		<label>ion missile</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/missile_cyan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_GrenadeDamage_ion</damageDef>
+			<damageAmountBase>50</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>50</speed>
+			<explosionRadius>2</explosionRadius>
+			<extraDamages>
+				<li>
+					<def>EMP</def>
+					<amount>50</amount>
+				</li>
+			</extraDamages>
+			<soundAmbient>kotorsound_missileflying</soundAmbient>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+		<comps>
+			<li Class="VFECore.CompProperties_HomingProjectile">
+				<homingDistanceFractionPassed>0.7</homingDistanceFractionPassed>
+				<homingCorrectionTickRate>5</homingCorrectionTickRate>
+				<initialDispersionFromTarget>2.5</initialDispersionFromTarget>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORMissile_buster</defName>
+		<label>buster missile</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/missile_pink</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_GrenadeDamage_thermaldet</damageDef>
+			<damageAmountBase>75</damageAmountBase>
+			<armorPenetrationBase>0.75</armorPenetrationBase>
+			<speed>50</speed>
+			<explosionRadius>1</explosionRadius>
+			<screenShakeFactor>1</screenShakeFactor>
+			<soundAmbient>kotorsound_missileflying</soundAmbient>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+		<comps>
+			<li Class="VFECore.CompProperties_HomingProjectile">
+				<homingDistanceFractionPassed>0.7</homingDistanceFractionPassed>
+				<homingCorrectionTickRate>5</homingCorrectionTickRate>
+				<initialDispersionFromTarget>2.5</initialDispersionFromTarget>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+
+
+
+	
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>guy762_ThrownGrenade_frag</defName>
+		<label>frag grenade</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+		  <texPath>Weapons/Projectiles/Grenades/grenade_frag</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+		  <explosionRadius>2.2</explosionRadius >
+		  <damageDef>guy762_GrenadeDamage_frag</damageDef>
+		  <damageAmountBase>50</damageAmountBase>
+		  <explosionDelay>100</explosionDelay>
+		  <!--soundAmbient>kotorsound_grenadecook</soundAmbient-->
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>guy762_ThrownGrenade_ion</defName>
+		<label>ion grenade</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+		  <texPath>Weapons/Projectiles/Grenades/grenade_ion</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+		  <explosionRadius>3.5</explosionRadius >
+		  <damageDef>guy762_GrenadeDamage_ion</damageDef>
+		  <damageAmountBase>50</damageAmountBase>
+		  <explosionDelay>100</explosionDelay>
+		  <!--soundAmbient>kotorsound_grenadecook</soundAmbient-->
+		  <extraDamages>
+				<li>
+					<def>EMP</def>
+					<amount>50</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>guy762_ThrownGrenade_stun</defName>
+		<label>concussion grenade</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+		  <texPath>Weapons/Projectiles/Grenades/grenade_stun</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+		  <explosionRadius>3.5</explosionRadius >
+		  <!--damageDef>guy762_GrenadeDamage_stun</damageDef-->
+		  <damageDef>Stun</damageDef>
+		  <explosionDelay>100</explosionDelay>
+		  <!--soundAmbient>kotorsound_grenadecook</soundAmbient-->
+		  <soundExplode>kotorsound_stungrenade</soundExplode>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="BaseGrenadeProjectile">
+		<defName>guy762_ThrownGrenade_poison</defName>
+		<label>poison grenade</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+		  <texPath>Weapons/Projectiles/Grenades/grenade_poison</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+		  <damageDef>ToxGas</damageDef>
+		  <explosionDelay>100</explosionDelay>
+		  <explosionRadius>1.9</explosionRadius>
+		  <explosionRadiusDisplayPadding>2</explosionRadiusDisplayPadding>
+		  <postExplosionGasType>ToxGas</postExplosionGasType>
+		  <screenShakeFactor>0.5</screenShakeFactor>
+		  <!--soundAmbient>kotorsound_grenadecook</soundAmbient-->
+		  <soundExplode>kotorsound_poisongrenade</soundExplode>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>guy762_ThrownGrenade_plasma</defName>
+		<label>plasma grenade</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+		  <texPath>Weapons/Projectiles/Grenades/grenade_plasma</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+		  <explosionRadius>2.3</explosionRadius >
+		  <damageDef>guy762_GrenadeDamage_plasma</damageDef>
+		  <damageAmountBase>50</damageAmountBase>
+		  <explosionDelay>100</explosionDelay>
+		  <ai_IsIncendiary>true</ai_IsIncendiary>
+		  <shadowSize>0.6</shadowSize>
+		  <screenShakeFactor>0.5</screenShakeFactor>
+		  <!--soundAmbient>kotorsound_grenadecook</soundAmbient-->
+		  <extraDamages>
+				<li>
+					<def>guy762_GrenadeDamage_ion</def>
+					<amount>25</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>guy762_ThrownGrenade_sonic</defName>
+		<label>sonic grenade</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+		  <texPath>Weapons/Projectiles/Grenades/grenade_sonic</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+		  <explosionRadius>3</explosionRadius>
+		  <damageDef>guy762_GrenadeDamage_sonic</damageDef>
+		  <damageAmountBase>50</damageAmountBase>
+		  <explosionDelay>100</explosionDelay>
+		  <!--soundAmbient>kotorsound_grenadecook</soundAmbient-->
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>guy762_ThrownGrenade_thermaldet</defName>
+		<label>thermal detonator</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+		  <texPath>Weapons/Projectiles/Grenades/grenade_thermaldet</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+		  <explosionRadius>1.9</explosionRadius >
+		  <damageDef>guy762_GrenadeDamage_thermaldet</damageDef>
+		  <damageAmountBase>75</damageAmountBase>
+		  <explosionDelay>100</explosionDelay>
+		  <screenShakeFactor>1</screenShakeFactor>
+		  <!--soundAmbient>kotorsound_grenadecook</soundAmbient-->
+		</projectile>
+	</ThingDef>
+  
+
+</Defs>

@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORBlasterBolt_default</defName>
+		<label>blaster bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/blaster_red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_energy</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationBase>0.05</armorPenetrationBase>
+			<speed>50</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORBlasterBolt_heavy</defName>
+		<label>blaster bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/heavyblaster_red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_energy</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationBase>0.1</armorPenetrationBase>
+			<stoppingPower>2</stoppingPower>
+			<speed>50</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORBlasterBolt_advheavy</defName>
+		<label>blaster bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/advheavyblaster_red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_energy</damageDef>
+			<damageAmountBase>40</damageAmountBase>
+			<armorPenetrationBase>0.15</armorPenetrationBase>
+			<stoppingPower>3</stoppingPower>
+			<speed>50</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORBlasterBolt_mstheavy</defName>
+		<label>blaster bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/mstheavyblaster_red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_energy</damageDef>
+			<damageAmountBase>60</damageAmountBase>
+			<armorPenetrationBase>0.2</armorPenetrationBase>
+			<stoppingPower>4</stoppingPower>
+			<speed>50</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORBlasterBolt_sniper</defName>
+		<label>blaster bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/sniper_red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_energy</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationBase>1</armorPenetrationBase>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORIonBolt_default</defName>
+		<label>ion bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/blaster_blue</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_ion</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<armorPenetrationBase>0.05</armorPenetrationBase>
+			<speed>50</speed>
+			<extraDamages>
+				<li>
+					<def>EMP</def>
+					<amount>10</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORIonBolt_heavy</defName>
+		<label>ion bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/heavyblaster_blue</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_ion</damageDef>
+			<damageAmountBase>16</damageAmountBase>
+			<armorPenetrationBase>0.1</armorPenetrationBase>
+			<stoppingPower>2</stoppingPower>
+			<speed>50</speed>
+			<extraDamages>
+				<li>
+					<def>EMP</def>
+					<amount>25</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORIonBolt_advheavy</defName>
+		<label>ion bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/advheavyblaster_blue</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_ion</damageDef>
+			<damageAmountBase>32</damageAmountBase>
+			<armorPenetrationBase>0.15</armorPenetrationBase>
+			<stoppingPower>3</stoppingPower>
+			<speed>50</speed>
+			<extraDamages>
+				<li>
+					<def>EMP</def>
+					<amount>30</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORIonBolt_mstheavy</defName>
+		<label>ion bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/mstheavyblaster_blue</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_ion</damageDef>
+			<damageAmountBase>48</damageAmountBase>
+			<armorPenetrationBase>0.2</armorPenetrationBase>
+			<stoppingPower>4</stoppingPower>
+			<speed>50</speed>
+			<extraDamages>
+				<li>
+					<def>EMP</def>
+					<amount>35</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORIonBolt_sniper</defName>
+		<label>ion bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/sniper_blue</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_ion</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<armorPenetrationBase>1</armorPenetrationBase>
+			<speed>100</speed>
+			<extraDamages>
+				<li>
+					<def>EMP</def>
+					<amount>18</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+	</ThingDef>
+	
+	
+	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORStunBolt_default</defName>
+		<label>blaster bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/blaster_orange</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_energy</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationBase>0.05</armorPenetrationBase>
+			<speed>50</speed>
+			<extraDamages>
+				<li>
+					<def>Stun</def>
+					<amount>10</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORStunBolt_heavy</defName>
+		<label>blaster bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/heavyblaster_orange</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_energy</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationBase>0.1</armorPenetrationBase>
+			<stoppingPower>2</stoppingPower>
+			<speed>50</speed>
+			<extraDamages>
+				<li>
+					<def>Stun</def>
+					<amount>10</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORStunBolt_advheavy</defName>
+		<label>blaster bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/advheavyblaster_orange</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_energy</damageDef>
+			<damageAmountBase>40</damageAmountBase>
+			<armorPenetrationBase>0.15</armorPenetrationBase>
+			<stoppingPower>3</stoppingPower>
+			<speed>50</speed>
+			<extraDamages>
+				<li>
+					<def>Stun</def>
+					<amount>15</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORStunBolt_mstheavy</defName>
+		<label>blaster bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/mstheavyblaster_orange</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_energy</damageDef>
+			<damageAmountBase>60</damageAmountBase>
+			<armorPenetrationBase>0.2</armorPenetrationBase>
+			<stoppingPower>4</stoppingPower>
+			<speed>50</speed>
+			<extraDamages>
+				<li>
+					<def>Stun</def>
+					<amount>20</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORStunBolt_sniper</defName>
+		<label>blaster bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/sniper_orange</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_energy</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationBase>1</armorPenetrationBase>
+			<speed>100</speed>
+			<extraDamages>
+				<li>
+					<def>Stun</def>
+					<amount>10</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+	</ThingDef>
+	
+	
+	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORDisruptorBolt_default</defName>
+		<label>disruptor bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/blaster_yellow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_disruptor</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<armorPenetrationBase>1</armorPenetrationBase>
+			<speed>75</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORDisruptorBolt_heavy</defName>
+		<label>disruptor bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/heavyblaster_yellow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_disruptor</damageDef>
+			<damageAmountBase>16</damageAmountBase>
+			<armorPenetrationBase>1</armorPenetrationBase>
+			<stoppingPower>2</stoppingPower>
+			<speed>75</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORDisruptorBolt_advheavy</defName>
+		<label>disruptor bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/advheavyblaster_yellow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_disruptor</damageDef>
+			<damageAmountBase>32</damageAmountBase>
+			<armorPenetrationBase>1</armorPenetrationBase>
+			<stoppingPower>3</stoppingPower>
+			<speed>75</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORDisruptorBolt_mstheavy</defName>
+		<label>disruptor bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/mstheavyblaster_yellow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_disruptor</damageDef>
+			<damageAmountBase>48</damageAmountBase>
+			<armorPenetrationBase>1</armorPenetrationBase>
+			<stoppingPower>4</stoppingPower>
+			<speed>75</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORDisruptorBolt_sniper</defName>
+		<label>disruptor bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/sniper_yellow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_disruptor</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<armorPenetrationBase>2</armorPenetrationBase>
+			<speed>125</speed>
+		</projectile>
+	</ThingDef>
+	
+	
+	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORSonicWave_default</defName>
+		<label>sonic wave</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/sonic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_sonic</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<armorPenetrationBase>0.05</armorPenetrationBase>
+			<speed>25</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORSonicWave_heavy</defName>
+		<label>sonic wave</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/sonic_heavy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_sonic</damageDef>
+			<damageAmountBase>16</damageAmountBase>
+			<armorPenetrationBase>0.1</armorPenetrationBase>
+			<stoppingPower>2</stoppingPower>
+			<speed>25</speed>
+		</projectile>
+	</ThingDef>
+	
+	<!--ThingDef ParentName="BaseBullet">
+		<defName>KotORSonicWave_sniper</defName>
+		<label>sonic wave</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/sonic_sniper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_sonic</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<armorPenetrationBase>1</armorPenetrationBase>
+			<speed>75</speed>
+		</projectile>
+	</ThingDef-->
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>KotORSonicWave_superheavy</defName>
+		<label>sonic wave</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/sonic_heavy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.25</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_GrenadeDamage_sonic</damageDef>
+			<damageAmountBase>24</damageAmountBase>
+			<armorPenetrationBase>0.15</armorPenetrationBase>
+			<stoppingPower>2</stoppingPower>
+			<speed>25</speed>
+			<explosionRadius>1.5</explosionRadius>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+	</ThingDef>
+		
+	
+	
+
+</Defs>

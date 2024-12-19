@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+
+	<!--  deathstick ================================================================ -->	
+	<ThingDef ParentName="DrugBase">
+		<defName>KOTOR_Deathstick</defName>
+		<label>Deathstick</label>
+		<description>Deathsticks are a highly addictive substance common in underworld locales across the galaxy. A luminescent gel contained inside a plastic stick, Deathsticks are smoked as a vapor to deliver intense feelings of relief and painlessness, which some have flippantly likened to the feeling of dying (hence the name "Deathstick"). Deathsticks are created from the brewing of Spice with many common types of fungus.</description>
+		<descriptionHyperlinks>
+			<HediffDef>deathstickHigh</HediffDef>
+			<HediffDef>guy762_drugtolerance_spice</HediffDef>
+			<HediffDef>guy762_addiction_deathstick</HediffDef>
+			<HediffDef>ChemicalDamageSevere</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Items/Consumables/Deathsticks</texPath>
+			<shaderType>TransparentPostLight</shaderType>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.75</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<WorkToMake>350</WorkToMake>
+			<MarketValue>50</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<techLevel>Spacer</techLevel>
+		<minRewardCount>10</minRewardCount>
+		<stackLimit>25</stackLimit>
+		<ingestible>
+			<foodType>Fluid, Processed</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.80</joy>
+			<baseIngestTicks>150</baseIngestTicks>
+			<drugCategory>Social</drugCategory>
+			  <ingestSound>Ingest_Smoke</ingestSound>
+			  <ingestEffect>Smoke_Joint</ingestEffect>
+			  <ingestHoldOffsetStanding>
+				<northDefault>
+				  <offset>(0.27,0,0.08)</offset>
+				  <behind>true</behind>
+				</northDefault>
+				<east>
+				  <offset>(0.45,0,0.08)</offset>
+				</east>
+				<south>
+				  <offset>(0.27,0,0.08)</offset>
+				</south>
+				<west>
+				  <offset>(-0.50,0,0.08)</offset>
+				  <flip>true</flip>
+				</west>
+			  </ingestHoldOffsetStanding>
+			  <ingestHoldUsesTable>false</ingestHoldUsesTable>
+			  <ingestCommandString>Smoke {0}</ingestCommandString>
+			  <ingestReportString>Smoking {0}.</ingestReportString>
+			  <ingestReportStringEat>Consuming {0}.</ingestReportStringEat>
+			  <useEatingSpeedStat>false</useEatingSpeedStat>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>deathstickHigh</hediffDef>
+					<severity>0.5</severity>
+					<toleranceChemical>guy762_chemical_spice</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>guy762_drugtolerance_spice</hediffDef>
+					<severity>0.06</severity>
+					<divideByBodySize>true</divideByBodySize>
+					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>guy762_chemical_spice</chemical>
+				<addictiveness>0.1</addictiveness>
+				<existingAddictionSeverityOffset>0.4</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<isCombatEnhancingDrug>false</isCombatEnhancingDrug>
+				<listOrder>100</listOrder>
+				<overdoseSeverityOffset>0.40~0.60</overdoseSeverityOffset>
+				<largeOverdoseChance>0.08</largeOverdoseChance>
+			</li>
+		</comps>
+		<allowedArchonexusCount>200</allowedArchonexusCount>
+		<tradeTags Inherit="False">
+		  <li>guy762TT_KotORDrugs</li>
+		  <li>guy762TT_Spice</li>
+		</tradeTags>
+	</ThingDef>
+
+	<HediffDef>
+		<defName>deathstickHigh</defName>
+		<label>zooted on Deathsticks</label>
+		<labelNoun>a Deathstick high</labelNoun>
+		<description>Active Deathstick chemicals in the bloodstream. Generates an intense feeling of painlessness and relief.</description>
+		<hediffClass>Hediff_High</hediffClass>
+		<defaultLabelColor>(1,0.8,0)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+			<severityPerDay>-2.0</severityPerDay>
+			<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painOffset>-0.4</painOffset>
+				<capMods>
+					<li>
+					  <capacity>Consciousness</capacity>
+					  <offset>-0.1</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<PsychicSensitivity>-0.8</PsychicSensitivity>
+				</statOffsets>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+					  <hediff>HeartAttack</hediff>
+					  <mtbDays>120</mtbDays>
+					  <partsToAffect>
+						<li>Heart</li>
+					  </partsToAffect>
+					</li>
+				</hediffGivers>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThoughtDef>
+		<defName>deathstickHigh</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>deathstickHigh</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>zooted on Deathsticks</label>
+				<description>I feel so good right now... all the colors around me look so nice... what a relief...</description>
+				<baseMoodEffect>25</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<HediffDef ParentName="AddictionBase">
+    <defName>guy762_addiction_deathstick</defName>
+    <label>Deathstick addiction</label>
+    <description>A chemical addiction to Deathsticks. Long-term presence of Deathsticks has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
+\nWithout regular doses of Deathsticks, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <causesNeed>guy762_chemneed_spice</causesNeed>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.001</severityPerDay>
+        <showDaysToRecover>true</showDaysToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>withdrawal</label>
+		<socialFightChanceFactor>2.0</socialFightChanceFactor>
+		<painFactor>2</painFactor>
+		<statOffsets>
+          <RestFallRateFactor>0.2</RestFallRateFactor>
+		  <PsychicSensitivity>-2</PsychicSensitivity>
+        </statOffsets>
+		<capMods>
+			<li>
+			  <capacity>Consciousness</capacity>
+			  <offset>-0.6</offset>
+			</li>
+		</capMods>
+        <mentalStateGivers>
+          <li>
+            <mentalState>Binging_DrugExtreme</mentalState>
+            <mtbDays>40</mtbDays>
+          </li>
+          <li>
+            <mentalState>Wander_Psychotic</mentalState>
+            <mtbDays>10</mtbDays>
+          </li>
+        </mentalStateGivers>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <ThoughtDef>
+    <defName>guy762_withdrawlthought_deathstick</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>guy762_addiction_deathstick</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>Deathstick withdrawal</label>
+        <description>I feel terrible... I need another Deathstick... I should rethink my life...</description>
+        <baseMoodEffect>-30</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+
+	<!-- Recipe -->
+	<RecipeDef>
+		<defName>KOTOR_Deathstick_recipe</defName>
+		<label>make 10 Deathsticks</label>
+		<description>Make 10 Deathstick vials.</description>
+		<jobString>Making 10 deathsticks.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>KOTOR_Spice</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawFungus</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>KOTOR_Spice</li>
+				<li>RawFungus</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<KOTOR_Deathstick>10</KOTOR_Deathstick>
+		</products>
+		<researchPrerequisite>KOTOR_Research_Spice</researchPrerequisite>
+		<skillRequirements>
+			<Cooking>10</Cooking>
+		</skillRequirements>
+		<workSkill>Cooking</workSkill>
+		<displayPriority>10</displayPriority>
+		<recipeUsers>
+			<li>kotor_DrugLab</li>
+		</recipeUsers>
+	</RecipeDef>
+</Defs>

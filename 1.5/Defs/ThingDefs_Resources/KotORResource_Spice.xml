@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<!--  Spice ================================================================ -->	
+	
+	<ThingDef ParentName="KOTOR_Mineable">
+		<defName>KOTOR_MineableSpice</defName>
+		<label>Spice deposit</label>
+		<description>Rock containing bits of spice.</description>
+		<graphicData>
+			<color>(150,110,55)</color>
+			<colorTwo>(220,170,95)</colorTwo>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+		</statBases>
+		<building>
+			<mineableThing>KOTOR_Spice</mineableThing>
+			<mineableYield>40</mineableYield>
+			<mineableScatterCommonality>0.05</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>5~15</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="DrugBase">
+		<defName>KOTOR_Spice</defName>
+		<label>spice</label>
+		<description>The most sought-after substance in the galaxy, Spice is in equal measures a powerful narcotic and a powerful healing agent. Large deposits of Spice are only known to be found on Mon Gazza and Kessel, though meager veins of the substance can be found on many other outer rim worlds. The Hutt cartels cornered the galactic market on spice a millennia ago and have since cemented their prominence on the galactic stage through its exploitation, enslaving billions of sentients to mine and refine it for export.\n\nSpice has an extraordinary amount of applications; in neurobionics it is essential to manufacture advanced implant upgrades. In pharmaceuticals it is used to enhance the healing potency of many medicinal drugs, and with an added risk of Spice addiction it can also be used to strengthen the physically-boosting capabilities of steroids used in combat stimulants. In narcotics, Spice is a powerful mind-altering hallucinogenic and is ubiquitous to the creation of traditional and designer drugs alike.</description>
+		<descriptionHyperlinks>
+			<HediffDef>SpiceHigh</HediffDef>
+			<HediffDef>guy762_drugtolerance_spice</HediffDef>
+			<HediffDef>guy762_addiction_spice</HediffDef>
+			<HediffDef>ChemicalDamageSevere</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>raw_resources/Sovereign_spice</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.75</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>75</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<techLevel>Spacer</techLevel>
+		<minRewardCount>50</minRewardCount>
+		<ingestible>
+			<foodType>Processed</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.9</joy>
+			<drugCategory>Hard</drugCategory>
+			<baseIngestTicks>150</baseIngestTicks>
+			<ingestSound>Ingest_Snort</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.21,0,0.05)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Snort {0}</ingestCommandString>
+			<ingestReportString>Snorting {0}.</ingestReportString>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>SpiceHigh</hediffDef>
+					<severity>0.5</severity>
+					<toleranceChemical>guy762_chemical_spice</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.75</offset>
+					<toleranceChemical>guy762_chemical_spice</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+				  <offset>0.25</offset>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>guy762_drugtolerance_spice</hediffDef>
+					<severity>0.03</severity>
+					<divideByBodySize>true</divideByBodySize>
+					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>guy762_chemical_spice</chemical>
+				<addictiveness>0.05</addictiveness>
+				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+				<listOrder>100</listOrder>
+				<overdoseSeverityOffset>0.20~0.40</overdoseSeverityOffset>
+				<largeOverdoseChance>0.01</largeOverdoseChance>
+			</li>
+		</comps>
+		<allowedArchonexusCount>200</allowedArchonexusCount>
+		<tradeTags Inherit="False">
+		  <li>guy762TT_KotORDrugs</li>
+		  <li>guy762TT_Spice</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<HediffDef>
+		<defName>SpiceHigh</defName>
+		<label>zonked on Spice</label>
+		<labelNoun>a Spice high</labelNoun>
+		<description>Active Spice in the bloodstream. Generates an intense euphoric high.</description>
+		<hediffClass>Hediff_High</hediffClass>
+		<defaultLabelColor>(1,0.5,0)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>true</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+			<severityPerDay>-1.5</severityPerDay>
+			<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<naturalHealingFactor>50</naturalHealingFactor>
+				<totalBleedFactor>0.8</totalBleedFactor>
+				<painFactor>0.7</painFactor>
+				<statOffsets>
+					<MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.5</MeditationFocusGain>
+					<PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.2</PsychicSensitivity>
+				</statOffsets>
+				<capMods>
+					<li>
+					  <capacity>Consciousness</capacity>
+					  <offset>1</offset>
+					</li>
+					<li>
+					  <capacity>Moving</capacity>
+					  <offset>0.30</offset>
+					</li>
+					<li>
+					  <capacity>Manipulation</capacity>
+					  <offset>0.30</offset>
+					</li>
+					<li>
+					  <capacity>Sight</capacity>
+					  <offset>0.30</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThoughtDef>
+		<defName>SpiceHigh</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>SpiceHigh</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>zonked on spice</label>
+				<description>My mind has been awakened... I can see *everything*!</description>
+				<baseMoodEffect>40</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- spice addiction -->
+
+  <ChemicalDef>
+    <defName>guy762_chemical_spice</defName>
+    <label>spice</label>
+    <addictionHediff>guy762_addiction_spice</addictionHediff>
+	<toleranceHediff>guy762_drugtolerance_spice</toleranceHediff>
+	<onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+	<onGeneratedAddictedEvents>
+      <li>
+        <hediff>ChemicalDamageSevere</hediff>
+        <chance>0.05</chance>
+        <partsToAffect>
+          <li>Brain</li>
+        </partsToAffect>
+      </li>
+    </onGeneratedAddictedEvents>
+    <geneOverdoseChanceFactorResist>0.5</geneOverdoseChanceFactorResist>
+    <geneOverdoseChanceFactorImmune>0</geneOverdoseChanceFactorImmune>
+  </ChemicalDef>
+  
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>guy762_chemneed_spice</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>spice</label>
+    <description>Because of a spice addiction, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+    <fallPerDay>0.333</fallPerDay>
+    <listPriority>761</listPriority>
+  </NeedDef>
+
+  <HediffDef ParentName="AddictionBase">
+    <defName>guy762_addiction_spice</defName>
+    <label>spice addiction</label>
+    <description>A chemical addiction to spice. Long-term presence of spice has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
+\nWithout regular doses of spice, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <causesNeed>guy762_chemneed_spice</causesNeed>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.03</severityPerDay>
+        <showDaysToRecover>true</showDaysToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>withdrawal</label>
+		<naturalHealingFactor>-0.5</naturalHealingFactor>
+		<painFactor>1.3</painFactor>
+		<statOffsets>
+			<MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">-0.5</MeditationFocusGain>
+			<PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">-0.2</PsychicSensitivity>
+		</statOffsets>
+		<capMods>
+			<li>
+			  <capacity>Consciousness</capacity>
+			  <offset>-0.75</offset>
+			</li>
+			<li>
+			  <capacity>Moving</capacity>
+			  <offset>-0.20</offset>
+			</li>
+			<li>
+			  <capacity>Manipulation</capacity>
+			  <offset>-0.20</offset>
+			</li>
+			<li>
+			  <capacity>Sight</capacity>
+			  <offset>-0.20</offset>
+			</li>
+		</capMods>
+        <mentalStateGivers>
+          <li>
+            <mentalState>Binging_DrugExtreme</mentalState>
+            <mtbDays>40</mtbDays>
+          </li>
+          <li>
+            <mentalState>Wander_Psychotic</mentalState>
+            <mtbDays>10</mtbDays>
+          </li>
+        </mentalStateGivers>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <ThoughtDef>
+    <defName>guy762_withdrawlthought_spice</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>guy762_addiction_spice</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>spice withdrawal</label>
+        <description>My brain hurts... I feel so constrained... my skull is closing in on me...</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <HediffDef ParentName="DrugToleranceBase">
+    <defName>guy762_drugtolerance_spice</defName>
+    <label>spice tolerance</label>
+    <description>A built-up tolerance to spice. The more severe this tolerance is, the more spice it takes to get the same effect.</description>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.01</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_DrugEffectFactor">
+        <chemical>guy762_chemical_spice</chemical>
+      </li>
+    </comps>
+    <hediffGivers>
+      <li Class="HediffGiver_RandomDrugEffect">
+        <hediff>ChemicalDamageModerate</hediff>
+        <severityToMtbDaysCurve>
+          <points>
+            <li>(0.45, 99999)</li>
+            <li>(0.5, 120)</li>
+            <li>(1, 90)</li>
+          </points>
+        </severityToMtbDaysCurve>
+        <partsToAffect>
+          <li>Brain</li>
+        </partsToAffect>
+      </li>
+    </hediffGivers>
+  </HediffDef>
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="MedicineBase">
+		<defName>KOTOR_SpacerMedKit</defName>
+		<label>spacer Medkit</label>
+		<description>A common medical kit containing a variety of tools and Spice-based medicinal drugs for tending wounds and illnesses. Unlike Kolto-based Medpacs, these are not instant-use and will require a trained medical professional and a relatively clean resting area to apply. The healing potency is only slightly less than that of "Glittertech" medicine, but the robustness of these Medkits can tend wounds to an extremely high quality.</description>
+		<possessionCount>3</possessionCount>
+		<graphicData>
+		  <texPath>Items/Medkits</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.85</drawSize>
+		</graphicData>
+		<soundInteract>kotorsound_select_JKmedkit</soundInteract>
+		<soundDrop>kotorsound_select_JKmedkit</soundDrop>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+		  <MaxHitPoints>100</MaxHitPoints>
+		  <MarketValue>40</MarketValue>
+		  <Mass>0.50</Mass>
+		  <Flammability>0.7</Flammability>
+		  <DeteriorationRate>1.5</DeteriorationRate>
+		  
+		  <MedicalPotency>1.50</MedicalPotency>
+		  <MedicalQualityMax>1.5</MedicalQualityMax>
+		  
+		  <WorkToMake>1400</WorkToMake>
+		</statBases>
+		<costList>
+		  <KOTOR_Spice>3</KOTOR_Spice>
+		  <Neutroamine>5</Neutroamine>
+		</costList>
+		<recipeMaker>
+		  <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		  <workSkill>Medicine</workSkill>
+		  <recipeUsers>
+			<li>kotor_DrugLab</li>
+		  </recipeUsers>
+		  <researchPrerequisite>KOTOR_Research_Spice</researchPrerequisite>
+		  <skillRequirements>
+			<Medicine>8</Medicine>
+		  </skillRequirements>
+		  <bulkRecipeCount>4</bulkRecipeCount>
+		</recipeMaker>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+		<tradeTags>
+		  <li>guy762TT_KotORMedicine</li>
+		</tradeTags>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	<!-- Hyper Stimulant Recipes -->
+	<RecipeDef>
+		<defName>KotORRecipe_stim_hypercon</defName>
+		<label>make 10 hyper-adrenal stamina</label>
+		<description>make 10 hyper-adrenal stamina needles</description>
+		<jobString>Making 10 hyper-adrenal stamina.</jobString>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<workAmount>7500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>KOTOR_Spice</li>
+				</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>KOTOR_Spice</li>
+				<li>Neutroamine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<guy762_stim_hypercon>10</guy762_stim_hypercon>
+		</products>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<workSkill>Medicine</workSkill>
+		<displayPriority>766</displayPriority>
+		<researchPrerequisite>KOTOR_Research_Spice</researchPrerequisite>
+		<recipeUsers>
+			<li>kotor_DrugLab</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>KotORRecipe_stim_hyperdex</defName>
+		<label>make 10 hyper-adrenal alacrity</label>
+		<description>make 10 hyper-adrenal alacrity needles</description>
+		<jobString>Making 10 hyper-adrenal alacrity.</jobString>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<workAmount>7500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>KOTOR_Spice</li>
+				</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>KOTOR_Spice</li>
+				<li>Neutroamine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<guy762_stim_hyperdex>10</guy762_stim_hyperdex>
+		</products>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<workSkill>Medicine</workSkill>
+		<displayPriority>767</displayPriority>
+		<researchPrerequisite>KOTOR_Research_Spice</researchPrerequisite>
+		<recipeUsers>
+			<li>kotor_DrugLab</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>KotORRecipe_stim_hyperstr</defName>
+		<label>make 10 hyper-adrenal strength</label>
+		<description>make 10 hyper-adrenal strength needles</description>
+		<jobString>Making 10 hyper-adrenal strength.</jobString>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<workAmount>7500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>KOTOR_Spice</li>
+				</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>KOTOR_Spice</li>
+				<li>Neutroamine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<guy762_stim_hyperstr>10</guy762_stim_hyperstr>
+		</products>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<workSkill>Medicine</workSkill>
+		<displayPriority>768</displayPriority>
+		<researchPrerequisite>KOTOR_Research_Spice</researchPrerequisite>
+		<recipeUsers>
+			<li>kotor_DrugLab</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>KotORRecipe_stim_hyperbattle</defName>
+		<label>make 10 hyper-battle stimulants</label>
+		<description>make 10 hyper-battle stimulant needles</description>
+		<jobString>Making 10 hyper-battle stimulants.</jobString>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<workAmount>7500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>KOTOR_Spice</li>
+				</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>Neutroamine</li>
+				</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>KOTOR_Spice</li>
+				<li>Neutroamine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<guy762_stim_hyperbattle>10</guy762_stim_hyperbattle>
+		</products>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<workSkill>Medicine</workSkill>
+		<displayPriority>769</displayPriority>
+		<researchPrerequisite>KOTOR_Research_Spice</researchPrerequisite>
+		<recipeUsers>
+			<li>kotor_DrugLab</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	
+</Defs>

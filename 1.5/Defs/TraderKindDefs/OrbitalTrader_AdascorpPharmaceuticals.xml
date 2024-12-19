@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+  <TraderKindDef>
+    <defName>guy762_TraderKind_AdascorpPharma</defName>
+    <label>Adascorp pharmaceuticals vendor</label>
+    <orbital>true</orbital>
+	<!--faction>ScumAndVillainy</faction-->
+    <commonalityMultFromPopulationIntent>
+      <points>
+        <li>(0.2, 0)</li>
+        <li>(1,   1)</li>
+        <li>(2,   3)</li>
+      </points>
+    </commonalityMultFromPopulationIntent>
+	<modExtensions>
+		<li MayRequire="Rick.FCP.Core.Tools" Class="FalloutCurrencies_NonReplacement.CurrencyReplacement">
+			<currency>guy762_KotORcredits</currency>
+		</li>
+	</modExtensions>
+    <stockGenerators>
+
+      <!-- CURRENCY -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>1500~3000</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Gold</thingDef>
+        <countRange>50~200</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_SingleDef">
+		<thingDef>guy762_KotORcredits</thingDef>
+		<countRange>25000~50000</countRange>
+	  </li>
+	  <!--li Class="StockGenerator_BuyTradeTag">
+		<tag>guy762TT_credits</tag>
+	  </li-->
+	  
+	  
+	  
+	  <!-- Resources -->
+	  
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>KOTOR_kolto</thingDef>
+        <countRange>200~600</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Neutroamine</thingDef>
+        <countRange>400~1000</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Cloth</thingDef>
+        <countRange>200~600</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Chocolate</thingDef>
+        <countRange>50~200</countRange>
+      </li>
+	  
+	  
+	  <!-- Medicine/Drugs -->
+	  
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>MedicineIndustrial</thingDef>
+        <countRange>20~30</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>MedicineUltratech</thingDef>
+        <countRange>5~30</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>KOTOR_SpacerMedKit</thingDef>
+        <countRange>30~50</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_KotORMedicine</tradeTag>
+        <thingDefCountRange>2~4</thingDefCountRange>
+        <countRange>10~30</countRange>
+		<excludedThingDefs>
+          <li>KOTOR_SpacerMedKit</li>
+          <li>KOTOR_kolto</li>
+          <!--li MayRequire="guy762.KotORDroids">guy762_DroidGadget_kolto</li-->
+        </excludedThingDefs>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_KotORMedpac</tradeTag>
+        <thingDefCountRange>3~4</thingDefCountRange>
+        <countRange>50~100</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_KotORStims</tradeTag>
+        <thingDefCountRange>2~4</thingDefCountRange>
+        <countRange>16~32</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_KotORHyperStims</tradeTag>
+        <thingDefCountRange>1~4</thingDefCountRange>
+        <countRange>6~12</countRange>
+      </li>
+	  
+	   <li Class="StockGenerator_SingleDef">
+        <thingDef>Luciferium</thingDef>
+        <countRange>20~60</countRange>
+      </li>
+	  
+	  
+	  <!-- Implants -->
+      <li Class="StockGenerator_Tag">
+        <tradeTag>TechHediff</tradeTag>
+        <thingDefCountRange>4~8</thingDefCountRange>
+        <countRange>1~6</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>ImplantEmpireCommon</tradeTag>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>ImplantEmpireRoyal</tradeTag>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_implants_basic</tradeTag>
+        <thingDefCountRange>4~8</thingDefCountRange>
+        <countRange>1~4</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_implants_adv</tradeTag>
+        <thingDefCountRange>2~4</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_implants_rare</tradeTag>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>0~1</countRange>
+      </li>
+	  
+	  
+	  <li Class="StockGenerator_Category">
+        <categoryDef>BodyPartsNatural</categoryDef>
+        <thingDefCountRange>3~6</thingDefCountRange>
+        <countRange>1~10</countRange>
+      </li>
+	  
+	  
+
+      <!-- Gadgets -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_AdascorpTrader_gadgets</tradeTag>
+        <thingDefCountRange>3~6</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li MayRequire="guy762.KotORWeapons" Class="StockGenerator_SingleDef">
+        <thingDef>guy762_Headband_breathmask</thingDef>
+        <countRange>5~20</countRange>
+      </li>
+	  <li MayRequire="guy762.KotORWeapons" Class="StockGenerator_SingleDef">
+        <thingDef>guy762_Headband_rebreathermask</thingDef>
+        <countRange>0~5</countRange>
+      </li>
+	  
+	  
+	  <!-- Buildings -->
+      <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_MedicalBuilding</tradeTag>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+      
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>HospitalBed</thingDef>
+        <countRange>0~5</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>VitalsMonitor</thingDef>
+        <countRange>0~5</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology" Class="StockGenerator_SingleDef">
+        <thingDef>BiosculpterPod</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <!-- Genepacks -->
+      <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>Genepack</thingDef>
+        <countRange>4~6</countRange>
+      </li>
+	  <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>ArchiteCapsule</thingDef>
+        <countRange>1~2</countRange>
+      </li>
+
+      <!-- Serums -->
+	  <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>DeathrestCapacitySerum</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_Tag">
+        <tradeTag>Serum</tradeTag>
+        <thingDefCountRange>4~4</thingDefCountRange>
+        <countRange>-3~1</countRange> <!-- 20% chance of appearing -->
+        <excludedThingDefs>
+          <li>VoidsightSerum</li>
+        </excludedThingDefs>
+      </li>
+      
+      <!-- Buying -->
+      <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireCommon</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireRoyal</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
+
+    </stockGenerators>
+  </TraderKindDef>
+  
+  
+</Defs>

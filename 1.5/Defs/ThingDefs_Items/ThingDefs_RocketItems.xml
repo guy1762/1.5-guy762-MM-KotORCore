@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="guy762_munitionbase" ParentName="ResourceBase" Abstract="True">
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>kotorsound_select_JKammo</soundInteract>
+		<soundDrop>kotorsound_select_JKammo</soundDrop>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MaxHitPoints>50</MaxHitPoints>
+		  <Flammability>0.2</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>guy762_weaponmod</li>
+		</thingCategories>
+		<tickerType>Normal</tickerType>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<tradeability>All</tradeability>
+		<techLevel>Spacer</techLevel>
+		
+		<!--recipeMaker>
+		  <recipeUsers>
+			<li>guy762_KotORWorkbench</li>
+			<li>kotor_DrugLab</li>
+		  </recipeUsers>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Crafting</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Smith</soundWorking>
+		  <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+		  <displayPriority>500</displayPriority>
+		  <useIngredientsForColor>false</useIngredientsForColor>
+		</recipeMaker-->
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_munitionbase">
+		<defName>guy762_RocketItem_highex</defName>
+		<label>high-explosive missile</label>
+		<description>This deadly anti-personnel missile detonates a secondary charge on impact, showering the target and those around it with shrapnel.</description>
+		<graphicData>
+		  <texPath>Items/Rockets/rocket_ex</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>100</MarketValue>
+		  <Mass>4</Mass>
+		</statBases>
+		<stackLimit>25</stackLimit>
+		<tradeTags>
+		  <li>guy762TT_LightMunitions</li>
+		</tradeTags>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>2</explosiveRadius>
+				<explosiveDamageType>guy762_GrenadeDamage_frag</explosiveDamageType>
+				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<RecipeDef>
+		<defName>KotORRecipe_HXMissiles</defName>
+		<label>make 5 high-ex missiles</label>
+		<description>make 5 high-explosive missiles.</description>
+		<jobString>making 5 high-ex missiles.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Smith</soundWorking>
+		<unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+		<workAmount>12000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+				<thingDefs>
+					<li>Chemfuel</li>
+				</thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		  <li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>20</count>
+		  </li>
+		  <li>
+			<filter>
+				<thingDefs>
+					<li>ComponentIndustrial</li>
+				</thingDefs>
+			</filter>
+			<count>5</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>KOTOR_RawRhydonium</li>
+			  </thingDefs>
+			</filter>
+			<count>50</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Chemfuel</li>
+			<li>Steel</li>
+			<li>ComponentIndustrial</li>
+			<li>KOTOR_RawRhydonium</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <guy762_RocketItem_highex>5</guy762_RocketItem_highex>
+		</products>
+		<researchPrerequisite>KOTOR_Research_AdvMunitions</researchPrerequisite>
+		<recipeUsers>
+			<li>FabricationBench</li>
+			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			<li>kotor_DrugLab</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+	  </RecipeDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_munitionbase">
+		<defName>guy762_RocketItem_plasma</defName>
+		<label>plasma missile</label>
+		<description>Plasma missiles explode in a roiling ball of super-heated gas on impact. This generally has a markedly bad effect on the target and anything in its immediate area.</description>
+		<graphicData>
+		  <texPath>Items/Rockets/rocket_plasma</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>200</MarketValue>
+		  <Mass>4</Mass>
+		</statBases>
+		<stackLimit>25</stackLimit>
+		<tradeTags>
+		  <li>guy762TT_LightMunitions</li>
+		</tradeTags>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>4</explosiveRadius>
+				<explosiveDamageType>guy762_GrenadeDamage_plasma</explosiveDamageType>
+				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+	
+	
+	<RecipeDef>
+		<defName>KotORRecipe_plasmaMissiles</defName>
+		<label>make 5 plasma missiles</label>
+		<description>make 5 plasma missiles.</description>
+		<jobString>making 5 plasma missiles.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Smith</soundWorking>
+		<unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+		<workAmount>16000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+				<thingDefs>
+					<li>Chemfuel</li>
+				</thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		  <li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>20</count>
+		  </li>
+		  <li>
+			<filter>
+				<thingDefs>
+					<li>ComponentIndustrial</li>
+				</thingDefs>
+			</filter>
+			<count>5</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>KOTOR_PlasmaCartridge</li>
+			  </thingDefs>
+			</filter>
+			<count>5</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Chemfuel</li>
+			<li>Steel</li>
+			<li>ComponentIndustrial</li>
+			<li>KOTOR_PlasmaCartridge</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <guy762_RocketItem_plasma>5</guy762_RocketItem_plasma>
+		</products>
+		<researchPrerequisites>
+			<li>KOTOR_Research_AdvMunitions</li>
+			<li>KOTOR_Research_plasma</li>
+		</researchPrerequisites>
+		<recipeUsers>
+			<li>FabricationBench</li>
+			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			<li>kotor_DrugLab</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+	  </RecipeDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_munitionbase">
+		<defName>guy762_RocketItem_ion</defName>
+		<label>ion missile</label>
+		<description>These missiles emit a burst of energy on impact, severely damaging any droids or personal shields in the area of effect.</description>
+		<graphicData>
+		  <texPath>Items/Rockets/rocket_ion</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>600</MarketValue>
+		  <Mass>4</Mass>
+		</statBases>
+		<stackLimit>25</stackLimit>
+		<tradeTags>
+		  <li>guy762TT_LightMunitions</li>
+		</tradeTags>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.5</explosiveRadius>
+				<explosiveDamageType>guy762_GrenadeDamage_ion</explosiveDamageType>
+				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<RecipeDef>
+		<defName>KotORRecipe_IonMissiles</defName>
+		<label>make 5 ion missiles</label>
+		<description>make 5 ion missiles.</description>
+		<jobString>making 5 ion missiles.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Smith</soundWorking>
+		<unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+		<workAmount>12000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+				<thingDefs>
+					<li>Chemfuel</li>
+				</thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		  <li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>20</count>
+		  </li>
+		  <li>
+			<filter>
+				<thingDefs>
+					<li>ComponentIndustrial</li>
+				</thingDefs>
+			</filter>
+			<count>5</count>
+		  </li>
+		  <li>
+			<filter>
+				<thingDefs>
+					<li>ComponentSpacer</li>
+				</thingDefs>
+			</filter>
+			<count>2</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Chemfuel</li>
+			<li>Steel</li>
+			<li>ComponentIndustrial</li>
+			<li>ComponentSpacer</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <guy762_RocketItem_ion>5</guy762_RocketItem_ion>
+		</products>
+		<researchPrerequisites>
+			<li>KOTOR_Research_AdvMunitions</li>
+			<li>guy762_ResearchKotOR_ion</li>
+		</researchPrerequisites>
+		<recipeUsers>
+			<li>FabricationBench</li>
+			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			<li>kotor_DrugLab</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Crafting>9</Crafting>
+		</skillRequirements>
+	  </RecipeDef>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	
+	<ThingDef ParentName="guy762_munitionbase">
+		<defName>guy762_RocketItem_buster</defName>
+		<label>buster missile</label>
+		<description>This missile is designed for use against vehicles and heavy droids.</description>
+		<graphicData>
+		  <texPath>Items/Rockets/rocket_buster</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>1000</MarketValue>
+		  <Mass>4</Mass>
+		  
+		  <!--WorkToMake>20000</WorkToMake-->
+		</statBases>
+		
+		<stackLimit>25</stackLimit>
+		<tradeTags>
+		  <li>guy762TT_LightMunitions</li>
+		</tradeTags>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>2</explosiveRadius>
+				<explosiveDamageType>guy762_GrenadeDamage_frag</explosiveDamageType>
+				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<RecipeDef>
+		<defName>KotORRecipe_BusterMissiles</defName>
+		<label>make 5 buster missiles</label>
+		<description>make 5 buster missiles.</description>
+		<jobString>making 5 buster missiles.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Smith</soundWorking>
+		<unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+		<workAmount>20000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+				<thingDefs>
+					<li>Chemfuel</li>
+				</thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		  <li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>20</count>
+		  </li>
+		  <li>
+			<filter>
+				<thingDefs>
+					<li>ComponentIndustrial</li>
+				</thingDefs>
+			</filter>
+			<count>5</count>
+		  </li>
+		  <li>
+			<filter>
+				<thingDefs>
+					<li>Uranium</li>
+				</thingDefs>
+			</filter>
+			<count>25</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>KOTOR_RawRhydonium</li>
+			  </thingDefs>
+			</filter>
+			<count>25</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Chemfuel</li>
+			<li>Steel</li>
+			<li>ComponentIndustrial</li>
+			<li>Uranium</li>
+			<li>KOTOR_RawRhydonium</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <guy762_RocketItem_buster>5</guy762_RocketItem_buster>
+		</products>
+		<researchPrerequisite>KOTOR_Research_Baradium</researchPrerequisite>
+		<recipeUsers>
+			<li>FabricationBench</li>
+			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			<li>kotor_DrugLab</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Crafting>14</Crafting>
+		</skillRequirements>
+	  </RecipeDef>
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</Defs>

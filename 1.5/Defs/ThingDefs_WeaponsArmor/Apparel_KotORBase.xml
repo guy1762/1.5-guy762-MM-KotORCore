@@ -1,0 +1,1188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef Name="guy762_apparelbase" Abstract="True">
+		<thingClass>Apparel</thingClass>
+		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<selectable>True</selectable>
+		<pathCost>14</pathCost>
+		<useHitPoints>True</useHitPoints>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+			<Beauty>-3</Beauty>
+		</statBases>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<burnableByRecipe>true</burnableByRecipe>
+		<smeltable>true</smeltable>
+		<tradeability>All</tradeability>
+	</ThingDef>
+
+	<ThingDef Name="guy762_apparelmakeable" ParentName="guy762_apparelbase" Abstract="True">
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<recipeUsers>
+				<li>FabricationBench</li>
+				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			</recipeUsers>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+					<li>Jade</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+		</recipeMaker>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Styleable"></li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef Name="guy762_ApparelNoQualityMakeable" ParentName="guy762_apparelbase" Abstract="True">
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<recipeUsers>
+				<li>FabricationBench</li>
+				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			</recipeUsers>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+					<li>Jade</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+			<useIngredientsForColor>false</useIngredientsForColor>
+		</recipeMaker>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+			<li Class="CompProperties_Styleable"></li>
+		</comps>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef Name="guy762_nocraftclothingbase" ParentName="guy762_apparelbase" Abstract="True">
+		<statBases>
+			<Mass>0.5</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
+			<EquipDelay>6</EquipDelay>
+		</statBases>
+		<smeltable>false</smeltable>
+		<apparel>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+			<careIfDamaged>true</careIfDamaged>
+		</apparel>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Styleable"></li>
+		</comps>
+	</ThingDef>
+	
+	
+	<ThingDef Name="guy762_MakeNoQualityClothing" ParentName="guy762_ApparelNoQualityMakeable" Abstract="True">
+		<statBases>
+			<Mass>0.5</Mass>
+			<WorkToMake>5000</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<EquipDelay>6</EquipDelay>
+		</statBases>
+		<apparel>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+			<careIfDamaged>true</careIfDamaged>
+		</apparel>
+		<recipeMaker>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<useIngredientsForColor>false</useIngredientsForColor>
+			<recipeUsers Inherit="False">
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	
+	<ThingDef Name="guy762_clothingbase" ParentName="guy762_apparelmakeable" Abstract="True">
+		<statBases>
+			<Mass>0.5</Mass>
+			<WorkToMake>5000</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<EquipDelay>6</EquipDelay>
+		</statBases>
+		<apparel>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+			<careIfDamaged>true</careIfDamaged>
+		</apparel>
+		<recipeMaker>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef Name="guy762_armorbase_soft" ParentName="guy762_apparelmakeable" Abstract="True">
+		<statBases>
+			<Mass>0.5</Mass>
+			<WorkToMake>2000</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<!--StuffEffectMultiplierArmor>-0.1</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat-->
+			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.25</ArmorRating_Heat>
+			<!--Insulation_Cold>10</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat-->
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<apparel>
+			<defaultOutfitTags Inherit="False">
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+			<careIfDamaged>true</careIfDamaged>
+		</apparel>
+		<thingCategories>
+			<li>ApparelArmor</li>
+			<li>guy762_ThingCategory_KotORArmor</li>
+		</thingCategories>
+		<recipeMaker>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef Name="guy762_armorbase_hard" ParentName="guy762_apparelmakeable" Abstract="True">
+		<statBases>
+			<Mass>0.5</Mass>
+			<WorkToMake>5000</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<!--StuffEffectMultiplierArmor>-0.1</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>-0.05</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat-->
+			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.25</ArmorRating_Heat>
+			<!--Insulation_Cold>5</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat-->
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<apparel>
+			<defaultOutfitTags Inherit="False">
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+			<careIfDamaged>true</careIfDamaged>
+		</apparel>
+		<thingCategories>
+			<li>ApparelArmor</li>
+			<li>guy762_ThingCategory_KotORArmor</li>
+		</thingCategories>
+		<recipeMaker>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+		</recipeMaker>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef Name="KotORArmorModdable_soft" Abstract="True" ParentName="guy762_apparelbase">
+		<recipeMaker>
+		  <soundWorking>kotorsound_upgrade</soundWorking>
+		  <recipeUsers>
+			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+		  </recipeUsers>
+		  <researchPrerequisite>guy762_ResearchKotOR_uncraftable</researchPrerequisite>
+		</recipeMaker>
+		<smeltable>false</smeltable>
+		<tickerType>Normal</tickerType>
+		<statBases>
+		    <WorkToMake>100</WorkToMake>
+		    <!--StuffEffectMultiplierArmor>-0.1</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.1</ArmorRating_Heat-->
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<Insulation_Cold>10</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+		</statBases>
+		<costList>
+			<KOTOR_UltraComponent>1</KOTOR_UltraComponent>
+		</costList>
+		<descriptionHyperlinks>
+			<ThingDef MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</ThingDef>
+		</descriptionHyperlinks>
+		<apparel>
+			<defaultOutfitTags Inherit="False">
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+			<careIfDamaged>true</careIfDamaged>
+		</apparel>
+		<thingCategories>
+			<li>ApparelArmor</li>
+			<li>guy762_ThingCategory_KotORArmor</li>
+		</thingCategories>
+		<equippedStatOffsets> <!--these are required for pawn stats to be affected by modifiers added via ModularPartDefs-->
+		  <MoveSpeed>0.000001</MoveSpeed>
+		  <SocialImpact>0.000001</SocialImpact>
+		  <PainShockThreshold>0.000001</PainShockThreshold>
+		  <MentalBreakThreshold>0.000001</MentalBreakThreshold>
+		  <PsychicSensitivity>0.000001</PsychicSensitivity>
+		  <PsychicEntropyRecoveryRate>0.000001</PsychicEntropyRecoveryRate>
+		  <PsychicEntropyGain>0.000001</PsychicEntropyGain>
+		  <PsychicEntropyMax>0.000001</PsychicEntropyMax>
+		  <InjuryHealingFactor>0.000001</InjuryHealingFactor>
+		  <MeleeDodgeChance>0.000001</MeleeDodgeChance>
+		  <MeleeHitChance>0.000001</MeleeHitChance>
+		  <IncomingDamageFactor>0.000001</IncomingDamageFactor>
+		  <HuntingStealth>0.000001</HuntingStealth>
+		  <ToxicEnvironmentResistance>0.000001</ToxicEnvironmentResistance>
+		  <PawnTrapSpringChance>0.000001</PawnTrapSpringChance>
+		  <MortarMissRadiusFactor>0.000001</MortarMissRadiusFactor>
+		  <HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">0.000001</HackingSpeed>
+		</equippedStatOffsets>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+	  </ThingDef>
+	  
+	  <ThingDef Name="KotORArmorModdable_hard" Abstract="True" ParentName="guy762_apparelbase">
+		<recipeMaker>
+		  <soundWorking>kotorsound_upgrade</soundWorking>
+		  <recipeUsers>
+			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+		  </recipeUsers>
+		  <researchPrerequisite>guy762_ResearchKotOR_uncraftable</researchPrerequisite>
+		</recipeMaker>
+		<smeltable>false</smeltable>
+		<tickerType>Normal</tickerType>
+		<statBases>
+		    <WorkToMake>100</WorkToMake>
+		    <!--StuffEffectMultiplierArmor>-0.1</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+			<ArmorRating_Blunt>-0.1</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat-->
+			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.25</ArmorRating_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+		</statBases>
+		<costList>
+			<KOTOR_UltraComponent>1</KOTOR_UltraComponent>
+		</costList>
+		<descriptionHyperlinks>
+			<ThingDef MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</ThingDef>
+		</descriptionHyperlinks>
+		<apparel>
+			<defaultOutfitTags Inherit="False">
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+			<careIfDamaged>true</careIfDamaged>
+		</apparel>
+		<thingCategories>
+			<li>ApparelArmor</li>
+			<li>guy762_ThingCategory_KotORArmor</li>
+		</thingCategories>
+		<equippedStatOffsets> <!--these are required for pawn stats to be affected by modifiers added via ModularPartDefs-->
+		  <MoveSpeed>0.000001</MoveSpeed>
+		  <SocialImpact>0.000001</SocialImpact>
+		  <PainShockThreshold>0.000001</PainShockThreshold>
+		  <MentalBreakThreshold>0.000001</MentalBreakThreshold>
+		  <PsychicSensitivity>0.000001</PsychicSensitivity>
+		  <PsychicEntropyRecoveryRate>0.000001</PsychicEntropyRecoveryRate>
+		  <PsychicEntropyGain>0.000001</PsychicEntropyGain>
+		  <PsychicEntropyMax>0.000001</PsychicEntropyMax>
+		  <InjuryHealingFactor>0.000001</InjuryHealingFactor>
+		  <MeleeDodgeChance>0.000001</MeleeDodgeChance>
+		  <MeleeHitChance>0.000001</MeleeHitChance>
+		  <IncomingDamageFactor>0.000001</IncomingDamageFactor>
+		  <HuntingStealth>0.000001</HuntingStealth>
+		  <ToxicEnvironmentResistance>0.000001</ToxicEnvironmentResistance>
+		  <PawnTrapSpringChance>0.000001</PawnTrapSpringChance>
+		  <MortarMissRadiusFactor>0.000001</MortarMissRadiusFactor>
+		  <HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">0.000001</HackingSpeed>
+		</equippedStatOffsets>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+	  </ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef Name="guy762_ModdableMakeableArmor_soft" ParentName="guy762_armorbase_soft" Abstract="True">
+		<equippedStatOffsets> <!--these are required for pawn stats to be affected by modifiers added via ModularPartDefs-->
+		  <MoveSpeed>0.000001</MoveSpeed>
+		  <SocialImpact>0.000001</SocialImpact>
+		  <PainShockThreshold>0.000001</PainShockThreshold>
+		  <MentalBreakThreshold>0.000001</MentalBreakThreshold>
+		  <PsychicSensitivity>0.000001</PsychicSensitivity>
+		  <PsychicEntropyRecoveryRate>0.000001</PsychicEntropyRecoveryRate>
+		  <PsychicEntropyGain>0.000001</PsychicEntropyGain>
+		  <PsychicEntropyMax>0.000001</PsychicEntropyMax>
+		  <InjuryHealingFactor>0.000001</InjuryHealingFactor>
+		  <MeleeDodgeChance>0.000001</MeleeDodgeChance>
+		  <MeleeHitChance>0.000001</MeleeHitChance>
+		  <IncomingDamageFactor>0.000001</IncomingDamageFactor>
+		  <HuntingStealth>0.000001</HuntingStealth>
+		  <ToxicEnvironmentResistance>0.000001</ToxicEnvironmentResistance>
+		  <PawnTrapSpringChance>0.000001</PawnTrapSpringChance>
+		  <MortarMissRadiusFactor>0.000001</MortarMissRadiusFactor>
+		  <HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">0.000001</HackingSpeed>
+		</equippedStatOffsets>
+		<tickerType>Normal</tickerType>
+		<descriptionHyperlinks>
+			<ThingDef MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</ThingDef>
+		</descriptionHyperlinks>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<useIngredientsForColor>false</useIngredientsForColor>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef Name="guy762_ModdableMakeableArmor_hard" ParentName="guy762_armorbase_hard" Abstract="True">
+		<equippedStatOffsets> <!--these are required for pawn stats to be affected by modifiers added via ModularPartDefs-->
+		  <MoveSpeed>0.000001</MoveSpeed>
+		  <SocialImpact>0.000001</SocialImpact>
+		  <PainShockThreshold>0.000001</PainShockThreshold>
+		  <MentalBreakThreshold>0.000001</MentalBreakThreshold>
+		  <PsychicSensitivity>0.000001</PsychicSensitivity>
+		  <PsychicEntropyRecoveryRate>0.000001</PsychicEntropyRecoveryRate>
+		  <PsychicEntropyGain>0.000001</PsychicEntropyGain>
+		  <PsychicEntropyMax>0.000001</PsychicEntropyMax>
+		  <InjuryHealingFactor>0.000001</InjuryHealingFactor>
+		  <MeleeDodgeChance>0.000001</MeleeDodgeChance>
+		  <MeleeHitChance>0.000001</MeleeHitChance>
+		  <IncomingDamageFactor>0.000001</IncomingDamageFactor>
+		  <HuntingStealth>0.000001</HuntingStealth>
+		  <ToxicEnvironmentResistance>0.000001</ToxicEnvironmentResistance>
+		  <PawnTrapSpringChance>0.000001</PawnTrapSpringChance>
+		  <MortarMissRadiusFactor>0.000001</MortarMissRadiusFactor>
+		  <HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">0.000001</HackingSpeed>
+		</equippedStatOffsets>
+		<tickerType>Normal</tickerType>
+		<descriptionHyperlinks>
+			<ThingDef MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</ThingDef>
+		</descriptionHyperlinks>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<useIngredientsForColor>false</useIngredientsForColor>
+		</recipeMaker>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef Name="guy762_ModMakeNoQualityArmor_soft" ParentName="guy762_ApparelNoQualityMakeable" Abstract="True">
+		<statBases>
+			<Mass>0.5</Mass>
+			<WorkToMake>2000</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<!--StuffEffectMultiplierArmor>-0.1</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat-->
+			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.25</ArmorRating_Heat>
+			<!--Insulation_Cold>10</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat-->
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<apparel>
+			<defaultOutfitTags Inherit="False">
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+			<careIfDamaged>true</careIfDamaged>
+		</apparel>
+		<thingCategories>
+			<li>ApparelArmor</li>
+			<li>guy762_ThingCategory_KotORArmor</li>
+		</thingCategories>
+		<recipeMaker>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
+		<equippedStatOffsets> <!--these are required for pawn stats to be affected by modifiers added via ModularPartDefs-->
+		  <MoveSpeed>0.000001</MoveSpeed>
+		  <SocialImpact>0.000001</SocialImpact>
+		  <PainShockThreshold>0.000001</PainShockThreshold>
+		  <MentalBreakThreshold>0.000001</MentalBreakThreshold>
+		  <PsychicSensitivity>0.000001</PsychicSensitivity>
+		  <PsychicEntropyRecoveryRate>0.000001</PsychicEntropyRecoveryRate>
+		  <PsychicEntropyGain>0.000001</PsychicEntropyGain>
+		  <PsychicEntropyMax>0.000001</PsychicEntropyMax>
+		  <InjuryHealingFactor>0.000001</InjuryHealingFactor>
+		  <MeleeDodgeChance>0.000001</MeleeDodgeChance>
+		  <MeleeHitChance>0.000001</MeleeHitChance>
+		  <IncomingDamageFactor>0.000001</IncomingDamageFactor>
+		  <HuntingStealth>0.000001</HuntingStealth>
+		  <ToxicEnvironmentResistance>0.000001</ToxicEnvironmentResistance>
+		  <PawnTrapSpringChance>0.000001</PawnTrapSpringChance>
+		  <MortarMissRadiusFactor>0.000001</MortarMissRadiusFactor>
+		  <HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">0.000001</HackingSpeed>
+		</equippedStatOffsets>
+		<tickerType>Normal</tickerType>
+		<descriptionHyperlinks>
+			<ThingDef MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</ThingDef>
+		</descriptionHyperlinks>
+	</ThingDef>
+	
+	<ThingDef Name="guy762_ModMakeNoQualityArmor_hard" ParentName="guy762_ApparelNoQualityMakeable" Abstract="True">
+		<statBases>
+			<Mass>0.5</Mass>
+			<WorkToMake>5000</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<!--StuffEffectMultiplierArmor>-0.1</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>-0.05</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat-->
+			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.25</ArmorRating_Heat>
+			<!--Insulation_Cold>5</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat-->
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<apparel>
+			<defaultOutfitTags Inherit="False">
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+			<careIfDamaged>true</careIfDamaged>
+		</apparel>
+		<thingCategories>
+			<li>ApparelArmor</li>
+			<li>guy762_ThingCategory_KotORArmor</li>
+		</thingCategories>
+		<recipeMaker>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+		</recipeMaker>
+		<equippedStatOffsets> <!--these are required for pawn stats to be affected by modifiers added via ModularPartDefs-->
+		  <MoveSpeed>0.000001</MoveSpeed>
+		  <SocialImpact>0.000001</SocialImpact>
+		  <PainShockThreshold>0.000001</PainShockThreshold>
+		  <MentalBreakThreshold>0.000001</MentalBreakThreshold>
+		  <PsychicSensitivity>0.000001</PsychicSensitivity>
+		  <PsychicEntropyRecoveryRate>0.000001</PsychicEntropyRecoveryRate>
+		  <PsychicEntropyGain>0.000001</PsychicEntropyGain>
+		  <PsychicEntropyMax>0.000001</PsychicEntropyMax>
+		  <InjuryHealingFactor>0.000001</InjuryHealingFactor>
+		  <MeleeDodgeChance>0.000001</MeleeDodgeChance>
+		  <MeleeHitChance>0.000001</MeleeHitChance>
+		  <IncomingDamageFactor>0.000001</IncomingDamageFactor>
+		  <HuntingStealth>0.000001</HuntingStealth>
+		  <ToxicEnvironmentResistance>0.000001</ToxicEnvironmentResistance>
+		  <PawnTrapSpringChance>0.000001</PawnTrapSpringChance>
+		  <MortarMissRadiusFactor>0.000001</MortarMissRadiusFactor>
+		  <HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">0.000001</HackingSpeed>
+		</equippedStatOffsets>
+		<tickerType>Normal</tickerType>
+		<descriptionHyperlinks>
+			<ThingDef MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</ThingDef>
+		</descriptionHyperlinks>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef Name="guy762_HeadbandBase" ParentName="guy762_apparelbase" Abstract="True">
+		<thingCategories>
+		  <li>Headgear</li>
+		  <li>guy762_gadgets</li>
+		</thingCategories>
+		<smeltable>false</smeltable>
+	  </ThingDef>
+	  
+	  <ThingDef Name="guy762_HatCraftableBase" ParentName="guy762_armorbase_soft" Abstract="True">
+		<thingCategories>
+		  <li>Headgear</li>
+		</thingCategories>
+	  </ThingDef>
+	  
+	  <ThingDef Name="guy762_HatModdableBase" ParentName="KotORArmorModdable_soft" Abstract="True">
+		<thingCategories>
+		  <li>Headgear</li>
+		</thingCategories>
+	  </ThingDef>
+	  
+	  <ThingDef Name="guy762_HatNoCraftBase" ParentName="guy762_nocraftclothingbase" Abstract="True">
+		<thingCategories>
+		  <li>Headgear</li>
+		</thingCategories>
+		<apparel Inherit="False" />
+	  </ThingDef>
+	  
+	  <ThingDef Name="guy762_HatCraftableNoQualityBase" ParentName="guy762_ApparelNoQualityMakeable" Abstract="True">
+		<thingCategories>
+		  <li>Headgear</li>
+		</thingCategories>
+		<smeltable>false</smeltable>
+	  </ThingDef>
+	  
+	  
+	  
+	  
+	  
+	  <ThingDef Name="guy762_HelmetModdable_soft" ParentName="KotORArmorModdable_soft" Abstract="True">
+		<thingCategories>
+		  <li>Headgear</li>
+		  <li>ArmorHeadgear</li>
+		</thingCategories>
+	  </ThingDef>
+	  
+	  <ThingDef Name="guy762_HelmetModdable_hard" ParentName="KotORArmorModdable_hard" Abstract="True">
+		<thingCategories>
+		  <li>Headgear</li>
+		  <li>ArmorHeadgear</li>
+		</thingCategories>
+	  </ThingDef>
+	  
+	  
+	  
+	  
+	  <ThingDef Name="guy762_SoftHelmetCraftable" ParentName="guy762_armorbase_soft" Abstract="True">
+		<thingCategories>
+		  <li>Headgear</li>
+		  <li>ArmorHeadgear</li>
+		</thingCategories>
+	  </ThingDef>
+	  
+	  <ThingDef Name="guy762_HelmetCraftableBase" ParentName="guy762_armorbase_hard" Abstract="True">
+		<thingCategories>
+		  <li>Headgear</li>
+		  <li>ArmorHeadgear</li>
+		</thingCategories>
+	  </ThingDef>
+	  
+	  
+	  
+	  
+	  
+	  <ThingDef Name="guy762_HelmetModMakeableBase" ParentName="guy762_ModdableMakeableArmor_hard" Abstract="True">
+		<thingCategories>
+		  <li>Headgear</li>
+		  <li>ArmorHeadgear</li>
+		</thingCategories>
+	  </ThingDef>
+	  
+	  
+	  
+	  
+	  <ThingDef Name="guy762_SoftHelmetModMakeNoQuality" ParentName="guy762_ModMakeNoQualityArmor_soft" Abstract="True">
+		<thingCategories>
+		  <li>Headgear</li>
+		  <li>ArmorHeadgear</li>
+		</thingCategories>
+	  </ThingDef>
+	  
+	  <ThingDef Name="guy762_HelmetModMakeNoQuality" ParentName="guy762_ModMakeNoQualityArmor_hard" Abstract="True">
+		<thingCategories>
+		  <li>Headgear</li>
+		  <li>ArmorHeadgear</li>
+		</thingCategories>
+	  </ThingDef>
+	  
+	  
+	  
+	  
+	
+
+	<ThingDef Name="guy762_UtilityItemBase" ParentName="ApparelNoQualityBase" Abstract="True">
+		<techLevel>Spacer</techLevel>
+		<tickerType>Normal</tickerType>
+		<thingCategories>
+		  <li>ApparelUtility</li>
+		  <li>guy762_gadgets</li>
+		</thingCategories>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<tradeNeverStack>false</tradeNeverStack>
+		<smeltable>false</smeltable>
+		<burnableByRecipe>false</burnableByRecipe>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<tradeability>All</tradeability>
+		<!--comps>
+		  <li Class="CompProperties_AIUSablePack">
+			<checkInterval>60</checkInterval>
+			<compClass>CompAIUsablePack</compClass>
+		  </li>
+		</comps-->
+		<apparel>
+		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
+		  <careIfWornByCorpse>false</careIfWornByCorpse>
+		  <careIfDamaged>false</careIfDamaged>
+		  <ignoredByNonViolent>false</ignoredByNonViolent>
+		  <wearPerDay>0</wearPerDay>
+		  <layers>
+			<li>Belt</li>
+		  </layers>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef Name="guy762_CraftableUtilityBeltBase" ParentName="guy762_UtilityItemBase" Abstract="True">
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			
+			<recipeUsers>
+				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			</recipeUsers>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+					<li>Jade</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+			<useIngredientsForColor>false</useIngredientsForColor>
+		</recipeMaker>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+			<li Class="CompProperties_Styleable"></li>
+		</comps>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef Name="guy762_glovebase" ParentName="guy762_UtilityItemBase" Abstract="True">
+		<statBases>
+		  <EquipDelay>1</EquipDelay>
+		  <MaxHitPoints>80</MaxHitPoints>
+		</statBases>
+		<apparel>
+		  <bodyPartGroups>
+			<li>Hands</li>
+		  </bodyPartGroups>
+		</apparel>
+	  </ThingDef>
+	  
+	  <ThingDef Name="guy762_CraftableGloveBase" ParentName="guy762_CraftableUtilityBeltBase" Abstract="True">
+		<statBases>
+		  <EquipDelay>1</EquipDelay>
+		  <MaxHitPoints>80</MaxHitPoints>
+		</statBases>
+		<apparel>
+		  <bodyPartGroups>
+			<li>Hands</li>
+		  </bodyPartGroups>
+		</apparel>
+		<recipeMaker>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<recipeUsers>
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+	  </ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef Name="guy762_DroidUtilityItemBase" ParentName="guy762_UtilityItemBase" Abstract="True">
+		<thingCategories Inherit="False">
+		  <li>guy762_ApparelDroid</li>
+		</thingCategories>
+		<apparel>
+		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
+		  <careIfWornByCorpse>false</careIfWornByCorpse>
+		  <careIfDamaged>false</careIfDamaged>
+		  <ignoredByNonViolent>false</ignoredByNonViolent>
+		  <wearPerDay>0</wearPerDay>
+		  <layers>
+			<li>Belt</li>
+		  </layers>
+		</apparel>
+	  </ThingDef>
+	  
+	  
+	  <ThingDef Name="guy762_DroidUtilityCraftableBase" ParentName="guy762_DroidUtilityItemBase" Abstract="True">
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			
+			<recipeUsers>
+				<li MayRequire="Killathon.ArtificialBeings.SynCore">ABF_Thing_Synstruct_PartWorkbench</li>
+			</recipeUsers>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+					<li>Jade</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+			<useIngredientsForColor>false</useIngredientsForColor>
+		</recipeMaker>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+			<li Class="CompProperties_Styleable"></li>
+		</comps>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef Name="guy762_DroidWeaponBase" ParentName="guy762_DroidUtilityItemBase" Abstract="True">
+		<graphicData>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+		</graphicData>
+		<statBases>
+		  <Mass>2</Mass>
+		  <EquipDelay>12</EquipDelay>
+		  <MaxHitPoints>200</MaxHitPoints>
+		</statBases>
+		<soundInteract>kotorsound_select_ion</soundInteract>
+		<apparel>
+		  <ignoredByNonViolent>true</ignoredByNonViolent>
+		</apparel>
+	  </ThingDef>
+	  
+	  <ThingDef Name="guy762_DroidWeaponCraftableBase" ParentName="guy762_DroidUtilityCraftableBase" Abstract="True">
+		<graphicData>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+		</graphicData>
+		<statBases>
+		  <Mass>2</Mass>
+		  <EquipDelay>12</EquipDelay>
+		  <MaxHitPoints>200</MaxHitPoints>
+		</statBases>
+		<soundInteract>kotorsound_select_ion</soundInteract>
+		<apparel>
+		  <ignoredByNonViolent>true</ignoredByNonViolent>
+		</apparel>
+		<recipeMaker>
+			<recipeUsers>
+				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			</recipeUsers>
+		</recipeMaker>
+	  </ThingDef>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <ThingDef Name="guy762_DroidShieldBase" ParentName="guy762_DroidUtilityItemBase" Abstract="True">
+		<soundInteract>kotorsound_select_JKshield</soundInteract>
+		<soundDrop>kotorsound_select_JKshield</soundDrop>
+		<statBases>
+		  <Mass>2</Mass>
+		  <EquipDelay>25</EquipDelay>
+		  <MaxHitPoints>100</MaxHitPoints>
+		</statBases>
+		<apparel>
+		  <bodyPartGroups>
+			<li>Waist</li>
+		  </bodyPartGroups>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef Name="guy762_DroidShieldCraftableBase" ParentName="guy762_DroidUtilityCraftableBase" Abstract="True">
+		<soundInteract>kotorsound_select_JKshield</soundInteract>
+		<soundDrop>kotorsound_select_JKshield</soundDrop>
+		<statBases>
+		  <Mass>2</Mass>
+		  <EquipDelay>25</EquipDelay>
+		  <MaxHitPoints>100</MaxHitPoints>
+		</statBases>
+		<apparel>
+		  <bodyPartGroups>
+			<li>Waist</li>
+		  </bodyPartGroups>
+		</apparel>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	<ThingDef Name="guy762_HvyShieldBase" ParentName="guy762_DroidUtilityItemBase" Abstract="True">
+		<statBases>
+		  <Mass>10</Mass>
+		  <EquipDelay>38</EquipDelay>
+		  <MaxHitPoints>300</MaxHitPoints>
+		</statBases>
+		<graphicData>
+		  <onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+		</graphicData>
+		<apparel>
+		  <bodyPartGroups>
+			<li>Waist</li>
+		  </bodyPartGroups>
+		</apparel>
+	</ThingDef>
+	
+	
+	
+	
+	<ThingDef Name="guy762_HvyShieldCraftableBase" ParentName="guy762_DroidUtilityCraftableBase" Abstract="True">
+		<statBases>
+		  <Mass>10</Mass>
+		  <EquipDelay>38</EquipDelay>
+		  <MaxHitPoints>300</MaxHitPoints>
+		</statBases>
+		<graphicData>
+		  <onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+		</graphicData>
+		<apparel>
+		  <bodyPartGroups>
+			<li>Waist</li>
+		  </bodyPartGroups>
+		</apparel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	  
+	  
+	  
+	  
+	  <ThingDef Name="guy762_DroidTech" ParentName="guy762_DroidUtilityItemBase" Abstract="True">
+		<techLevel>Spacer</techLevel>
+		<statBases>
+		  <EquipDelay>38</EquipDelay>
+		  <MaxHitPoints>80</MaxHitPoints>
+		</statBases>
+		<graphicData>
+		  <onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+		</graphicData>
+		<apparel>
+		  <careIfDamaged>true</careIfDamaged>
+		</apparel>
+	  </ThingDef>
+	  
+	  <ThingDef Name="guy762_DroidCraftableTech" ParentName="guy762_DroidUtilityCraftableBase" Abstract="True">
+		<techLevel>Spacer</techLevel>
+		<statBases>
+		  <EquipDelay>38</EquipDelay>
+		  <MaxHitPoints>80</MaxHitPoints>
+		</statBases>
+		<graphicData>
+		  <onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+		</graphicData>
+		<apparel>
+		  <careIfDamaged>true</careIfDamaged>
+		</apparel>
+	  </ThingDef>
+	  
+	  
+  
+  <!--ThingDef Name="guy762_DroidTechUpgradeable" ParentName="guy762_DroidTech" Abstract="True">
+	<recipeMaker>
+	  <soundWorking>kotorsound_upgrade</soundWorking>
+	  <recipeUsers>
+		<li>guy762_KotORDroidBench</li>
+	  </recipeUsers>
+	  <researchPrerequisite>guy762_ResearchKotOR_uncraftable</researchPrerequisite>
+	</recipeMaker>
+	<costList>
+		<KOTOR_UltraComponent>1</KOTOR_UltraComponent>
+	</costList>
+	<descriptionHyperlinks>
+		<ThingDef>guy762_KotORDroidBench</ThingDef>
+		<ThingDef>guy762_KotORWorkbench</ThingDef>
+	</descriptionHyperlinks>
+	<equippedStatOffsets>
+	  <MoveSpeed>0.000001</MoveSpeed>
+	  <SocialImpact>0.000001</SocialImpact>
+	  <PainShockThreshold>0.000001</PainShockThreshold>
+	  <MentalBreakThreshold>0.000001</MentalBreakThreshold>
+	  <PsychicSensitivity>0.000001</PsychicSensitivity>
+	  <PsychicEntropyRecoveryRate>0.000001</PsychicEntropyRecoveryRate>
+	  <PsychicEntropyGain>0.000001</PsychicEntropyGain>
+	  <PsychicEntropyMax>0.000001</PsychicEntropyMax>
+	  <InjuryHealingFactor>0.000001</InjuryHealingFactor>
+	  <MeleeDodgeChance>0.000001</MeleeDodgeChance>
+	  <MeleeHitChance>0.000001</MeleeHitChance>
+	  <IncomingDamageFactor>0.000001</IncomingDamageFactor>
+	  <HuntingStealth>0.000001</HuntingStealth>
+	  <ToxicEnvironmentResistance>0.000001</ToxicEnvironmentResistance>
+	  <PawnTrapSpringChance>0.000001</PawnTrapSpringChance>
+	  <MortarMissRadiusFactor>0.000001</MortarMissRadiusFactor>
+	  <HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">0.000001</HackingSpeed>
+	</equippedStatOffsets>
+  </ThingDef-->
+	
+	
+	
+	
+	
+	
+	<ThingDef Name="guy762_DroidArmorMakeable" MayRequire="Killathon.ArtificialBeings.SynCore" ParentName="guy762_armorbase_hard" Abstract="True">
+		<recipeMaker>
+			<researchPrerequisite>guy762_ResearchKotOR_droidarmor</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+				<li MayRequire="Killathon.ArtificialBeings.SynCore">ABF_Thing_Synstruct_PartWorkbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<thingCategories Inherit="False">
+		  <li>guy762_ApparelDroid</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef Name="KotORDroidArmor" Abstract="True" ParentName="guy762_apparelbase">
+		<statBases>
+		    <WorkToMake>100</WorkToMake>
+		    <!--StuffEffectMultiplierArmor>-0.1</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>-0.05</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat-->
+			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.25</ArmorRating_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+		</statBases>
+		<apparel>
+			<defaultOutfitTags Inherit="False">
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<careIfWornByCorpse>true</careIfWornByCorpse>
+			<careIfDamaged>true</careIfDamaged>
+		</apparel>
+		<thingCategories Inherit="False">
+		  <li>guy762_ApparelDroid</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+	  </ThingDef>
+
+</Defs>

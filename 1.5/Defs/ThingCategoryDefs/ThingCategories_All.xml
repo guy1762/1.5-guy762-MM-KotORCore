@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingCategoryDef>
+      <defName>guy762_blasters</defName>
+      <label>blasters</label>
+      <parent>Weapons</parent>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+      <defName>guy762_vibroweapons</defName>
+      <label>vibroweapons</label>
+      <parent>Weapons</parent>
+    </ThingCategoryDef>
+
+	<ThingCategoryDef>
+      <defName>guy762_lightsaber</defName>
+      <label>lightsabers</label>
+      <parent>Weapons</parent>
+	</ThingCategoryDef>
+	
+	
+	
+	
+	
+	
+	
+	<!--revised categories for use with the auction house mod-->
+	
+	<ThingCategoryDef>
+      <defName>guy762_ThingCategory_KotORWeapons</defName>
+      <label>weapons (KotOR)</label>
+      <parent>Weapons</parent>
+	  <!--iconPath>UI/sabericons/default/default_yellow</iconPath-->
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+      <defName>guy762_ThingCategory_KotORArmor</defName>
+      <label>armor (KotOR)</label>
+      <parent>Apparel</parent>
+	  <!--iconPath>Apparel/Sith/trooper/Helmet</iconPath-->
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+      <defName>guy762_gadgets</defName>
+      <label>gadgets (KotOR)</label>
+      <parent>Apparel</parent>
+	  <!--iconPath>Items/shield</iconPath-->
+    </ThingCategoryDef>
+	
+	
+	
+	<ThingCategoryDef>
+		<defName>guy762_implants</defName>
+		<label>implant modules (KotOR)</label>
+		<parent>BodyPartsBionic</parent>
+		<!--iconPath>Items/Bionics/ImplantSystem_B</iconPath-->
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>guy762_weaponmod</defName>
+		<label>equipment upgrades (KotOR)</label>
+		<parent>Items</parent>
+		<!--iconPath>Items/Upgrades/Armor/overlay_ablative</iconPath-->
+	</ThingCategoryDef>
+	
+	
+	
+	<ThingCategoryDef>
+      <defName>guy762_ApparelDroid</defName>
+      <label>droid equipment (KotOR)</label>
+      <parent>Apparel</parent>
+	  <!--iconPath>Items/droidarmor/droidarmor_light_agrinium</iconPath-->
+    </ThingCategoryDef>
+
+</Defs>

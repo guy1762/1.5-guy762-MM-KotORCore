@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+
+	<!-- General Details ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<name>Star Wars KotOR Resources and Materials</name>
+	<modIconPath IgnoreIfNoMatchingField="True">UI/ModIcon_guy762_KotORCore</modIconPath>
+	<description>Adds resources, crafting materials, consumables, and other items from across the Star Wars universe.\n\nRIMPY USERS DOWNLOAD FROM HERE: https://github.com/guy1762/1.5ZIP_StarWarsKotORCore/tree/main</description>
+	<author>guy762, MajesticMadman, Kaitorisenkou, and lee01richards</author>
+	
+	<!-- Technical Details ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<supportedVersions>
+		<!--li>1.4</li-->
+		<li>1.5</li>
+	</supportedVersions>
+	<packageId>guy762.MM.KotORCore</packageId>
+	<url>https://github.com/guy1762/1.5ZIP_StarWarsKotORCore/tree/main</url>
+	
+	<!-- Requirements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<modDependencies>
+	<li>
+		<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+		<displayName>Vanilla Expanded Framework</displayName>
+		<steamWorkshopUrl>steam://url/CommunityFilePage/2023507013</steamWorkshopUrl>
+		<downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
+	  </li>
+	  <li>
+        <packageId>imranfish.xmlextensions</packageId>
+		<displayName>XML Extensions</displayName>
+		<downloadUrl>https://github.com/15adhami/XmlExtensions/releases</downloadUrl>
+		<steamWorkshopUrl>steam://url/CommunityFilePage/2574315206</steamWorkshopUrl>
+	  </li>
+  </modDependencies>
+  
+  <loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Anomaly</li>
+		
+		<li>brrainz.harmony</li>
+		<li>erdelf.HumanoidAlienRaces</li>
+		
+		<li>antaioz.modmedicinepatch</li>
+		<li>imranfish.xmlextensions</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		
+		<li>VanillaExpanded.VPsycastsE</li>
+		<li>jecrell.jecstools</li>
+		
+		<li>Roolo.DualWield</li>
+		<li>EBSG.Framework</li>
+		<li>smartkar.athenaframework</li>
+		<li>Lee.Athena.PostFix</li>
+		<li>kaitorisenkou.ModularWeapons</li>
+		
+		<li>Killathon.ArtificialBeings</li>
+		<li>Killathon.ArtificialBeings.SynCore</li>
+		
+		<li>SmashPhil.VehicleFramework</li>
+		<li>ShunTheWitch.CVNmechanoidwarfarecore</li>
+		
+		<li>Ogam.MedievalOverhaul.ArcaneArchaeologists</li>
+		<li>jecrell.StarWarsTheForce</li>
+		
+		<li>kentington.saveourship2</li>
+		<li>sindre0830.rimnauts2</li>
+		<li>guy762.StarWarsXenotypes</li>
+	</loadAfter>
+	<loadBefore>
+		<li>guy762.KotORWeapons</li>
+		<li>guy762.KotORDroids</li>
+		<li>guy762.KotORFactions</li>
+	</loadBefore>
+	
+	<incompatibleWith>
+	  <li>guy762.KotORGadgets</li>
+	</incompatibleWith>
+  
+</ModMetaData>

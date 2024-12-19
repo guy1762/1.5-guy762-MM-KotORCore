@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+<!--Carpet Base-->
+
+
+<!-- <ThingDef ParentName="BuildingBase" Name="RugBase" Abstract="True">-->
+
+<ThingDef Name="CarpetBased" ParentName="BuildingBase" Abstract="True" >
+	<defName>GS_Carpet_big</defName>
+    <label>large carpet</label>
+    <description>a big carpet</description>
+    <size>(3,5)</size>
+	<designationCategory>KOTOR_BuildTab</designationCategory>
+	
+	 <!--=Graphic==================================================================================================================-->
+
+
+     <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData> 
+	
+	 <!--=============================================================================================================================-->
+	<altitudeLayer>FloorEmplacement</altitudeLayer>
+    <rotatable>true</rotatable>
+    <destroyable>true</destroyable>
+    <useHitPoints>true</useHitPoints>
+    <passability>Standable</passability>
+    <canOverlapZones>false</canOverlapZones>
+	<pathCost>0</pathCost>
+	<castEdgeShadows>false</castEdgeShadows>
+	 <!--=============================================================================================================================-->
+		<blockWind>false</blockWind>
+		
+		
+		
+	    <minifiedDef>MinifiedThing</minifiedDef>
+		
+    <thingCategories>
+      <li>BuildingsArt</li>
+    </thingCategories>
+				
+		
+<!--======Stats=======================================================================================================-->
+		
+	<statBases>
+    <Flammability>1.0</Flammability>
+	<SellPriceFactor>1.10</SellPriceFactor>
+	<Mass>5</Mass>
+    </statBases>
+	
+	    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <costStuffCount>140</costStuffCount>
+		
+<!--=============================================================================================================================-->
+	
+	
+    <building>
+	<isEdifice>true</isEdifice>
+	<paintable>true</paintable>
+	<destroySound>BuildingDestroyed_Metal_Small</destroySound>	
+      <deconstructible>true</deconstructible>
+      <claimable>true</claimable>
+	      </building>
+	  
+<!--	 <costList>
+      <Cloth>120</Cloth>
+    </costList>-->
+	  
+	  
+	  
+<!--    <researchPrerequisites>
+      <li>GS_Indoc</li>
+    </researchPrerequisites>-->
+	   
+</ThingDef>
+<!--=============================================================================================================================-->
+
+<ThingDef ParentName="CarpetBased">
+<defName>GS_Carpet_Star</defName>
+    <label>large carpet</label>
+    <description>a big carpet</description>
+	
+     <graphicData>
+      <texPath>Furniture/Sovereign_ImperialDecor/Carpet/CarpetStar</texPath>
+    </graphicData> 
+	
+</ThingDef>
+
+<ThingDef ParentName="CarpetBased">
+<defName>GS_Carpet_cult</defName>
+    <label>large carpet</label>
+    <description>a big carpet</description>
+	
+     <graphicData>
+      <texPath>Furniture/Sovereign_ImperialDecor/Carpet/CarpetCult</texPath>
+    </graphicData> 
+	
+</ThingDef>
+
+<ThingDef ParentName="CarpetBased">
+<defName>GS_Carpet_forge</defName>
+    <label>large carpet</label>
+    <description>a big carpet</description>
+	
+     <graphicData>
+      <texPath>Furniture/Sovereign_ImperialDecor/Carpet/CarpetForge</texPath>
+    </graphicData> 
+	
+</ThingDef>
+
+
+</Defs>

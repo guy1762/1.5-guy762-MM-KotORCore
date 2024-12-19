@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	
+	<!--BackstoryDef>
+		<defName>guy762_Backstory_powerdroid</defName>
+		<title>power droid</title>
+		<titleShort>power droid</titleShort>
+		<baseDesc>This is a power droid.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>guy762BSC_Droid_power</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>guy762_Backstory_gonkA</defName>
+		<title>SP-series power droid</title>
+		<titleShort>power droid</titleShort>
+		<baseDesc>This is a power droid.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>guy762BSC_Droid_power_A</li>
+		</spawnCategories>
+		<workDisables>
+			<li>Social</li>
+			<li>Violent</li>
+			<li>AllWork</li>
+		</workDisables>
+	</BackstoryDef>
+	
+	
+	
+	<AlienRace.ThingDef_AlienRace Name="guy762_DroidRace_gonk" ParentName="guy762_KotORDroidBase">
+		<defName>guy762_DroidRace_gonk</defName>
+		<label>SP-series power droid</label>
+		<description>Gonk.</description>
+		<alienRace>
+			<graphicPaths>
+                <body>
+                    <path>Droid/gonk/gonk</path>
+                </body>
+				<bodyMasks>
+				  <path>Droid/gonk/gonk_mask</path>
+				</bodyMasks>
+				<head>
+                    <path>512blank</path>
+                </head>
+                <skinShader>Cutout</skinShader>
+            </graphicPaths>
+			<raceRestriction>
+				<apparelList />
+			</raceRestriction>
+            <generalSettings>
+                <alienPartGenerator>
+					<colorChannels Inherit="False">
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(235,255,255,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(65,90,125,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(135,130,110,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(160,180,180,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(120,125,110,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(190,180,170,255)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+					</colorChannels>
+					<headTypes>
+                        <li>guy762_DroidHeadType_HK</li>
+                    </headTypes>
+                </alienPartGenerator>
+				<forcedRaceTraitEntries>
+				  <li>
+					<defName>Asexual</defName>
+				  </li>
+				</forcedRaceTraitEntries>
+            </generalSettings>
+		</alienRace>
+        <uiIconPath>UI/Icon_gonk</uiIconPath>
+		<statBases>
+			<MarketValue>2500</MarketValue>
+			<MoveSpeed>1</MoveSpeed>
+			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
+			<ComfyTemperatureMax>75</ComfyTemperatureMax>
+			
+			<GlobalLearningFactor>0</GlobalLearningFactor>
+			
+			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.4</ArmorRating_Heat>
+            <IncomingDamageFactor>1.1</IncomingDamageFactor>
+			
+            <MHC_MaintenanceRetention>2</MHC_MaintenanceRetention>
+            <MHC_NutritionalIntakeEfficiency>1</MHC_NutritionalIntakeEfficiency>
+            <MHC_ChargingSpeed>3</MHC_ChargingSpeed>
+			
+			<Mass>150</Mass>
+		</statBases>
+		<race>
+			<body>ATR_KotORDroidBody_gonk</body>
+			<hasGenders>false</hasGenders>
+			<lifeExpectancy>4000</lifeExpectancy>
+			<baseHealthScale>1</baseHealthScale>
+			<baseHungerRate>0.25</baseHungerRate>
+			<baseBodySize>0.65</baseBodySize>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.0</minAge>
+					<soundAmbience>kotorsound_TsUD_ambient</soundAmbience>
+					<soundAngry>kotorsound_TsUD_angry</soundAngry>
+					<soundCall>kotorsound_TsUD_call</soundCall>
+					<soundWounded>kotorsound_TsUD_wounded</soundWounded>
+					<soundDeath>kotorsound_TsUD_death</soundDeath>
+				</li>
+			</lifeStageAges>
+			<deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
+			<executionRange>12</executionRange>
+		</race>
+		<modExtensions>
+			<li Class="MechHumanlikes.MHC_MechanicalPawnExtension">
+                <canBeSapient>false</canBeSapient>
+				<droneSkillLevel>5</droneSkillLevel>
+                <dronesCanHaveTraits>false</dronesCanHaveTraits>
+				<useCustomNoneGenderNameMakers>true</useCustomNoneGenderNameMakers>
+                <sapientNoneGenderNameMaker>ATR_AndroidNoneNames</sapientNoneGenderNameMaker>
+                <droneNoneGenderNameMaker>ATR_DroneNoneNames</droneNoneGenderNameMaker>
+                <letPawnKindHandleDroneBackstories>false</letPawnKindHandleDroneBackstories>
+                <droneChildhoodBackstoryDef>guy762_Backstory_gonkA</droneChildhoodBackstoryDef>
+                <droneAdulthoodBackstoryDef>guy762_Backstory_powerdroid</droneAdulthoodBackstoryDef>
+                <blacklistedNeeds>
+                    <li>DrugDesire</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">Hygiene</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">Bladder</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
+					<li MayRequire="rim.job.world">Sex</li>
+                </blacklistedNeeds>
+                <blacklistedSapientNeeds>
+                    <li>RoomSize</li>
+                    <li>Joy</li>
+                    <li>Beauty</li>
+                    <li>Comfort</li>
+                    <li>Outdoors</li>
+                    <li>Indoors</li>
+                </blacklistedSapientNeeds>
+                <mechanicalNeeds>
+                    <li><key>MHC_Coolant</key><value>0.25</value></li>
+                    <li><key>MHC_Lubrication</key><value>0.25</value></li>
+                </mechanicalNeeds>
+            </li>
+            <li Class="ATReforged.ATR_PawnExtension">
+                <isAndroid>true</isAndroid>
+            </li>
+		</modExtensions>
+		<tradeTags Inherit="False">
+            <li>guy762TT_KotORDroids_techbasic</li>
+		</tradeTags>
+		
+		<comps>
+			<li Class="CompProperties_Battery">
+				<storedEnergyMax>750</storedEnergyMax>
+			</li>
+			<li Class="CompProperties_BecomeBuilding">
+			<buildingDef>kotor_gonk</buildingDef>
+		</li>
+		</comps>
+	</AlienRace.ThingDef_AlienRace>
+	
+	
+	
+	
+	
+	
+	<PawnKindDef ParentName="BasePlayerPawnKind">
+		<defName>guy762_gonk_colonist</defName>
+		<label>SP-series power droid</label>
+		<race>guy762_DroidRace_gonk</race>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<chemicalAddictionChance>0.00</chemicalAddictionChance>
+		<techHediffsMoney>
+			<min>2000</min>
+			<max>10000</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<maxGenerationAge>1951</maxGenerationAge>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<techHediffsChance>0.3</techHediffsChance>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<initialResistanceRange>13~21</initialResistanceRange>
+	</PawnKindDef-->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- Gonk ================================================================ -->	
+	<DesignatorDropdownGroupDef>
+		<defName>kotor_gonk_Designator</defName>
+	</DesignatorDropdownGroupDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<designatorDropdown>kotor_gonk_Designator</designatorDropdown>
+		<defName>KOTOR_GonkBuilding</defName>
+		<label>SP-series power droid</label>
+		<description>Stores higher amounts of electricity than a common battery. Immune to short-circuiting. Droid functionality to-be-added.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Buildings/gonk/gonk</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<blockWind>false</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.40</fillPercent>
+		<tickerType>Normal</tickerType>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsPower</li>
+		</thingCategories>
+		<statBases>
+			<MarketValue>1600</MarketValue>
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToBuild>2200</WorkToBuild>
+			<Mass>40</Mass>
+			<Flammability>0.5</Flammability>
+			<Beauty>0</Beauty>
+		</statBases>
+		<size>(1,1)</size>
+		<building>
+			<paintable>true</paintable>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		
+		<researchPrerequisites>
+			<li>KOTOR_Research_UltraComponent</li>
+		</researchPrerequisites>
+		<costList>
+			<KOTOR_AlloyDurasteel>65</KOTOR_AlloyDurasteel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+			<KOTOR_UltraComponent>1</KOTOR_UltraComponent>
+		</costList>
+		
+		<comps>
+			<li Class="CompProperties_Battery">
+				<storedEnergyMax>2400</storedEnergyMax>
+				<efficiency>0.95</efficiency>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Stunnable">
+				<useLargeEMPEffecter>true</useLargeEMPEffecter>
+				<affectedDamageDefs>
+				  <li>EMP</li>
+				</affectedDamageDefs>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+			<!--li MayRequire="kentington.saveourship2" Class="CompProperties_BecomePawn">
+				<pawnDef>guy762_gonk_colonist</pawnDef>
+			</li-->
+		</comps>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>KOTOR_BuildTab</designationCategory>
+		<uiOrder>2020</uiOrder>
+		<staticSunShadowHeight>0.2</staticSunShadowHeight>
+		<constructEffect>ConstructMetal</constructEffect>
+		<canOverlapZones>false</canOverlapZones>
+		<uiIconScale>0.6</uiIconScale>
+		
+		<tradeTags>
+		  <li>guy762TT_KotORWorkbench</li>
+		</tradeTags>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!--ThingDef ParentName="BuildingBase">
+		<designatorDropdown>kotor_gonk_Designator</designatorDropdown>
+		<defName>KOTOR_babygonk</defName>
+		<label>SP-series micro power droid</label>
+		<description>Baby Gonk, doo-doo, doo-doo, doo-doo\n\nBaby Gonk, doo-doo, doo-doo, doo-doo\n\nBaby Gonk, doo-doo, doo-doo, doo-doo\n\nBaby Gonk</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<shaderType>CutoutComplex</shaderType>
+			<texPath>Buildings/gonk/gonk</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<blockWind>false</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.40</fillPercent>
+		<tickerType>Normal</tickerType>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsPower</li>
+		</thingCategories>
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>10</Mass>
+			<Flammability>0.5</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+		<size>(1,1)</size>
+		<building>
+			<paintable>true</paintable>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		
+		
+		<comps>
+			<li Class="CompProperties_Battery">
+				<storedEnergyMax>600</storedEnergyMax>
+				<efficiency>0.95</efficiency>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Stunnable">
+				<useLargeEMPEffecter>true</useLargeEMPEffecter>
+				<affectedDamageDefs>
+				  <li>EMP</li>
+				</affectedDamageDefs>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>KOTOR_BuildTab</designationCategory>
+		<uiOrder>2020</uiOrder>
+		<constructEffect>ConstructMetal</constructEffect>
+		<canOverlapZones>false</canOverlapZones>
+		
+		<tradeTags>
+		  <li>guy762TT_KotORWorkbench</li>
+		</tradeTags>
+	</ThingDef-->
+	
+
+</Defs>

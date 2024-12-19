@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	  
+	  <ThingDef ParentName="BenchBase">
+		
+		<!-- Base -->
+		<defName>kotor_DrugLab</defName>
+		<label>Adascorp lab bench</label>
+		<description>This advanced lab bench can process anything involving organic material, from Kolto and spice to medpacs and stimulants.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<thingCategories Inherit="false" />
+		
+		<!-- Texture -->
+		<graphicData>
+			<texPath>Buildings/Czerkatech_DrugsBench/Czerkatech_DrugsBench</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+			<shadowData>
+				<volume>(1.5, 0.5, 0.25)</volume>
+				<offset>(0,0,-0.35)</offset>
+			</shadowData>
+		</graphicData>
+		
+		<!-- Cost -->
+		<costList>
+			<KOTOR_AlloyDurasteel>150</KOTOR_AlloyDurasteel>
+		    <ComponentIndustrial>10</ComponentIndustrial>
+		    <ComponentSpacer>5</ComponentSpacer>
+		    <KOTOR_UltraComponent>1</KOTOR_UltraComponent>
+		</costList>
+		
+		<!-- Stats -->
+		<statBases>
+			<MarketValue>2500</MarketValue>
+			<MaxHitPoints>750</MaxHitPoints>
+			<WorkToBuild>6000</WorkToBuild>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<unpoweredWorkTableWorkSpeedFactor>0</unpoweredWorkTableWorkSpeedFactor>
+			<paintable>false</paintable>
+		</building>
+		
+		<!-- Menu -->
+		<designationCategory>KOTOR_BuildTab</designationCategory>
+		<uiOrder>763</uiOrder>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+	
+		<!-- World -->
+		<size>(3,1)</size>
+		<minifiedDef />
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.5</fillPercent>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<surfaceType>Item</surfaceType>
+		
+		<!-- Comps -->
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>200</basePowerConsumption>
+				<shortCircuitInRain>false</shortCircuitInRain>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+				  <li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		
+		<!-- Requirements -->
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>KOTOR_Research_AdvPhysiology</li>
+		</researchPrerequisites>
+		
+		<tradeTags>
+		  <li>guy762TT_KotORWorkbench</li>
+		  <li>guy762TT_MedicalBuilding</li>
+		</tradeTags>
+		
+	</ThingDef>
+	
+	<WorkGiverDef>
+		<defName>kotor_DrugLab_WorkGiver</defName>
+		<label>make things at Adascorp lab bench</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<workTags>
+		  <li>Caring</li>
+		  <li>Intellectual</li>
+		</workTags>
+		<priorityInType>75</priorityInType>
+		<fixedBillGiverDefs>
+			<li>kotor_DrugLab</li>
+		</fixedBillGiverDefs>
+		<verb>work</verb>
+		<gerund>working at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+	
+	
+	
+
+	
+</Defs>

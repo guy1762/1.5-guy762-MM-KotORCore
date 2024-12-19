@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<XmlExtensions.SettingsMenuDef>
+		<defName>guy762_KotORCoreSettingsMenu</defName>
+		<modId>guy762.MM.KotORCore</modId>
+		<label>Star Wars KotOR Resources and Materials</label>
+		<settings>
+			<li Class="XmlExtensions.Setting.Text">
+                <text>Changes require restarting RimWorld!!!</text>
+                <anchor>Middle</anchor>
+            </li>
+			<li Class="XmlExtensions.Setting.GapLine"/>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>KotORCoreSettings_PlasteelRebalance</key>
+				<label>Enable Plasteel rebalance patch</label>
+				<defaultValue>true</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>This patch lowers the market value, WorkToMake, and WorkToBuild stats of Plasteel while increasing the commonality of Plasteel ore. It also slightly lowers the maximum hit points of things made with Plasteel.</text>
+			</li>
+			
+			<li Class="XmlExtensions.Setting.GapLine"/>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>KotORCoreSettings_SoS2Stygium</key>
+				<label>Enable 25x Stygium in SoS2 Cloaking Device recipe patch</label>
+				<defaultValue>true</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>This patch adds 25 Stygium crystals to the building material requirements of the Save Our Ship 2 ship cloaking device.</text>
+			</li>
+			
+			<li Class="XmlExtensions.Setting.GapLine"/>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>KotORCoreSettings_JunkPiles</key>
+				<label>Enable mineable 'Junk Pile' spawning</label>
+				<defaultValue>true</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>This patch adds mineable junk piles to the map generation steps, meaning mineable junk will spawn on most maps in a medium-sized square. Disabling this may help prevent errors during map generation.</text>
+			</li>
+			
+			<li Class="XmlExtensions.Setting.GapLine"/>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>KotORCoreSettings_AIJumpPack</key>
+				<label>Enable enemy pawn jump pack use (WARNING: may have performance impact!)</label>
+				<defaultValue>false</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>This patch enables experimental pawn AI code that allows raiding pawns to use equipped jump packs/jetpacks to jump to melee range. This code may cause lag spikes when pausing/unpausing.</text>
+			</li>
+			
+			<li Class="XmlExtensions.Setting.GapLine"/>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>KotORCoreSettings_CreditWeight</key>
+				<label>Pick Up And Haul fix for Credits</label>
+				<defaultValue>false</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>This patch adds the smallest amount of weight possible to Credits to prevent the Pick Up And Haul mod from dividing by 0 when pawns try to pick up a stack of Credits. The stack size of Credits is also reduced to 1,000.</text>
+			</li>
+			
+			<li Class="XmlExtensions.Setting.GapLine" MayRequire="Ludeon.RimWorld.Ideology"/>
+			<li Class="XmlExtensions.Setting.Checkbox" MayRequire="Ludeon.RimWorld.Ideology">
+				<key>KotORCoreSettings_BroadwrapLayerTweak</key>
+				<label>Broadwrap coverage tweak</label>
+				<defaultValue>true</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Text" MayRequire="Ludeon.RimWorld.Ideology">
+				<text>This patch adjusts the coverage of the "broadwrap" hat so it only covers the "UpperHead" layer, meaning apparel that covers the mouth can be worn with it.</text>
+			</li>
+			
+			<li Class="XmlExtensions.Setting.GapLine" MayRequire="Ludeon.RimWorld.Biotech"/>
+			<li Class="XmlExtensions.Setting.Checkbox" MayRequire="Ludeon.RimWorld.Biotech">
+				<key>KotORCoreSettings_SashLayerTweak</key>
+				<label>Sash layer tweak</label>
+				<defaultValue>true</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Text" MayRequire="Ludeon.RimWorld.Biotech">
+				<text>This patch adjusts the layering of the "sash" apparel so it is worn on the outermost "Shell" layer (same as the vanilla cape and the chest accessories in KotOR Weapons and Armor).</text>
+			</li>
+		</settings>
+	</XmlExtensions.SettingsMenuDef>
+	
+	<XmlExtensions.SettingsMenuDef MayRequire="guy762.StarWarsXenotypes">
+		<defName>guy762_SWXenotypesSettingsMenu</defName>
+		<modId>guy762.StarWarsXenotypes</modId>
+		<label>Star Wars Xenotypes</label>
+		<settings>
+			<li Class="XmlExtensions.Setting.Text">
+                <text>Changes require restarting RimWorld!!!</text>
+                <anchor>Middle</anchor>
+            </li>
+			<li MayRequire="guy762.StarWarsXenotypes" Class="XmlExtensions.Setting.GapLine"/>
+			<li MayRequire="guy762.StarWarsXenotypes" Class="XmlExtensions.Setting.Checkbox">
+				<key>KotORXenotypeSettings_HumanRaceRenamer</key>
+				<label>Human race ThingDef is renamed to "sentient".</label>
+				<defaultValue>true</defaultValue>
+			</li>
+			<li MayRequire="guy762.StarWarsXenotypes" Class="XmlExtensions.Setting.Text">
+				<text>This patch renames and edits the description of the base "human" race to be slightly more immersive when using a Xenotype-based alien mod (like Star Wars Xenotypes). The Baseliner Xenotype is also renamed "human".</text>
+			</li>
+			<li MayRequire="guy762.StarWarsXenotypes" Class="XmlExtensions.Setting.GapLine"/>
+			<li MayRequire="guy762.StarWarsXenotypes" Class="XmlExtensions.Setting.Checkbox">
+				<key>KotORXenotypeSettings_EarLayer68</key>
+				<label>Ear gene layering fix</label>
+				<defaultValue>true</defaultValue>
+			</li>
+			<li MayRequire="guy762.StarWarsXenotypes" Class="XmlExtensions.Setting.Text">
+				<text>This patch shifts the rendering layer of the Biotech and the applicable Star Wars Xenotypes ear genes down two layers, so they no longer clip through things like the KotOR headbands.</text>
+			</li>
+		</settings>
+	</XmlExtensions.SettingsMenuDef>
+	
+	
+	
+	<XmlExtensions.SettingsMenuDef MayRequire="guy762.StarWarsXenotypes">
+		<defName>guy762_KotORWeaponsSettingsMenu</defName>
+		<modId>guy762.KotORWeapons</modId>
+		<label>Star Wars KotOR Weapons and Armor</label>
+		<settings>
+			<li Class="XmlExtensions.Setting.Text">
+                <text>Changes require restarting RimWorld!!!</text>
+                <anchor>Middle</anchor>
+            </li>
+			<li Class="XmlExtensions.Setting.GapLine"/>
+			<li MayRequire="EBSG.Framework" Class="XmlExtensions.Setting.Checkbox">
+				<key>KotORWeaponsSettings_EBSGSkillImplantRework</key>
+				<label>Skill implant overhaul using EBSG</label>
+				<defaultValue>true</defaultValue>
+			</li>
+			<li MayRequire="EBSG.Framework" Class="XmlExtensions.Setting.Text">
+				<text>This patch reworks all four "Skill" implant upgrades to give direct bonuses to a pawn's skill levels, rather than giving a bunch of stat modifiers.</text>
+			</li>
+		</settings>
+	</XmlExtensions.SettingsMenuDef>
+
+
+</Defs>

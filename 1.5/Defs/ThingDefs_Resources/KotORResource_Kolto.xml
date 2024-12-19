@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Refined kolto ================================================================ -->
+	<ThingDef ParentName="ResourceBase">
+		<defName>KOTOR_kolto</defName>
+		<label>Kolto</label>
+		<description>A rare, extremely potent healing gel refined from a liquid only found in the depths of Manaan. When properly applied (via an instant-use Medpac), it can heal most battlefield injuries in a matter of seconds. Kolto can also be applied directly to a patient's injuries via spray applicator or skilled medical professional, though the quality of wound tending is lower when used in this way compared to Spice-based Medkits.</description>
+		<possessionCount>3</possessionCount>
+		<tickerType>Normal</tickerType>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>ResourceSys_Kolto/kolto</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<stackLimit>10</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<intricate>true</intricate> <!-- Not returned to player when product made of this is smelted. -->
+		<statBases>
+			<MarketValue>100</MarketValue>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Mass>1</Mass>
+			<Flammability>0.4</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+			
+			<MedicalPotency>1.9</MedicalPotency> <!-- doesn't work at 2.0 I guess -->
+			<MedicalQualityMax>1</MedicalQualityMax>
+		</statBases>
+		<thingClass>Medicine</thingClass>
+		<thingCategories>
+		  <li>Medicine</li>
+		  <li>ResourcesRaw</li>
+		</thingCategories>
+		<orderedTakeGroup>Medicine</orderedTakeGroup>
+		<tradeTags>
+		  <li>guy762TT_KotORMedicine</li>
+		  <li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardCore</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef Class="KoltoTank.KoltoTankDef" Name="KoltoTankBase" ParentName="BuildingBase" Abstract="True">
+		<defName>KoltoTankBase</defName>
+		<thingClass>KoltoTank.Building_KoltoTank</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<altitudeLayer>Pawn</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>25</pathCost>
+		<blockWind>true</blockWind>
+		<fillPercent>0.8</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<Flammability>0.2</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<designationCategory>Power</designationCategory>
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellOffset>(0,0,2)</interactionCellOffset>
+		<defaultPlacingRot>South</defaultPlacingRot>		
+		<inspectorTabs>
+			<li>ITab_BiosculpterNutritionStorage</li>
+		</inspectorTabs>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<destroyable>true</destroyable>
+		<rotatable>false</rotatable>		
+	</ThingDef>
+	
+<ThingDef Class="KoltoTank.KoltoTankDef" ParentName="KoltoTankBase">
+    <defName>KoltoTank</defName>
+    <label>Kolto Tank</label>
+    <description>A large tank designed to heal grievously-wounded organic patients by submerging them in Kolto gel. Once placed inside, the Kolto will halt all blood loss and will periodically heal one random injury per 2.5 hours. This tank can save pawns that are mere seconds away from death, provided they are placed inside quickly enough.\n\nNOTE: While being submerged in this tank will also halt all illness gain, it will not increase immunity at all or cure the infection. All illnesses must be tended normally, this tank is only for physical injuries!</description>
+    <containedPawnsSelectable>true</containedPawnsSelectable>
+    <graphicData>
+		<texPath>ResourceSys_Kolto/KoltoTank_Round_south</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(3, 3)</drawSize>
+		<drawRotated>false</drawRotated>
+		<!--shadowData>
+			<volume>(3, 3, 0.5)</volume>
+			<offset>(0,0,-1)</offset>
+		</shadowData-->
+	</graphicData>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <researchPrerequisites>
+		<li>KOTOR_Research_Kolto</li>
+	</researchPrerequisites>
+    <altitudeLayer>Pawn</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>42</pathCost>
+    <blockWind>true</blockWind>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MarketValue>10000</MarketValue>
+	  <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>28000</WorkToBuild>
+      <Mass>50</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <size>(3,3)</size>
+    <interactionCellOffset>(0,0,2)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>
+    <costList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>12</ComponentIndustrial>
+    </costList>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+      <haulToContainerDuration>120</haulToContainerDuration>
+      <uninstallWork>1800</uninstallWork>
+    </building>
+    <resourcesFractionWhenDeconstructed>0.25</resourcesFractionWhenDeconstructed>
+    <designationCategory>KOTOR_BuildTab</designationCategory>
+    <uiOrder>2500</uiOrder>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Flickable"/>
+	   <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>9</fuelConsumptionRate>
+        <fuelCapacity>30</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>KOTOR_kolto</li>
+          </thingDefs>
+        </fuelFilter>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+	  <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+        <idlePowerDraw>50</idlePowerDraw>
+      </li>
+	  <li Class="CompProperties_Glower">
+			<glowRadius>4</glowRadius>
+			<glowColor>(95,255,200,0)</glowColor>
+	  </li>
+	  <li Class="KoltoTank.CompProperties_SecondLayer">
+		<graphicData>
+			<texPath>ResourceSys_Kolto/KoltoTank_Round_south_floor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<offset>(0,0,0)</offset>
+		<altitudeLayer>LayingPawn</altitudeLayer>
+	  </li>
+	  
+	  <!--li Class="CompProperties_BiosculpterPod">
+        <enterSound>BiosculpterPod_Enter</enterSound>
+        <exitSound>BiosculpterPod_Exit</exitSound>
+        <operatingEffecter>BiosculpterPod_Operating</operatingEffecter>
+        <readyEffecter>BiosculpterPod_Ready</readyEffecter>
+        <biotunedCycleSpeedFactor>1</biotunedCycleSpeedFactor>
+      </li>
+      <li Class="CompProperties_BiosculpterPod_HealingCycle">
+        <compClass>CompBiosculpterPod_MedicCycle</compClass>
+        <key>medic</key>
+        <label>medic</label>
+        <description>Heal all fresh wounds, blood loss, and one random infectious disease.</description>
+        <iconPath>UI/Gizmos/BiosculpterCycleHealing</iconPath>
+        <durationDays>5</durationDays>
+        <conditionsToPossiblyCure>
+          <li>Malaria</li>
+          <li>SleepingSickness</li>
+          <li>Flu</li>
+          <li>Plague</li>
+          <li>GutWorms</li>
+          <li>MuscleParasites</li>
+          <li>WoundInfection</li>
+        </conditionsToPossiblyCure>
+      </li>
+      <li Class="CompProperties_BiosculpterPod_HealingCycle">
+        <compClass>CompBiosculpterPod_RegenerationCycle</compClass>
+        <key>bioregeneration</key>
+        <label>bioregeneration</label>
+        <description>Heal all fresh wounds and heal one random permanent injury.</description>
+        <iconPath>UI/Gizmos/BiosculpterCycleBioregeneration</iconPath>
+        <durationDays>10</durationDays>
+        <conditionsToPossiblyCure>
+          <li>Asthma</li>
+          <li>BadBack</li>
+          <li>Cataract</li>
+          <li>Blindness</li>
+          <li>Frail</li>
+          <li>HearingLoss</li>
+          <li>HeartArteryBlockage</li>
+        </conditionsToPossiblyCure>
+      </li-->
+    </comps>
+	<innerDrawOffset>(0, 0, -0.25)</innerDrawOffset>
+	<waterDrawCenter>(0, 0.25, 0.0)</waterDrawCenter>
+	<waterDrawSize>(1.9, 1.4)</waterDrawSize>
+	<bodySizeMin>0</bodySizeMin>
+	<bodySizeMax>2</bodySizeMax>
+	<hediffOnEntry>KoltoTank_Coma</hediffOnEntry>
+	<hediffOnExit>KoltoTank_Recovering</hediffOnExit>
+	<multiplier>2.5</multiplier> <!-- this multiplier * in-game hour = time to heal -->
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+	<tradeTags>
+	  <li>guy762TT_MedicalBuilding</li>
+	</tradeTags>
+  </ThingDef>
+  
+  
+  
+  
+  <JobDef>
+    <defName>EnterKoltoTank</defName>
+    <driverClass>KoltoTank.JobDriver_EnterKoltoTank</driverClass>
+    <reportString>entering Kolto tank.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JobDef>
+    <defName>CarryToKoltoTank</defName>
+    <driverClass>KoltoTank.JobDriver_CarryToKoltoTank</driverClass>
+    <reportString>carrying TargetA to Kolto tank.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+	
+
+
+</Defs>

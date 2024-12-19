@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Czerka-Tech ================================================================ -->
+	<!--ResearchProjectDef>
+		<defName>KOTOR_Research_Czerkatech</defName>
+		<label>Czerka-Tech</label>
+		<description>Learn the basics of Czerka-Tech</description>
+		<baseCost>5000</baseCost>
+		
+		<prerequisites>
+			<li>MicroelectronicsBasics</li>
+		</prerequisites>
+		
+		<tab>kotor_ResearchTab</tab>
+		<techLevel>Spacer</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef-->
+	
+	<!-- Plasma ================================================================ -->
+	<ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>KOTOR_Research_plasma</defName>
+		<label>Tibanna Processing</label>
+		<description>Superheat the exotic gas Tibanna to create plasma, an effective energy source capable of generating high amounts of power.</description>
+		<baseCost>5000</baseCost>
+		
+		<prerequisites>
+			<li>ShipReactor</li>
+		</prerequisites>
+		<requiredResearchFacilities>
+		  <li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>KOTOR_Research_plasmaApplications</defName>
+		<label>Plasma Applications</label>
+		<description>Utilize the power of plasma to create advanced gadgets and machinery.</description>
+		<baseCost>1000</baseCost>
+		
+		<prerequisites>
+			<li>KOTOR_Research_plasma</li>
+		</prerequisites>
+		
+		<researchViewX>1</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+	<!-- Rhydonium ================================================================ -->
+	<ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>KOTOR_Research_FuelProcessing</defName>
+		<label>Rhydonium Fuel Processing</label>
+		<description>Refine raw Rhydonium powder into safely useable fuel.</description>
+		<baseCost>5000</baseCost>
+		
+		<prerequisites>
+			<li>ShipReactor</li>
+		</prerequisites>
+		
+		<researchViewX>0</researchViewX>
+		<researchViewY>0.5</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>KOTOR_Research_AdvMunitions</defName>
+		<label>Advanced Munitions</label>
+		<description>Craft advanced explosive munitions.</description>
+		<baseCost>1000</baseCost>
+		
+		<prerequisites>
+			<li>KOTOR_Research_FuelProcessing</li>
+		</prerequisites>
+		
+		<researchViewX>1</researchViewX>
+		<researchViewY>0.5</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>KOTOR_Research_Baradium</defName>
+		<label>Baradium Explosives</label>
+		<description>Utilize Baradium (an isotope of Uranium) to craft powerful explosive warheads.</description>
+		<baseCost>4000</baseCost>
+		
+		<prerequisites>
+			<li>KOTOR_Research_AdvMunitions</li>
+		</prerequisites>
+		<requiredResearchFacilities>
+		  <li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>2</researchViewX>
+		<researchViewY>0.5</researchViewY>
+	</ResearchProjectDef>
+	
+	
+	<!-- Adv. Materials ================================================================ -->
+	<ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>KOTOR_Research_AdvMaterials</defName>
+		<label>Reinforced Materials</label>
+		<description>Learn how to create advanced steel-reinforced materials such as Plasteel, Armorweave, and Duracrete.</description>
+		<baseCost>2500</baseCost>
+		<prerequisites>
+			<li>AdvancedFabrication</li>
+		</prerequisites>
+		<researchViewX>0</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>KOTOR_Research_Durasteel</defName>
+		<label>Durasteel production</label>
+		<description>Learn how to create Durasteel, a strong alloy fusion of steel and uranium.</description>
+		<baseCost>1000</baseCost>
+		<prerequisites>
+			<li>KOTOR_Research_AdvMaterials</li>
+		</prerequisites>
+		<requiredResearchFacilities>
+		  <li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>1</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<!--ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>KOTOR_Research_WarshipAlloys</defName>
+		<label>Warship Alloys</label>
+		<description>Learn how to create advanced alloys used to build warships, such as Havod and Matrix.</description>
+		<baseCost>5000</baseCost>
+		<prerequisites>
+			<li>KOTOR_Research_Durasteel</li>
+		</prerequisites>
+		<requiredResearchFacilities>
+		  <li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef-->
+	
+	
+	<!-- Ultra Component ================================================================ -->
+	<ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>KOTOR_Research_UltraComponent</defName>
+		<label>Ultra Component Fabrication</label>
+		<description>Learn how to create ultra-advanced components using exotic materials and spacer components.</description>
+		<baseCost>6000</baseCost>
+		<prerequisites>
+			<li>AdvancedFabrication</li>
+		</prerequisites>
+		<requiredResearchFacilities>
+		  <li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>0</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<!-- Stygium Cloaking ================================================================ -->
+	<ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>KOTOR_Research_cloaking</defName>
+		<label>Stygium Cloaking Devices</label>
+		<description>Craft invisibility cloaking devices using advanced Stygium crystal technology.</description>
+		<baseCost>12000</baseCost>
+		<hiddenPrerequisites>
+		  <li>KOTOR_Research_UltraComponent</li>
+		</hiddenPrerequisites>
+		<requiredResearchFacilities>
+		  <li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<heldByFactionCategoryTags>
+		  <li>Empire</li>
+		</heldByFactionCategoryTags>
+		<techprintCount>4</techprintCount>
+		<techprintCommonality>0.125</techprintCommonality>
+		<researchViewX>4</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- Adv. Phys. ================================================================ -->
+	<ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>KOTOR_Research_AdvPhysiology</defName>
+		<label>Adv. Physiology</label>
+		<description>Study the inner mechanics of the humanoid body to create physiologically enhancing stimulants, bionic implants, and equipment.</description>
+		<baseCost>2000</baseCost>
+		
+		<prerequisites>
+			<li>MedicineProduction</li>
+		</prerequisites>
+		
+		<researchViewX>0</researchViewX>
+		<researchViewY>1.75</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>KOTOR_Research_Kolto</defName>
+		<label>Kolto Applications</label>
+		<description>Learn how to utilize the powerful healing gel Kolto in efficient ways.</description>
+		<baseCost>1000</baseCost>
+		
+		<prerequisites>
+			<li>KOTOR_Research_AdvPhysiology</li>
+		</prerequisites>
+		<techprintCount>1</techprintCount>
+		<techprintCommonality>0.25</techprintCommonality>
+		<heldByFactionCategoryTags>
+		  <li>Empire</li>
+		</heldByFactionCategoryTags>
+		<researchViewX>1</researchViewX>
+		<researchViewY>1.5</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>KOTOR_Research_Spice</defName>
+		<label>Spice Applications</label>
+		<description>Process raw Spice into pharmaceuticals, narcotics, and advanced bionic implants.</description>
+		<baseCost>3000</baseCost>
+		
+		<prerequisites>
+			<li>KOTOR_Research_AdvPhysiology</li>
+		</prerequisites>
+		
+		<researchViewX>1</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+	
+	
+	
+	
+	<!-- Implant System ================================================================ -->
+	
+	<ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>KOTOR_Research_Implants</defName>
+		<label>Modular Implant Systems</label>
+		<description>Build cybernetic implant systems capable of freely installing and ejecting implants as-needed.</description>
+		<baseCost>8000</baseCost>
+		
+		<prerequisites>
+			<li>Bionics</li>
+			<li>KOTOR_Research_AdvPhysiology</li>
+			<li>KOTOR_Research_UltraComponent</li>
+		</prerequisites>
+		<!--hiddenPrerequisites>
+		  <li>KOTOR_Research_UltraComponent</li>
+		</hiddenPrerequisites-->
+		<requiredResearchFacilities>
+		  <li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>1</researchViewX>
+		<researchViewY>2.5</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>KOTOR_Research_AdvImplants</defName>
+		<label>Adv. Modular Implant Systems</label>
+		<description>Build advanced cybernetic implant systems capable of freely installing and ejecting implants as-needed.</description>
+		<baseCost>4000</baseCost>
+		
+		<prerequisites>
+			<li>KOTOR_Research_Spice</li>
+			<li>KOTOR_Research_Implants</li>
+		</prerequisites>
+		<!--hiddenPrerequisites>
+		  <li>KOTOR_Research_UltraComponent</li>
+		</hiddenPrerequisites-->
+		<requiredResearchFacilities>
+		  <li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>2</researchViewX>
+		<researchViewY>2.5</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>KOTOR_Research_Lobot</defName>
+		<label>Positronic Brain</label>
+		<description>Craft a highly-advanced brain implant dock capable of utilizing rare D-Packages. This device replaces over 30% of a pawn's brain, and disables many of their needs when installed. Removal of this device is fatal.</description>
+		<baseCost>10000</baseCost>
+		
+		<prerequisites>
+			<li>KOTOR_Research_AdvImplants</li>
+		</prerequisites>
+		<techprintCount>2</techprintCount>
+		<techprintCommonality>0.125</techprintCommonality>
+		<heldByFactionCategoryTags>
+		  <li>Empire</li>
+		</heldByFactionCategoryTags>
+		<requiredResearchFacilities>
+		  <li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>3</researchViewX>
+		<researchViewY>2.5</researchViewY>
+	</ResearchProjectDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- Alcohol ================================================================ -->
+	<!--ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>KOTOR_Research_Alcohol</defName>
+		<label>Czerka-Tech Alcohol</label>
+		<description>Learn how to create the finest beverages in the galaxy</description>
+		<baseCost>1000</baseCost>
+		
+		<researchViewX>0</researchViewX>
+		<researchViewY>1.5</researchViewY>
+	</ResearchProjectDef-->
+	
+	<!-- Table Rec ================================================================ -->
+	<ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>KOTOR_Research_TableRec</defName>
+		<label>Pazaak</label>
+		<description>Learn how to play Pazaak</description>
+		<baseCost>1000</baseCost>
+		
+		<researchViewX>4</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+	<!-- Instruments ================================================================ -->
+	<ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>KOTOR_Research_Instruments</defName>
+		<label>Jizz Instruments</label>
+		<description>Learn how to create instruments</description>
+		<baseCost>1000</baseCost>
+		
+		
+		<researchViewX>4</researchViewX>
+		<researchViewY>2.5</researchViewY>
+	</ResearchProjectDef>
+	
+	<!-- Holo Rec ================================================================ -->
+	<ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>KOTOR_Research_HoloRec</defName>
+		<label>Holographic Recreation</label>
+		<description>Learn how to use holographic entertainment</description>
+		<baseCost>1000</baseCost>
+		
+		<researchViewX>4</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</Defs>

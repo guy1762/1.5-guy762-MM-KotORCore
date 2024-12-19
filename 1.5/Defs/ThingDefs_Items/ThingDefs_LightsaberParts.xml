@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ThingDef ParentName="guy762_upgradebase">
+		<defName>guy762_saberpart_lens</defName>
+		<label>lightsaber lens fixture</label>
+		<description>This is one of four key parts used in the construction of a Lightsaber. These individual parts are very difficult to make even for a Jedi, and most records on how to make them were lost during the bombing of the Jedi Enclave on Dantooine and the sacking of the Jedi Temple on Coruscant.</description>
+		<graphicData>
+		  <texPath>Items/lightsaberpart_lens</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>10</stackLimit><drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+		  <MarketValue>1000</MarketValue>
+		  <Mass>0.2</Mass>
+		  
+		  <WorkToMake>10000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Crafting>16</Crafting>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_saberparts</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_weaponmod_rare</li>
+		  <li>guy762TT_sabermod_basic</li>
+		  <li>guy762TT_KotORLightsaber</li>
+		  <li>Artifact</li>
+		  <li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_upgradebase">
+		<defName>guy762_saberpart_emitter</defName>
+		<label>lightsaber emitter matrix</label>
+		<description>This is one of four key parts used in the construction of a Lightsaber. These individual parts are very difficult to make even for a Jedi, and most records on how to make them were lost during the bombing of the Jedi Enclave on Dantooine and the sacking of the Jedi Temple on Coruscant.</description>
+		<graphicData>
+		  <texPath>Items/lightsaberpart_emitter</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>10</stackLimit><drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+		  <MarketValue>1000</MarketValue>
+		  <Mass>0.6</Mass>
+		  
+		  <WorkToMake>20000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Crafting>16</Crafting>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_saberparts</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<KOTOR_UltraComponent>1</KOTOR_UltraComponent>
+			<KOTOR_AlloyDurasteel>20</KOTOR_AlloyDurasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_weaponmod_rare</li>
+		  <li>guy762TT_sabermod_basic</li>
+		  <li>guy762TT_KotORLightsaber</li>
+		  <li>Artifact</li>
+		  <li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_upgradebase">
+		<defName>guy762_saberpart_pcell</defName>
+		<label>lightsaber power cell</label>
+		<description>This is one of four key parts used in the construction of a Lightsaber. These individual parts are very difficult to make even for a Jedi, and most records on how to make them were lost during the bombing of the Jedi Enclave on Dantooine and the sacking of the Jedi Temple on Coruscant.</description>
+		<graphicData>
+		  <texPath>Items/lightsaberpart_pcell</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>10</stackLimit><drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+		  <MarketValue>1000</MarketValue>
+		  <Mass>1</Mass>
+		  
+		  <WorkToMake>30000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <skillRequirements>
+			<Crafting>16</Crafting>
+		  </skillRequirements>
+		  <researchPrerequisite>guy762_ResearchKotOR_saberparts</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<KOTOR_UltraComponent>1</KOTOR_UltraComponent>
+			<Plasteel>30</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<KOTOR_PlasmaCartridge>3</KOTOR_PlasmaCartridge>
+		</costList>
+		
+		<tradeTags>
+		  <li>guy762TT_weaponmod_rare</li>
+		  <li>guy762TT_sabermod_basic</li>
+		  <li>guy762TT_KotORLightsaber</li>
+		  <li>Artifact</li>
+		  <li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</Defs>

@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+  <ResearchProjectDef Name="KOTOR_UnobtainableResearch_Base" ParentName="KOTOR_Research_Base" Abstract="True">
+    <baseCost>99999999</baseCost>
+    <techLevel>Ultra</techLevel>
+    <heldByFactionCategoryTags>
+      <li>Ancient</li>
+    </heldByFactionCategoryTags>
+	<techprintCount>999</techprintCount>
+    <techprintCommonality>0</techprintCommonality>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_UnobtainableResearch_Base">
+    <defName>guy762_ResearchKotOR_uncraftable</defName>
+    <label>uncraftable weapons</label>
+    <description>Hey! You're not supposed to unlock this one!</description>
+    <researchViewX>21.00</researchViewX>
+    <researchViewY>7.6</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_UnobtainableResearch_Base">
+    <defName>guy762_ResearchKotOR_teethree</defName>
+    <label>T3-M4's equipment</label>
+    <description>Craft the personal belongings of T3-M4.</description>
+    <researchViewX>22.00</researchViewX>
+    <researchViewY>0.5</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_UnobtainableResearch_Base">
+    <defName>guy762_ResearchKotOR_hkequipment</defName>
+    <label>HK-47's equipment</label>
+    <description>Craft the personal belongings of HK-47.</description>
+    <researchViewX>22.00</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_UnobtainableResearch_Base">
+    <defName>guy762_ResearchKotOR_revan</defName>
+    <label>Revan's equipment</label>
+    <description>Craft the personal belongings of the legendary Revan.</description>
+    <researchViewX>22.00</researchViewX>
+    <researchViewY>1.5</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_UnobtainableResearch_Base">
+    <defName>guy762_ResearchKotOR_malak</defName>
+    <label>Malak's equipment</label>
+    <description>Craft the personal belongings of Darth Malak.</description>
+    <researchViewX>22.00</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_UnobtainableResearch_Base">
+    <defName>guy762_ResearchKotOR_sion</defName>
+    <label>Sion's equipment</label>
+    <description>Craft the personal belongings of Darth Sion.</description>
+    <researchViewX>22.00</researchViewX>
+    <researchViewY>2.5</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_UnobtainableResearch_Base">
+    <defName>guy762_ResearchKotOR_nihilus</defName>
+    <label>Nihilus' equipment</label>
+    <description>Craft the personal belongings of Darth Nihilus.</description>
+    <researchViewX>22.00</researchViewX>
+    <researchViewY>3</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_UnobtainableResearch_Base">
+    <defName>guy762_ResearchKotOR_visas</defName>
+    <label>Visas Marr's equipment</label>
+    <description>Craft the personal belongings of Visas Marr.</description>
+    <researchViewX>22.00</researchViewX>
+    <researchViewY>3.5</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_UnobtainableResearch_Base">
+    <defName>guy762_ResearchKotOR_exile</defName>
+    <label>The Exile's equipment</label>
+    <description>Craft the personal belongings of the Jedi Exile.</description>
+    <researchViewX>22.00</researchViewX>
+    <researchViewY>4</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_UnobtainableResearch_Base">
+    <defName>guy762_ResearchKotOR_canderous</defName>
+    <label>Canderous Ordo's equipment</label>
+    <description>Craft the personal belongings of Canderous Ordo.</description>
+    <researchViewX>22.00</researchViewX>
+    <researchViewY>4.5</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_UnobtainableResearch_Base">
+    <defName>guy762_ResearchKotOR_carth</defName>
+    <label>Carth Onasi's equipment</label>
+    <description>Craft the personal belongings of Carth Onasi.</description>
+    <researchViewX>22.00</researchViewX>
+    <researchViewY>5</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_UnobtainableResearch_Base">
+    <defName>guy762_ResearchKotOR_vao</defName>
+    <label>Mission Vao's equipment</label>
+    <description>Craft the personal belongings of Mission Vao.</description>
+    <researchViewX>22.00</researchViewX>
+    <researchViewY>5.5</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_UnobtainableResearch_Base">
+    <defName>guy762_ResearchKotOR_bigZ</defName>
+    <label>Zaalbar's equipment</label>
+    <description>Craft the personal belongings of Zaalbar.</description>
+    <researchViewX>22.00</researchViewX>
+    <researchViewY>6</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_UnobtainableResearch_Base">
+    <defName>guy762_ResearchKotOR_handmaiden</defName>
+    <label>Brianna's equipment</label>
+    <description>Craft the personal belongings of Brianna, daughter of Yusanis.</description>
+    <researchViewX>22.00</researchViewX>
+    <researchViewY>6.5</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_UnobtainableResearch_Base">
+    <defName>guy762_ResearchKotOR_goto</defName>
+    <label>G0-T0's equipment</label>
+    <description>Craft the personal belongings of G0-T0.</description>
+    <researchViewX>22.00</researchViewX>
+    <researchViewY>7</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_UnobtainableResearch_Base">
+    <defName>guy762_ResearchKotOR_jolee</defName>
+    <label>Jolee Bindo's equipment</label>
+    <description>Craft the personal belongings of Jolee Bindo.</description>
+    <researchViewX>22.00</researchViewX>
+    <researchViewY>7.5</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_UnobtainableResearch_Base">
+    <defName>guy762_ResearchKotOR_bastila</defName>
+    <label>Bastila Shan's equipment</label>
+    <description>Craft the personal belongings of Bastila Shan.</description>
+    <researchViewX>22.00</researchViewX>
+    <researchViewY>8</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_UnobtainableResearch_Base">
+    <defName>guy762_ResearchKotOR_juhani</defName>
+    <label>Juhani's equipment</label>
+    <description>Craft the personal belongings of Juhani.</description>
+    <researchViewX>22.00</researchViewX>
+    <researchViewY>8.5</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_UnobtainableResearch_Base">
+    <defName>guy762_ResearchKotOR_luxa</defName>
+    <label>Luxa's equipment</label>
+    <description>Craft the personal belongings of Luxa.</description>
+    <researchViewX>22.00</researchViewX>
+    <researchViewY>9</researchViewY>
+  </ResearchProjectDef>
+
+</Defs>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/HediffDef[defName="ToxicBuildup"]/comps</xpath>
+	  <order>Append</order>
+	  <value>
+			<li Class="HediffCompProperties_RemoveIfOtherHediff">
+				<hediffs>
+					<li>guy762_medpacHeal_antidote</li>
+					<li MayRequire="guy762.Lee.KotORPotF">SWPotF_hediff_ForceCure</li>
+				</hediffs>
+			</li>
+	  </value>
+	</Operation>
+
+	
+	
+</Patch>

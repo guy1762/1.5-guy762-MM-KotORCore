@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+
+  <HediffDef>
+    <defName>guy762_Poison_saber</defName>
+    <label>Saber poison</label>
+    <description>An extremely lethal biotoxin that targets the individual's heart.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0, 0.75, 0)</defaultLabelColor>
+    <makesSickThought>true</makesSickThought>
+    <tendable>false</tendable>
+    <comps>
+      <li Class="HediffCompProperties_Immunizable">
+        <severityPerDayNotImmune>20</severityPerDayNotImmune>
+		<immunityPerDaySick>1</immunityPerDaySick>
+        <severityPerDayImmune>-5</severityPerDayImmune>
+		<immunityPerDayNotSick>-0.75</immunityPerDayNotSick>
+      </li>
+	  <li Class="HediffCompProperties_RemoveIfOtherHediff">
+		<hediffs>
+			<li>guy762_medpacHeal_antidote</li>
+			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_hediff_ForceCure</li>
+		</hediffs>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <minSeverity>0.25</minSeverity>
+		<label>initial</label>
+		<lifeThreatening>true</lifeThreatening>
+        <painOffset>0.35</painOffset>
+        <capMods>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>-0.35</offset>
+          </li>
+        </capMods>
+      </li>
+	  <li>
+        <minSeverity>0.5</minSeverity>
+		<label>moderate</label>
+		<lifeThreatening>true</lifeThreatening>
+        <painOffset>0.65</painOffset>
+        <capMods>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>-0.65</offset>
+          </li>
+        </capMods>
+      </li>
+	  <li>
+        <minSeverity>0.75</minSeverity>
+		<label>severe</label>
+        <lifeThreatening>true</lifeThreatening>
+        <painOffset>0.95</painOffset>
+        <capMods>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>-0.95</offset>
+          </li>
+        </capMods>
+      </li>
+	  <li>
+        <minSeverity>1</minSeverity>
+		<label>extreme</label>
+        <lifeThreatening>true</lifeThreatening>
+        <painOffset>0.95</painOffset>
+        <capMods>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>-1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  
+</Defs>

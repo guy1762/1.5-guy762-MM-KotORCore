@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="KOTOR_Mineable">
+		<defName>KOTOR_MineableJunk</defName>
+		<label>Piled Junk</label>
+		<description>Piled junk from centuries of irresponsible dumping. Mining this could yield useful materials that were carelessly thrown away, or it could yield a stack of wastepacks.</description>
+		<graphicData Inherit="False">
+			<texPath>raw_resources/junk</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			  <linkFlags>
+				<li>Rock</li>
+				<li>MapEdge</li>
+			  </linkFlags>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<Beauty>-10</Beauty>
+			<BeautyOutdoors>-10</BeautyOutdoors>
+		</statBases>
+		<filthLeaving>Filth_MachineBits</filthLeaving>
+		<!--building>
+			<mineableScatterCommonality>0.25</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>10~25</mineableScatterLumpSizeRange>
+		</building-->
+		<modExtensions>
+		  <li Class="SecondaryMineableYield.ModExtension_SecondaryMineableYield">
+			<mineableDropChance>1.0</mineableDropChance>
+			<entries>
+			  <!--
+				GRAND TOTAL 0.8029
+			  -->
+			  
+			  <!--BLOCK 1 TOTAL 0.70-->
+			  <li MayRequire="Ludeon.RimWorld.Biotech">
+				<randomWeight>0.25</randomWeight>
+				<mineableThing>Wastepack</mineableThing>
+				<mineableYield>5</mineableYield>
+			  </li>
+			  <li>
+				<randomWeight>0.15</randomWeight>
+				<mineableThing>ChunkSlagSteel</mineableThing>
+				<mineableYield>1</mineableYield>
+			  </li>
+			  <li>
+				<randomWeight>0.05</randomWeight>
+				<mineableThing>KotORChunk_plasteel</mineableThing>
+				<mineableYield>1</mineableYield>
+			  </li>
+			  <li>
+				<randomWeight>0.10</randomWeight>
+				<mineableThing>Cloth</mineableThing>
+				<mineableYield>25</mineableYield>
+			  </li>
+			  <li>
+				<randomWeight>0.05</randomWeight>
+				<mineableThing>KotORChunk_durasteel</mineableThing>
+				<mineableYield>1</mineableYield>
+			  </li>
+			  <li>
+				<randomWeight>0.05</randomWeight>
+				<mineableThing>KotORChunk_bronzium</mineableThing>
+				<mineableYield>1</mineableYield>
+			  </li>
+			  <li>
+				<randomWeight>0.03</randomWeight>
+				<mineableThing>ComponentIndustrial</mineableThing>
+				<mineableYield>8</mineableYield>
+			  </li>
+			  <li>
+				<randomWeight>0.01</randomWeight>
+				<mineableThing>ComponentSpacer</mineableThing>
+				<mineableYield>4</mineableYield>
+			  </li>
+			  <li>
+				<randomWeight>0.01</randomWeight>
+				<mineableThing>Chemfuel</mineableThing>
+				<mineableYield>50</mineableYield>
+			  </li>
+			  
+			  <!--BLOCK 2 TOTAL 0.0111-->
+			  
+			  <li>
+				<randomWeight>0.01</randomWeight>
+				<mineableThing>guy762_KotORcredits</mineableThing>
+				<mineableYield>100</mineableYield>
+			  </li>
+			  <li>
+				<randomWeight>0.001</randomWeight>
+				<mineableThing>guy762_KotORcredits</mineableThing>
+				<mineableYield>1000</mineableYield>
+			  </li>
+			  <li>
+				<randomWeight>0.0001</randomWeight>
+				<mineableThing>guy762_KotORcredits</mineableThing>
+				<mineableYield>10000</mineableYield>
+			  </li>
+			  
+			  <!--BLOCK 3 TOTAL 0.0111-->
+			  
+			  <li>
+				<randomWeight>0.01</randomWeight>
+				<mineableThing>guy762_medpac</mineableThing>
+				<mineableYield>3</mineableYield>
+			  </li>
+			  <li>
+				<randomWeight>0.001</randomWeight>
+				<mineableThing>guy762_medpac_adv</mineableThing>
+				<mineableYield>3</mineableYield>
+			  </li>
+			  <li>
+				<randomWeight>0.0001</randomWeight>
+				<mineableThing>guy762_medpac_life</mineableThing>
+				<mineableYield>3</mineableYield>
+			  </li>
+			  
+			  <!--BLOCK 4 TOTAL 0.0111-->
+			  
+			  <li>
+				<randomWeight>0.01</randomWeight>
+				<mineableThing>KOTOR_Deathstick</mineableThing>
+				<mineableYield>6</mineableYield>
+			  </li>
+			  <li>
+				<randomWeight>0.001</randomWeight>
+				<mineableThing>KOTOR_Spice</mineableThing>
+				<mineableYield>30</mineableYield>
+			  </li>
+			  <li>
+				<randomWeight>0.0001</randomWeight>
+				<mineableThing>guy762_stim_echani</mineableThing>
+				<mineableYield>10</mineableYield>
+			  </li>
+			  
+			  <!--BLOCK 5 TOTAL 0.003-->
+			  
+			  <li>
+				<randomWeight>0.001</randomWeight>
+				<mineableThing>guy762_saberpart_lens</mineableThing>
+				<mineableYield>1</mineableYield>
+			  </li>
+			  <li>
+				<randomWeight>0.001</randomWeight>
+				<mineableThing>guy762_saberpart_emitter</mineableThing>
+				<mineableYield>1</mineableYield>
+			  </li>
+			  <li>
+				<randomWeight>0.001</randomWeight>
+				<mineableThing>guy762_saberpart_pcell</mineableThing>
+				<mineableYield>1</mineableYield>
+			  </li>
+			  
+			  <!--BLOCK 6 TOTAL 0.0111-->
+			  
+			  <li>
+				<randomWeight>0.01</randomWeight>
+				<mineableThing>KOTOR_PlasmaCartridge</mineableThing>
+				<mineableYield>10</mineableYield>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.001</randomWeight>
+				<mineableThing>guy762_energyshield</mineableThing>
+				<mineableYield>3</mineableYield>
+			  </li>
+			  <li>
+				<randomWeight>0.0001</randomWeight>
+				<mineableThing>KOTOR_UltraComponent</mineableThing>
+				<mineableYield>3</mineableYield>
+			  </li>
+			  
+			  <!--BLOCK 7 TOTAL 0.0111-->
+			  
+			  <li>
+				<randomWeight>0.01</randomWeight>
+				<mineableThing>Synthread</mineableThing>
+				<mineableYield>75</mineableYield>
+			  </li>
+			  <li>
+				<randomWeight>0.001</randomWeight>
+				<mineableThing>KOTOR_FabricArmorweave</mineableThing>
+				<mineableYield>75</mineableYield>
+			  </li>
+			  <li>
+				<randomWeight>0.0001</randomWeight>
+				<mineableThing>Hyperweave</mineableThing>
+				<mineableYield>75</mineableYield>
+			  </li>
+			  
+			  <!--BLOCK 8 TOTAL 0.0111-->
+			  
+			  <li>
+				<randomWeight>0.01</randomWeight>
+				<mineableThing>Neutroamine</mineableThing>
+				<mineableYield>50</mineableYield>
+			  </li>
+			  <li>
+				<randomWeight>0.001</randomWeight>
+				<mineableThing>KOTOR_SpacerMedKit</mineableThing>
+				<mineableYield>5</mineableYield>
+			  </li>
+			  <!--li MayRequire="Ludeon.RimWorld.Biotech">
+				<randomWeight>0.0001</randomWeight>
+				<mineableThing>guy762_ThrownGrenade_poison</mineableThing>
+				<mineableYield>1</mineableYield>
+			  </li-->
+			  
+			  <!--BLOCK 9 TOTAL 0.003-->
+			  
+			  <li>
+				<randomWeight>0.001</randomWeight>
+				<mineableThing>guy762_stim_hypercon</mineableThing>
+				<mineableYield>3</mineableYield>
+			  </li>
+			  <li>
+				<randomWeight>0.001</randomWeight>
+				<mineableThing>guy762_stim_hyperdex</mineableThing>
+				<mineableYield>3</mineableYield>
+			  </li>
+			  <li>
+				<randomWeight>0.001</randomWeight>
+				<mineableThing>guy762_stim_hyperstr</mineableThing>
+				<mineableYield>3</mineableYield>
+			  </li>
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  <!--
+			  EQUIPMENT MODS TOTAL 0.0303
+			  -->
+			  
+			  
+			  
+			  
+			  
+			  <!--BLASTER MODS TOTAL 0.0139-->
+			  
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.001</randomWeight>
+				<mineableThing>guy762_scopeitem_accuracy</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0005</randomWeight>
+				<mineableThing>guy762_scopeitem_crippling</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0005</randomWeight>
+				<mineableThing>guy762_scopeitem_holographic</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0005</randomWeight>
+				<mineableThing>guy762_scopeitem_targeting</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  
+			  
+			  
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.001</randomWeight>
+				<mineableThing>guy762_pcellitem_optimized</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0005</randomWeight>
+				<mineableThing>guy762_pcellitem_pulsator</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0001</randomWeight>
+				<mineableThing>guy762_pcellitem_rylith</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0005</randomWeight>
+				<mineableThing>guy762_pcellitem_ion</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.001</randomWeight>
+				<mineableThing>guy762_pcellitem_charge</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0005</randomWeight>
+				<mineableThing>guy762_pcellitem_advcharge</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0001</randomWeight>
+				<mineableThing>guy762_pcellitem_mstcharge</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  
+			  
+			  
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.001</randomWeight>
+				<mineableThing>guy762_chamberitem_precision</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.001</randomWeight>
+				<mineableThing>guy762_chamberitem_amp</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0005</randomWeight>
+				<mineableThing>guy762_chamberitem_carbonite</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0005</randomWeight>
+				<mineableThing>guy762_chamberitem_mando</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  
+			  
+			  
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0005</randomWeight>
+				<mineableThing>guy762_triggeritem_hair</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.001</randomWeight>
+				<mineableThing>guy762_triggeritem_rapid</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0005</randomWeight>
+				<mineableThing>guy762_triggeritem_advrapid</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0001</randomWeight>
+				<mineableThing>guy762_triggeritem_mstrapid</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  
+			  
+			  
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0005</randomWeight>
+				<mineableThing>guy762_beamitem_splitter</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0005</randomWeight>
+				<mineableThing>guy762_beamitem_focuser</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.001</randomWeight>
+				<mineableThing>guy762_beamitem_sniper</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0005</randomWeight>
+				<mineableThing>guy762_beamitem_advsniper</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0001</randomWeight>
+				<mineableThing>guy762_beamitem_mstsniper</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  
+			  
+			  
+			  <!--ARMOR MODS TOTAL 0.0095-->
+			  
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.001</randomWeight>
+				<mineableThing>guy762_underlayitem_armorweave</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.001</randomWeight>
+				<mineableThing>guy762_underlayitem_environment</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.001</randomWeight>
+				<mineableThing>guy762_underlayitem_durasteel</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0005</randomWeight>
+				<mineableThing>guy762_underlayitem_regen</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0005</randomWeight>
+				<mineableThing>guy762_underlayitem_flex</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0005</randomWeight>
+				<mineableThing>guy762_underlayitem_strength</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <!--li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0001</randomWeight>
+				<mineableThing>guy762_underlayitem_force</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li-->
+			  
+			  
+			  
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.001</randomWeight>
+				<mineableThing>guy762_overlayitem_heat</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.001</randomWeight>
+				<mineableThing>guy762_overlayitem_energy</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.001</randomWeight>
+				<mineableThing>guy762_overlayitem_ballistic</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0005</randomWeight>
+				<mineableThing>guy762_overlayitem_armorply</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0005</randomWeight>
+				<mineableThing>guy762_overlayitem_ablative</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0005</randomWeight>
+				<mineableThing>guy762_overlayitem_bonded</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0005</randomWeight>
+				<mineableThing>guy762_overlayitem_hvybonded</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  
+			  
+			  
+			  <!--MELEE MODS TOTAL 0.0069-->
+			  
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.001</randomWeight>
+				<mineableThing>guy762_edgeitem_devaronian</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.001</randomWeight>
+				<mineableThing>guy762_edgeitem_neutronium</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0005</randomWeight>
+				<mineableThing>guy762_edgeitem_mullinine</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0001</randomWeight>
+				<mineableThing>guy762_edgeitem_quadranium</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  
+			  
+			  
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0005</randomWeight>
+				<mineableThing>guy762_ecellitem_ion</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0005</randomWeight>
+				<mineableThing>guy762_ecellitem_vibration</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0001</randomWeight>
+				<mineableThing>guy762_ecellitem_energy</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0001</randomWeight>
+				<mineableThing>guy762_ecellitem_sonic</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  
+			  
+			  
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.001</randomWeight>
+				<mineableThing>guy762_gripitem_contoured</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.001</randomWeight>
+				<mineableThing>guy762_gripitem_agrinium</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0005</randomWeight>
+				<mineableThing>guy762_gripitem_basket</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0005</randomWeight>
+				<mineableThing>guy762_gripitem_nagai</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			  <li MayRequire="guy762.KotORWeapons">
+				<randomWeight>0.0001</randomWeight>
+				<mineableThing>guy762_gripitem_zabrak</mineableThing>
+				<mineableYield>1</mineableYield>
+				<mineableScatterCommonality>1</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+			  </li>
+			</entries>
+		  </li>
+		</modExtensions>
+	</ThingDef>
+	
+	<!--ThingDef ParentName="KOTOR_Mineable">
+		<defName>KOTOR_MineableJunk_Tox</defName>
+		<label>Toxic Junk</label>
+		<description>Piled junk from centuries of dumping. These piles are particularly toxic. Mine with caution.</description>
+		<graphicData Inherit="False">
+			<texPath>raw_resources/junk_tox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			  <linkFlags>
+				<li>Rock</li>
+				<li>MapEdge</li>
+			  </linkFlags>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>2000</MaxHitPoints>
+			<Beauty>-20</Beauty>
+			<BeautyOutdoors>-20</BeautyOutdoors>
+		</statBases>
+		<filthLeaving>Filth_MachineBits</filthLeaving>
+		<comps>
+		  <li Class="CompProperties_Glower">
+			<glowRadius>2</glowRadius>
+			<glowColor>(175,200,35,0)</glowColor>
+		  </li>
+		</comps>
+		<modExtensions>
+		  <li Class="SecondaryMineableYield.ModExtension_SecondaryMineableYield">
+			<mineableDropChance>1.0</mineableDropChance>
+			<entries>
+			  <li>
+				<randomWeight>0.5</randomWeight>
+				<mineableThing>Silver</mineableThing>
+				<mineableYield>40</mineableYield>
+			  </li>
+			  <li>
+				<randomWeight>0.35</randomWeight>
+				<mineableThing>Gold</mineableThing>
+				<mineableYield>30</mineableYield>
+			  </li>
+			  <li>
+				<randomWeight>0.15</randomWeight>
+				<mineableThing>Jade</mineableThing>
+				<mineableYield>20</mineableYield>
+			  </li>
+			</entries>
+		  </li>
+		</modExtensions>
+	</ThingDef-->
+	  
+	
+	
+  
+</Defs>

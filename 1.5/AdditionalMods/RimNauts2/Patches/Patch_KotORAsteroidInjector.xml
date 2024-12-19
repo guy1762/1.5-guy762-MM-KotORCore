@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    
+	
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/Universum.Defs.ObjectGeneration[defName="RimNauts2_ObjectGeneration_AsteroidOre"]/objectGroup</xpath>
+		<value>
+			<li>
+				<!-- celestial object def from before -->
+				<celestialDefName>KotORCelestialObject_AsteroidBeskar</celestialDefName>
+				<!-- decides the chance of picking this object when randomly picking the next asteroid to spawn. Gold has 250 as a reference -->
+				<tickets>75</tickets>
+			</li>
+			<li>
+				<celestialDefName>KotORCelestialObject_AsteroidRhydonium</celestialDefName>
+				<tickets>400</tickets>
+			</li>
+			<li>
+				<celestialDefName>KotORCelestialObject_AsteroidCortosis</celestialDefName>
+				<tickets>250</tickets>
+			</li>
+		</value>
+	</Operation>
+	
+	
+</Patch>

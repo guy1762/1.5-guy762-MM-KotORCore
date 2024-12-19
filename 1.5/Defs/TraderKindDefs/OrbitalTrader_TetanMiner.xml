@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+  <TraderKindDef>
+    <defName>guy762_TraderKind_tetanminer</defName>
+    <label>Mining Guild freighter</label>
+    <orbital>true</orbital>
+	<!--faction>ScumAndVillainy</faction-->
+    <commonalityMultFromPopulationIntent>
+      <points>
+        <li>(0.2, 0)</li>
+        <li>(1,   1)</li>
+        <li>(2,   3)</li>
+      </points>
+    </commonalityMultFromPopulationIntent>
+	<modExtensions>
+		<li MayRequire="Rick.FCP.Core.Tools" Class="FalloutCurrencies_NonReplacement.CurrencyReplacement">
+			<currency>guy762_KotORcredits</currency>
+		</li>
+	</modExtensions>
+    <stockGenerators>
+
+      <!-- CURRENCY -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>15000~30000</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Gold</thingDef>
+        <countRange>1000~5000</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_SingleDef">
+		<thingDef>guy762_KotORcredits</thingDef>
+		<countRange>250000~500000</countRange>
+	  </li>
+	  <!--li Class="StockGenerator_BuyTradeTag">
+		<tag>guy762TT_credits</tag>
+	  </li-->
+	  
+	  
+	  
+	  <!-- Resources -->
+	  
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Chemfuel</thingDef>
+        <countRange>200~600</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>KOTOR_Rhydonium</thingDef>
+        <countRange>5000~10000</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>KOTOR_Tibanna</thingDef>
+        <countRange>500~1000</countRange>
+      </li>
+	  
+	  
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Steel</thingDef>
+        <countRange>5000~8000</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Plasteel</thingDef>
+        <countRange>1000~4000</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Uranium</thingDef>
+        <countRange>500~2000</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>KOTOR_AlloyDurasteel</thingDef>
+        <countRange>2000~6000</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>KOTOR_AlloyBronzium</thingDef>
+        <countRange>800~1200</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>KOTOR_IngotCortosis</thingDef>
+        <countRange>100~250</countRange>
+      </li>
+	  
+	  
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>KOTOR_Duracrete</thingDef>
+        <countRange>2500~5000</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_Category">
+        <categoryDef>ResourcesRaw</categoryDef>
+        <excludedThingDefs>
+          <li>Silver</li>
+          <li>Gold</li>
+        </excludedThingDefs>
+        <thingDefCountRange>3~5</thingDefCountRange>
+        <countRange>800~1200</countRange>
+      </li>
+      
+      
+      
+      <!-- Buying -->
+      <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireCommon</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireRoyal</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
+
+    </stockGenerators>
+  </TraderKindDef>
+  
+  
+</Defs>

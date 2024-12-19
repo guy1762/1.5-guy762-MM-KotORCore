@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="guy762_upgradebase" ParentName="ResourceBase" Abstract="True">
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MaxHitPoints>50</MaxHitPoints>
+		  <Flammability>0.2</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>guy762_weaponmod</li>
+		</thingCategories>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<tradeability>All</tradeability>
+		<techLevel>Spacer</techLevel>
+		
+		<recipeMaker>
+		  <recipeUsers>
+			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+		  </recipeUsers>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Crafting</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Machining</soundWorking>
+		  <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+		  <displayPriority>500</displayPriority>
+		  <useIngredientsForColor>false</useIngredientsForColor>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef Name="guy762_NoCraft_upgradebase" ParentName="ResourceBase" Abstract="True">
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MaxHitPoints>50</MaxHitPoints>
+		  <Flammability>0.2</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>guy762_weaponmod</li>
+		</thingCategories>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<tradeability>All</tradeability>
+		<techLevel>Spacer</techLevel>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef Name="guy762_underlayupgradebase" ParentName="ResourceBase" Abstract="True">
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MaxHitPoints>50</MaxHitPoints>
+		  <Flammability>0.4</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>guy762_weaponmod</li>
+		</thingCategories>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<tradeability>All</tradeability>
+		<techLevel>Spacer</techLevel>
+		
+		<recipeMaker>
+		  <recipeUsers>
+			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+		  </recipeUsers>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Crafting</workSkill>
+		  <effectWorking>Tailor</effectWorking>
+		  <soundWorking>Recipe_Tailor</soundWorking>
+		  <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+		  <displayPriority>500</displayPriority>
+		  <useIngredientsForColor>false</useIngredientsForColor>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef Name="guy762_overlayupgradebase" ParentName="ResourceBase" Abstract="True">
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MaxHitPoints>100</MaxHitPoints>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>guy762_weaponmod</li>
+		</thingCategories>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<tradeability>All</tradeability>
+		<techLevel>Spacer</techLevel>
+		
+		<recipeMaker>
+		  <recipeUsers>
+			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+		  </recipeUsers>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Crafting</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Machining</soundWorking>
+		  <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+		  <displayPriority>500</displayPriority>
+		  <useIngredientsForColor>false</useIngredientsForColor>
+		</recipeMaker>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	<ThingDef Name="guy762_NoCraft_underlayupgradebase" ParentName="ResourceBase" Abstract="True">
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MaxHitPoints>50</MaxHitPoints>
+		  <Flammability>0.4</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>guy762_weaponmod</li>
+		</thingCategories>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<tradeability>All</tradeability>
+		<techLevel>Spacer</techLevel>
+	</ThingDef>
+
+	
+	
+	
+	
+	
+	<ThingDef Name="guy762_crystalbase" ParentName="ResourceBase" Abstract="True">
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>ChunkRock_Drop</soundInteract>
+		<soundDrop>ChunkRock_Drop</soundDrop>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MaxHitPoints>50</MaxHitPoints>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+		  <li>guy762_weaponmod</li>
+		</thingCategories>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<tradeability>All</tradeability>
+		<techLevel>Ultra</techLevel>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef Name="guy762_ImplantBase" ParentName="guy762_upgradebase" MayRequire="smartkar.athenaframework" Abstract="True">
+		<statBases>
+		  <MaxHitPoints>50</MaxHitPoints>
+		  <Flammability>0.2</Flammability>
+		</statBases>
+		<thingCategories Inherit="False">
+		  <li>guy762_implants</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<compClass>AthenaFramework.CompUsable_HediffModule</compClass>
+				<useJob>Athena_InstallModule</useJob>
+			</li>
+		</comps>
+		<recipeMaker>
+		  <recipeUsers Inherit="False">
+			<li>kotor_DrugLab</li>
+		  </recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef Name="guy762_NoCraft_ImplantBase" ParentName="guy762_NoCraft_upgradebase" MayRequire="smartkar.athenaframework" Abstract="True">
+		<statBases>
+		  <MaxHitPoints>50</MaxHitPoints>
+		  <Flammability>0.2</Flammability>
+		</statBases>
+		<thingCategories Inherit="False">
+		  <li>guy762_implants</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<compClass>AthenaFramework.CompUsable_HediffModule</compClass>
+				<useJob>Athena_InstallModule</useJob>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+</Defs>

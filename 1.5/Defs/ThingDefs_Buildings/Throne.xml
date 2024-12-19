@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="ThroneBase">
+    <defName>GS_Palp_Throne</defName>
+    <label>Imperial throne</label>
+    <description>Owner of these thrones were well known masters of every type of game, from the great game of political maneuvering, to mind games, to getting dubs on ForceNite. And for such an elite, an equally elite throne is needed. With built-in muscle massagers, extendable footrest, ergonomic cushions, all terrain wheels, and built in toilet, this chair can serve as a chair, bed, masseuse, vehicle, toilet, and jacuzzi (if you're brave enough). With this, you will never have to be uncomfortable when you manipulate people into killing friends and children again.</description>
+    <castEdgeShadows>False</castEdgeShadows>
+    <size>(3,2)</size>
+    <interactionCellOffset>(0,0,1)</interactionCellOffset>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <WorkToBuild>40000</WorkToBuild>
+      <Mass>100</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>60</Beauty>
+      <Comfort>2</Comfort>
+    </statBases>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+    <costList>
+      <Steel>300</Steel>
+    </costList>
+    <building>
+      <buildingSizeCategory>Medium</buildingSizeCategory>
+    </building>
+    <uiIconOffset>(0, 0.04)</uiIconOffset>
+    <uiIconScale>1</uiIconScale>
+	<defaultPlacingRot>South</defaultPlacingRot>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+      <texPath>Furniture/Sovereign_ImperialDecor/Palp</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <shadowData>
+        <volume>(2.1,0.5,1.5)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.1,0.1,2.8,1.8)</rect>
+      </damageData>
+    </graphicData>
+	<rotatable>false</rotatable>
+	
+	<designationCategory>KOTOR_BuildTab</designationCategory>
+  </ThingDef>
+  
+  
+  </Defs>

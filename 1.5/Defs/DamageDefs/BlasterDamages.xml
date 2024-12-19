@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<DamageDef Name="guy762_RangedDamage_energy">
+		<defName>guy762_RangedDamage_energy</defName>
+		<label>energy burn</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been shot to death.</deathMessage>
+		<hediff>Burn</hediff>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Bullet</impactSoundType>
+		<armorCategory>Heat</armorCategory>
+		<makesBlood>false</makesBlood>
+		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+		<isRanged>true</isRanged>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+		<defaultDamage>1</defaultDamage>
+	</DamageDef>
+
+	<DamageDef ParentName="guy762_RangedDamage_energy"> <!-- IMPORTANT: there are patches in AdditionalMods that make this compatible with ATR/MHC pawns-->
+		<defName>guy762_RangedDamage_ion</defName>
+		<label>ionization</label>
+		<workerClass>guy762_Ionization.DamageWorker_Ionization</workerClass>
+		<externalViolenceForMechanoids>true</externalViolenceForMechanoids>
+		<deathMessage>{0} has been ionized to death.</deathMessage>
+		<modExtensions>
+			<li Class="guy762_Ionization.ModExtension_HediffGiver">
+				<hediffToAdd>guy762_IonizationBuildup</hediffToAdd>
+				<severityFixed>0.05</severityFixed>
+			</li>
+		</modExtensions>
+		<defaultDamage>1</defaultDamage>
+	</DamageDef>
+	
+	<DamageDef>
+		<defName>guy762_RangedDamage_disruptor</defName>
+		<label>disruption</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been atomized.</deathMessage>
+		<hediff>Shredded</hediff>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Bullet</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<makesBlood>true</makesBlood>
+		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+		<isRanged>true</isRanged>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+		<defaultArmorPenetration>1</defaultArmorPenetration>
+	</DamageDef>
+	
+	<DamageDef>
+		<defName>guy762_RangedDamage_sonic</defName>
+		<label>sonic fracturing</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has died from internal fracturing.</deathMessage>
+		<hediff>Bruise</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<makesBlood>false</makesBlood>
+		<overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+		<isRanged>true</isRanged>
+		<defaultArmorPenetration>0</defaultArmorPenetration>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+		<buildingDamageFactorImpassable>7.5</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>3.75</buildingDamageFactorPassable>
+
+		<additionalHediffs>
+		  <li>
+			<hediff>guy762_SonicDisorient</hediff>
+			<severityPerDamageDealt>0.01</severityPerDamageDealt>
+		  </li>
+		</additionalHediffs>
+
+	</DamageDef>
+	
+	<DamageDef Name="guy762_BeamDamage_energy">
+		<defName>guy762_BeamDamage_energy</defName>
+		<label>energy burn</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been shot to death.</deathMessage>
+		<hediff>Burn</hediff>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Bullet</impactSoundType>
+		<armorCategory>Heat</armorCategory>
+		<makesBlood>false</makesBlood>
+		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+		<isRanged>true</isRanged>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+		<defaultDamage>5</defaultDamage>
+		<buildingDamageFactorImpassable>5</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>1.5</buildingDamageFactorPassable>
+	</DamageDef>
+	
+	<!--DamageDef ParentName="guy762_BeamDamage_energy">
+		<defName>guy762_BeamDamage_ion</defName>
+		<label>ionization</label>
+		<workerClass>guy762_Ionization.DamageWorker_Ionization</workerClass>
+		<externalViolenceForMechanoids>true</externalViolenceForMechanoids>
+		<deathMessage>{0} has been ionized to death.</deathMessage>
+		<modExtensions>
+			<li Class="guy762_Ionization.ModExtension_HediffGiver">
+				<hediffToAdd>guy762_IonizationBuildup</hediffToAdd>
+				<severityFixed>0.05</severityFixed>
+			</li>
+		</modExtensions>
+		<defaultDamage>5</defaultDamage>
+	</DamageDef-->
+	
+	<DamageDef>
+		<defName>guy762_BeamDamage_disruptor</defName>
+		<label>disruption</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been atomized.</deathMessage>
+		<hediff>Shredded</hediff>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Bullet</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<makesBlood>true</makesBlood>
+		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+		<isRanged>true</isRanged>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+		<defaultArmorPenetration>10</defaultArmorPenetration>
+		<defaultDamage>100</defaultDamage>
+	</DamageDef>
+	
+	
+	
+	
+	
+	
+	
+	<DamageDef Name="guy762_ExplosiveDamage_energy">
+		<defName>guy762_ExplosiveDamage_energy</defName>
+		<label>energy burn</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<isExplosive>true</isExplosive>
+		<deathMessage>{0} has been blasted to death.</deathMessage>
+		<hediff>Shredded</hediff>
+		<hediffSkin>Burn</hediffSkin>
+		<hediffSolid>Crack</hediffSolid>
+		<makesBlood>false</makesBlood>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Heat</armorCategory>
+		<minDamageToFragment>15</minDamageToFragment>
+		<defaultDamage>1</defaultDamage>
+		<defaultStoppingPower>2</defaultStoppingPower>
+		<defaultArmorPenetration>0.10</defaultArmorPenetration>
+		<buildingDamageFactorImpassable>4</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+		<plantDamageFactor>4</plantDamageFactor>
+		<corpseDamageFactor>0.5</corpseDamageFactor>
+		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+		<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+		<explosionCellFleck>BlastDry</explosionCellFleck>
+		<explosionColorCenter>(255,255,255)</explosionColorCenter>
+		<explosionColorEdge>(255,125,0)</explosionColorEdge>
+		<soundExplosion>kotorsound_blasterexplosion_mix</soundExplosion>
+		<combatLogRules>Damage_Bomb</combatLogRules>
+	  </DamageDef>
+	  
+	  <DamageDef ParentName="guy762_ExplosiveDamage_energy"> <!-- IMPORTANT: there are patches in AdditionalMods that make this compatible with ATR/MHC pawns-->
+		<defName>guy762_ExplosiveDamage_ion</defName>
+		<label>ionization</label>
+		<workerClass>guy762_Ionization.DamageWorker_Ionization</workerClass>
+		<externalViolenceForMechanoids>true</externalViolenceForMechanoids>
+		<deathMessage>{0} has been ionized to death.</deathMessage>
+		<modExtensions>
+			<li Class="guy762_Ionization.ModExtension_HediffGiver">
+				<hediffToAdd>guy762_IonizationBuildup</hediffToAdd>
+				<severityFixed>0.5</severityFixed>
+			</li>
+		</modExtensions>
+		<defaultDamage>1</defaultDamage>
+		<soundExplosion>kotorsound_iongrenade</soundExplosion>
+		<explosionCellFleck>BlastEMP</explosionCellFleck>
+		<explosionColorCenter>(255,255,255)</explosionColorCenter>
+		<explosionColorEdge>(125,195,255)</explosionColorEdge>
+	</DamageDef>
+	  
+	  <DamageDef>
+		<defName>guy762_ExplosiveDamage_disruptor</defName>
+		<label>disruption</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<isExplosive>true</isExplosive>
+		<deathMessage>{0} was blasted to death.</deathMessage>
+		<hediff>Shredded</hediff>
+		<makesBlood>true</makesBlood>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<minDamageToFragment>15</minDamageToFragment>
+		<defaultDamage>1</defaultDamage>
+		<defaultStoppingPower>2</defaultStoppingPower>
+		<defaultArmorPenetration>1</defaultArmorPenetration>
+		<buildingDamageFactorImpassable>4</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+		<plantDamageFactor>4</plantDamageFactor>
+		<corpseDamageFactor>0.5</corpseDamageFactor>
+		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+		<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+		<explosionCellFleck>BlastDry</explosionCellFleck>
+		<explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+		<explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+		<soundExplosion>kotorsound_blasterexplosion_mix</soundExplosion>
+		<combatLogRules>Damage_Bomb</combatLogRules>
+	  </DamageDef>
+
+</Defs>

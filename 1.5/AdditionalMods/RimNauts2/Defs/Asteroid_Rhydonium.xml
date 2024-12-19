@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GenStepDef>
+        <defName>KotORGenStep_RhydoniumAsteroid</defName>
+        <order>10</order>
+        <genStep Class="RimNauts2.AsteroidOre.RocksFromGrid">
+            <!-- asteroid rock type -->
+            <rock_def_name>Granite</rock_def_name>
+            <!-- mineral type -->
+            <ore_def_name>KOTOR_MineableRhydonium</ore_def_name>
+            <!-- chance of mineral to spawn on the outer side of the asteroid -->
+            <ore_chance_outer>(0.05, 0.10)</ore_chance_outer>
+            <!-- chance of mineral to spawn inside the asteroid -->
+            <ore_chance_inner>(0.30, 0.50)</ore_chance_inner>
+            <!-- the size of the inner core (higher value means smaller core) -->
+            <inner_elevation>0.75</inner_elevation>
+            <!-- elevation where the thin roof will be set (very high value is the same as not having a roof) -->
+            <roof_elevation>0.55</roof_elevation>
+        </genStep>
+    </GenStepDef>
+	
+	<MapGeneratorDef ParentName="RimNauts2_Ore_MapGen">
+        <defName>KotORMapGen_RhydoniumAsteroid</defName>
+        <genSteps>
+            <!-- the def name of the gen step above -->
+            <li>KotORGenStep_RhydoniumAsteroid</li>
+        </genSteps>
+    </MapGeneratorDef>
+	
+	<Universum.Defs.Component ParentName="RimNauts2_Component_AsteroidOre">
+        <defName>KotOR_Component_AsteroidOre_Rhydonium</defName>
+        <!-- overwrites the label instead of using the random name generated -->
+        <overwriteText>Rhydonium</overwriteText>
+        <!-- changes the color of the label (keep this bright) -->
+        <color>(255,110,100)</color>
+    </Universum.Defs.Component>
+	
+	<Universum.Defs.Mesh ParentName="RimNauts2_Mesh_Asteroid_2">
+        <defName>KotOR_Mesh_AsteroidOre_Rhydonium</defName>
+        <!-- sets the material. if you don't know what this means, just use this material -->
+        <materialDefName>RimNauts2_Material_Surface_Metal</materialDefName>
+        <!-- defines the color on the rim of the crater -->
+        <maxElevationColor>(255,110,100)</maxElevationColor>
+        <!-- defines the color on the center of the crater (this should be darker) -->
+        <minElevationColor>(60,50,50)</minElevationColor>
+    </Universum.Defs.Mesh>
+	
+	<Universum.Defs.CelestialObject ParentName="RimNauts2_CelestialObject_AsteroidOre">
+        <defName>KotORCelestialObject_AsteroidRhydonium</defName>
+        <objectHolder>
+            <!-- uses the mapgen from before -->
+            <mapGeneratorDef>KotORMapGen_RhydoniumAsteroid</mapGeneratorDef>
+            <!-- description for the object -->
+            <description>Rhydonium deposit asteroid</description>
+        </objectHolder>
+        <components>
+            <!-- component from before -->
+            <li>KotOR_Component_AsteroidOre_Rhydonium</li>
+        </components>
+        <shape>
+            <meshes>
+                <!-- mesh from before -->
+                <li>KotOR_Mesh_AsteroidOre_Rhydonium</li>
+            </meshes>
+        </shape>
+    </Universum.Defs.CelestialObject>
+  
+
+  
+</Defs>

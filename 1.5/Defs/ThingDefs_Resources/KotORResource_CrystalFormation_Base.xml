@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef Name="KOTOR_CrystalFormation_Base" ParentName="BuildingNaturalBase" Abstract="True">
+		<graphicData Inherit="False">
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<building>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<ai_neverTrashThis>true</ai_neverTrashThis>
+			<ai_chillDestination>false</ai_chillDestination>
+			<destroySound>BuildingDestroyed_Stone_Small</destroySound>
+			
+			<isResourceRock>true</isResourceRock>
+			<veinMineable>false</veinMineable>
+			
+			<isInert>true</isInert>
+			<isNaturalRock>true</isNaturalRock>
+			<canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+			<deconstructible>false</deconstructible>
+			<destroyShakeAmount>0</destroyShakeAmount>
+		</building>
+		<thingClass>Mineable</thingClass>
+		<mineable>true</mineable>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
+		<fillPercent>0.35</fillPercent>
+		<comps>
+		  <li Class="CompProperties_MeditationFocus">
+			<statDef>MeditationFocusStrength</statDef>
+			<focusTypes>
+			  <li>Natural</li>
+			</focusTypes>
+		  </li>
+		</comps>
+	</ThingDef>
+	
+</Defs>

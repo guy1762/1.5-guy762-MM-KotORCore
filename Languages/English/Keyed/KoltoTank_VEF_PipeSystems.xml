@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <Kolto_InjuryHealed>Injury healed by Kolto tank!</Kolto_InjuryHealed>
+  
+  
+  
+  <KotORLD_ExtractTibanna>Extract 10 Tibanna</KotORLD_ExtractTibanna>
+  <KotORLD_ExtractTibannaDesc>Extract 10 Tibanna from the tank. A pawn will come to extract it.</KotORLD_ExtractTibannaDesc>
+
+  <KotORLD_ExtractRhydonium>Extract 75 Rhydonium</KotORLD_ExtractRhydonium>
+  <KotORLD_ExtractRhydoniumDesc>Extract 75 Rhydonium from the tank. A pawn will come to extract it.</KotORLD_ExtractRhydoniumDesc>
+  
+  <KotORLD_TibannaValve>Switches Tibanna flow on/off.</KotORLD_TibannaValve>
+  <KotORLD_TibannaValveDesc>Switches Tibanna flow on/off. A pawn will come open/close the valve.</KotORLD_TibannaValveDesc>
+
+  <KotORLD_RhydoniumValve>Switches Rhydonium flow on/off.</KotORLD_RhydoniumValve>
+  <KotORLD_RhydoniumValveDesc>Switches Rhydonium flow on/off. A pawn will come open/close the valve.</KotORLD_RhydoniumValveDesc>
+</LanguageData>

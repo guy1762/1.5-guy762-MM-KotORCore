@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<DamageDef>
+		<defName>guy762_GrenadeDamage_frag</defName>
+		<label>bomb</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<isExplosive>true</isExplosive>
+		<deathMessage>{0} has died in an explosion.</deathMessage>
+		<hediff>Shredded</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<minDamageToFragment>15</minDamageToFragment>
+		<defaultDamage>20</defaultDamage>
+		<defaultStoppingPower>0.5</defaultStoppingPower>
+		<defaultArmorPenetration>0.10</defaultArmorPenetration>
+		<buildingDamageFactorImpassable>4</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+		<plantDamageFactor>4</plantDamageFactor>
+		<corpseDamageFactor>0.5</corpseDamageFactor>
+		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+		<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+		<explosionCellFleck>BlastDry</explosionCellFleck>
+		<explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+		<explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+		<soundExplosion>kotorsound_fraggrenade</soundExplosion>
+		<combatLogRules>Damage_Bomb</combatLogRules>
+	</DamageDef>
+	
+	
+	<DamageDef Name="guy762_GrenadeDamage_energy">
+		<defName>guy762_GrenadeDamage_energy</defName>
+		<label>energy burn</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<isExplosive>true</isExplosive>
+		<deathMessage>{0} has been blasted to death.</deathMessage>
+		<hediff>Shredded</hediff>
+		<hediffSkin>Burn</hediffSkin>
+		<hediffSolid>Crack</hediffSolid>
+		<makesBlood>false</makesBlood>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Heat</armorCategory>
+		<minDamageToFragment>15</minDamageToFragment>
+		<defaultDamage>15</defaultDamage>
+		<defaultArmorPenetration>0.10</defaultArmorPenetration>
+		<buildingDamageFactorImpassable>4</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+		<plantDamageFactor>4</plantDamageFactor>
+		<corpseDamageFactor>0.5</corpseDamageFactor>
+		<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+		<explosionCellFleck>BlastDry</explosionCellFleck>
+		<explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+		<explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+		<soundExplosion>kotorsound_thermaldet</soundExplosion>
+		<combatLogRules>Damage_Bomb</combatLogRules>
+	  </DamageDef>
+	
+
+	<DamageDef ParentName="guy762_GrenadeDamage_energy"> <!-- IMPORTANT: there are patches in AdditionalMods that make this compatible with ATR/MHC pawns-->
+		<defName>guy762_GrenadeDamage_ion</defName>
+		<label>ionization</label>
+		<workerClass>guy762_Ionization.DamageWorker_Ionization</workerClass>
+		<externalViolenceForMechanoids>true</externalViolenceForMechanoids>
+		<deathMessage>{0} has been ionized to death.</deathMessage>
+		<modExtensions>
+			<li Class="guy762_Ionization.ModExtension_HediffGiver">
+				<hediffToAdd>guy762_IonizationBuildup</hediffToAdd>
+				<severityFixed>0.4</severityFixed>
+			</li>
+		</modExtensions>
+		<soundExplosion>kotorsound_iongrenade</soundExplosion>
+		<explosionCellFleck>BlastEMP</explosionCellFleck>
+		<explosionColorCenter>(255,255,255)</explosionColorCenter>
+		<explosionColorEdge>(125,195,255)</explosionColorEdge>
+	</DamageDef>
+	
+	<DamageDef ParentName="StunBase">
+		<defName>guy762_GrenadeDamage_stun</defName>
+		<label>stun</label>
+		<workerClass>DamageWorker_Stun</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been stunned to death.</deathMessage>
+		<defaultDamage>20</defaultDamage>
+		<explosionCellFleck>BlastDry</explosionCellFleck>
+		<combatLogRules>Damage_Stun</combatLogRules>
+		<soundExplosion>kotorsound_stungrenade</soundExplosion>
+	</DamageDef>
+	
+	<DamageDef>
+		<defName>guy762_GrenadeDamage_sonic</defName>
+		<label>sonic fracturing</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<isExplosive>true</isExplosive>
+		<makesBlood>false</makesBlood>
+		<deathMessage>{0} has died from internal fracturing.</deathMessage>
+		<hediff>Bruise</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<minDamageToFragment>15</minDamageToFragment>
+		<defaultDamage>10</defaultDamage>
+		<defaultArmorPenetration>0</defaultArmorPenetration>
+		<buildingDamageFactorImpassable>40</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>20</buildingDamageFactorPassable>
+		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+		<explosionCellFleck>BlastDry</explosionCellFleck>
+		<explosionColorCenter>(0.73, 0.93, 0.96)</explosionColorCenter>
+		<explosionColorEdge>(0.71, 0.82, 0.90)</explosionColorEdge>
+		<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+		<soundExplosion>kotorsound_sonicgrenade</soundExplosion>
+		<combatLogRules>Damage_Bomb</combatLogRules>
+		
+		<additionalHediffs>
+		  <li>
+			<hediff>guy762_SonicDisorient</hediff>
+			<severityPerDamageDealt>0.35</severityPerDamageDealt>
+		  </li>
+		</additionalHediffs>
+	</DamageDef>
+	
+	
+	<DamageDef ParentName="Flame">
+		<defName>guy762_GrenadeDamage_plasma</defName>
+		<workerClass>guy762_Ionization.DamageWorker_KotORPlasmaGrenade</workerClass>
+		<defaultDamage>36</defaultDamage>
+		<soundExplosion>kotorsound_plasmagrenade</soundExplosion>
+		<explosionCellFleck>BlastFlame</explosionCellFleck>
+	</DamageDef>
+	
+	
+	
+	<DamageDef ParentName="guy762_GrenadeDamage_energy">
+		<defName>guy762_GrenadeDamage_thermaldet</defName>
+	    <defaultDamage>60</defaultDamage>
+		<defaultArmorPenetration>0.20</defaultArmorPenetration>
+		<defaultStoppingPower>4</defaultStoppingPower>
+		<buildingDamageFactorImpassable>6</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>4</buildingDamageFactorPassable>
+		<plantDamageFactor>6</plantDamageFactor>
+		<corpseDamageFactor>1</corpseDamageFactor>
+		<explosionHeatEnergyPerCell>10</explosionHeatEnergyPerCell>
+	  </DamageDef>
+	
+
+</Defs>

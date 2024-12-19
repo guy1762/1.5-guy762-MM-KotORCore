@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Instrument Base ================================================================ -->
+	<ThingDef Name="Kotor_Instrument_Base" ParentName="MusicalInstrumentBase" Abstract="True">
+		<minTechLevelToBuild>Spacer</minTechLevelToBuild>
+		<soundPlayInstrument>jizz_play</soundPlayInstrument>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<researchPrerequisites><li>KOTOR_Research_Instruments</li></researchPrerequisites>
+		<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>30</Mass>
+			<JoyGainFactor>1.25</JoyGainFactor>
+			<Beauty>20</Beauty>
+		</statBases>
+		<building>
+			<instrumentRange>16</instrumentRange>
+		</building>
+		<rotatable>false</rotatable>
+		<descriptionHyperlinks>
+			<ThingDef>KOTORInstrument_slitherhorn</ThingDef>
+			<ThingDef>KOTORInstrument_ommnibox</ThingDef>
+			<ThingDef>KOTORInstrument_bandfill</ThingDef>
+			<ThingDef>KOTORInstrument_Nalargon</ThingDef>
+		</descriptionHyperlinks>
+	
+	</ThingDef>
+	
+	<!-- Slitherhorn ================================================================ -->
+	<ThingDef ParentName="Kotor_Instrument_Base">
+		<defName>KOTORInstrument_slitherhorn</defName>
+		<label>Slitherhorn</label>
+		<description>The slitherhorn, also called the traz, was a musical instrument common among jizz bands during the Galactic Civil War. It was similar in appearance to the kloo horn, though smaller in size.</description>
+		<size>(1,1)</size>
+		<interactionCellOffset>(0,0,1)</interactionCellOffset>
+		
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>KOTOR_Research_Instruments</researchPrerequisite>
+			<recipeUsers>
+				<li>TableSculpting</li>
+			</recipeUsers>
+			<displayPriority>610</displayPriority>
+		</recipeMaker>
+		
+		<costList>
+			<WoodLog>100</WoodLog>
+		</costList>
+		
+		<graphicData>
+			<drawSize>(1,1)</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>recreation/instruments/slitherhorn</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<!-- Ommni Box ================================================================ -->
+	<ThingDef ParentName="Kotor_Instrument_Base">
+		<defName>KOTORInstrument_ommnibox</defName>
+		<label>Ommni Box</label>
+		<description>The ommni box was a notoriously hard-to-play instrument which enhanced music, and was commonly used in jizz. It was usually used as an amplifier to attenuate and alter the bass aspects of the music, with such sophisticated parts as the thwee and bwom pedals.</description>
+		<size>(1,1)</size>
+		<interactionCellOffset>(0,0,1)</interactionCellOffset>
+		
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>KOTOR_Research_Instruments</researchPrerequisite>
+			<recipeUsers>
+				<li>TableSculpting</li>
+			</recipeUsers>
+			<displayPriority>610</displayPriority>
+		</recipeMaker>
+		
+		<costList>
+			<WoodLog>100</WoodLog>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		
+		<graphicData>
+			<drawSize>(1.5,1.5)</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>recreation/instruments/ommnibox</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<!-- Bandfill ================================================================ -->
+	<ThingDef ParentName="Kotor_Instrument_Base">
+		<defName>KOTORInstrument_bandfill</defName>
+		<label>Bandfill</label>
+		<description>The bandfill was a musical instrument, commonly used in jizz, that featured a number of mounted horn bells called reciprocator horns and a ploong sounder.</description>
+		<size>(1,1)</size>
+		<interactionCellOffset>(0,0,1)</interactionCellOffset>
+		
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>KOTOR_Research_Instruments</researchPrerequisite>
+			<recipeUsers>
+				<li>TableSculpting</li>
+			</recipeUsers>
+			<displayPriority>610</displayPriority>
+		</recipeMaker>
+		
+		<costList>
+			<WoodLog>100</WoodLog>
+		</costList>
+		
+		<graphicData>
+			<drawSize>(1.5,1.5)</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>recreation/instruments/bandfill</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<!-- Nalargon ================================================================ -->
+	<ThingDef ParentName="Kotor_Instrument_Base">
+		<defName>KOTORInstrument_Nalargon</defName>
+		<label>Nalargon</label>
+		<description>The Nalargon or Red Ball Jett keyboard was a keyboard instrument similar to an organ. Circular in shape, the player—known as a Nalargonist would sit in the center of the instrument, depressing any combination of the keys. Air intake was to the player's left, while the output speaker was on their right. Between the base of the organ and the keyboard were air outlet pipes.</description>
+		<size>(2,2)</size>
+		
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>KOTOR_Research_Instruments</researchPrerequisite>
+			<recipeUsers>
+				<li>TableSculpting</li>
+			</recipeUsers>
+			<displayPriority>610</displayPriority>
+		</recipeMaker>
+		
+		<costList>
+			<WoodLog>250</WoodLog>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		
+		<graphicData>
+			<drawSize>(3,3)</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>recreation/instruments/Nalargon</texPath>
+		</graphicData>
+	</ThingDef>
+	
+</Defs>

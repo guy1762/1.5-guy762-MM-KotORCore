@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	
+	<Operation Class="PatchOperationFindMod" IfModActive="Killathon.ArtificialBeings.SynCore">
+		<mods>
+			<li>ABF: Synstructs Core</li>
+		</mods>
+		
+		<match Class="PatchOperationAdd">
+		  <xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABF_Thing_Synstruct_HumanlikeBase"]/alienRace/raceRestriction/blackFoodList</xpath>
+		  <order>Append</order>
+		  <value>
+				<!--li>kotor_grog</li>
+				<li>kotor_Juma</li>
+				<li>kotor_Ardees</li-->
+				<li>KOTOR_Deathstick</li>
+				
+				<li>KOTOR_Spice</li>
+				
+				<li>guy762_stim_con</li>
+				<li>guy762_stim_hypercon</li>
+				<li>guy762_stim_dex</li>
+				<li>guy762_stim_hyperdex</li>
+				<li>guy762_stim_str</li>
+				<li>guy762_stim_hyperstr</li>
+				<li>guy762_stim_battle</li>
+				<li>guy762_stim_hyperbattle</li>
+				<li>guy762_stim_echani</li>
+				
+				<li>guy762_medpac</li>
+				<li>guy762_medpac_adv</li>
+				<li>guy762_medpac_life</li>
+				<li>guy762_medpac_antidote</li>
+		  </value>
+		</match>
+	  
+	</Operation>
+
+	
+	
+</Patch>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<EnterKoltoTank>Enter Kolto Tank</EnterKoltoTank>
+	<NoPowerMessage>No Power</NoPowerMessage>
+	<CarryToKoltoTank>Carry {1_label} to Kolto Tank</CarryToKoltoTank>
+	<CannotCarryToKoltoTank>Cannot carry to Kolto Tank</CannotCarryToKoltoTank>
+	<RefuelTitle>Refuel Filter</RefuelTitle>
+	<RefuelTab>Filter Tab</RefuelTab>
+	
+	<CommandCopyKoltoTankSettingsLabel>Copy settings</CommandCopyKoltoTankSettingsLabel>
+	<CommandCopyKoltoTankSettingsDesc>Copy this Kolto Tank's settings to the clipboard so you can paste them onto another KoltoTank.</CommandCopyKoltoTankSettingsDesc>
+
+	<CommandPasteKoltoTankSettingsLabel>Paste settings</CommandPasteKoltoTankSettingsLabel>
+	<CommandPasteKoltoTankSettingsDesc>Overwrite this Kolto Tank's settings with those previously copied to the clipboard.</CommandPasteKoltoTankSettingsDesc>
+</LanguageData>

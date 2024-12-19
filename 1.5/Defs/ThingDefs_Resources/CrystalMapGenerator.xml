@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GenStepDef>
+		<defName>KOTOR_CrystalFormation</defName>
+		<order>1100</order>
+		<genStep Class="CrystalFormations.GenStep_ScatterLightsaberCrystals">
+			<allowInWaterBiome>false</allowInWaterBiome>
+			<minSpacing>5</minSpacing>
+			<countPer10kCellsRange>15.0~30.0</countPer10kCellsRange>
+			<spotMustBeStandable>true</spotMustBeStandable>
+			<allowRoofed>true</allowRoofed>
+			<validators>
+				<li Class="ScattererValidator_Buildable">
+				<radius>5</radius>
+				<affordance>Heavy</affordance>
+				</li>
+			</validators>
+			<groups>
+				<li>
+				<things>
+					<KOTOR_SmallCrystal_red MayRequire="guy762.KotORWeapons">0.15</KOTOR_SmallCrystal_red>
+					<KOTOR_SmallCrystal_orange MayRequire="guy762.KotORWeapons">0.15</KOTOR_SmallCrystal_orange>
+					<KOTOR_SmallCrystal_yellow MayRequire="guy762.KotORWeapons">0.15</KOTOR_SmallCrystal_yellow>
+					<KOTOR_SmallCrystal_green MayRequire="guy762.KotORWeapons">0.15</KOTOR_SmallCrystal_green>
+					<KOTOR_SmallCrystal_blue MayRequire="guy762.KotORWeapons">0.15</KOTOR_SmallCrystal_blue>
+					<KOTOR_SmallCrystal_purple MayRequire="guy762.KotORWeapons">0.15</KOTOR_SmallCrystal_purple>
+					<KOTOR_SmallCrystal_white MayRequire="guy762.KotORWeapons">0.10</KOTOR_SmallCrystal_white>
+					
+					<KOTOR_MediumCrystal_cool MayRequire="guy762.KotORWeapons">0.1</KOTOR_MediumCrystal_cool>
+					<KOTOR_MediumCrystal_soft MayRequire="guy762.KotORWeapons">0.1</KOTOR_MediumCrystal_soft>
+					<KOTOR_MediumCrystal_warm MayRequire="guy762.KotORWeapons">0.1</KOTOR_MediumCrystal_warm>
+					
+					<KOTOR_StygiumCrystal>0.0833</KOTOR_StygiumCrystal>
+				</things>
+				<indoorRuin>false</indoorRuin>
+				<coveredCellsPer10Cells>1.5~2.5</coveredCellsPer10Cells>
+				<clusterRectRadius>3~5</clusterRectRadius>
+				</li>
+			</groups>
+		</genStep>
+	  </GenStepDef>
+</Defs>

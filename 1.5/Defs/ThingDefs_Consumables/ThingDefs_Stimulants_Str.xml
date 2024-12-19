@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <HediffDef>
+    <defName>guy762_stimulant_str</defName>
+    <description>A chemical boost of the user's strength.</description>
+    <label>adrenal strength</label>
+	<hediffClass>HediffWithComps</hediffClass>
+    <maxSeverity>1.0</maxSeverity>
+    <stages>
+      <li>
+        <statOffsets>
+			<MeleeDamageFactor>0.3</MeleeDamageFactor>
+			<VEF_MassCarryCapacity>30</VEF_MassCarryCapacity>
+		</statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <!--2,500 ticks per hour in game-->
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>5000</disappearsAfterTicks>
+		<showRemainingTime>True</showRemainingTime>
+      </li>
+    </comps>
+  </HediffDef>
+  
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>guy762_stim_str</defName>
+    <label>adrenal strength</label>
+    <description>A shot of this enhancer provides a temporary boost in the strength of the user. The effect wears off after a short time, and side effects are considered minimal. They cannot be used by droids.</description>
+	<descriptionHyperlinks>
+		<HediffDef>guy762_stimulant_str</HediffDef>
+	</descriptionHyperlinks>
+	<possessionCount>3</possessionCount>
+    <graphicData>
+      <texPath>Items/Consumables/Stimulants/stim_blue</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+	  <drawSize>0.75</drawSize>
+    </graphicData>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MarketValue>50</MarketValue>
+	  <WorkToMake>1000</WorkToMake>
+      <Mass>0.01</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+	<stackLimit>25</stackLimit>
+    <techLevel>Spacer</techLevel>
+    <ingestible>
+      <drugCategory>Hard</drugCategory>
+      <baseIngestTicks>10</baseIngestTicks>
+	  <ingestSound>kotorsound_inject</ingestSound>
+	  <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>guy762_stimulant_str</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+	<tradeTags Inherit="False">
+      <li>guy762TT_KotORStims</li>
+    </tradeTags>
+    <recipeMaker>
+      <researchPrerequisite>KOTOR_Research_AdvPhysiology</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+		<li>kotor_DrugLab</li>
+      </recipeUsers>
+	  <bulkRecipeCount>10</bulkRecipeCount>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>1</Neutroamine>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1767</listOrder>
+		<chemical>guy762_chemical_strstim</chemical>
+        <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+		<addictiveness>0</addictiveness>
+		<needLevelOffset>0.1</needLevelOffset>
+        <existingAddictionSeverityOffset>0.10</existingAddictionSeverityOffset>
+      </li>
+    </comps>
+    <orderedTakeGroup>Drug</orderedTakeGroup>
+  </ThingDef>
+  
+  
+  
+  
+  
+  
+  
+  <HediffDef>
+    <defName>guy762_stimulant_hyperstr</defName>
+    <description>A chemical boost of the user's strength.</description>
+    <label>hyper-adrenal strength</label>
+	<hediffClass>HediffWithComps</hediffClass>
+    <maxSeverity>1.0</maxSeverity>
+    <stages>
+      <li>
+        <statOffsets>
+			<MeleeDamageFactor>0.6</MeleeDamageFactor>
+			<VEF_MassCarryCapacity>60</VEF_MassCarryCapacity>
+		</statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <!--2,500 ticks per hour in game-->
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>5000</disappearsAfterTicks>
+		<showRemainingTime>True</showRemainingTime>
+      </li>
+    </comps>
+  </HediffDef>
+  
+  <ThingDef ParentName="DrugPillBase">
+    <defName>guy762_stim_hyperstr</defName>
+    <label>hyper-adrenal strength</label>
+    <description>More effective than the basic model, this stim uses a risky cocktail of chemicals to boost the strength of the user. The effect wears off after a short time. They cannot be used by droids.</description>
+	<descriptionHyperlinks>
+		<HediffDef>guy762_stimulant_hyperstr</HediffDef>
+	
+		<HediffDef>guy762_drugtolerance_strstim</HediffDef>
+		<HediffDef>guy762_addiction_strstim</HediffDef>
+		<HediffDef>ChemicalDamageSevere</HediffDef>
+	</descriptionHyperlinks>
+	<possessionCount>3</possessionCount>
+    <graphicData>
+      <texPath>Items/Consumables/Stimulants/hyperstim_blue</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+	  <drawSize>0.75</drawSize>
+    </graphicData>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MarketValue>100</MarketValue>
+	  <WorkToMake>2000</WorkToMake>
+      <Mass>0.01</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+	<stackLimit>25</stackLimit>
+    <techLevel>Spacer</techLevel>
+    <ingestible>
+      <drugCategory>Hard</drugCategory>
+      <baseIngestTicks>10</baseIngestTicks>
+	  <ingestSound>kotorsound_inject</ingestSound>
+	  <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>guy762_stimulant_hyperstr</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+	<tradeTags Inherit="False">
+      <li>guy762TT_KotORHyperStims</li>
+      <li>guy762TT_KotORDrugs</li>
+    </tradeTags>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1770</listOrder>
+		<chemical>guy762_chemical_strstim</chemical>
+        <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+		<addictiveness>0.01</addictiveness>
+		<needLevelOffset>0.9</needLevelOffset>
+		<minToleranceToAddict>0.5</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+        <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+      </li>
+    </comps>
+    <orderedTakeGroup>Drug</orderedTakeGroup>
+  </ThingDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- str stim addiction -->
+
+  <ChemicalDef>
+    <defName>guy762_chemical_strstim</defName>
+    <label>adrenal strength</label>
+    <addictionHediff>guy762_addiction_strstim</addictionHediff>
+	<toleranceHediff>guy762_drugtolerance_strstim</toleranceHediff>
+	<onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+	<onGeneratedAddictedEvents>
+      <li>
+        <hediff>ChemicalDamageSevere</hediff>
+        <chance>0.05</chance>
+        <partsToAffect>
+          <li>Heart</li>
+        </partsToAffect>
+      </li>
+    </onGeneratedAddictedEvents>
+    <geneOverdoseChanceFactorResist>0.5</geneOverdoseChanceFactorResist>
+    <geneOverdoseChanceFactorImmune>0</geneOverdoseChanceFactorImmune>
+  </ChemicalDef>
+  
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>guy762_chemneed_strstim</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>adrenal strength</label>
+    <description>Because of an adrenal strength stimulant addiction, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+    <fallPerDay>0.5</fallPerDay>
+    <listPriority>763</listPriority>
+  </NeedDef>
+
+  <HediffDef ParentName="AddictionBase">
+    <defName>guy762_addiction_strstim</defName>
+    <label>adrenal strength addiction</label>
+    <description>A chemical addiction to adrenal strength stimulants. Long-term presence of adrenal strength stimulants has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
+\nWithout regular doses of adrenal strength stimulants, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <causesNeed>guy762_chemneed_strstim</causesNeed>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.05</severityPerDay>
+        <showDaysToRecover>true</showDaysToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>withdrawal</label>
+        <statOffsets>
+			<MeleeDamageFactor>-0.6</MeleeDamageFactor>
+		  </statOffsets>
+        <mentalStateGivers>
+          <li>
+            <mentalState>Binging_DrugExtreme</mentalState>
+            <mtbDays>40</mtbDays>
+          </li>
+          <li>
+            <mentalState>Wander_Psychotic</mentalState>
+            <mtbDays>10</mtbDays>
+          </li>
+        </mentalStateGivers>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <ThoughtDef>
+    <defName>guy762_withdrawlthought_strstim</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>guy762_addiction_strstim</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>adrenal strength withdrawal</label>
+        <description>I feel so weak...</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <HediffDef ParentName="DrugToleranceBase">
+    <defName>guy762_drugtolerance_strstim</defName>
+    <label>adrenal strength tolerance</label>
+    <description>A built-up tolerance to adrenal strength stimulants. The more severe this tolerance is, the more adrenal strength stimulants it takes to get the same effect.</description>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.015</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_DrugEffectFactor">
+        <chemical>guy762_chemical_strstim</chemical>
+      </li>
+    </comps>
+    <hediffGivers>
+      <li Class="HediffGiver_RandomDrugEffect">
+        <hediff>ChemicalDamageModerate</hediff>
+        <severityToMtbDaysCurve>
+          <points>
+            <li>(0.45, 99999)</li>
+            <li>(0.5, 120)</li>
+            <li>(1, 90)</li>
+          </points>
+        </severityToMtbDaysCurve>
+        <partsToAffect>
+          <li>Heart</li>
+        </partsToAffect>
+      </li>
+    </hediffGivers>
+  </HediffDef>
+  
+</Defs>
