@@ -4,7 +4,7 @@
 	<!-- General Details ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	<name>Star Wars KotOR Resources and Materials</name>
 	<modIconPath IgnoreIfNoMatchingField="True">UI/ModIcon_guy762_KotORCore</modIconPath>
-	<description>Adds resources, crafting materials, consumables, and other items from across the Star Wars universe.\n\nRIMPY USERS DOWNLOAD FROM HERE: https://github.com/guy1762/1.5ZIP_StarWarsKotORCore/tree/main</description>
+	<description>Adds resources, crafting materials, consumables, and other items from across the Star Wars universe.</description>
 	<author>guy762, MajesticMadman, Kaitorisenkou, and lee01richards</author>
 	
 	<!-- Technical Details ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -13,7 +13,7 @@
 		<li>1.5</li>
 	</supportedVersions>
 	<packageId>guy762.MM.KotORCore</packageId>
-	<url>https://github.com/guy1762/1.5ZIP_StarWarsKotORCore/tree/main</url>
+	<url>https://github.com/guy1762/1.5-guy762-MM-KotORCore</url>
 	
 	<!-- Requirements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	<modDependencies>
