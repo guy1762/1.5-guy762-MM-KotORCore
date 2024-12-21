@@ -380,6 +380,115 @@
 			</li>
 		</subSounds>
 	</SoundDef>
+	
+	
+	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_E11carbine</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorblasters/JKe11_fire</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>0.8</min>				
+					<max>1.2</max>
+				</pitchRange>			
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_E11alt</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorblasters/JKe11_alt_fire</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>0.8</min>				
+					<max>1.2</max>
+				</pitchRange>			
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_RebelBlaster</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorblasters/wpn_RebelBlaster</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>45</min>        
+				<max>45</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>0.8</min>				
+					<max>1.2</max>
+				</pitchRange>			
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	<SoundDef>
+		<defName>kotorsound_RebelBlaster_mix</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>kotorblasters/RebelBlasterMix</clipFolderPath>
+					</li>
+				</grains>		
+				<volumeRange>
+				<min>45</min>        
+				<max>45</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>0.8</min>				
+					<max>1.2</max>
+				</pitchRange>			
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
 
 	
 </Defs>
