@@ -13,7 +13,7 @@
 		<projectile>
 			<damageDef>guy762_RangedDamage_energy</damageDef>
 			<damageAmountBase>10</damageAmountBase>
-			<armorPenetrationBase>0.20</armorPenetrationBase>
+			<armorPenetrationBase>0.40</armorPenetrationBase>
 			<speed>50</speed>
 		</projectile>
 	</ThingDef>
@@ -29,7 +29,7 @@
 		<projectile>
 			<damageDef>guy762_ExplosiveDamage_energy</damageDef>
 			<damageAmountBase>35</damageAmountBase>
-			<armorPenetrationBase>0.30</armorPenetrationBase>
+			<armorPenetrationBase>0.50</armorPenetrationBase>
 			<speed>50</speed>
 			<explosionRadius>0.25</explosionRadius>
 		</projectile>
@@ -58,7 +58,7 @@
 		<projectile>
 			<damageDef>guy762_ExplosiveDamage_energy</damageDef>
 			<damageAmountBase>50</damageAmountBase>
-			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<armorPenetrationBase>0.50</armorPenetrationBase>
 			<speed>50</speed>
 			<explosionRadius>1</explosionRadius>
 		</projectile>
@@ -192,7 +192,7 @@
 		<projectile>
 			<damageDef>guy762_RangedDamage_disruptor</damageDef>
 			<damageAmountBase>6</damageAmountBase>
-			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<armorPenetrationBase>0.45</armorPenetrationBase>
 			<speed>25</speed>
 		</projectile>
 	</ThingDef>
@@ -260,7 +260,7 @@
 		<projectile>
 			<damageDef>guy762_RangedDamage_energy</damageDef>
 			<damageAmountBase>10</damageAmountBase>
-			<armorPenetrationBase>0.05</armorPenetrationBase>
+			<armorPenetrationBase>0.10</armorPenetrationBase>
 			<speed>50</speed>
 			<extraDamages>
 				<li>
@@ -397,7 +397,7 @@
 		<projectile>
 			<damageDef>guy762_RangedDamage_energy</damageDef>
 			<damageAmountBase>10</damageAmountBase>
-			<armorPenetrationBase>0.05</armorPenetrationBase>
+			<armorPenetrationBase>0.20</armorPenetrationBase>
 			<speed>50</speed>
 			<!--extraDamages>
 				<li>
@@ -418,7 +418,7 @@
 		<projectile>
 			<damageDef>guy762_RangedDamage_energy</damageDef>
 			<damageAmountBase>20</damageAmountBase>
-			<armorPenetrationBase>0.05</armorPenetrationBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
 			<speed>50</speed>
 			<!--extraDamages>
 				<li>

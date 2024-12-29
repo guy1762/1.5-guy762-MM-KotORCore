@@ -13,7 +13,7 @@
 		<projectile>
 			<damageDef>guy762_RangedDamage_energy</damageDef>
 			<damageAmountBase>10</damageAmountBase>
-			<armorPenetrationBase>0.05</armorPenetrationBase>
+			<armorPenetrationBase>0.20</armorPenetrationBase>
 			<speed>50</speed>
 		</projectile>
 	</ThingDef>
@@ -29,7 +29,7 @@
 		<projectile>
 			<damageDef>guy762_RangedDamage_energy</damageDef>
 			<damageAmountBase>20</damageAmountBase>
-			<armorPenetrationBase>0.1</armorPenetrationBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
 			<stoppingPower>2</stoppingPower>
 			<speed>50</speed>
 		</projectile>
@@ -46,7 +46,7 @@
 		<projectile>
 			<damageDef>guy762_RangedDamage_energy</damageDef>
 			<damageAmountBase>40</damageAmountBase>
-			<armorPenetrationBase>0.15</armorPenetrationBase>
+			<armorPenetrationBase>0.30</armorPenetrationBase>
 			<stoppingPower>3</stoppingPower>
 			<speed>50</speed>
 		</projectile>
@@ -63,7 +63,7 @@
 		<projectile>
 			<damageDef>guy762_RangedDamage_energy</damageDef>
 			<damageAmountBase>60</damageAmountBase>
-			<armorPenetrationBase>0.2</armorPenetrationBase>
+			<armorPenetrationBase>0.35</armorPenetrationBase>
 			<stoppingPower>4</stoppingPower>
 			<speed>50</speed>
 		</projectile>
