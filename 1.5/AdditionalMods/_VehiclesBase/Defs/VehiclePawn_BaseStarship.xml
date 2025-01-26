@@ -451,19 +451,28 @@
 			<damageDefMultipliers>
 				<li>
 					 <key>guy762_RangedDamage_ion</key>
-					 <value>1.5</value>
+					 <value>2</value>
 				</li>
 				<li>
 					 <key>guy762_ExplosiveDamage_ion</key>
-					 <value>1.5</value>
+					 <value>2</value>
 				</li>
 				<li>
 					 <key>guy762_GrenadeDamage_ion</key>
-					 <value>1.5</value>
+					 <value>2</value>
 				</li>
 				<li>
 					 <key>guy762_MeleeDamage_ion</key>
-					 <value>1.5</value>
+					 <value>2</value>
+				</li>
+				
+				<!-- <li> -->
+					 <!-- <key>guy762_GrenadeDamage_frag</key> -->
+					 <!-- <value>1.5</value> -->
+				<!-- </li> -->
+				<li>
+					 <key>guy762_GrenadeDamage_thermaldet</key>
+					 <value>4</value>
 				</li>
 			</damageDefMultipliers>
 			
@@ -502,7 +511,7 @@
 			
 			<li>
 				<key>Repaired</key>
-				<value>kotorsound_fusioncutter</value>
+				<value>kotorsound_fusioncutter_oneshot</value>
 			</li>
 			
 			

@@ -343,7 +343,7 @@
 		<projectile>
 			<damageDef>guy762_GrenadeDamage_thermaldet</damageDef>
 			<damageAmountBase>75</damageAmountBase>
-			<armorPenetrationBase>0.75</armorPenetrationBase>
+			<armorPenetrationBase>0.9</armorPenetrationBase>
 			<speed>50</speed>
 			<explosionRadius>1</explosionRadius>
 			<screenShakeFactor>1</screenShakeFactor>

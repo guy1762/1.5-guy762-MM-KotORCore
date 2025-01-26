@@ -174,7 +174,7 @@
 			<soundAmbient>kotorsound_zapflying</soundAmbient>
 		</projectile>
 		<comps>
-		  <li Class="AthenaFramework.CompProperties_ProjectileBouncy">
+		  <li MayRequire="smartkar.athenaframework" Class="AthenaFramework.CompProperties_ProjectileBouncy">
 			<bounceAmount>3</bounceAmount>
 			<range>17</range>
 		  </li>
@@ -474,7 +474,51 @@
 			<damageAmountBase>35</damageAmountBase>
 			<armorPenetrationBase>0.30</armorPenetrationBase>
 			<speed>25</speed>
+			<explosionRadius>1.9</explosionRadius>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>SWProj_FC1flechette</defName>
+		<label>flechette</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/flechette</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<!-- <drawSize>0.75</drawSize> -->
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<armorPenetrationBase>0.5</armorPenetrationBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>75</speed>
+		</projectile>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>SWProj_FC1FragGrenade</defName>
+		<label>frag grenade</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/Grenades/grenade_flechettelauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>0.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_GrenadeDamage_frag</damageDef>
+		    <damageAmountBase>25</damageAmountBase>
+			
+			<speed>25</speed>
 			<explosionRadius>1.5</explosionRadius>
+			<explosionDelay>100</explosionDelay>
 		</projectile>
 		<thingClass>Projectile_Explosive</thingClass>
 	</ThingDef>
