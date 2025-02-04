@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="XmlExtensions.OptionalPatch" MayRequire="Ludeon.RimWorld.Ideology">
+        <modId>guy762.MM.KotORCore</modId>
+        <key>KotORCoreSettings_BroadwrapLayerTweak</key>
+        <defaultValue>true</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationReplace">
+			  <xpath>Defs/ThingDef[defName="Apparel_Broadwrap"]/apparel/bodyPartGroups/li[1]</xpath>
+			  <value>
+					<li>UpperHead</li>
+			  </value>
+			</Operation>
+        </caseTrue>
+    </Operation>
+	
+
+
+    
+
+</Patch>

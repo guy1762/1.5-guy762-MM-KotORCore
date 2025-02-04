@@ -2,7 +2,7 @@
 
 <Defs>	
 	
-	<Vehicles.VehicleDef Name = "VehiclePawn_Mechanical" ParentName = "BaseVehiclePawn" Abstract = "True">
+	<Vehicles.VehicleDef Name = "guy762_GroundVehiclePawn_base" ParentName = "BaseVehiclePawn" Abstract = "True">
 		<properties>
 			<worldSpeedMultiplier>1</worldSpeedMultiplier>
 		</properties>
@@ -40,6 +40,82 @@
 					 <key>guy762_GrenadeDamage_thermaldet</key>
 					 <value>4</value>
 				</li>
+				
+				
+				
+				
+				
+				
+				
+				<li>
+					 <key>guy762_RangedDamage_energy</key>
+					 <value>0.01</value>
+				</li>
+				
+				
+				
+				
+				
+				<li>
+					 <key>guy762_RangedDamage_electrical</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>guy762_MeleeDamage_electrical</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>guy762_BeamDamage_electrical</key>
+					 <value>0.01</value>
+				</li>
+				
+				
+				
+				
+				<li>
+					 <key>guy762_RangedDamage_sonic</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>guy762_MeleeDamage_sonic</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>guy762_GrenadeDamage_sonic</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>Thump</key>
+					 <value>0.01</value>
+				</li>
+				
+				
+				
+				
+				
+				<li>
+					 <key>Flame</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>Burn</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>guy762_GrenadeDamage_plasma</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>guy762_BeamDamage_radiation</key>
+					 <value>0.01</value>
+				</li>
+				
+				
+				
+				<li>
+					 <key>Frostbite</key>
+					 <value>0.01</value>
+				</li>
 			</damageDefMultipliers>
 		</properties>
 		
@@ -59,6 +135,15 @@
 			<li>
 				<key>Repaired</key>
 				<value>kotorsound_fusioncutter_oneshot</value>
+			</li>
+			
+			<li>
+				<key>OutOfFuel</key>
+				<value>kotorsound_starfighter_malfunction</value>
+			</li>
+			<li>
+				<key>DamageTaken</key>
+				<value>kotorsound_damage_laserhit</value>
 			</li>
 		</soundOneShotsOnEvent>
 	</Vehicles.VehicleDef>

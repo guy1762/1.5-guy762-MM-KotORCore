@@ -344,6 +344,31 @@
 	</SoundDef>
 	
 	<SoundDef>
+		<defName>kotorsound_TIEgun</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>kotorshipweapons/TIEgun</clipFolderPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>1</min>				
+					<max>1</max>
+				</pitchRange>			
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
 		<defName>kotorsound_xwinggun</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
@@ -528,6 +553,31 @@
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorshipweapons/wpn_hav_main_gu</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>1</min>				
+					<max>1</max>
+				</pitchRange>			
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_mantisiongun</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipweapons/wpn_probe_missi</clipPath>
 					</li>
 				</grains>	
 				<volumeRange>

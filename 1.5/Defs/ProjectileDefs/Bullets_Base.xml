@@ -2,7 +2,22 @@
 <Defs>
 
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef Name="guy762_BaseBullet_VehicleDamageReducer" ParentName="BaseBullet" Abstract="True">
+		<defName>guy762_BaseBullet_VehicleDamageReducer</defName>
+		<modExtensions>
+			<li MayRequire="SmashPhil.VehicleFramework" Class = "Vehicles.VehicleDamageMultiplierDefModExtension">
+			  <multiplier>0.01</multiplier>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORBlasterBolt_default</defName>
 		<label>blaster bolt</label>
 		<graphicData>
@@ -18,7 +33,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORBlasterBolt_heavy</defName>
 		<label>blaster bolt</label>
 		<graphicData>
@@ -35,7 +50,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORBlasterBolt_advheavy</defName>
 		<label>blaster bolt</label>
 		<graphicData>
@@ -52,7 +67,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORBlasterBolt_mstheavy</defName>
 		<label>blaster bolt</label>
 		<graphicData>
@@ -69,7 +84,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORBlasterBolt_sniper</defName>
 		<label>blaster bolt</label>
 		<graphicData>
@@ -90,7 +105,7 @@
 	
 	
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORIonBolt_default</defName>
 		<label>ion bolt</label>
 		<graphicData>
@@ -112,7 +127,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORIonBolt_heavy</defName>
 		<label>ion bolt</label>
 		<graphicData>
@@ -135,7 +150,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORIonBolt_advheavy</defName>
 		<label>ion bolt</label>
 		<graphicData>
@@ -158,7 +173,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORIonBolt_mstheavy</defName>
 		<label>ion bolt</label>
 		<graphicData>
@@ -181,7 +196,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORIonBolt_sniper</defName>
 		<label>ion bolt</label>
 		<graphicData>
@@ -206,7 +221,7 @@
 	
 	
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORStunBolt_default</defName>
 		<label>blaster bolt</label>
 		<graphicData>
@@ -228,7 +243,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORStunBolt_heavy</defName>
 		<label>blaster bolt</label>
 		<graphicData>
@@ -251,7 +266,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORStunBolt_advheavy</defName>
 		<label>blaster bolt</label>
 		<graphicData>
@@ -274,7 +289,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORStunBolt_mstheavy</defName>
 		<label>blaster bolt</label>
 		<graphicData>
@@ -297,7 +312,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORStunBolt_sniper</defName>
 		<label>blaster bolt</label>
 		<graphicData>
@@ -322,7 +337,7 @@
 	
 	
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORDisruptorBolt_default</defName>
 		<label>disruptor bolt</label>
 		<graphicData>
@@ -338,7 +353,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORDisruptorBolt_heavy</defName>
 		<label>disruptor bolt</label>
 		<graphicData>
@@ -355,7 +370,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORDisruptorBolt_advheavy</defName>
 		<label>disruptor bolt</label>
 		<graphicData>
@@ -372,7 +387,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORDisruptorBolt_mstheavy</defName>
 		<label>disruptor bolt</label>
 		<graphicData>
@@ -389,7 +404,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORDisruptorBolt_sniper</defName>
 		<label>disruptor bolt</label>
 		<graphicData>
@@ -408,7 +423,7 @@
 	
 	
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORSonicWave_default</defName>
 		<label>sonic wave</label>
 		<graphicData>
@@ -424,7 +439,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORSonicWave_heavy</defName>
 		<label>sonic wave</label>
 		<graphicData>
@@ -441,7 +456,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<!--ThingDef ParentName="BaseBullet">
+	<!--ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORSonicWave_sniper</defName>
 		<label>sonic wave</label>
 		<graphicData>
@@ -457,7 +472,7 @@
 		</projectile>
 	</ThingDef-->
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORSonicWave_superheavy</defName>
 		<label>sonic wave</label>
 		<graphicData>

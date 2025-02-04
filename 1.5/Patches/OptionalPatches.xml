@@ -209,7 +209,7 @@
 	
 	
 	
-	
+	<!--
 	
 	<Operation Class="XmlExtensions.OptionalPatch" MayRequire="Ludeon.RimWorld.Ideology">
         <modId>guy762.MM.KotORCore</modId>
@@ -217,7 +217,7 @@
         <defaultValue>true</defaultValue>
         <caseTrue>
             <Operation Class="PatchOperationReplace">
-			  <xpath>Defs/ThingDef[defName="Apparel_Broadwrap"]/apparel/bodyPartGroups/li[1]</xpath>
+			  <xpath>Defs/ThingDef[defName="Apparel_Broadwrap"]/apparel/bodyPartGroups/li[1]</xpath>          MOVED TO A SEPARATE LOADFOLDERS FOLDER!!!!!!
 			  <value>
 					<li>UpperHead</li>
 			  </value>
@@ -238,6 +238,8 @@
 			</Operation>
         </caseTrue>
     </Operation>
+	
+	-->
 
     
 

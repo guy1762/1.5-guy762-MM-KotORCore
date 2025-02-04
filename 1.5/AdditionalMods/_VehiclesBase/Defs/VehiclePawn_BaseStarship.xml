@@ -519,6 +519,10 @@
 				<key>OutOfFuel</key>
 				<value>kotorsound_starfighter_malfunction</value>
 			</li>
+			<li>
+				<key>DamageTaken</key>
+				<value>kotorsound_damage_laserhit</value>
+			</li>
 			
 			
 			<li>
@@ -531,10 +535,7 @@
 			</li>
 			
 			
-			<li>
-				<key>DamageTaken</key>
-				<value>kotorsound_damage_laserhit</value>
-			</li>
+			
 		</soundOneShotsOnEvent>
 	</Vehicles.VehicleDef>
 

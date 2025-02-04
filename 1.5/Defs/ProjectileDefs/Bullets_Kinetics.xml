@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORDart_stun</defName>
 		<label>paralysis dart</label>
 		<graphicData>
@@ -17,7 +17,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="BaseBullet">
+	<ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORDart_toxic</defName>
 		<label>toxic dart</label>
 		<graphicData>
@@ -33,7 +33,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORDart_saber</defName>
 		<label>Saber-dart</label>
 		<graphicData>
@@ -49,7 +49,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORDart_throwingknife</defName>
 		<label>throwing knife</label>
 		<graphicData>
@@ -85,7 +85,7 @@
 	
 	
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORSlugBolt</defName>
 		<label>slug bolt</label>
 		<graphicData>
@@ -145,7 +145,7 @@
 	
 	
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORRocket_micro</defName>
 		<label>micro rocket</label>
 		<graphicData>
@@ -163,7 +163,7 @@
 		<thingClass>Projectile_Explosive</thingClass>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORRocket</defName>
 		<label>rocket</label>
 		<graphicData>
@@ -181,7 +181,7 @@
 		<thingClass>Projectile_Explosive</thingClass>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORMissile_whistlingbird</defName>
 		<label>micro missile</label>
 		<graphicData>
@@ -207,7 +207,7 @@
 		</comps>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORMissile_seeker</defName>
 		<label>seeker missile</label>
 		<graphicData>
@@ -237,7 +237,7 @@
 	
 	
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORMissile_highex</defName>
 		<label>high-ex missile</label>
 		<graphicData>
@@ -264,7 +264,7 @@
 		</comps>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>KotORMissile_plasma</defName>
 		<label>plasma missile</label>
 		<graphicData>

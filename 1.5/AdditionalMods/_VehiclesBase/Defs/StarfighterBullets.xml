@@ -202,6 +202,29 @@
 		<thingClass>Projectile_Explosive</thingClass>
 	</ThingDef>
 	
+	<ThingDef ParentName="BaseBullet">
+		<defName>SWVehicleBullet_IonTag</defName>
+		<label>ion bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/sniper_blue</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_ion</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>0.375</armorPenetrationBase>
+			<speed>100</speed>
+			<extraDamages>
+				<li>
+					<def>EMP</def>
+					<amount>25</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+	</ThingDef>
+	
 	
 	
 	
