@@ -6,7 +6,7 @@
 		<li IfModActive="erdelf.HumanoidAlienRaces">1.5/AdditionalMods/HAR</li>
 		
 		<li IfModNotActive="jecrell.jecstools">1.5/AdditionalMods/_BorrowedFromJecsTools</li>
-		<li IfModNotActive="Lee.Athena.PostFix">1.5/AdditionalMods/_NO_LeeAthenaFrameworkPostFix</li>
+		<!-- <li IfModNotActive="smartkar.athenaframework">1.5/AdditionalMods/_BorrowedFromAthenaFramework</li> -->
 		
 		<li IfModActive="Killathon.ArtificialBeings">1.5/AdditionalMods/MHC</li>
 		<li IfModActive="Killathon.ArtificialBeings.SynCore">1.5/AdditionalMods/ATC</li>

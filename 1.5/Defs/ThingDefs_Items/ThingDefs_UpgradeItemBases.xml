@@ -167,7 +167,7 @@
 	
 	
 	
-	<ThingDef Name="guy762_ImplantBase" ParentName="guy762_upgradebase" MayRequire="smartkar.athenaframework" Abstract="True">
+	<ThingDef Name="guy762_ImplantBase" ParentName="guy762_upgradebase" MayRequire="EBSG.Framework" Abstract="True">
 		<statBases>
 		  <MaxHitPoints>50</MaxHitPoints>
 		  <Flammability>0.2</Flammability>
@@ -177,8 +177,8 @@
 		</thingCategories>
 		<comps>
 			<li Class="CompProperties_Usable">
-				<compClass>AthenaFramework.CompUsable_HediffModule</compClass>
-				<useJob>Athena_InstallModule</useJob>
+				<compClass>EBSGFramework.CompUsable_HediffModule</compClass>
+				<useJob>EBSG_InstallItem</useJob>
 			</li>
 		</comps>
 		<recipeMaker>
@@ -188,7 +188,7 @@
 		</recipeMaker>
 	</ThingDef>
 	
-	<ThingDef Name="guy762_NoCraft_ImplantBase" ParentName="guy762_NoCraft_upgradebase" MayRequire="smartkar.athenaframework" Abstract="True">
+	<ThingDef Name="guy762_NoCraft_ImplantBase" ParentName="guy762_NoCraft_upgradebase" MayRequire="EBSG.Framework" Abstract="True">
 		<statBases>
 		  <MaxHitPoints>50</MaxHitPoints>
 		  <Flammability>0.2</Flammability>
@@ -198,8 +198,8 @@
 		</thingCategories>
 		<comps>
 			<li Class="CompProperties_Usable">
-				<compClass>AthenaFramework.CompUsable_HediffModule</compClass>
-				<useJob>Athena_InstallModule</useJob>
+				<compClass>EBSGFramework.CompUsable_HediffModule</compClass>
+				<useJob>EBSG_InstallItem</useJob>
 			</li>
 		</comps>
 	</ThingDef>

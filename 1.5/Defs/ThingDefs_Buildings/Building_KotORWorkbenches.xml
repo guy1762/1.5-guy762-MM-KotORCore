@@ -83,6 +83,7 @@
 				  <li>ToolCabinet</li>
 				</linkableFacilities>
 			</li>
+			<li Class="CompProperties_Breakdownable"/>
 		</comps>
 		
 		<!-- Requirements -->
@@ -91,6 +92,7 @@
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
+		<constructEffect>ConstructMetal</constructEffect>
 		<researchPrerequisites>
 			<li>KOTOR_Research_AdvPhysiology</li>
 		</researchPrerequisites>
