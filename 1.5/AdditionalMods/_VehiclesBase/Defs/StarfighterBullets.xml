@@ -18,13 +18,13 @@
 			<drawSize>1.5</drawSize>
 		</graphicData>
 		<projectile>
-			<damageDef>guy762_ExplosiveDamage_energy</damageDef>
+			<damageDef>guy762_RangedDamage_energy</damageDef>
 			<damageAmountBase>25</damageAmountBase>
 			<armorPenetrationBase>0.25</armorPenetrationBase>
-			<speed>50</speed>
-			<explosionRadius>0.25</explosionRadius>
+			<speed>200</speed>
+			<!-- <explosionRadius>0.25</explosionRadius> -->
 		</projectile>
-		<thingClass>Projectile_Explosive</thingClass>
+		<!-- <thingClass>Projectile_Explosive</thingClass> -->
 	</ThingDef>
 	
 	<ThingDef ParentName="BaseBullet">
@@ -37,13 +37,13 @@
 			<drawSize>1.5</drawSize>
 		</graphicData>
 		<projectile>
-			<damageDef>guy762_ExplosiveDamage_energy</damageDef>
+			<damageDef>guy762_RangedDamage_energy</damageDef>
 			<damageAmountBase>25</damageAmountBase>
 			<armorPenetrationBase>0.25</armorPenetrationBase>
-			<speed>50</speed>
-			<explosionRadius>0.25</explosionRadius>
+			<speed>200</speed>
+			<!-- <explosionRadius>0.25</explosionRadius> -->
 		</projectile>
-		<thingClass>Projectile_Explosive</thingClass>
+		<!-- <thingClass>Projectile_Explosive</thingClass> -->
 	</ThingDef>
 	
 	
@@ -70,7 +70,7 @@
 			<damageDef>guy762_ExplosiveDamage_energy</damageDef>
 			<damageAmountBase>35</damageAmountBase>
 			<armorPenetrationBase>0.375</armorPenetrationBase>
-			<speed>50</speed>
+			<speed>200</speed>
 			<explosionRadius>0.25</explosionRadius>
 		</projectile>
 		<thingClass>Projectile_Explosive</thingClass>
@@ -89,7 +89,7 @@
 			<damageDef>guy762_ExplosiveDamage_energy</damageDef>
 			<damageAmountBase>35</damageAmountBase>
 			<armorPenetrationBase>0.375</armorPenetrationBase>
-			<speed>50</speed>
+			<speed>200</speed>
 			<explosionRadius>0.25</explosionRadius>
 		</projectile>
 		<thingClass>Projectile_Explosive</thingClass>
@@ -113,7 +113,7 @@
 			<damageDef>guy762_ExplosiveDamage_energy</damageDef>
 			<damageAmountBase>45</damageAmountBase>
 			<armorPenetrationBase>0.5</armorPenetrationBase>
-			<speed>50</speed>
+			<speed>200</speed>
 			<explosionRadius>1</explosionRadius>
 		</projectile>
 		<thingClass>Projectile_Explosive</thingClass>
@@ -132,7 +132,7 @@
 			<damageDef>guy762_ExplosiveDamage_energy</damageDef>
 			<damageAmountBase>25</damageAmountBase>
 			<armorPenetrationBase>0.25</armorPenetrationBase>
-			<speed>50</speed>
+			<speed>200</speed>
 			<explosionRadius>0.25</explosionRadius>
 		</projectile>
 		<thingClass>Projectile_Explosive</thingClass>
@@ -159,7 +159,24 @@
 	
 	
 	
-	
+	<ThingDef ParentName="BaseBullet">
+		<defName>SWVehicleBullet_slowred</defName>
+		<label>laser bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/blaster_red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_ExplosiveDamage_energy</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>50</speed>
+			<explosionRadius>0.25</explosionRadius>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+	</ThingDef>
 	
 	
 	
@@ -182,9 +199,8 @@
 		<thingClass>Projectile_Explosive</thingClass>
 	</ThingDef>
 	
-	
 	<ThingDef ParentName="BaseBullet">
-		<defName>SWVehicleBullet_TIEdoublegreen</defName>
+		<defName>SWVehicleBullet_slowdoublegreen</defName>
 		<label>laser bolt</label>
 		<graphicData>
 			<texPath>Weapons/Projectiles/doubleblaster_green</texPath>
@@ -202,6 +218,79 @@
 		<thingClass>Projectile_Explosive</thingClass>
 	</ThingDef>
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>SWVehicleBullet_heavyred</defName>
+		<label>heavy laser bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/sniper_red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_ExplosiveDamage_energy</damageDef>
+			<damageAmountBase>35</damageAmountBase>
+			<armorPenetrationBase>0.375</armorPenetrationBase>
+			<speed>200</speed>
+			<!-- <explosionRadius>1</explosionRadius> -->
+		</projectile>
+		<!-- <thingClass>Projectile_Explosive</thingClass> -->
+	</ThingDef>
+	
+	
+	
+	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>SWVehicleBullet_TIEdoublegreen</defName>
+		<label>laser bolts</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/doubleblaster_green</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_energy</damageDef>
+			<damageAmountBase>50</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>200</speed>
+			<!-- <explosionRadius>1</explosionRadius> -->
+		</projectile>
+		<!-- <thingClass>Projectile_Explosive</thingClass> -->
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>SWVehicleBullet_doublered</defName>
+		<label>laser bolts</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/doubleblaster_red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_energy</damageDef>
+			<damageAmountBase>50</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>200</speed>
+			<!-- <explosionRadius>1</explosionRadius> -->
+		</projectile>
+		<!-- <thingClass>Projectile_Explosive</thingClass> -->
+	</ThingDef>
+	
 	<ThingDef ParentName="BaseBullet">
 		<defName>SWVehicleBullet_IonTag</defName>
 		<label>ion bolt</label>
@@ -215,7 +304,7 @@
 			<damageDef>guy762_RangedDamage_ion</damageDef>
 			<damageAmountBase>25</damageAmountBase>
 			<armorPenetrationBase>0.375</armorPenetrationBase>
-			<speed>100</speed>
+			<speed>400</speed>
 			<extraDamages>
 				<li>
 					<def>EMP</def>
@@ -225,6 +314,51 @@
 		</projectile>
 	</ThingDef>
 	
+	
+	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>SWVehicleBullet_starviper</defName>
+		<label>laser bolts</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/longdoubleblaster_green</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_energy</damageDef>
+			<damageAmountBase>70</damageAmountBase>
+			<armorPenetrationBase>0.375</armorPenetrationBase>
+			<speed>200</speed>
+			<!-- <explosionRadius>1</explosionRadius> -->
+		</projectile>
+		<!-- <thingClass>Projectile_Explosive</thingClass> -->
+	</ThingDef>
+	
+	
+	
+	
+	<!-- YT2400 -->
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>SWVehicleBullet_bigdoublered</defName>
+		<label>heavy laser bolts</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/longdoubleblaster_red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>4</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_energy</damageDef>
+			<damageAmountBase>100</damageAmountBase>
+			<armorPenetrationBase>0.5</armorPenetrationBase>
+			<speed>200</speed>
+			<!-- <explosionRadius>2</explosionRadius> -->
+		</projectile>
+		<!-- <thingClass>Projectile_Explosive</thingClass> -->
+	</ThingDef>
 	
 	
 	
@@ -247,7 +381,7 @@
 			<damageDef>guy762_GrenadeDamage_frag</damageDef>
 			<damageAmountBase>25</damageAmountBase>
 			<armorPenetrationBase>0.375</armorPenetrationBase>
-			<speed>50</speed>
+			<speed>100</speed>
 			<explosionRadius>3</explosionRadius>
 			<soundAmbient>kotorsound_missileflying</soundAmbient>
 		</projectile>
@@ -274,7 +408,7 @@
 			<damageDef>guy762_GrenadeDamage_ion</damageDef>
 			<damageAmountBase>25</damageAmountBase>
 			<armorPenetrationBase>0.25</armorPenetrationBase>
-			<speed>50</speed>
+			<speed>100</speed>
 			<explosionRadius>1.5</explosionRadius>
 			<extraDamages>
 				<li>
@@ -312,7 +446,7 @@
 			<damageDef>guy762_GrenadeDamage_thermaldet</damageDef>
 			<damageAmountBase>75</damageAmountBase>
 			<armorPenetrationBase>0.875</armorPenetrationBase>
-			<speed>25</speed>
+			<speed>50</speed>
 			<explosionRadius>2</explosionRadius>
 			<soundAmbient>kotorsound_missileflying</soundAmbient>
 		</projectile>
@@ -332,7 +466,7 @@
 	
 	
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="BaseGrenadeProjectile">
 		<defName>KotORSFBullet_bomblet</defName>
 		<label>energy bomblet</label>
 		<graphicData>
@@ -341,13 +475,40 @@
 			<shaderType>TransparentPostLight</shaderType>
 			<drawSize>2</drawSize>
 		</graphicData>
-		<thingClass>taranchuk_flightcombat.Bomb</thingClass>
+		<!-- <thingClass>taranchuk_flightcombat.Bomb</thingClass> -->
 		<projectile>
 		  <damageDef>guy762_ExplosiveDamage_energy</damageDef>
 		  <damageAmountBase>45</damageAmountBase>
 		  <armorPenetrationBase>0.25</armorPenetrationBase>
-		  <speed>1</speed>
+		  <speed>20</speed>
 		  <explosionRadius>5</explosionRadius>
+		  <explosionDamageFalloff>true</explosionDamageFalloff>
+		  <explosionEffect>GiantExplosion</explosionEffect>
+		  <flyOverhead>true</flyOverhead>
+		  <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+		  <soundExplode>kotorsound_bombletexplode</soundExplode>
+		  <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+		  <soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>SWVehicleBullet_protonbomb</defName>
+		<label>proton bomb</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/energybomb</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>4</drawSize>
+		</graphicData>
+		<thingClass>taranchuk_flightcombat.Bomb</thingClass>
+		<projectile>
+		  <damageDef>guy762_ExplosiveDamage_energy</damageDef>
+		  <damageAmountBase>90</damageAmountBase>
+		  <armorPenetrationBase>0.5</armorPenetrationBase>
+		  <speed>20</speed>
+		  <explosionRadius>10</explosionRadius>
 		  <explosionDamageFalloff>true</explosionDamageFalloff>
 		  <explosionEffect>GiantExplosion</explosionEffect>
 		  <flyOverhead>true</flyOverhead>

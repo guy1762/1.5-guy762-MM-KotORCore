@@ -28,6 +28,10 @@
 		<burnableByRecipe>true</burnableByRecipe>
 		<smeltable>true</smeltable>
 		<tradeability>All</tradeability>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Styleable"></li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef Name="guy762_apparelmakeable" ParentName="guy762_apparelbase" Abstract="True">

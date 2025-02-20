@@ -189,6 +189,63 @@
 		</subSounds>
 	</SoundDef>
 	
+	<SoundDef>
+		<defName>kotorsound_enginehum_starviper</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<sustain>true</sustain>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/Egl_star_viper_1</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>  		
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_lancet</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<sustain>true</sustain>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/Egl_lancet_1</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>  		
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	<SoundDef>
 		<defName>kotorsound_enginehum_sigil</defName>	
@@ -271,8 +328,8 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>30</min>        
-				<max>30</max>
+				<min>20</min>        
+				<max>20</max>
 				</volumeRange>  		
 			</li>
 		</subSounds>
