@@ -49,4 +49,22 @@
 		<uiIconScale>0.5</uiIconScale>
 	</ThingDef>
 	
+	
+	<JoyGiverDef>
+		<defName>guy762_JoyGiver_pazaak</defName>
+		<giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
+		<baseChance>5</baseChance>
+		<canDoWhileInBed>true</canDoWhileInBed>
+		<thingDefs>
+			<li>KOTOR_PazaakTable</li>
+		</thingDefs>
+		<jobDef>Play_Chess</jobDef>
+		<joyKind>Gaming_Cerebral</joyKind>
+		<desireSit>false</desireSit>
+		<requiredCapacities>
+		  <li>Sight</li>
+		  <li>Manipulation</li>
+		</requiredCapacities>
+	</JoyGiverDef>
+	
 </Defs>

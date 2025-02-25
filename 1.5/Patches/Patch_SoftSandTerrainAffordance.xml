@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/TerrainDef[defName="SoftSand"]/affordances</xpath>
+	  <order>Append</order>
+	  <value>
+			<li>guy762_TerrainAffordance_softsand</li>
+	  </value>
+	</Operation>
+
+	
+	
+</Patch>

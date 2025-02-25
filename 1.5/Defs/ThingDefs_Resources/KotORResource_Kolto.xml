@@ -153,7 +153,15 @@
             <li>KOTOR_kolto</li>
           </thingDefs>
         </fuelFilter>
+
+        <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+        <initialConfigurableTargetFuelLevel>5</initialConfigurableTargetFuelLevel>
+        <!-- <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed> -->
+        <showFuelGizmo>true</showFuelGizmo>
+        <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+        <!-- <drawFuelGaugeInMap>true</drawFuelGaugeInMap> -->
         <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+		<autoRefuelPercent>1</autoRefuelPercent>
       </li>
 	  <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>KotOR_water</defName>
+    <label>water</label>
+    <description>Canned water from a moisture vaporator. A valued commodity on worlds with particularly dry climates.</description>
+    <graphicData>
+      <texPath>Items/Consumables/Water</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.3</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0.25</DeteriorationRate>
+      <Nutrition>0.5</Nutrition>
+    </statBases>
+	
+	<stackLimit>10</stackLimit>
+	
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <foodType>Fluid</foodType>
+      <babiesCanIngest>true</babiesCanIngest>
+	  
+      <ingestSound>Ingest_Beer</ingestSound>
+	  <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Drink {0}</ingestCommandString>
+      <ingestReportString>Drinking {0}.</ingestReportString>
+	  <tableDesired>false</tableDesired>
+    </ingestible>
+	
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+    <possessionCount>10</possessionCount>
+  </ThingDef>
+
+</Defs>

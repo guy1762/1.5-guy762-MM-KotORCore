@@ -10,7 +10,7 @@
 		<label>Adascorp lab bench</label>
 		<description>This advanced lab bench can process anything involving organic material, from Kolto and spice to medpacs and stimulants.</description>
 		<thingClass>Building_WorkTable</thingClass>
-		<thingCategories Inherit="false" />
+		
 		
 		<!-- Texture -->
 		<graphicData>
@@ -60,7 +60,6 @@
 	
 		<!-- World -->
 		<size>(3,1)</size>
-		<minifiedDef />
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
@@ -85,6 +84,8 @@
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
+		
+		<minifiedDef>MinifiedThing</minifiedDef>
 		
 		<!-- Requirements -->
 		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>

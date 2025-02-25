@@ -9,7 +9,7 @@
 	  </FleckDef>
   
   
-	<Vehicles.VehicleDef Abstract="True" Name="MM-VF-Vehicle_Pawn" ParentName="BaseVehiclePawn">
+	<Vehicles.VehicleDef Abstract="True" Name="MM-VF-Vehicle_Pawn" ParentName="guy762_VehiclePawn_base">
 		<comps>                 <!--DO NOT ADD OTHER COMPS TO THIS DEF BECAUSE A SOS2 PATCH REPLACES THE ENTIRE COMPS FIELD!!!-->
 			<li Class="Vehicles.CompProperties_VehicleLauncher">
 				<launchProtocol Class="Vehicles.PropellerTakeoff">
@@ -448,33 +448,6 @@
 		
 		
 		<properties>
-			<damageDefMultipliers>
-				<li>
-					 <key>guy762_RangedDamage_ion</key>
-					 <value>2</value>
-				</li>
-				<li>
-					 <key>guy762_ExplosiveDamage_ion</key>
-					 <value>2</value>
-				</li>
-				<li>
-					 <key>guy762_GrenadeDamage_ion</key>
-					 <value>2</value>
-				</li>
-				<li>
-					 <key>guy762_MeleeDamage_ion</key>
-					 <value>2</value>
-				</li>
-				
-				<!-- <li> -->
-					 <!-- <key>guy762_GrenadeDamage_frag</key> -->
-					 <!-- <value>1.5</value> -->
-				<!-- </li> -->
-				<li>
-					 <key>guy762_GrenadeDamage_thermaldet</key>
-					 <value>4</value>
-				</li>
-			</damageDefMultipliers>
 			
 			<customTerrainCosts>
 				<li>
@@ -483,6 +456,8 @@
 				</li>
 			</customTerrainCosts>
 		</properties>
+		
+		<drawOffscreen>true</drawOffscreen>
 		
 		<soundOneShotsOnEvent Inherit = "False">
 			<li>

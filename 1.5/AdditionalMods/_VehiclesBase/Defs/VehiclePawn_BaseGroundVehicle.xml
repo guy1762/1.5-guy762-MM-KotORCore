@@ -2,7 +2,9 @@
 
 <Defs>	
 	
-	<Vehicles.VehicleDef Name = "guy762_GroundVehiclePawn_base" ParentName = "BaseVehiclePawn" Abstract = "True">
+	
+	
+	<Vehicles.VehicleDef Name = "guy762_GroundVehiclePawn_base" ParentName = "guy762_VehiclePawn_base" Abstract = "True">
 		<properties>
 			<worldSpeedMultiplier>1</worldSpeedMultiplier>
 		</properties>
@@ -13,110 +15,6 @@
 		
 		<properties>
 			<customTerrainCosts AssignDefaults = "1"/>
-			
-			<damageDefMultipliers>
-				<li>
-					 <key>guy762_RangedDamage_ion</key>
-					 <value>2</value>
-				</li>
-				<li>
-					 <key>guy762_ExplosiveDamage_ion</key>
-					 <value>2</value>
-				</li>
-				<li>
-					 <key>guy762_GrenadeDamage_ion</key>
-					 <value>2</value>
-				</li>
-				<li>
-					 <key>guy762_MeleeDamage_ion</key>
-					 <value>2</value>
-				</li>
-				
-				<!-- <li> -->
-					 <!-- <key>guy762_GrenadeDamage_frag</key> -->
-					 <!-- <value>1.5</value> -->
-				<!-- </li> -->
-				<li>
-					 <key>guy762_GrenadeDamage_thermaldet</key>
-					 <value>4</value>
-				</li>
-				
-				
-				
-				
-				
-				
-				
-				<li>
-					 <key>guy762_RangedDamage_energy</key>
-					 <value>0.01</value>
-				</li>
-				
-				
-				
-				
-				
-				<li>
-					 <key>guy762_RangedDamage_electrical</key>
-					 <value>0.01</value>
-				</li>
-				<li>
-					 <key>guy762_MeleeDamage_electrical</key>
-					 <value>0.01</value>
-				</li>
-				<li>
-					 <key>guy762_BeamDamage_electrical</key>
-					 <value>0.01</value>
-				</li>
-				
-				
-				
-				
-				<li>
-					 <key>guy762_RangedDamage_sonic</key>
-					 <value>0.01</value>
-				</li>
-				<li>
-					 <key>guy762_MeleeDamage_sonic</key>
-					 <value>0.01</value>
-				</li>
-				<li>
-					 <key>guy762_GrenadeDamage_sonic</key>
-					 <value>0.01</value>
-				</li>
-				<li>
-					 <key>Thump</key>
-					 <value>0.01</value>
-				</li>
-				
-				
-				
-				
-				
-				<li>
-					 <key>Flame</key>
-					 <value>0.01</value>
-				</li>
-				<li>
-					 <key>Burn</key>
-					 <value>0.01</value>
-				</li>
-				<li>
-					 <key>guy762_GrenadeDamage_plasma</key>
-					 <value>0.01</value>
-				</li>
-				<li>
-					 <key>guy762_BeamDamage_radiation</key>
-					 <value>0.01</value>
-				</li>
-				
-				
-				
-				<li>
-					 <key>Frostbite</key>
-					 <value>0.01</value>
-				</li>
-			</damageDefMultipliers>
 		</properties>
 		
 		<soundOneShotsOnEvent Inherit = "False">
