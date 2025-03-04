@@ -157,7 +157,7 @@
 	<JobDef>
 		<defName>guy762_Job_WatchTerminal</defName>
 		<driverClass>JobDriver_WatchTelevision</driverClass>
-		<reportString>viewing terminal.</reportString>
+		<reportString>viewing monitor.</reportString>
 		<joyDuration>4000</joyDuration>
 		<joyMaxParticipants>8</joyMaxParticipants>
 		<joyKind>Television</joyKind>
