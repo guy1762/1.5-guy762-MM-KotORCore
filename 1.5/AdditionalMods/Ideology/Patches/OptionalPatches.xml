@@ -15,6 +15,53 @@
         </caseTrue>
     </Operation>
 	
+	
+	
+	<Operation Class="XmlExtensions.OptionalPatch" MayRequire="Ludeon.RimWorld.Ideology">
+        <modId>guy762.MM.KotORCore</modId>
+        <key>KotORCoreSettings_IdeoAbilitiesAIUsable</key>
+        <defaultValue>true</defaultValue>
+        <caseTrue>
+			<Operation Class="PatchOperationSequence">
+			  <operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/AbilityDef[defName="CombatCommand"]</xpath>
+					<value>
+						<aiCanUse>true</aiCanUse>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/AbilityDef[@Name="RoleAuraBuffBase"]</xpath>
+					<value>
+						<aiCanUse>true</aiCanUse>
+					</value>
+				</li>
+				
+				<!-- fixes the hediffs so it works on non-colonists -->
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="CombatCommand"]/comps/li[3]/targetingParameters/onlyTargetColonists</xpath>
+					<value>
+						<onlyTargetColonists>false</onlyTargetColonists>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="MarksmanCommand"]/comps/li[3]/targetingParameters/onlyTargetColonists</xpath>
+					<value>
+						<onlyTargetColonists>false</onlyTargetColonists>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="ProductionCommand"]/comps/li[3]/targetingParameters/onlyTargetColonists</xpath>
+					<value>
+						<onlyTargetColonists>false</onlyTargetColonists>
+					</value>
+				</li>
+			  </operations>
+			</Operation>
+        </caseTrue>
+    </Operation>
+	
 
 
     

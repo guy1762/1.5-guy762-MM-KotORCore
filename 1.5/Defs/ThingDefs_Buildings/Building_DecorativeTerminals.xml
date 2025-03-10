@@ -94,15 +94,18 @@
 		<defName>guy762_decor_TowerTerminalA</defName>
 		<label>tower terminal</label>
 		<graphicData>
-			<texPath>Buildings/DecorativeTerminals/bigrebelscreen_green</texPath>
+			<texPath>Buildings/DecorativeTerminals/JKtowerconsole</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
-			<drawOffsetSouth>(0,0,0.5)</drawOffsetSouth>
-			<drawOffsetNorth>(0,0,0.5)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,0.25)</drawOffsetSouth>
+			<drawOffsetNorth>(0,0,0.25)</drawOffsetNorth>
+			
+			<drawOffsetEast>(0,0,0.25)</drawOffsetEast>
+			<drawOffsetWest>(0,0,0.25)</drawOffsetWest>
 		</graphicData>
 		
 		<size>(1,1)</size>
-		<fillPercent>0.75</fillPercent>
+		<fillPercent>0.85</fillPercent>
 		
 		<building>
 			<joyKind>Television</joyKind>
@@ -136,6 +139,57 @@
 	
 	
 	
+	
+	
+	<ThingDef ParentName="guy762_DecorativeTerminalBase">
+		<defName>guy762_decor_StandingTerminalA</defName>
+		<label>standing terminal</label>
+		<graphicData>
+			<texPath>Buildings/DecorativeTerminals/detentionconsole</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawOffsetSouth>(0,0,0.25)</drawOffsetSouth>
+			<drawOffsetNorth>(0,0,0.25)</drawOffsetNorth>
+			
+			<drawOffsetEast>(0,0,0.25)</drawOffsetEast>
+			<drawOffsetWest>(0,0,0.25)</drawOffsetWest>
+		</graphicData>
+		
+		<size>(1,1)</size>
+		<fillPercent>0.25</fillPercent>
+		
+		<building>
+			<joyKind>Television</joyKind>
+			<spawnedConceptLearnOpportunity>TVForSickPeople</spawnedConceptLearnOpportunity>
+			<boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
+			<watchBuildingStandDistanceRange>1~1</watchBuildingStandDistanceRange>
+			<watchBuildingStandRectWidth>1</watchBuildingStandRectWidth>
+			<watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+			<effectWatching>WatchingTelevision</effectWatching>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_WatchArea</li>
+			<!-- <li>PlaceWorker_ShowFacilitiesConnections</li> -->
+		</placeWorkers>
+		
+		<comps>
+		  <li Class="CompProperties_Glower">
+				<glowRadius>1</glowRadius>
+				<glowColor>(130,230,245,0)</glowColor>
+		  </li>
+		  <!-- <li Class="CompProperties_Facility"> -->
+			<!-- <statOffsets> -->
+			  <!-- <RangedWeapon_DamageMultiplier>0.06</RangedWeapon_DamageMultiplier> -->
+			<!-- </statOffsets> -->
+			<!-- <maxSimultaneous>2</maxSimultaneous> -->
+		  <!-- </li> -->
+		</comps>
+		
+	</ThingDef>
+	
+	
+	
+	
 	<JoyGiverDef>
 		<defName>guy762_JoyGiver_WatchDecorativeTerminal</defName>
 		<giverClass>JoyGiver_WatchBuilding</giverClass>
@@ -144,6 +198,7 @@
 		<thingDefs>
 			<li>guy762_decor_BigRebelScreen</li>
 			<li>guy762_decor_TowerTerminalA</li>
+			<li>guy762_decor_StandingTerminalA</li>
 		</thingDefs>
 		<jobDef>guy762_Job_WatchTerminal</jobDef>
 		<joyKind>Television</joyKind>

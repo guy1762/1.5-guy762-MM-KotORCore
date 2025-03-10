@@ -459,6 +459,24 @@
 		</projectile>
 	</ThingDef>
 	
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+		<defName>SWProj_TL50slugbolt</defName>
+		<label>metallic bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/metalbolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<!-- <drawSize>0.75</drawSize> -->
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>6</damageAmountBase>
+			<armorPenetrationBase>0.05</armorPenetrationBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>75</speed>
+		</projectile>
+	</ThingDef>
+	
 	
 	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>SWProj_TL50conc</defName>

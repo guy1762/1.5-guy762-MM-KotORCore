@@ -70,6 +70,16 @@
 				<text>This patch adjusts the coverage of the "broadwrap" hat so it only covers the "UpperHead" layer, meaning apparel that covers the mouth can be worn with it.</text>
 			</li>
 			
+			<li Class="XmlExtensions.Setting.GapLine" MayRequire="Ludeon.RimWorld.Ideology"/>
+			<li Class="XmlExtensions.Setting.Checkbox" MayRequire="Ludeon.RimWorld.Ideology">
+				<key>KotORCoreSettings_IdeoAbilitiesAIUsable</key>
+				<label>Ideo role abilities can be used by AI</label>
+				<defaultValue>true</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Text" MayRequire="Ludeon.RimWorld.Ideology">
+				<text>This patch adds an XML line to allow the AI to use the Ideology role abilities (e.g. Combat Command, Marksman Command, Berserker Trance) since they are used in KotOR Factions' PawnKinds.</text>
+			</li>
+			
 			<li Class="XmlExtensions.Setting.GapLine" MayRequire="Ludeon.RimWorld.Biotech"/>
 			<li Class="XmlExtensions.Setting.Checkbox" MayRequire="Ludeon.RimWorld.Biotech">
 				<key>KotORCoreSettings_SashLayerTweak</key>
