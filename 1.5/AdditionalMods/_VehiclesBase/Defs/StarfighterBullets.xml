@@ -15,7 +15,7 @@
 			<texPath>Weapons/Projectiles/blaster_green</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>1.5</drawSize>
+			<drawSize>2</drawSize>
 		</graphicData>
 		<projectile>
 			<damageDef>guy762_RangedDamage_energy</damageDef>
@@ -34,7 +34,7 @@
 			<texPath>Weapons/Projectiles/blaster_red</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>1.5</drawSize>
+			<drawSize>2</drawSize>
 		</graphicData>
 		<projectile>
 			<damageDef>guy762_RangedDamage_energy</damageDef>
@@ -237,7 +237,7 @@
 			<texPath>Weapons/Projectiles/sniper_red</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>2</drawSize>
+			<drawSize>3</drawSize>
 		</graphicData>
 		<projectile>
 			<damageDef>guy762_ExplosiveDamage_energy</damageDef>
@@ -260,7 +260,7 @@
 			<texPath>Weapons/Projectiles/doubleblaster_green</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>1.5</drawSize>
+			<drawSize>2</drawSize>
 		</graphicData>
 		<projectile>
 			<damageDef>guy762_RangedDamage_energy</damageDef>
@@ -279,7 +279,7 @@
 			<texPath>Weapons/Projectiles/doubleblaster_red</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>1.5</drawSize>
+			<drawSize>2</drawSize>
 		</graphicData>
 		<projectile>
 			<damageDef>guy762_RangedDamage_energy</damageDef>
@@ -292,18 +292,46 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="BaseBullet">
+		<defName>SWVehicleBullet_doubleion</defName>
+		<label>ion bolts</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/doubleblaster_blue</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_ion</damageDef>
+			<damageAmountBase>50</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>200</speed>
+			<extraDamages>
+				<li>
+					<def>EMP</def>
+					<amount>25</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+		<!-- <thingClass>Projectile_Explosive</thingClass> -->
+	</ThingDef>
+	
+	
+	
+	
+	
+	<ThingDef ParentName="BaseBullet">
 		<defName>SWVehicleBullet_IonTag</defName>
 		<label>ion bolt</label>
 		<graphicData>
 			<texPath>Weapons/Projectiles/sniper_blue</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>1.5</drawSize>
+			<drawSize>2</drawSize>
 		</graphicData>
 		<projectile>
 			<damageDef>guy762_RangedDamage_ion</damageDef>
 			<damageAmountBase>25</damageAmountBase>
-			<armorPenetrationBase>0.375</armorPenetrationBase>
+			<armorPenetrationBase>0.125</armorPenetrationBase>
 			<speed>400</speed>
 			<extraDamages>
 				<li>

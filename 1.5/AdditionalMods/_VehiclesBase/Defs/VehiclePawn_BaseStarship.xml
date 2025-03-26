@@ -457,6 +457,10 @@
 			</customTerrainCosts>
 		</properties>
 		
+		<vehicleStats>
+			<MoveSpeed>1</MoveSpeed>
+		</vehicleStats>
+		
 		<drawOffscreen>true</drawOffscreen>
 		
 		<soundOneShotsOnEvent Inherit = "False">

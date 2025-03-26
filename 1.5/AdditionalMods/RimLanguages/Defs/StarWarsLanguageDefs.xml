@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!---->
+	<FactionLanguages.RaceLanguageDef>
+		<defName>guy762_SWRaceLanguage_main</defName>
+		<label>Sentient auditory language</label>
+		<description>A complex and multifaceted system of communication formed on the basis of biological, cultural and historical factors. It has a rich grammar, intonation nuances and emotional coloring, allowing to express not only information, but also subtle shades of meaning, metaphors and abstract concepts. The diversity of sentient auditory languages ​​reflects the development of civilization, the way of thinking and social structures of society.</description>
+		<nameMaker>guy762_NamerRaceLanguage_main</nameMaker>
+	</FactionLanguages.RaceLanguageDef>
+	
+	<RulePackDef>
+		<defName>guy762_NamerRaceLanguage_main</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->Sentient</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<FactionLanguages.LanguageFamilyDef>
+		<defName>guy762_SWLanguageFamily_main</defName>
+		<forcedLanguage>guy762_SWRaceLanguage_main</forcedLanguage>
+		<linkedRace>Human</linkedRace>
+		<factionDialects>
+			<li>
+				<dialectDef>guy762_SWLanguageDialect_galacticbasic</dialectDef> <!-- GROUPING: Republic/CoreWorlds/Empire -->
+				<factions>
+					<li MayRequire="lee.theforce.psycast">Force_Jedi_Remnant</li>
+					<li MayRequire="lee.theforce.psycast">Force_Sith_Order</li>
+					
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_OldRepublic</li>
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_CorruptRepublic</li>
+					
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_SithRemnant</li>
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_KrathRaiders</li>
+					
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_Militia</li>
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_Rebellion</li>
+					
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_MandoClan</li>
+					
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_Czerka</li>
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_Exchange</li>
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_Civilians</li>
+					
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_MandoNeoCrusaders</li>
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_SithEmpire</li>
+					
+					<li MayRequire="guy762.KotORFactions">guy762_KotORPlayerFaction_RepublicStrikeTeam</li>
+					<li MayRequire="guy762.KotORFactions">guy762_KotORPlayerFaction_SmugglerCrew</li>
+					<li MayRequire="guy762.KotORFactions">guy762_KotORPlayerFaction_MandalorianTribe</li>
+					<li MayRequire="guy762.KotORFactions">guy762_KotORPlayerFaction_SithWarlord</li>
+					
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_NewRepublic</li> -->
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_CivilRebels</li> -->
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_AggroRebels</li> -->
+					
+					<li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_ImpRemnant</li>
+					<li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_Pentastar</li>
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_ZsinjDominion</li> -->
+					
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_ZannConsortium</li> -->
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_BlackSun</li> -->
+					
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_MandoClan</li> -->
+					
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_Militia</li> -->
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_Civilians</li> -->
+					
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsPlayerFaction_Thrawn7thFleet</li> -->
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsPlayerFaction_LumiyaSith</li> -->
+				</factions>
+			</li>
+			<li>
+				<dialectDef>guy762_SWLanguageDialect_huttese</dialectDef> <!-- GROUPING: Scum/OuterRim -->
+				<factions>
+					<li MayRequire="lee.theforce.psycast">Force_Jedi_Remnant</li>
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_KrathRaiders</li>
+					
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_Rebellion</li>
+					
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_HuttCartel</li>
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_ViciousHutts</li>
+					
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_MandoClan</li>
+					
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_Exchange</li>
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_Civilians</li>
+					
+					<li MayRequire="guy762.KotORFactions">guy762_KotORPlayerFaction_RepublicStrikeTeam</li>
+					<li MayRequire="guy762.KotORFactions">guy762_KotORPlayerFaction_SmugglerCrew</li>
+					<li MayRequire="guy762.KotORFactions">guy762_KotORPlayerFaction_MandalorianTribe</li>
+					<li MayRequire="guy762.KotORFactions">guy762_KotORPlayerFaction_SithWarlord</li>
+					<li MayRequire="guy762.KotORFactions">guy762_KotORPlayerFaction_HuttUpstart</li>
+					
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_CivilRebels</li> -->
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_AggroRebels</li> -->
+					
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_ZsinjDominion</li> -->
+					
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_ZannConsortium</li> -->
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_BlackSun</li> -->
+					
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_HuttCartel</li> -->
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_ViciousHutts</li> -->
+					
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_MandoClan</li> -->
+
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_Civilians</li> -->
+					
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsPlayerFaction_Thrawn7thFleet</li> -->
+				</factions>
+			</li>
+			<li>
+				<dialectDef>guy762_SWLanguageDialect_tionese</dialectDef> <!-- GROUPING: KotORSith/NonHuttScum/GalacticNorthEast -->
+				<factions>
+					<li MayRequire="lee.theforce.psycast">Force_Sith_Order</li>
+					
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_SithRemnant</li>
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_KrathRaiders</li>
+					
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_Czerka</li>
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_Exchange</li>
+					
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_SithEmpire</li>
+					
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_ZsinjDominion</li> -->
+					
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_ZannConsortium</li> -->
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_BlackSun</li> -->
+					
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsPlayerFaction_Thrawn7thFleet</li> -->
+				</factions>
+			</li>
+			<li>
+				<dialectDef>guy762_SWLanguageDialect_bocce</dialectDef> <!-- GROUPING: NonHuttMerchant/Scum/Locals/GalacticSouth -->
+				<factions>
+					<li MayRequire="lee.theforce.psycast">Force_Jedi_Remnant</li>
+					
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_KrathRaiders</li>
+					
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_Militia</li>
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_Rebellion</li>
+					
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_Czerka</li>
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_Exchange</li>
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_Civilians</li>
+					
+					<li MayRequire="guy762.KotORFactions">guy762_KotORPlayerFaction_SmugglerCrew</li>
+					<li MayRequire="guy762.KotORFactions">guy762_KotORPlayerFaction_HuttUpstart</li>
+
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_CivilRebels</li> -->
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_AggroRebels</li> -->
+
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_BlackSun</li> -->
+
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_Militia</li> -->
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_Civilians</li> -->
+					
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsPlayerFaction_Thrawn7thFleet</li> -->
+				</factions>
+			</li>
+			<li>
+				<dialectDef>guy762_SWLanguageDialect_mando</dialectDef> <!-- GROUPING: Mandos/fans of Mandalorians -->
+				<factions>
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_MandoClan</li>
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_SavageMandos</li>
+
+					<li MayRequire="guy762.KotORFactions">guy762_KotORPlayerFaction_MandalorianTribe</li>
+
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_ZannConsortium</li> -->
+					
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_MandoClan</li> -->
+					
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsPlayerFaction_Thrawn7thFleet</li> -->
+				</factions>
+			</li>
+			<li>
+				<dialectDef>guy762_SWLanguageDialect_sybisti</dialectDef> <!-- GROUPING: anyone who has contact with species from the Unknown Regions (Chiss, Nagai, etc.) -->
+				<factions>
+					<li MayRequire="lee.theforce.psycast">Force_Jedi_Remnant</li>
+					
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_SithRemnant</li>
+					
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_HuttCartel</li>
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_ViciousHutts</li>
+
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_Exchange</li>
+
+					<li MayRequire="guy762.KotORFactions">guy762_KotORPlayerFaction_SithWarlord</li>
+					
+					<li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_Pentastar</li>
+					
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsPlayerFaction_Thrawn7thFleet</li> -->
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsPlayerFaction_LumiyaSith</li> -->
+				</factions>
+			</li>
+			<li>
+				<dialectDef>guy762_SWLanguageDialect_highgalactic</dialectDef> <!-- GROUPING: CoreWorlds/DeepCore/Empire/scholars/any human racists -->
+				<factions>
+					<li MayRequire="lee.theforce.psycast">Force_Jedi_Remnant</li>
+					
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_CorruptRepublic</li>
+					
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_SithRemnant</li>
+					
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_Czerka</li>
+					
+					<li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_ImpRemnant</li>
+					<li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_Pentastar</li>
+					
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsPlayerFaction_Thrawn7thFleet</li> -->
+				</factions>
+			</li>
+			
+			
+			
+			<li>
+				<dialectDef>guy762_SWLanguageDialect_jedi</dialectDef> <!-- GROUPING: Jedi/scholars -->
+				<factions>
+					<li MayRequire="lee.theforce.psycast">Force_Jedi_Remnant</li>
+					
+					<li MayRequire="guy762.KotORFactions">guy762_KotORPlayerFaction_RepublicStrikeTeam</li>
+					
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsPlayerFaction_Thrawn7thFleet</li> -->
+				</factions>
+			</li>
+			
+			<li>
+				<dialectDef>guy762_SWLanguageDialect_sith</dialectDef> <!-- GROUPING: Sith -->
+				<factions>
+					<li MayRequire="lee.theforce.psycast">Force_Sith_Order</li>
+					
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_SithRemnant</li>
+					
+					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_SithEmpire</li>
+
+					<li MayRequire="guy762.KotORFactions">guy762_KotORPlayerFaction_SithWarlord</li>
+					
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsPlayerFaction_LumiyaSith</li> -->
+				</factions>
+			</li>
+		</factionDialects>
+	</FactionLanguages.LanguageFamilyDef>
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- the big two -->
+	<FactionLanguages.DialectDef>
+		<defName>guy762_SWLanguageDialect_galacticbasic</defName>
+		<label>Galactic Basic</label>
+		<description>The official language of the Republic, used as the primary trade language from the Deep Core all the way to the Mid Rim.</description>
+		<nameMaker>guy762_NamerLanguageDialect_galacticbasic</nameMaker>
+		<commonality>10</commonality>
+		<learningDifficulty>1</learningDifficulty>
+	</FactionLanguages.DialectDef>
+	<RulePackDef>
+		<defName>guy762_NamerLanguageDialect_galacticbasic</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->Galactic Basic</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	
+	
+	
+	
+	
+	<FactionLanguages.DialectDef>
+		<defName>guy762_SWLanguageDialect_huttese</defName>
+		<label>Huttese</label>
+		<description>The most common trade language in the Outer Rim and the official language of the Hutt Kajidics.</description>
+		<nameMaker>guy762_NamerLanguageDialect_huttese</nameMaker>
+		<commonality>15</commonality>
+		<learningDifficulty>1</learningDifficulty>
+	</FactionLanguages.DialectDef>
+	<RulePackDef>
+		<defName>guy762_NamerLanguageDialect_huttese</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->Huttese</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	
+	
+	<!-- regional trade languages -->
+	
+	<FactionLanguages.DialectDef>
+		<defName>guy762_SWLanguageDialect_tionese</defName>
+		<label>Old Tionese</label>
+		<description>The ancient language of the Tion cluster, still used as a prestige language by the Tionese nobility and as a trade language by regional merchants.</description>
+		<nameMaker>guy762_NamerLanguageDialect_tionese</nameMaker>
+		<commonality>2</commonality>
+		<learningDifficulty>1.25</learningDifficulty>
+	</FactionLanguages.DialectDef>
+	<RulePackDef>
+		<defName>guy762_NamerLanguageDialect_tionese</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->Old Tionese</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	
+	
+	
+	<FactionLanguages.DialectDef>
+		<defName>guy762_SWLanguageDialect_bocce</defName>
+		<label>Bocce</label>
+		<description>A sophisticated, uncommon Outer Rim trade language primarily used by the Baobab Merchant Fleet.</description>
+		<nameMaker>guy762_NamerLanguageDialect_bocce</nameMaker>
+		<commonality>4</commonality>
+		<learningDifficulty>1.5</learningDifficulty>
+	</FactionLanguages.DialectDef>
+	<RulePackDef>
+		<defName>guy762_NamerLanguageDialect_bocce</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->Bocce</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	
+	<FactionLanguages.DialectDef>
+		<defName>guy762_SWLanguageDialect_mando</defName>
+		<label>Mando'a</label>
+		<description>The language of the modern Mandalorian warriors. Compared to the language of the ancient Taung, it has been greatly simplified for purposes of imposing it en masse on conscripted soldiers during the Mandalorian Wars.</description>
+		<nameMaker>guy762_NamerLanguageDialect_mando</nameMaker>
+		<commonality>5</commonality>
+		<learningDifficulty>0.75</learningDifficulty>
+	</FactionLanguages.DialectDef>
+	<RulePackDef>
+		<defName>guy762_NamerLanguageDialect_mando</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->Mando'a</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	
+	<FactionLanguages.DialectDef>
+		<defName>guy762_SWLanguageDialect_sybisti</defName>
+		<label>Sy Bisti</label>
+		<description>A simple, uncomplicated trade language originating from the Unknown Regions.</description>
+		<nameMaker>guy762_NamerLanguageDialect_sybisti</nameMaker>
+		<commonality>3</commonality>
+		<learningDifficulty>0.5</learningDifficulty>
+	</FactionLanguages.DialectDef>
+	<RulePackDef>
+		<defName>guy762_NamerLanguageDialect_sybisti</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->Sy Bisti</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	
+	
+	<FactionLanguages.DialectDef> <!-- NOT LINKED YET -->
+		<defName>guy762_SWLanguageDialect_droidbinary</defName>
+		<label>Binary</label>
+		<description>A highly intricate form of communication utilized by droids. It is communicated primarily through tones, beeps, and warbles of varying pitches, frequencies, and amplitudes. It is very difficult (but not impossible) for sentient beings to learn how to detect the subtle tonal changes used.</description>
+		<nameMaker>guy762_NamerLanguageDialect_droidbinary</nameMaker>
+		<commonality>1</commonality>
+		<learningDifficulty>4</learningDifficulty>
+	</FactionLanguages.DialectDef>
+	<RulePackDef>
+		<defName>guy762_NamerLanguageDialect_droidbinary</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->Binary</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	
+	<!-- obscure languages -->
+	
+	<FactionLanguages.DialectDef>
+		<defName>guy762_SWLanguageDialect_highgalactic</defName>
+		<label>High Galactic</label>
+		<description>The antiquated prestige language of the Core world intelligentsia, considered by many to be a crucial component to "human high culture".</description>
+		<nameMaker>guy762_NamerLanguageDialect_highgalactic</nameMaker>
+		<commonality>1</commonality>
+		<learningDifficulty>2</learningDifficulty>
+	</FactionLanguages.DialectDef>
+	<RulePackDef>
+		<defName>guy762_NamerLanguageDialect_highgalactic</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->High Galactic</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	
+	
+	<FactionLanguages.DialectDef>
+		<defName>guy762_SWLanguageDialect_jedi</defName>
+		<label>Classical Ossan</label>
+		<description>The archaic language of the Jedi historians.</description>
+		<nameMaker>guy762_NamerLanguageDialect_jedi</nameMaker>
+		<commonality>0</commonality>
+		<learningDifficulty>3</learningDifficulty>
+	</FactionLanguages.DialectDef>
+	<RulePackDef>
+		<defName>guy762_NamerLanguageDialect_jedi</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->Classical Ossan</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	
+	
+	
+	<FactionLanguages.DialectDef>
+		<defName>guy762_SWLanguageDialect_sith</defName>
+		<label>ur-Kittât</label>
+		<description>The language of the ancient Sith empire that was supposedly destroyed during the Great Hyperspace War millenia ago.</description>
+		<nameMaker>guy762_NamerLanguageDialect_sith</nameMaker>
+		<commonality>0</commonality>
+		<learningDifficulty>3</learningDifficulty>
+	</FactionLanguages.DialectDef>
+	<RulePackDef>
+		<defName>guy762_NamerLanguageDialect_sith</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->ur-Kittât</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	<!-- <FactionLanguages.DialectDef> -->
+		<!-- <defName>Human_Empire</defName> -->
+		<!-- <label>Imperial human dialect</label> -->
+		<!-- <description>A formalized and standardized type of universal language designed for official communication, management and documentation on a large scale. It has a clear structure, strict grammar and a rich vocabulary, including specialized terms for diplomacy, military affairs and administrative management. The Imperial dialect emphasizes the hierarchy and status of the speaker, giving the speech solemnity and authority.</description> -->
+		<!-- <nameMaker>HumanDialect_Empire</nameMaker> -->
+		<!-- <learningDifficulty>1.5</learningDifficulty> -->
+	<!-- </FactionLanguages.DialectDef> -->
+
+	<!-- <FactionLanguages.DialectDef> -->
+		<!-- <defName>Human_Horax</defName> -->
+		<!-- <label>Cultist human dialect</label> -->
+		<!-- <description>An esoteric and distorted form of universal human language used by followers of the mysterious Horax cults and closed religious communities. It is full of archaisms, symbolic expressions, and borrowings from forgotten or fictional languages. Grammar and structure of speech can intentionally deviate from the norm, creating a sense of mystery and involvement in higher knowledge. This dialect often includes ciphers, mantras, and ritual formulas that are understandable only to initiates, which makes it a tool for both secret communication and to enhance the mystical aura of the cult.</description> -->
+		<!-- <nameMaker>HumanDialect_Horax</nameMaker> -->
+		<!-- <learningDifficulty>2</learningDifficulty> -->
+	<!-- </FactionLanguages.DialectDef> -->
+
+	<!-- <FactionLanguages.DialectDef> -->
+		<!-- <defName>Human_Ancient</defName> -->
+		<!-- <label>Ancient human dialect</label> -->
+		<!-- <description>An outdated, archaic form of the universal human language, used in the distant past. Its structure is more complex than modern variants, with an abundance of long words, complex grammatical constructions and symbolism. It contains sounds lost in modern dialects, as well as a special melodiousness or rhythmicity of speech. -->
+<!-- This dialect is often found in ancient texts. Its study requires deep knowledge in philology, since some words and expressions have no direct analogues in the modern language.</description> -->
+		<!-- <nameMaker>HumanDialect_Ancient</nameMaker> -->
+		<!-- <learningDifficulty>2.5</learningDifficulty> -->
+	<!-- </FactionLanguages.DialectDef> -->
+	
+	
+	
+</Defs>

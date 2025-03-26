@@ -11,6 +11,8 @@
 		<li IfModActive="Killathon.ArtificialBeings">1.5/AdditionalMods/MHC</li>
 		<li IfModActive="Killathon.ArtificialBeings.SynCore">1.5/AdditionalMods/ATC</li>
 		
+		<li IfModActive="DimonSever000.FactionLanguages">1.5/AdditionalMods/RimLanguages</li>
+		
 		<li IfModActive="sindre0830.rimnauts2">1.5/AdditionalMods/RimNauts2</li>
 		
 		<li IfModActive="Ludeon.RimWorld.Ideology">1.5/AdditionalMods/Ideology</li>
