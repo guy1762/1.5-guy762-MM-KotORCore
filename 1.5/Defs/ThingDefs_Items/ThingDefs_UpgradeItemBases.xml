@@ -21,6 +21,7 @@
 		<recipeMaker>
 		  <recipeUsers>
 			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			<li>FabricationBench</li>
 		  </recipeUsers>
 		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		  <workSkill>Crafting</workSkill>
@@ -74,6 +75,7 @@
 		<recipeMaker>
 		  <recipeUsers>
 			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			<li>FabricationBench</li>
 		  </recipeUsers>
 		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		  <workSkill>Crafting</workSkill>
@@ -105,6 +107,7 @@
 		<recipeMaker>
 		  <recipeUsers>
 			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			<li>FabricationBench</li>
 		  </recipeUsers>
 		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		  <workSkill>Crafting</workSkill>
