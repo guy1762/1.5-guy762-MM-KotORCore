@@ -462,6 +462,12 @@
       </li>
 	  
 	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_SWMoistureVaporator</tradeTag>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>4~5</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_Tag">
         <tradeTag>guy762TT_KotORWorkbench</tradeTag>
         <thingDefCountRange>1~2</thingDefCountRange>
         <countRange>1~2</countRange>

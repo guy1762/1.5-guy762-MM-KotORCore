@@ -701,6 +701,14 @@
 		<smeltable>false</smeltable>
 	  </ThingDef>
 	  
+	  <ThingDef Name="guy762_HeadbandCraftableNoQualityBase" ParentName="guy762_ApparelNoQualityMakeable" Abstract="True">
+		<thingCategories>
+		  <li>Headgear</li>
+		  <li>guy762_gadgets</li>
+		</thingCategories>
+		<smeltable>false</smeltable>
+	  </ThingDef>
+	  
 	  
 	  
 	  

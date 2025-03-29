@@ -94,6 +94,7 @@
     <tradeability>All</tradeability>
     <tradeTags>
       <li>ExoticBuilding</li>
+	  <li>guy762TT_SWMoistureVaporator</li>
     </tradeTags>
   </ThingDef>
   
