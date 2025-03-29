@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<DamageDef>
+		<defName>guy762_ExplosiveDamage_knockback</defName>
+		<label>concussion blast</label>
+		<workerClass>Fusrodah.DamageWorker_Fusrodah</workerClass>
+		<modExtensions>
+			<li Class="Fusrodah.Extension">
+				<rangeToLand>1~3</rangeToLand>
+				<damageToApply>Blunt</damageToApply>
+				<damageAmount>10</damageAmount>
+			</li>
+		</modExtensions>
+		<externalViolence>true</externalViolence>
+		<isExplosive>true</isExplosive>
+		<deathMessage>{0} has been blasted to death.</deathMessage>
+		<hediff>Bruise</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<makesBlood>false</makesBlood>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Blunt</armorCategory>
+		<minDamageToFragment>15</minDamageToFragment>
+		<defaultDamage>1</defaultDamage>
+		<defaultStoppingPower>2</defaultStoppingPower>
+		<defaultArmorPenetration>0.10</defaultArmorPenetration>
+		<buildingDamageFactorImpassable>10</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>5</buildingDamageFactorPassable>
+		<plantDamageFactor>4</plantDamageFactor>
+		<corpseDamageFactor>0.5</corpseDamageFactor>
+		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+		<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+		<explosionCellFleck>BlastDry</explosionCellFleck>
+		<explosionColorCenter>(255,255,255)</explosionColorCenter>
+		<explosionColorEdge>(205,90,230)</explosionColorEdge>
+		<soundExplosion>kotorsound_JKrepeater_AltFireExplode</soundExplosion>
+		<combatLogRules>Damage_Bomb</combatLogRules>
+	  </DamageDef>
+	  
+	  <ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+		<defName>SWProj_TL50conc</defName>
+		<label>concussion blast</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/energybomb_purple</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.25</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_ExplosiveDamage_knockback</damageDef>
+			<damageAmountBase>35</damageAmountBase>
+			<armorPenetrationBase>0.30</armorPenetrationBase>
+			<speed>25</speed>
+			<explosionRadius>1.9</explosionRadius>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+	</ThingDef>
+	
+
+</Defs>

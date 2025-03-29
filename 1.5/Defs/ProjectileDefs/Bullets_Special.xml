@@ -478,24 +478,24 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
-		<defName>SWProj_TL50conc</defName>
-		<label>concussion blast</label>
-		<graphicData>
-			<texPath>Weapons/Projectiles/energybomb_purple</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>1.25</drawSize>
-		</graphicData>
-		<projectile>
-			<damageDef>guy762_ExplosiveDamage_knockback</damageDef>
-			<damageAmountBase>35</damageAmountBase>
-			<armorPenetrationBase>0.30</armorPenetrationBase>
-			<speed>25</speed>
-			<explosionRadius>1.9</explosionRadius>
-		</projectile>
-		<thingClass>Projectile_Explosive</thingClass>
-	</ThingDef>
+	<!-- <ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer"> MOVED TO CONC DAMAGE FILE IN VEHICLES BASE FOLDER IN ADDITIONALMODS-->
+		<!-- <defName>SWProj_TL50conc</defName> -->
+		<!-- <label>concussion blast</label> -->
+		<!-- <graphicData> -->
+			<!-- <texPath>Weapons/Projectiles/energybomb_purple</texPath> -->
+			<!-- <graphicClass>Graphic_Single</graphicClass> -->
+			<!-- <shaderType>TransparentPostLight</shaderType> -->
+			<!-- <drawSize>1.25</drawSize> -->
+		<!-- </graphicData> -->
+		<!-- <projectile> -->
+			<!-- <damageDef>guy762_ExplosiveDamage_knockback</damageDef> -->
+			<!-- <damageAmountBase>35</damageAmountBase> -->
+			<!-- <armorPenetrationBase>0.30</armorPenetrationBase> -->
+			<!-- <speed>25</speed> -->
+			<!-- <explosionRadius>1.9</explosionRadius> -->
+		<!-- </projectile> -->
+		<!-- <thingClass>Projectile_Explosive</thingClass> -->
+	<!-- </ThingDef> -->
 	
 	
 	
