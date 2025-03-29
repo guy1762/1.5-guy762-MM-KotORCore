@@ -3,6 +3,7 @@
 	
 	<!-- Bases ================================================================ -->
 	<ThingDef Name="KOTOR_RawMetal" ParentName="ResourceBase" Abstract="True">
+		<defName>KOTOR_RawMetal</defName>
 		<graphicData>
 			<texPath>raw_resources/raw_metal</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -21,6 +22,7 @@
 	</ThingDef>
 	
 	<ThingDef Name="KOTOR_Metal" ParentName="ResourceBase" Abstract="True">
+		<defName>KOTOR_Metal</defName>
 		<graphicData>
 			<texPath>raw_resources/metal_ingot</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -49,6 +51,7 @@
 	</ThingDef>
 	
 	<ThingDef Name="KOTOR_Mineable" ParentName="RockBase" Abstract="True">
+		<defName>KOTOR_Mineable</defName>
 		<graphicData>
 			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
