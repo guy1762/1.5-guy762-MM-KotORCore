@@ -365,6 +365,26 @@
 	</ThingDef>
 	
 	
+	<ThingDef ParentName="BaseBullet">
+		<defName>SWVehicleBullet_scurrg</defName>
+		<label>heavy laser bolts</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/doubleadvheavyblaster_orange</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_energy</damageDef>
+			<damageAmountBase>70</damageAmountBase>
+			<armorPenetrationBase>0.375</armorPenetrationBase>
+			<speed>200</speed>
+			<!-- <explosionRadius>0.25</explosionRadius> -->
+		</projectile>
+		<!-- <thingClass>Projectile_Explosive</thingClass> -->
+	</ThingDef>
+	
+	
 	
 	
 	<!-- YT2400 -->
