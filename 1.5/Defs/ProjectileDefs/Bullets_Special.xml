@@ -560,6 +560,28 @@
 			<speed>50</speed>
 		</projectile>
 	</ThingDef>
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+		<defName>SWProj_ScatterBlasterBolt</defName>
+		<label>blaster bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/sniper_red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>0.75</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_energy</damageDef>
+			<damageAmountBase>6</damageAmountBase>
+			<armorPenetrationBase>0.20</armorPenetrationBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
 
   
 

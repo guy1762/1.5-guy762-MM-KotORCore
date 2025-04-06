@@ -129,6 +129,56 @@
 	</SoundDef>
 	
 	<SoundDef>
+		<defName>kotorsound_SotEpulse</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorblasters/EaWX/Imperial_Repeater_Fire</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>0.8</min>				
+					<max>1.2</max>
+				</pitchRange>			
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_SBDtrishot</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorblasters/wep_GEN_GnShpBmFire_01</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>45</min>        
+				<max>45</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>0.8</min>				
+					<max>1.2</max>
+				</pitchRange>			
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
 		<defName>kotorsound_slug</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
@@ -321,8 +371,8 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
-				<max>45</max>
+				<min>10</min>        
+				<max>10</max>
 				</volumeRange>  		
 				<pitchRange>
 					<min>0.8</min>				
