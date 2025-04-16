@@ -2,7 +2,7 @@
 <Defs>
 	
 	<DamageDef>
-		<defName>guy762_ExplosiveDamage_knockback</defName>
+		<defName>guy762_ExplosiveDamage_conc</defName>
 		<label>concussion blast</label>
 		<workerClass>Fusrodah.DamageWorker_Fusrodah</workerClass>
 		<modExtensions>
@@ -48,7 +48,7 @@
 			<drawSize>1.25</drawSize>
 		</graphicData>
 		<projectile>
-			<damageDef>guy762_ExplosiveDamage_knockback</damageDef>
+			<damageDef>guy762_ExplosiveDamage_conc</damageDef>
 			<damageAmountBase>35</damageAmountBase>
 			<armorPenetrationBase>0.30</armorPenetrationBase>
 			<speed>25</speed>
