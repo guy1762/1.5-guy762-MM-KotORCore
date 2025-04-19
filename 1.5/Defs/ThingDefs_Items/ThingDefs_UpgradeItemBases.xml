@@ -16,6 +16,9 @@
 		</thingCategories>
 		<drawGUIOverlay>true</drawGUIOverlay>
 		<tradeability>All</tradeability>
+		<tradeTags>
+			<li>guy762TT_AllItemsSellable</li>
+		</tradeTags>
 		<techLevel>Spacer</techLevel>
 		
 		<recipeMaker>
@@ -48,6 +51,9 @@
 		</thingCategories>
 		<drawGUIOverlay>true</drawGUIOverlay>
 		<tradeability>All</tradeability>
+		<tradeTags>
+			<li>guy762TT_AllItemsSellable</li>
+		</tradeTags>
 		<techLevel>Spacer</techLevel>
 	</ThingDef>
 	
@@ -70,6 +76,9 @@
 		</thingCategories>
 		<drawGUIOverlay>false</drawGUIOverlay>
 		<tradeability>All</tradeability>
+		<tradeTags>
+			<li>guy762TT_AllItemsSellable</li>
+		</tradeTags>
 		<techLevel>Spacer</techLevel>
 		
 		<recipeMaker>
@@ -102,6 +111,9 @@
 		</thingCategories>
 		<drawGUIOverlay>false</drawGUIOverlay>
 		<tradeability>All</tradeability>
+		<tradeTags>
+			<li>guy762TT_AllItemsSellable</li>
+		</tradeTags>
 		<techLevel>Spacer</techLevel>
 		
 		<recipeMaker>
@@ -137,6 +149,9 @@
 		</thingCategories>
 		<drawGUIOverlay>false</drawGUIOverlay>
 		<tradeability>All</tradeability>
+		<tradeTags>
+			<li>guy762TT_AllItemsSellable</li>
+		</tradeTags>
 		<techLevel>Spacer</techLevel>
 	</ThingDef>
 
@@ -160,6 +175,9 @@
 		</thingCategories>
 		<drawGUIOverlay>false</drawGUIOverlay>
 		<tradeability>All</tradeability>
+		<tradeTags>
+			<li>guy762TT_AllItemsSellable</li>
+		</tradeTags>
 		<techLevel>Ultra</techLevel>
 	</ThingDef>
 	

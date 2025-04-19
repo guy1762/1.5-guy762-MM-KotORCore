@@ -18,6 +18,9 @@
 		<li IfModActive="Ludeon.RimWorld.Ideology">1.5/AdditionalMods/Ideology</li>
 		<li IfModActive="Ludeon.RimWorld.Biotech">1.5/AdditionalMods/Biotech</li>
 		
+		<li IfModActive="Dubwise.DubsBadHygiene">1.5/AdditionalMods/DBH</li>
+		<li IfModNotActive="Dubwise.DubsBadHygiene">1.5/AdditionalMods/NO_DBH</li>
+		
 		<li IfModActive="guy762.NA.MM.SWVehicles">1.5/AdditionalMods/_VehiclesBase</li>
 		<li IfModActive="guy762.MM.KotORVehicles">1.5/AdditionalMods/_VehiclesBase</li>
 	</v1.5>

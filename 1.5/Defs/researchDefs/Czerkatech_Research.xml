@@ -311,7 +311,20 @@
 	
 	
 	
-	
+	<!-- Moisture Vaporator ================================================================ -->
+	<ResearchProjectDef ParentName="KOTOR_Research_Base">
+		<defName>KOTOR_Research_MoistureVaporator</defName>
+		<label>Atmospheric Moisture Collection</label>
+		<description>Build moisture vaporators capable of condensing atmospheric water molecules into drinkable water.</description>
+		<baseCost>1000</baseCost>
+		
+		<hiddenPrerequisites>
+		  <li>MoisturePump</li>
+		</hiddenPrerequisites>
+		
+		<researchViewX>3</researchViewX>
+		<researchViewY>1.5</researchViewY>
+	</ResearchProjectDef>
 	
 	
 	<!-- Alcohol ================================================================ -->

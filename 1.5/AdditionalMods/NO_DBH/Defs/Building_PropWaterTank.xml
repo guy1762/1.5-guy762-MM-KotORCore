@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>KotOR_watertank</defName>
+		<label>water tank</label>
+		<!-- <thingClass>DubsBadHygiene.Building_Butt</thingClass> -->
+		<graphicData>
+			<texPath>Buildings/MoistureVaporators/watertank</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawOffset>(0,0,0.5)</drawOffset>
+			<color>(205,200,195)</color>         <!-- off-light-grey -->
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<fillPercent>0.7</fillPercent>
+		
+		<!-- <socialPropernessMatters>true</socialPropernessMatters> -->
+		<size>(1,1)</size>
+		<!-- <minifiedDef>MinifiedThing</minifiedDef> -->
+		<!-- <tradeNeverStack>true</tradeNeverStack> -->
+		<!-- <thingCategories> -->
+			<!-- <li>BuildingsHygiene</li> -->
+		<!-- </thingCategories> -->
+		<!-- <costList> -->
+		  <!-- <Steel>75</Steel> -->
+		  <!-- <ComponentIndustrial>2</ComponentIndustrial> -->
+		<!-- </costList> -->
+		<!-- <comps> -->
+			<!-- <li> -->
+				<!-- <compClass>CompColorable</compClass> -->
+			<!-- </li> -->
+			<!-- <li Class="DubsBadHygiene.CompProperties_WaterStorage"> -->
+				<!-- <WaterStorageCap>500</WaterStorageCap> -->
+			<!-- </li> -->
+		<!-- </comps> -->
+		<blockWind>false</blockWind>
+		<!-- <canOverlapZones>true</canOverlapZones> -->
+		<!-- <tradeability>Sellable</tradeability> -->
+		<statBases>
+			<Mass>14</Mass>
+			<MaxHitPoints>75</MaxHitPoints>
+			<!-- <WorkToBuild>2500</WorkToBuild> -->
+		</statBases>
+		<!-- <researchPrerequisites> -->
+			<!-- <li>KOTOR_Research_MoistureVaporator</li> -->
+		<!-- </researchPrerequisites> -->
+		<!-- <tradeTags> -->
+		  <!-- <li>guy762TT_SWMoistureVaporator</li> -->
+		<!-- </tradeTags> -->
+		
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<building>
+		  <claimable>false</claimable>
+		  <alwaysDeconstructible>true</alwaysDeconstructible>
+		</building>
+	</ThingDef>
+	
+
+
+
+</Defs>

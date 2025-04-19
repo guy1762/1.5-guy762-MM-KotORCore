@@ -4,8 +4,11 @@
   <ThingDef ParentName="ResourceBase">
     <defName>KotOR_water</defName>
     <label>water</label>
-    <description>Canned water from a moisture vaporator. A valued commodity on worlds with particularly dry climates.</description>
-    <graphicData>
+    <description>Canned water from a moisture vaporator. A valued commodity on worlds with particularly dry climates.\n\nDUBS BAD HYGIENE COMPATIBILITY: this item will NOT be present in the game if DBH is active. If the "Thirst" mechanic is enabled in the DBH mod options, Moisture Vaporators will spawn DBH water bottles instead of this!</description>
+    <descriptionHyperlinks>
+		<ThingDef>KotOR_MoistureVaporator_big</ThingDef>
+	</descriptionHyperlinks>
+	<graphicData>
       <texPath>Items/Consumables/Water</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>

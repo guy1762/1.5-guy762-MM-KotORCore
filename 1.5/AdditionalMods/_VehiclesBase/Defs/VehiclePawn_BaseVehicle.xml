@@ -53,10 +53,24 @@
 				
 				
 				
-				<!-- <li> -->
-					 <!-- <key>guy762_RangedDamage_energy</key> -->
-					 <!-- <value>0.01</value> -->
-				<!-- </li> -->
+				<li>
+					 <key>guy762_RangedDamage_AntiVehicleEnergy</key>
+					 <value>1</value>
+				</li>
+				<li>
+					 <key>guy762_ExplosiveDamage_AntiVehicleEnergy</key>
+					 <value>1</value>
+				</li>
+				
+				
+				<li>
+					 <key>guy762_RangedDamage_energy</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>guy762_ExplosiveDamage_energy</key>
+					 <value>0.5</value>
+				</li>
 				
 				
 				
@@ -78,18 +92,18 @@
 				
 				
 				
-				<!-- <li> -->
-					 <!-- <key>guy762_RangedDamage_sonic</key> -->
-					 <!-- <value>0.01</value> -->
-				<!-- </li> -->
-				<!-- <li> -->
-					 <!-- <key>guy762_MeleeDamage_sonic</key> -->
-					 <!-- <value>0.01</value> -->
-				<!-- </li> -->
-				<!-- <li> -->
-					 <!-- <key>guy762_GrenadeDamage_sonic</key> -->
-					 <!-- <value>0.01</value> -->
-				<!-- </li> -->
+				<li>
+					 <key>guy762_RangedDamage_sonic</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>guy762_MeleeDamage_sonic</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>guy762_GrenadeDamage_sonic</key>
+					 <value>0.01</value>
+				</li>
 				<!-- <li> -->
 					 <!-- <key>Thump</key> -->
 					 <!-- <value>0.01</value> -->
@@ -99,29 +113,29 @@
 				
 				
 				
-				<!-- <li> -->
-					 <!-- <key>Flame</key> -->
-					 <!-- <value>0.01</value> -->
-				<!-- </li> -->
-				<!-- <li> -->
-					 <!-- <key>Burn</key> -->
-					 <!-- <value>0.01</value> -->
-				<!-- </li> -->
+				<li>
+					 <key>Flame</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>Burn</key>
+					 <value>0.01</value>
+				</li>
 				<!-- <li> -->
 					 <!-- <key>guy762_GrenadeDamage_plasma</key> -->
 					 <!-- <value>0.01</value> -->
 				<!-- </li> -->
-				<!-- <li> -->
-					 <!-- <key>guy762_BeamDamage_radiation</key> -->
-					 <!-- <value>0.01</value> -->
-				<!-- </li> -->
+				<li>
+					 <key>guy762_BeamDamage_radiation</key>
+					 <value>0.01</value>
+				</li>
 				
 				
 				
-				<!-- <li> -->
-					 <!-- <key>Frostbite</key> -->
-					 <!-- <value>0.01</value> -->
-				<!-- </li> -->
+				<li>
+					 <key>Frostbite</key>
+					 <value>0.01</value>
+				</li>
 			</damageDefMultipliers>
 		</properties>
 	</Vehicles.VehicleDef>

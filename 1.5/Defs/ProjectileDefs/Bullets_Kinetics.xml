@@ -118,7 +118,7 @@
 			<drawSize>1.5</drawSize>
 		</graphicData>
 		<projectile>
-			<damageDef>guy762_ExplosiveDamage_energy</damageDef>
+			<damageDef>guy762_ExplosiveDamage_AntiVehicleEnergy</damageDef>
 			<damageAmountBase>25</damageAmountBase>
 			<armorPenetrationBase>0.75</armorPenetrationBase>
 			<stoppingPower>2</stoppingPower>

@@ -17,6 +17,9 @@
 		<tickerType>Normal</tickerType>
 		<drawGUIOverlay>true</drawGUIOverlay>
 		<tradeability>All</tradeability>
+		<tradeTags>
+			<li>guy762TT_AllItemsSellable</li>
+		</tradeTags>
 		<techLevel>Spacer</techLevel>
 		
 		<!--recipeMaker>

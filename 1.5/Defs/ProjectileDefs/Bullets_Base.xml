@@ -33,7 +33,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+	<ThingDef ParentName="BaseBullet">
 		<defName>KotORBlasterBolt_heavy</defName>
 		<label>blaster bolt</label>
 		<graphicData>
@@ -42,7 +42,7 @@
 			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>
 		<projectile>
-			<damageDef>guy762_RangedDamage_energy</damageDef>
+			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
 			<damageAmountBase>20</damageAmountBase>
 			<armorPenetrationBase>0.25</armorPenetrationBase>
 			<stoppingPower>2</stoppingPower>
@@ -50,7 +50,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+	<ThingDef ParentName="BaseBullet">
 		<defName>KotORBlasterBolt_advheavy</defName>
 		<label>blaster bolt</label>
 		<graphicData>
@@ -59,7 +59,7 @@
 			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>
 		<projectile>
-			<damageDef>guy762_RangedDamage_energy</damageDef>
+			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
 			<damageAmountBase>40</damageAmountBase>
 			<armorPenetrationBase>0.30</armorPenetrationBase>
 			<stoppingPower>3</stoppingPower>
@@ -67,7 +67,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+	<ThingDef ParentName="BaseBullet">
 		<defName>KotORBlasterBolt_mstheavy</defName>
 		<label>blaster bolt</label>
 		<graphicData>
@@ -76,7 +76,7 @@
 			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>
 		<projectile>
-			<damageDef>guy762_RangedDamage_energy</damageDef>
+			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
 			<damageAmountBase>60</damageAmountBase>
 			<armorPenetrationBase>0.35</armorPenetrationBase>
 			<stoppingPower>4</stoppingPower>
@@ -127,7 +127,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+	<ThingDef ParentName="BaseBullet">
 		<defName>KotORIonBolt_heavy</defName>
 		<label>ion bolt</label>
 		<graphicData>
@@ -150,7 +150,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+	<ThingDef ParentName="BaseBullet">
 		<defName>KotORIonBolt_advheavy</defName>
 		<label>ion bolt</label>
 		<graphicData>
@@ -173,7 +173,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+	<ThingDef ParentName="BaseBullet">
 		<defName>KotORIonBolt_mstheavy</defName>
 		<label>ion bolt</label>
 		<graphicData>
@@ -243,7 +243,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+	<ThingDef ParentName="BaseBullet">
 		<defName>KotORStunBolt_heavy</defName>
 		<label>blaster bolt</label>
 		<graphicData>
@@ -252,7 +252,7 @@
 			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>
 		<projectile>
-			<damageDef>guy762_RangedDamage_energy</damageDef>
+			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
 			<damageAmountBase>20</damageAmountBase>
 			<armorPenetrationBase>0.1</armorPenetrationBase>
 			<stoppingPower>2</stoppingPower>
@@ -266,7 +266,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+	<ThingDef ParentName="BaseBullet">
 		<defName>KotORStunBolt_advheavy</defName>
 		<label>blaster bolt</label>
 		<graphicData>
@@ -275,7 +275,7 @@
 			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>
 		<projectile>
-			<damageDef>guy762_RangedDamage_energy</damageDef>
+			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
 			<damageAmountBase>40</damageAmountBase>
 			<armorPenetrationBase>0.15</armorPenetrationBase>
 			<stoppingPower>3</stoppingPower>
@@ -289,7 +289,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+	<ThingDef ParentName="BaseBullet">
 		<defName>KotORStunBolt_mstheavy</defName>
 		<label>blaster bolt</label>
 		<graphicData>
@@ -298,7 +298,7 @@
 			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>
 		<projectile>
-			<damageDef>guy762_RangedDamage_energy</damageDef>
+			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
 			<damageAmountBase>60</damageAmountBase>
 			<armorPenetrationBase>0.2</armorPenetrationBase>
 			<stoppingPower>4</stoppingPower>
@@ -353,7 +353,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+	<ThingDef ParentName="BaseBullet">
 		<defName>KotORDisruptorBolt_heavy</defName>
 		<label>disruptor bolt</label>
 		<graphicData>
@@ -370,7 +370,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+	<ThingDef ParentName="BaseBullet">
 		<defName>KotORDisruptorBolt_advheavy</defName>
 		<label>disruptor bolt</label>
 		<graphicData>
@@ -387,7 +387,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+	<ThingDef ParentName="BaseBullet">
 		<defName>KotORDisruptorBolt_mstheavy</defName>
 		<label>disruptor bolt</label>
 		<graphicData>
@@ -439,7 +439,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+	<ThingDef ParentName="BaseBullet">
 		<defName>KotORSonicWave_heavy</defName>
 		<label>sonic wave</label>
 		<graphicData>
@@ -472,7 +472,7 @@
 		</projectile>
 	</ThingDef-->
 	
-	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+	<ThingDef ParentName="BaseBullet">
 		<defName>KotORSonicWave_superheavy</defName>
 		<label>sonic wave</label>
 		<graphicData>

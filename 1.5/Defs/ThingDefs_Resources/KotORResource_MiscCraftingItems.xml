@@ -28,7 +28,8 @@
 		</thingCategories>
 		<tradeTags>
 			<li>ExoticMisc</li>
-		</tradeTags>
+			<li>guy762TT_AllItemsSellable</li>
+		</tradeTags>	
 		<thingSetMakerTags><li>RewardStandardCore</li></thingSetMakerTags>
 		<allowedArchonexusCount>5</allowedArchonexusCount>
 	</ThingDef>
@@ -191,7 +192,8 @@
 		</thingCategories>
 		<tradeTags>
 		  <li>guy762TT_KotORRawMat_common</li>
-		</tradeTags>
+			<li>guy762TT_AllItemsSellable</li>
+		</tradeTags>	
 	  </ThingDef>
 	  
 	  <RecipeDef>
@@ -373,7 +375,8 @@
 		<allowedArchonexusCount>80</allowedArchonexusCount>
 		<tradeTags>
 		  <li>guy762TT_KotORRawMat_common</li>
-		</tradeTags>
+		  <li>guy762TT_AllItemsSellable</li>
+		</tradeTags>	
 	  </ThingDef>
 	  
 	  <RecipeDef ParentName="MakeStoneBlocksBase">

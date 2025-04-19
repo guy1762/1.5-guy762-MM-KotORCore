@@ -25,6 +25,9 @@
 		  <li Class="CompProperties_Biocodable"/>
 		</comps>
 		<tradeability>All</tradeability>
+		<tradeTags>
+			<li>guy762TT_AllItemsSellable</li>
+		</tradeTags>
 	  </ThingDef>
 	  
 	  
@@ -73,6 +76,9 @@
 		  </li>
 		  <li Class="CompProperties_Biocodable"/>
 		</comps>
+		<tradeTags>
+			<li>guy762TT_AllItemsSellable</li>
+		</tradeTags>
 	  </ThingDef>
 	  
 	  
@@ -192,6 +198,9 @@
 		  <li Class="CompProperties_Biocodable"/>
 		  <li Class="Spinning_Projectile.ThingCompProperties_ReturningWeapon"/>
 		</comps>
+		<tradeTags>
+			<li>guy762TT_AllItemsSellable</li>
+		</tradeTags>
 	  </ThingDef>
 	  
 	  
@@ -269,6 +278,9 @@
 		  <li Class="Spinning_Projectile.ThingCompProperties_ReturningWeapon"/>
 		</comps>
 		<tradeability>All</tradeability>
+		<tradeTags>
+			<li>guy762TT_AllItemsSellable</li>
+		</tradeTags>
 	  </ThingDef>
 	  
 	  <ThingDef Abstract="True" Name="KotORMeleeMakeable" ParentName="BaseWeapon">
@@ -322,6 +334,9 @@
 		<inspectorTabs>
 		  <li>ITab_Art</li>
 		</inspectorTabs>
+		<tradeTags>
+			<li>guy762TT_AllItemsSellable</li>
+		</tradeTags>
 	  </ThingDef>
 	  
 	  <ThingDef Name="KotORMeleeModdable" Abstract="True" ParentName="KotORMeleeWeapon">

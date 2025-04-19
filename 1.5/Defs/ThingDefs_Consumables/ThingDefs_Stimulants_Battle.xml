@@ -26,7 +26,9 @@
     </comps>
   </HediffDef>
   
-  <ThingDef ParentName="MakeableDrugPillBase">
+  
+  
+  <ThingDef ParentName="guy762_MakeableDrugPillBase">
     <defName>guy762_stim_battle</defName>
     <label>battle stimulant</label>
     <description>This stimulant enables the user to better absorb damage and focuses the mind on the fight, improving the ability to hit. The effect wears off after a short time, and side effects are considered minimal. They cannot be used by droids.</description>
@@ -60,7 +62,7 @@
         </li>
       </outcomeDoers>
     </ingestible>
-	<tradeTags Inherit="False">
+	<tradeTags>
       <li>guy762TT_KotORStims</li>
     </tradeTags>
     <recipeMaker>
@@ -115,7 +117,7 @@
     </comps>
   </HediffDef>
   
-  <ThingDef ParentName="DrugPillBase">
+  <ThingDef ParentName="guy762_DrugPillBase">
     <defName>guy762_stim_hyperbattle</defName>
     <label>hyper-battle stimulant</label>
     <description>This stimulant produces a chemical cocktail that sends a boost of adrenaline through the body, focusing the mind and bolstering the user's tolerance for damage. The effect wears off after a short time. They cannot be used by droids.</description>
@@ -153,7 +155,7 @@
         </li>
       </outcomeDoers>
     </ingestible>
-	<tradeTags Inherit="False">
+	<tradeTags>
       <li>guy762TT_KotORHyperStims</li>
 	  <li>guy762TT_KotORDrugs</li>
     </tradeTags>
@@ -200,7 +202,7 @@
     </comps>
   </HediffDef>
   
-  <ThingDef ParentName="DrugPillBase">
+  <ThingDef ParentName="guy762_DrugPillBase">
     <defName>guy762_stim_echani</defName>
     <label>Echani battle stimulant</label>
     <description>This stim removes all distractions, allowing the user to focus purely on the battle. The user is almost oblivious to damage suffered. The effect wears off after a short time. They cannot be used by droids.</description>
@@ -238,7 +240,7 @@
         </li>
       </outcomeDoers>
     </ingestible>
-	<tradeTags Inherit="False">
+	<tradeTags>
       <li>guy762TT_KotORHyperStims</li>
 	  <li>guy762TT_KotORDrugs</li>
     </tradeTags>

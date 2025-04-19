@@ -55,6 +55,31 @@
 	</SoundDef>
 	
 	<SoundDef>
+		<defName>kotorsound_ioncannon_small_louder</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorblasters/ion_cannon3</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>65</min>        
+				<max>65</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>0.8</min>				
+					<max>1.2</max>
+				</pitchRange>			
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
 		<defName>kotorsound_soniccannon</defName>	
 		<context>MapOnly</context>
 		<eventNames />	

@@ -102,6 +102,9 @@
 			</li>
 		</comps>
 		<allowedArchonexusCount>100</allowedArchonexusCount>
+		<tradeTags>
+			<li>guy762TT_AllItemsSellable</li>
+		</tradeTags>	
 	</ThingDef>
 	
 	<!-- Refined Rhydonium ================================================================ -->
@@ -151,7 +154,8 @@
 		<allowedArchonexusCount>100</allowedArchonexusCount>
 		<tradeTags>
 		  <li>guy762TT_KotORFuel_common</li>
-		</tradeTags>
+		  <li>guy762TT_AllItemsSellable</li>
+		</tradeTags>	
 	</ThingDef>
 	
 	<!-- Recipe 10x -->
@@ -423,6 +427,9 @@
 			<li>KOTOR_Research_FuelProcessing</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>14</constructionSkillPrerequisite>
+		<tradeTags>
+			<li>guy762TT_AllItemsSellable</li>
+		</tradeTags>	
 	</ThingDef>
 	
 </Defs>

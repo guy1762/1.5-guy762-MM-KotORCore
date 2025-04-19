@@ -37,7 +37,7 @@
     </comps>
   </HediffDef>
   
-  <ThingDef ParentName="MakeableDrugPillBase">
+  <ThingDef ParentName="guy762_MakeableDrugPillBase">
     <defName>guy762_stim_con</defName>
     <label>adrenal stamina</label>
     <description>A shot of this enhancer provides a temporary boost in the constitution of the user. The effect wears off after a short time, and side effects are considered minimal. They cannot be used by droids.</description>
@@ -71,7 +71,7 @@
         </li>
       </outcomeDoers>
     </ingestible>
-	<tradeTags Inherit="False">
+	<tradeTags>
       <li>guy762TT_KotORStims</li>
     </tradeTags>
     <recipeMaker>
@@ -140,7 +140,7 @@
     </comps>
   </HediffDef>
   
-  <ThingDef ParentName="DrugPillBase">
+  <ThingDef ParentName="guy762_DrugPillBase">
     <defName>guy762_stim_hypercon</defName>
     <label>hyper-adrenal stamina</label>
     <description>Steeling the user against pain, this stim provides a very large boost in constitution. The effect wears off after a short time. They cannot be used by droids.</description>
@@ -178,7 +178,7 @@
         </li>
       </outcomeDoers>
     </ingestible>
-	<tradeTags Inherit="False">
+	<tradeTags>
       <li>guy762TT_KotORHyperStims</li>
 	  <li>guy762TT_KotORDrugs</li>
     </tradeTags>

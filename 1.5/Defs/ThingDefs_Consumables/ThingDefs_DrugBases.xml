@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef Name="guy762_DrugBase" ParentName="DrugBase" Abstract="True">
+		<tradeTags Inherit="False">
+			<li>guy762TT_AllItemsSellable</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef Name="guy762_DrugPillBase" ParentName="DrugPillBase" Abstract="True">
+		<tradeTags Inherit="False">
+			<li>guy762TT_AllItemsSellable</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef Name="guy762_MakeableDrugPillBase" ParentName="MakeableDrugPillBase" Abstract="True">
+		<tradeTags Inherit="False">
+			<li>guy762TT_AllItemsSellable</li>
+		</tradeTags>
+	</ThingDef>
+  
+  
+</Defs>

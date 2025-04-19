@@ -24,7 +24,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="DrugBase">
+	<ThingDef ParentName="guy762_DrugBase">
 		<defName>KOTOR_Spice</defName>
 		<label>spice</label>
 		<description>The most sought-after substance in the galaxy, Spice is in equal measures a powerful narcotic and a powerful healing agent. Large deposits of Spice are only known to be found on Mon Gazza and Kessel, though meager veins of the substance can be found on many other outer rim worlds. The Hutt cartels cornered the galactic market on spice a millennia ago and have since cemented their prominence on the galactic stage through its exploitation, enslaving billions of sentients to mine and refine it for export.\n\nSpice has an extraordinary amount of applications; in neurobionics it is essential to manufacture advanced implant upgrades. In pharmaceuticals it is used to enhance the healing potency of many medicinal drugs, and with an added risk of Spice addiction it can also be used to strengthen the physically-boosting capabilities of steroids used in combat stimulants. In narcotics, Spice is a powerful mind-altering hallucinogenic and is ubiquitous to the creation of traditional and designer drugs alike.</description>
@@ -100,7 +100,7 @@
 			</li>
 		</comps>
 		<allowedArchonexusCount>200</allowedArchonexusCount>
-		<tradeTags Inherit="False">
+		<tradeTags>
 		  <li>guy762TT_KotORDrugs</li>
 		  <li>guy762TT_Spice</li>
 		</tradeTags>

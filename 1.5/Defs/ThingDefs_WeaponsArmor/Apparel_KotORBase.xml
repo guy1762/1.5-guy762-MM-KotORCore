@@ -28,6 +28,9 @@
 		<burnableByRecipe>true</burnableByRecipe>
 		<smeltable>true</smeltable>
 		<tradeability>All</tradeability>
+		<tradeTags>
+			<li>guy762TT_AllItemsSellable</li>
+		</tradeTags>
 		<comps>
 			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Styleable"></li>
@@ -790,6 +793,9 @@
 		<burnableByRecipe>false</burnableByRecipe>
 		<drawGUIOverlay>false</drawGUIOverlay>
 		<tradeability>All</tradeability>
+		<tradeTags>
+			<li>guy762TT_AllItemsSellable</li>
+		</tradeTags>
 		<!--comps>
 		  <li Class="CompProperties_AIUSablePack">
 			<checkInterval>60</checkInterval>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+	  <xpath>Defs/ThingDef[defName="KotOR_MoistureVaporator_big"]/comps/li[1]/thingToSpawn</xpath>
+	  <value>
+		<thingToSpawn>DBH_WaterBottle</thingToSpawn>
+	  </value>
+	</Operation>
+
+	<Operation Class="PatchOperationAttributeAdd">
+	  <xpath>Defs/ThingDef[defName="KotOR_MoistureVaporator_big"]</xpath>
+	  <attribute>DBHThirst</attribute>
+	  <value>true</value>
+	</Operation>
+	
+</Patch>

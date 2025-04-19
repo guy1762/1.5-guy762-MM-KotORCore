@@ -34,7 +34,7 @@
     </comps>
   </HediffDef>
   
-  <ThingDef ParentName="MakeableDrugPillBase">
+  <ThingDef ParentName="guy762_MakeableDrugPillBase">
     <defName>guy762_stim_dex</defName>
     <label>adrenal alacrity</label>
     <description>A shot of this enhancer provides a temporary boost in the dexterity of the user. The effect wears off after a short time, and side effects are considered minimal. They cannot be used by droids.</description>
@@ -68,7 +68,7 @@
         </li>
       </outcomeDoers>
     </ingestible>
-	<tradeTags Inherit="False">
+	<tradeTags>
       <li>guy762TT_KotORStims</li>
     </tradeTags>
     <recipeMaker>
@@ -134,7 +134,7 @@
     </comps>
   </HediffDef>
   
-  <ThingDef ParentName="DrugPillBase">
+  <ThingDef ParentName="guy762_DrugPillBase">
     <defName>guy762_stim_hyperdex</defName>
     <label>hyper-adrenal alacrity</label>
     <description>This model of alacrity stim uses a very powerful mixture of chemicals to produce an incredible increase in the dexterity of the user. The effect wears off after a short time. They cannot be used by droids.</description>
@@ -172,7 +172,7 @@
         </li>
       </outcomeDoers>
     </ingestible>
-	<tradeTags Inherit="False">
+	<tradeTags>
       <li>guy762TT_KotORHyperStims</li>
 	  <li>guy762TT_KotORDrugs</li>
     </tradeTags>

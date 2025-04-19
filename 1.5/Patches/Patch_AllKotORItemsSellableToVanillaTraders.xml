@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	 <!-- ORBITAL TRADERS -->
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/TraderKindDef[defName="Orbital_BulkGoods" or defName="Orbital_CombatSupplier" or defName="Orbital_Exotic" or defName="Orbital_PirateMerchant"]/stockGenerators</xpath>
+	  <order>Append</order>
+	  <value>
+		  <li Class="StockGenerator_BuyTradeTag">
+			<tag>guy762TT_AllItemsSellable</tag>
+		  </li>
+	  </value>
+	</Operation>
+	
+	
+	
+	
+	
+	
+	 <!-- EMPIRE TRADERS -->
+	
+	<Operation Class="PatchOperationFindMod" IfModActive="kentington.saveourship2">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		
+		<match Class="PatchOperationAdd">
+		  <xpath>Defs/TraderKindDef[defName="Orbital_Empire" or defName="Base_Empire_Standard" or defName="Empire_Caravan_TraderGeneral"]/stockGenerators</xpath>
+		  <value>
+			  <li Class="StockGenerator_BuyTradeTag">
+				<tag>guy762TT_AllItemsSellable</tag>
+			  </li>
+		  </value>
+		</match>
+	  
+	</Operation>
+	
+	
+	
+	
+	
+	<!-- OUTLANDER TRADERS -->
+	
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/TraderKindDef[defName="Base_Outlander_Standard" or defName="Visitor_Outlander_Standard" or defName="Caravan_Outlander_BulkGoods" or defName="Caravan_Outlander_CombatSupplier" or defName="Caravan_Outlander_PirateMerchant" or defName="Caravan_Outlander_Exotic"]/stockGenerators</xpath>
+	  <order>Append</order>
+	  <value>
+		  <li Class="StockGenerator_BuyTradeTag">
+			<tag>guy762TT_AllItemsSellable</tag>
+		  </li>
+	  </value>
+	</Operation>
+	
+	
+	
+	<!-- NEOLITHIC TRADERS -->
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/TraderKindDef[defName="Base_Neolithic_Standard" or defName="Caravan_Neolithic_BulkGoods" or defName="Caravan_Neolithic_WarMerchant" or defName="Caravan_Neolithic_Slaver" or defName="Caravan_Neolithic_ShamanMerchant" or defName="Visitor_Neolithic_Standard"]/stockGenerators</xpath>
+	  <order>Append</order>
+	  <value>
+		  <li Class="StockGenerator_BuyTradeTag">
+			<tag>guy762TT_AllItemsSellable</tag>
+		  </li>
+	  </value>
+	</Operation>
+	
+	
+</Patch>

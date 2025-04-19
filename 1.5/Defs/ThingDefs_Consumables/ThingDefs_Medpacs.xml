@@ -22,7 +22,11 @@
     </comps>
   </HediffDef>
   
-  <ThingDef ParentName="DrugPillBase">
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_DrugPillBase">
     <defName>guy762_medpac</defName>
     <label>Medpac</label>
     <description>A Medpac contains essential equipment for the treatment of wounds. They cannot be used by droids.</description>
@@ -56,7 +60,7 @@
         </li>
       </outcomeDoers>
     </ingestible>
-	<tradeTags Inherit="False">
+	<tradeTags>
       <li>guy762TT_KotORMedpac</li>
     </tradeTags>
     <comps>
@@ -94,7 +98,7 @@
     </comps>
   </HediffDef>
   
-  <ThingDef ParentName="DrugPillBase">
+  <ThingDef ParentName="guy762_DrugPillBase">
     <defName>guy762_medpac_adv</defName>
     <label>Advanced Medpac</label>
     <description>An advanced Medpac contains an improved array of equipment for the treatment of wounds. They cannot be used by droids.</description>
@@ -128,7 +132,7 @@
         </li>
       </outcomeDoers>
     </ingestible>
-	<tradeTags Inherit="False">
+	<tradeTags>
       <li>guy762TT_KotORMedpac</li>
     </tradeTags>
     <comps>
@@ -165,7 +169,7 @@
     </comps>
   </HediffDef>
   
-  <ThingDef ParentName="DrugPillBase">
+  <ThingDef ParentName="guy762_DrugPillBase">
     <defName>guy762_medpac_life</defName>
     <label>Life Support Pack</label>
     <description>A life support pack contains dermal regenerators and other equipment for the treatment of wounds. They cannot be used by droids.</description>
@@ -199,7 +203,7 @@
         </li>
       </outcomeDoers>
     </ingestible>
-	<tradeTags Inherit="False">
+	<tradeTags>
       <li>guy762TT_KotORMedpac</li>
     </tradeTags>
     <comps>
@@ -239,7 +243,7 @@
     </comps>
   </HediffDef>
   
-  <ThingDef ParentName="DrugPillBase">
+  <ThingDef ParentName="guy762_DrugPillBase">
     <defName>guy762_medpac_antidote</defName>
     <label>Antidote kit</label>
     <description>This kit contains wide-spectrum antidote hypospray injectors designed to neutralize all known poisons and toxic buildup. Damage already suffered must still be healed by other means. They cannot be used by droids.</description>
@@ -273,7 +277,7 @@
         </li>
       </outcomeDoers>
     </ingestible>
-	<tradeTags Inherit="False">
+	<tradeTags>
       <li>guy762TT_KotORMedicine</li>
     </tradeTags>
     <comps>

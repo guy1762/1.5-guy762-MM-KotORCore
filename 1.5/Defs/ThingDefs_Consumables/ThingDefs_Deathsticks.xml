@@ -2,8 +2,9 @@
 <Defs>
 	
 
+  
 	<!--  deathstick ================================================================ -->	
-	<ThingDef ParentName="DrugBase">
+	<ThingDef ParentName="guy762_DrugBase">
 		<defName>KOTOR_Deathstick</defName>
 		<label>Deathstick</label>
 		<description>Deathsticks are a highly addictive substance common in underworld locales across the galaxy. A luminescent gel contained inside a plastic stick, Deathsticks are smoked as a vapor to deliver intense feelings of relief and painlessness, which some have flippantly likened to the feeling of dying (hence the name "Deathstick"). Deathsticks are created from the brewing of Spice with many common types of fungus.</description>
@@ -84,7 +85,7 @@
 			</li>
 		</comps>
 		<allowedArchonexusCount>200</allowedArchonexusCount>
-		<tradeTags Inherit="False">
+		<tradeTags>
 		  <li>guy762TT_KotORDrugs</li>
 		  <li>guy762TT_Spice</li>
 		</tradeTags>

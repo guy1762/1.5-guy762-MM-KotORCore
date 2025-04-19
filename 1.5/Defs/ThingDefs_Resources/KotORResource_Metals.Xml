@@ -19,6 +19,9 @@
 		<thingCategories>
 			<li>ResourcesRaw</li>
 		</thingCategories>
+		<tradeTags>
+			<li>guy762TT_AllItemsSellable</li>
+		</tradeTags>	
 	</ThingDef>
 	
 	<ThingDef Name="KOTOR_Metal" ParentName="ResourceBase" Abstract="True">
@@ -48,6 +51,9 @@
 		  <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
 		  <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
 		</stuffProps>
+		<tradeTags>
+			<li>guy762TT_AllItemsSellable</li>
+		</tradeTags>	
 	</ThingDef>
 	
 	<ThingDef Name="KOTOR_Mineable" ParentName="RockBase" Abstract="True">

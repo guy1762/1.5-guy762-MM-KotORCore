@@ -137,6 +137,9 @@
 		  <li>RewardStandardCore</li>
 		</thingSetMakerTags>
 		<minRewardCount>25</minRewardCount>
+		<tradeTags>
+			<li>guy762TT_AllItemsSellable</li>
+		</tradeTags>	
 	</ThingDef>
 	
 	
@@ -373,7 +376,8 @@
 		<allowedArchonexusCount>100</allowedArchonexusCount>
 		<tradeTags>
 		  <li>guy762TT_KotORFuel_common</li>
-		</tradeTags>
+		  <li>guy762TT_AllItemsSellable</li>
+		</tradeTags>	
 	</ThingDef>
 	
 	
@@ -493,7 +497,8 @@
 		</placeWorkers>
 		<tradeTags>
 		  <li>guy762TT_KotORWorkbench</li>
-		</tradeTags>
+		  <li>guy762TT_AllItemsSellable</li>
+		</tradeTags>	
 	</ThingDef>
 	
 	<WorkGiverDef>

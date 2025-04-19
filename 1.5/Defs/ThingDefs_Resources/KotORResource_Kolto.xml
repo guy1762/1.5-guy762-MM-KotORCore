@@ -34,6 +34,7 @@
 		</thingCategories>
 		<orderedTakeGroup>Medicine</orderedTakeGroup>
 		<tradeTags>
+		  <li>guy762TT_AllItemsSellable</li>
 		  <li>guy762TT_KotORMedicine</li>
 		  <li>ExoticMisc</li>
 		</tradeTags>
@@ -85,7 +86,10 @@
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 		<destroyable>true</destroyable>
-		<rotatable>false</rotatable>		
+		<rotatable>false</rotatable>	
+		<tradeTags>
+			<li>guy762TT_AllItemsSellable</li>
+		</tradeTags>		
 	</ThingDef>
 	
 <ThingDef Class="KoltoTank.KoltoTankDef" ParentName="KoltoTankBase">
