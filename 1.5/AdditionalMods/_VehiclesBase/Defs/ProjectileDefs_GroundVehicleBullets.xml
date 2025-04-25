@@ -1,10 +1,43 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<ThingDef Name="guy762_nonAAprojectileBASE" ParentName="BaseBullet" Abstract="True">
+		<modExtensions>
+			<li Class="taranchuk_flightcombat.ProjectileModes">
+				<antiAir>false</antiAir>
+				<ground>true</ground>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	
 	<!-- ANTI-INFANTRY -->
 
 
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_nonAAprojectileBASE">
+		<defName>SWVehicleBullet_AIred_light</defName>
+		<label>laser bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/blaster_red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_energy</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>50</speed>
+			<!-- <explosionRadius>0.25</explosionRadius> -->
+		</projectile>
+		<!-- <thingClass>Projectile_Explosive</thingClass> -->
+	</ThingDef>
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_nonAAprojectileBASE">
 		<defName>SWVehicleBullet_AIred</defName>
 		<label>laser bolt</label>
 		<graphicData>
@@ -25,7 +58,31 @@
 	
 	
 	
-	<ThingDef ParentName="BaseBullet">
+	
+	<ThingDef ParentName="guy762_nonAAprojectileBASE">
+		<defName>SWVehicleBullet_AIred_heavy</defName>
+		<label>laser bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/blaster_red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_ExplosiveDamage_energy</damageDef>
+			<damageAmountBase>35</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>50</speed>
+			<explosionRadius>1</explosionRadius>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+	</ThingDef>
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_nonAAprojectileBASE">
 		<defName>SWVehicleBullet_AIdoublered</defName>
 		<label>laser bolts</label>
 		<graphicData>
@@ -39,12 +96,12 @@
 			<damageAmountBase>50</damageAmountBase>
 			<armorPenetrationBase>0.25</armorPenetrationBase>
 			<speed>50</speed>
-			<explosionRadius>1</explosionRadius>
+			<explosionRadius>1.5</explosionRadius>
 		</projectile>
 		<thingClass>Projectile_Explosive</thingClass>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_nonAAprojectileBASE">
 		<defName>SWVehicleBullet_AIdoublegreen</defName>
 		<label>laser bolt</label>
 		<graphicData>
@@ -58,7 +115,31 @@
 			<damageAmountBase>50</damageAmountBase>
 			<armorPenetrationBase>0.25</armorPenetrationBase>
 			<speed>50</speed>
-			<explosionRadius>1</explosionRadius>
+			<explosionRadius>1.5</explosionRadius>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_nonAAprojectileBASE">
+		<defName>SWVehicleBullet_AIdoublegreen_heavy</defName>
+		<label>laser bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/longdoubleblaster_green</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_ExplosiveDamage_energy</damageDef>
+			<damageAmountBase>75</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>50</speed>
+			<explosionRadius>2</explosionRadius>
 		</projectile>
 		<thingClass>Projectile_Explosive</thingClass>
 	</ThingDef>
@@ -82,15 +163,37 @@
 	
 	
 	<!-- ANTI-VEHICLE -->
+	<!-- instead of explosion radius, AP changes between light/medium/heavy projectiles -->
+	
+	<ThingDef ParentName="guy762_nonAAprojectileBASE">
+		<defName>SWVehicleBullet_AVred_light</defName>
+		<label>laser bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/sniper_red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.75</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>0.375</armorPenetrationBase>
+			<speed>100</speed>
+			<!-- <explosionRadius>0.25</explosionRadius> -->
+		</projectile>
+		<!-- <thingClass>Projectile_Explosive</thingClass> -->
+	</ThingDef>
 	
 	
 	
 	
-	<ThingDef ParentName="BaseBullet">
+	
+	
+	<ThingDef ParentName="guy762_nonAAprojectileBASE">
 		<defName>SWVehicleBullet_AVred</defName>
 		<label>laser bolt</label>
 		<graphicData>
-			<texPath>Weapons/Projectiles/blaster_red</texPath>
+			<texPath>Weapons/Projectiles/AntiVehicle_red</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
 			<drawSize>2</drawSize>
@@ -105,11 +208,11 @@
 		<!-- <thingClass>Projectile_Explosive</thingClass> -->
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_nonAAprojectileBASE">
 		<defName>SWVehicleBullet_AVgreen</defName>
 		<label>laser bolt</label>
 		<graphicData>
-			<texPath>Weapons/Projectiles/blaster_green</texPath>
+			<texPath>Weapons/Projectiles/AntiVehicle_green</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
 			<drawSize>2</drawSize>
@@ -126,11 +229,11 @@
 	
 	
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_nonAAprojectileBASE">
 		<defName>SWVehicleBullet_AVdoublered</defName>
-		<label>laser bolt</label>
+		<label>laser bolts</label>
 		<graphicData>
-			<texPath>Weapons/Projectiles/doubleblaster_red</texPath>
+			<texPath>Weapons/Projectiles/DoubleAntiVehicle_red</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
 			<drawSize>2</drawSize>
@@ -145,11 +248,11 @@
 		<!-- <thingClass>Projectile_Explosive</thingClass> -->
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_nonAAprojectileBASE">
 		<defName>SWVehicleBullet_AVdoublegreen</defName>
-		<label>laser bolt</label>
+		<label>laser bolts</label>
 		<graphicData>
-			<texPath>Weapons/Projectiles/doubleblaster_green</texPath>
+			<texPath>Weapons/Projectiles/DoubleAntiVehicle_green</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
 			<drawSize>2</drawSize>
@@ -187,11 +290,11 @@
 		<!-- STATIONARY TURRETS -->
 	
 	
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="guy762_nonAAprojectileBASE">
 		<defName>SWFixedTurretBullet_AVred</defName>
 		<label>heavy laser bolt</label>
 		<graphicData>
-			<texPath>Weapons/Projectiles/sniper_red</texPath>
+			<texPath>Weapons/Projectiles/heavysniper_red</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
 			<drawSize>2</drawSize>
@@ -212,6 +315,109 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- AV and AA -->
+	
+	
+	<ThingDef Name="guy762_AVandAAprojectileBASE" ParentName="BaseBullet" Abstract="True">
+		<!-- <modExtensions> -->
+			<!-- <li Class="taranchuk_flightcombat.ProjectileModes"> -->
+				<!-- <antiAir>true</antiAir> -->
+				<!-- <ground>true</ground> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="guy762_AVandAAprojectileBASE">
+		<defName>SWVehicleBullet_AVAAdoublered</defName>
+		<label>laser bolts</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/DoubleAntiVehicle_red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
+			<damageAmountBase>100</damageAmountBase>
+			<armorPenetrationBase>0.50</armorPenetrationBase>
+			<speed>100</speed>
+			<!-- <explosionRadius>0.25</explosionRadius> -->
+		</projectile>
+		<!-- <thingClass>Projectile_Explosive</thingClass> -->
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="guy762_AVandAAprojectileBASE">
+		<defName>SWVehicleBullet_AVAAconcMissile</defName>
+		<label>concussion missile</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/missile_yellow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>3</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_ExplosiveDamage_conc</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>0.375</armorPenetrationBase>
+			<speed>100</speed>
+			<explosionRadius>1.9</explosionRadius>
+			<soundAmbient>kotorsound_missileflying</soundAmbient>
+			<extraDamages>
+				<li>
+					<def>Stun</def>
+					<amount>6</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+		<comps>
+			<!-- <li Class="VFECore.CompProperties_HomingProjectile"> -->
+				<!-- <homingDistanceFractionPassed>0.7</homingDistanceFractionPassed> -->
+				<!-- <homingCorrectionTickRate>5</homingCorrectionTickRate> -->
+				<!-- <initialDispersionFromTarget>2.5</initialDispersionFromTarget> -->
+			<!-- </li> -->
+			<li Class="taranchuk_homingprojectiles.CompProperties_HomingProjectile">
+				<tickRate>10</tickRate>
+				<lifetimeTicks>30000</lifetimeTicks>
+				<delayTurnInTicks>20</delayTurnInTicks>
+				<initialSpreadAngle>10</initialSpreadAngle>
+				<tailMote>guy762_OrbMote</tailMote>
+				<effectLifetime>600</effectLifetime>
+				<effectSize>2</effectSize>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="MoteBase">
+        <defName>guy762_OrbMote</defName>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <drawOffscreen>true</drawOffscreen>
+        <graphicData>
+			<texPath>Things/Mote/Smoke</texPath>
+			<renderInstanced>true</renderInstanced>
+        </graphicData>
+        <mote>
+            <fadeInTime>0.05</fadeInTime>
+            <fadeOutTime>0.05</fadeOutTime>
+            <solidTime>1.9</solidTime>
+        </mote>
+    </ThingDef>
 	
 
 </Defs>

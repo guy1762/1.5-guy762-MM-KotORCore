@@ -38,10 +38,20 @@
 					 <value>2</value>
 				</li>
 				
-				<!-- <li> -->
-					 <!-- <key>guy762_GrenadeDamage_frag</key> -->
-					 <!-- <value>1.5</value> -->
-				<!-- </li> -->
+				
+				<li>
+					 <key>Bomb</key>
+					 <value>0.1</value>
+				</li>
+				<li>
+					 <key>guy762_GrenadeDamage_frag</key>
+					 <value>0.1</value>
+				</li>
+				
+				<li>
+					 <key>guy762_ExplosiveDamage_conc</key>
+					 <value>1</value>
+				</li>
 				<li>
 					 <key>guy762_GrenadeDamage_thermaldet</key>
 					 <value>4</value>
@@ -69,9 +79,8 @@
 				</li>
 				<li>
 					 <key>guy762_ExplosiveDamage_energy</key>
-					 <value>0.5</value>
+					 <value>0.1</value>
 				</li>
-				
 				
 				
 				
@@ -110,9 +119,6 @@
 				<!-- </li> -->
 				
 				
-				
-				
-				
 				<li>
 					 <key>Flame</key>
 					 <value>0.01</value>
@@ -131,11 +137,81 @@
 				</li>
 				
 				
-				
 				<li>
 					 <key>Frostbite</key>
 					 <value>0.01</value>
 				</li>
+				
+				
+				
+				
+				
+				
+				
+				<li>
+					 <key>Cut</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>Crush</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>Blunt</key>
+					 <value>0.01</value>
+				</li>
+				<li MayRequire="lee.theforce.lightsaber">
+					 <key>Force_BluntLightsaber</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>Poke</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>Stab</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>Scratch</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>ScratchToxic</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>Bite</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>ToxicBite</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>RangedStab</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>Bullet</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>Arrow</key>
+					 <value>0.01</value>
+				</li>
+				
+				
+				
+				<li>
+					 <key>ArrowHighVelocity</key>
+					 <value>0.1</value>
+				</li>
+				<li>
+					 <key>TornadoScratch</key>
+					 <value>0.1</value>
+				</li>
+				
 			</damageDefMultipliers>
 		</properties>
 	</Vehicles.VehicleDef>

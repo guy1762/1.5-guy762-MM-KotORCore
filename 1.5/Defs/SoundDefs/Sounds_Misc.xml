@@ -698,5 +698,59 @@
 	</SoundDef>
 	
 	
+	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_static_on</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotormisc/Static_on</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>45</min>        
+				<max>45</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>1</min>				
+					<max>1</max>
+				</pitchRange>			
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_static_off</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotormisc/Static_off</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>45</min>        
+				<max>45</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>1</min>				
+					<max>1</max>
+				</pitchRange>			
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
 
 </Defs>

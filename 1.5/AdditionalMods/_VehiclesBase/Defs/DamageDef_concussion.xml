@@ -34,7 +34,7 @@
 		<explosionCellFleck>BlastDry</explosionCellFleck>
 		<explosionColorCenter>(255,255,255)</explosionColorCenter>
 		<explosionColorEdge>(205,90,230)</explosionColorEdge>
-		<soundExplosion>kotorsound_JKrepeater_AltFireExplode</soundExplosion>
+		<soundExplosion>kotorsound_RepComDC17MortarExplode</soundExplosion>
 		<combatLogRules>Damage_Bomb</combatLogRules>
 	  </DamageDef>
 	  
@@ -53,6 +53,13 @@
 			<armorPenetrationBase>0.30</armorPenetrationBase>
 			<speed>25</speed>
 			<explosionRadius>1.9</explosionRadius>
+			<extraDamages>
+				<li>
+					<def>Stun</def>
+					<amount>6</amount>
+				</li>
+			</extraDamages>
+			<soundExplode>kotorsound_JKrepeater_AltFireExplode</soundExplode>
 		</projectile>
 		<thingClass>Projectile_Explosive</thingClass>
 	</ThingDef>
