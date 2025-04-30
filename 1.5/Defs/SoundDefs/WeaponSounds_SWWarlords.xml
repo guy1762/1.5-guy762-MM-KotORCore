@@ -1004,8 +1004,8 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
-				<max>45</max>
+				<min>55</min>        
+				<max>55</max>
 				</volumeRange>  
 				<pitchRange>
 					<min>0.8</min>				

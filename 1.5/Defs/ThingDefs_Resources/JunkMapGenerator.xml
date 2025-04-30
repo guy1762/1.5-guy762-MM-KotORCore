@@ -3,10 +3,12 @@
 	<GenStepDef>
 		<defName>KOTOR_JunkPileClusters</defName>
 		<order>1099</order>
+		<!-- <order>301</order> -->
 		<genStep Class="GenStep_ScatterGroup">
 			<allowInWaterBiome>false</allowInWaterBiome>
 			<minSpacing>5</minSpacing>
 			<countPer10kCellsRange>0.2~0.5</countPer10kCellsRange>
+			<!-- <countPer10kCellsRange>15.0~30.0</countPer10kCellsRange> -->
 			<spotMustBeStandable>true</spotMustBeStandable>
 			<allowRoofed>false</allowRoofed>
 			<validators>

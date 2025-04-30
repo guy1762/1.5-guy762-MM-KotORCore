@@ -636,8 +636,8 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>35</min>        
-				<max>35</max>
+				<min>55</min>        
+				<max>55</max>
 				</volumeRange>  		
 				<pitchRange>
 					<min>1</min>				
@@ -661,8 +661,8 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>35</min>        
-				<max>35</max>
+				<min>55</min>        
+				<max>55</max>
 				</volumeRange>  		
 				<pitchRange>
 					<min>1</min>				
@@ -683,6 +683,31 @@
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorshipweapons/GUN_PROTON_1</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>55</min>        
+				<max>55</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>1</min>				
+					<max>1</max>
+				</pitchRange>			
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_protorp2</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipweapons/Proton_Torp.L</clipPath>
 					</li>
 				</grains>	
 				<volumeRange>
@@ -712,8 +737,8 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>35</min>        
-				<max>35</max>
+				<min>45</min>        
+				<max>45</max>
 				</volumeRange>  		
 				<pitchRange>
 					<min>1</min>				

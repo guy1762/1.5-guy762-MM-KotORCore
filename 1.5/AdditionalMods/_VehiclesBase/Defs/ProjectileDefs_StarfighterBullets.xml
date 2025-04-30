@@ -280,7 +280,7 @@
 			<damageAmountBase>25</damageAmountBase>
 			<armorPenetrationBase>0.375</armorPenetrationBase>
 			<speed>100</speed>
-			<explosionRadius>1.9</explosionRadius>
+			<explosionRadius>2.5</explosionRadius>
 			<soundAmbient>kotorsound_missileflying</soundAmbient>
 			<extraDamages>
 				<li>

@@ -86,19 +86,19 @@
     </Operation>
 
 
-    <Operation Class="XmlExtensions.OptionalPatch">
-        <modId>guy762.MM.KotORCore</modId>
-        <key>KotORCoreSettings_JunkPiles</key>
-        <defaultValue>true</defaultValue>
-        <caseTrue>
-            <Operation Class="PatchOperationAdd">
-			<xpath>Defs/MapGeneratorDef[@Name="MapCommonBase"]/genSteps</xpath>
-			<value>
-				<li>KOTOR_JunkPileClusters</li>
-			</value>
-		  </Operation>
-        </caseTrue>
-    </Operation>
+    <!-- <Operation Class="XmlExtensions.OptionalPatch"> -->
+        <!-- <modId>guy762.MM.KotORCore</modId> -->
+        <!-- <key>KotORCoreSettings_JunkPiles</key> -->
+        <!-- <defaultValue>true</defaultValue> -->
+        <!-- <caseTrue> -->
+            <!-- <Operation Class="PatchOperationAdd"> -->
+				<!-- <xpath>Defs/MapGeneratorDef[@Name="MapCommonBase"]/genSteps</xpath> -->
+				<!-- <value> -->
+					<!-- <li>KOTOR_JunkPileClusters</li> -->
+				<!-- </value> -->
+			<!-- </Operation> -->
+        <!-- </caseTrue> -->
+    <!-- </Operation> -->
 	
 	<Operation Class="XmlExtensions.OptionalPatch">
         <modId>guy762.MM.KotORCore</modId>

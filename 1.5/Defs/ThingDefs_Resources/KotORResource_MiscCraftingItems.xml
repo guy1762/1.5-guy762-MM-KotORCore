@@ -382,7 +382,7 @@
 	  <RecipeDef ParentName="MakeStoneBlocksBase">
 		<defName>KotORRecipe_Duracrete</defName>
 		<label>make 20 Duracrete</label>
-		<description>Infuse rock chunks and steel into Duracrete.</description>
+		<description>Infuse rock chunks and steel into Duracrete.\n\nDEV'S NOTE: AVOID using the "Do until you have X" order, it is BROKEN and does not count produced Duracrete correctly meaning Duracrete will be infinitely produced!</description>
 		<jobString>Making 20 Duracrete.</jobString>
 		<workerCounterClass>RecipeWorkerCounter_MakeStoneBlocks</workerCounterClass>
 		<workAmount>3000</workAmount>
@@ -431,7 +431,7 @@
 	  <RecipeDef ParentName="MakeStoneBlocksBase">
 		<defName>KotORRecipe_5xDuracrete</defName>
 		<label>make 100 Duracrete</label>
-		<description>Infuse rock chunks and steel into Duracrete.</description>
+		<description>Infuse rock chunks and steel into Duracrete.\n\nDEV'S NOTE: AVOID using the "Do until you have X" order, it is BROKEN and does not count produced Duracrete correctly meaning Duracrete will be infinitely produced!</description>
 		<jobString>Making 100 Duracrete.</jobString>
 		<workerCounterClass>RecipeWorkerCounter_MakeStoneBlocks</workerCounterClass>
 		<workAmount>15000</workAmount>

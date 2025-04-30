@@ -30,15 +30,15 @@
 				<text>This patch adds 25 Stygium crystals to the building material requirements of the Save Our Ship 2 ship cloaking device.</text>
 			</li>
 			
-			<li Class="XmlExtensions.Setting.GapLine"/>
-			<li Class="XmlExtensions.Setting.Checkbox">
-				<key>KotORCoreSettings_JunkPiles</key>
-				<label>Enable mineable 'Junk Pile' spawning</label>
-				<defaultValue>true</defaultValue>
-			</li>
-			<li Class="XmlExtensions.Setting.Text">
-				<text>This patch adds mineable junk piles to the map generation steps, meaning mineable junk will spawn on most maps in a medium-sized square. Disabling this may help prevent errors during map generation.</text>
-			</li>
+			<!-- <li Class="XmlExtensions.Setting.GapLine"/> -->
+			<!-- <li Class="XmlExtensions.Setting.Checkbox"> -->
+				<!-- <key>KotORCoreSettings_JunkPiles</key> -->
+				<!-- <label>Enable mineable 'Junk Pile' spawning</label> -->
+				<!-- <defaultValue>true</defaultValue> -->
+			<!-- </li> -->
+			<!-- <li Class="XmlExtensions.Setting.Text"> -->
+				<!-- <text>This patch adds mineable junk piles to the map generation steps, meaning mineable junk will spawn on most maps in a medium-sized square. Disabling this may help prevent errors during map generation.</text> -->
+			<!-- </li> -->
 			
 			<li Class="XmlExtensions.Setting.GapLine"/>
 			<li Class="XmlExtensions.Setting.Checkbox">
