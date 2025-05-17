@@ -25,8 +25,8 @@
 		<defaultDamage>1</defaultDamage>
 		<defaultStoppingPower>2</defaultStoppingPower>
 		<defaultArmorPenetration>0.10</defaultArmorPenetration>
-		<buildingDamageFactorImpassable>10</buildingDamageFactorImpassable>
-		<buildingDamageFactorPassable>5</buildingDamageFactorPassable>
+		<buildingDamageFactorImpassable>5</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>10</buildingDamageFactorPassable>
 		<plantDamageFactor>4</plantDamageFactor>
 		<corpseDamageFactor>0.5</corpseDamageFactor>
 		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>

@@ -66,7 +66,7 @@
 		<isRanged>true</isRanged>
 		<defaultArmorPenetration>0</defaultArmorPenetration>
 		<makesAnimalsFlee>true</makesAnimalsFlee>
-		<buildingDamageFactorImpassable>7.5</buildingDamageFactorImpassable>
+		<buildingDamageFactorImpassable>7.5</buildingDamageFactorImpassable> <!-- don't flip this -->
 		<buildingDamageFactorPassable>3.75</buildingDamageFactorPassable>
 
 		<additionalHediffs>
@@ -154,8 +154,8 @@
 		<defaultDamage>1</defaultDamage>
 		<defaultStoppingPower>2</defaultStoppingPower>
 		<defaultArmorPenetration>0.10</defaultArmorPenetration>
-		<buildingDamageFactorImpassable>4</buildingDamageFactorImpassable>
-		<buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+		<buildingDamageFactorImpassable>2</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>4</buildingDamageFactorPassable>
 		<plantDamageFactor>4</plantDamageFactor>
 		<corpseDamageFactor>0.5</corpseDamageFactor>
 		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
@@ -202,8 +202,8 @@
 		<defaultDamage>1</defaultDamage>
 		<defaultStoppingPower>2</defaultStoppingPower>
 		<defaultArmorPenetration>1</defaultArmorPenetration>
-		<buildingDamageFactorImpassable>4</buildingDamageFactorImpassable>
-		<buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+		<buildingDamageFactorImpassable>2</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>4</buildingDamageFactorPassable>
 		<plantDamageFactor>4</plantDamageFactor>
 		<corpseDamageFactor>0.5</corpseDamageFactor>
 		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>

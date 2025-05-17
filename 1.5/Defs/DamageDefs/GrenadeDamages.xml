@@ -3,7 +3,7 @@
 
 	<DamageDef>
 		<defName>guy762_GrenadeDamage_frag</defName>
-		<label>bomb</label>
+		<label>fragmentation shrapnel</label>
 		<workerClass>DamageWorker_AddInjury</workerClass>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
@@ -17,8 +17,8 @@
 		<defaultDamage>20</defaultDamage>
 		<defaultStoppingPower>0.5</defaultStoppingPower>
 		<defaultArmorPenetration>0.10</defaultArmorPenetration>
-		<buildingDamageFactorImpassable>4</buildingDamageFactorImpassable>
-		<buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+		<buildingDamageFactorImpassable>2</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>4</buildingDamageFactorPassable>
 		<plantDamageFactor>4</plantDamageFactor>
 		<corpseDamageFactor>0.5</corpseDamageFactor>
 		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
@@ -48,8 +48,8 @@
 		<minDamageToFragment>15</minDamageToFragment>
 		<defaultDamage>15</defaultDamage>
 		<defaultArmorPenetration>0.10</defaultArmorPenetration>
-		<buildingDamageFactorImpassable>4</buildingDamageFactorImpassable>
-		<buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+		<buildingDamageFactorImpassable>2</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>4</buildingDamageFactorPassable>
 		<plantDamageFactor>4</plantDamageFactor>
 		<corpseDamageFactor>0.5</corpseDamageFactor>
 		<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
@@ -108,7 +108,7 @@
 		<minDamageToFragment>15</minDamageToFragment>
 		<defaultDamage>10</defaultDamage>
 		<defaultArmorPenetration>0</defaultArmorPenetration>
-		<buildingDamageFactorImpassable>40</buildingDamageFactorImpassable>
+		<buildingDamageFactorImpassable>40</buildingDamageFactorImpassable> <!-- don't flip this -->
 		<buildingDamageFactorPassable>20</buildingDamageFactorPassable>
 		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
 		<explosionCellFleck>BlastDry</explosionCellFleck>
@@ -137,17 +137,34 @@
 	
 	
 	
+	
+	<DamageDef ParentName="guy762_GrenadeDamage_energy">
+		<defName>guy762_GrenadeDamage_detpack</defName>
+	    <defaultDamage>40</defaultDamage>
+		<defaultArmorPenetration>0.15</defaultArmorPenetration>
+		<defaultStoppingPower>4</defaultStoppingPower>
+		<buildingDamageFactorImpassable>10</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>20</buildingDamageFactorPassable>
+		<plantDamageFactor>6</plantDamageFactor>
+		<corpseDamageFactor>1</corpseDamageFactor>
+		<explosionHeatEnergyPerCell>10</explosionHeatEnergyPerCell>
+		<soundExplosion>kotorsound_RepComDC17MortarExplode</soundExplosion>
+	</DamageDef>
+	
+	
+	
+	
 	<DamageDef ParentName="guy762_GrenadeDamage_energy">
 		<defName>guy762_GrenadeDamage_thermaldet</defName>
 	    <defaultDamage>60</defaultDamage>
 		<defaultArmorPenetration>0.20</defaultArmorPenetration>
 		<defaultStoppingPower>4</defaultStoppingPower>
-		<buildingDamageFactorImpassable>6</buildingDamageFactorImpassable>
-		<buildingDamageFactorPassable>4</buildingDamageFactorPassable>
+		<buildingDamageFactorImpassable>4</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>6</buildingDamageFactorPassable>
 		<plantDamageFactor>6</plantDamageFactor>
 		<corpseDamageFactor>1</corpseDamageFactor>
 		<explosionHeatEnergyPerCell>10</explosionHeatEnergyPerCell>
-	  </DamageDef>
+	</DamageDef>
 	
 
 </Defs>

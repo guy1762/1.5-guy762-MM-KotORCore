@@ -10,6 +10,10 @@
                 <text>Changes require restarting RimWorld!!!</text>
                 <anchor>Middle</anchor>
             </li>
+			
+			
+			
+			
 			<li Class="XmlExtensions.Setting.GapLine"/>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>KotORCoreSettings_PlasteelRebalance</key>
@@ -20,15 +24,26 @@
 				<text>This patch lowers the market value, WorkToMake, and WorkToBuild stats of Plasteel while increasing the commonality of Plasteel ore. It also slightly lowers the maximum hit points of things made with Plasteel.</text>
 			</li>
 			
-			<li Class="XmlExtensions.Setting.GapLine"/>
-			<li Class="XmlExtensions.Setting.Checkbox">
+			
+			
+			
+			
+			
+			
+			
+			<li MayRequire="kentington.saveourship2" Class="XmlExtensions.Setting.GapLine"/>
+			<li MayRequire="kentington.saveourship2" Class="XmlExtensions.Setting.Checkbox">
 				<key>KotORCoreSettings_SoS2Stygium</key>
 				<label>Enable 25x Stygium in SoS2 Cloaking Device recipe patch</label>
 				<defaultValue>true</defaultValue>
 			</li>
-			<li Class="XmlExtensions.Setting.Text">
+			<li MayRequire="kentington.saveourship2" Class="XmlExtensions.Setting.Text">
 				<text>This patch adds 25 Stygium crystals to the building material requirements of the Save Our Ship 2 ship cloaking device.</text>
 			</li>
+			
+			
+			
+			
 			
 			<!-- <li Class="XmlExtensions.Setting.GapLine"/> -->
 			<!-- <li Class="XmlExtensions.Setting.Checkbox"> -->
@@ -40,6 +55,15 @@
 				<!-- <text>This patch adds mineable junk piles to the map generation steps, meaning mineable junk will spawn on most maps in a medium-sized square. Disabling this may help prevent errors during map generation.</text> -->
 			<!-- </li> -->
 			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			<li Class="XmlExtensions.Setting.GapLine"/>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>KotORCoreSettings_AIJumpPack</key>
@@ -49,6 +73,10 @@
 			<li Class="XmlExtensions.Setting.Text">
 				<text>This patch enables experimental pawn AI code that allows raiding pawns to use equipped jump packs/jetpacks to jump to melee range. This code may cause lag spikes when pausing/unpausing.</text>
 			</li>
+			
+			
+			
+			
 			
 			<li Class="XmlExtensions.Setting.GapLine"/>
 			<li Class="XmlExtensions.Setting.Checkbox">
@@ -60,6 +88,10 @@
 				<text>This patch adds the smallest amount of weight possible to Credits to prevent the Pick Up And Haul mod from dividing by 0 when pawns try to pick up a stack of Credits. The stack size of Credits is also reduced to 1,000.</text>
 			</li>
 			
+			
+			
+			
+			
 			<li Class="XmlExtensions.Setting.GapLine" MayRequire="Ludeon.RimWorld.Ideology"/>
 			<li Class="XmlExtensions.Setting.Checkbox" MayRequire="Ludeon.RimWorld.Ideology">
 				<key>KotORCoreSettings_BroadwrapLayerTweak</key>
@@ -69,6 +101,11 @@
 			<li Class="XmlExtensions.Setting.Text" MayRequire="Ludeon.RimWorld.Ideology">
 				<text>This patch adjusts the coverage of the "broadwrap" hat so it only covers the "UpperHead" layer, meaning apparel that covers the mouth can be worn with it.</text>
 			</li>
+			
+			
+			
+			
+			
 			
 			<li Class="XmlExtensions.Setting.GapLine" MayRequire="Ludeon.RimWorld.Ideology"/>
 			<li Class="XmlExtensions.Setting.Checkbox" MayRequire="Ludeon.RimWorld.Ideology">
@@ -80,6 +117,10 @@
 				<text>This patch adds an XML line to allow the AI to use the Ideology role abilities (e.g. Combat Command, Marksman Command, Berserker Trance) since they are used in KotOR Factions' PawnKinds.</text>
 			</li>
 			
+			
+			
+			
+			
 			<li Class="XmlExtensions.Setting.GapLine" MayRequire="Ludeon.RimWorld.Biotech"/>
 			<li Class="XmlExtensions.Setting.Checkbox" MayRequire="Ludeon.RimWorld.Biotech">
 				<key>KotORCoreSettings_SashLayerTweak</key>
@@ -89,6 +130,8 @@
 			<li Class="XmlExtensions.Setting.Text" MayRequire="Ludeon.RimWorld.Biotech">
 				<text>This patch adjusts the layering of the "sash" apparel so it is worn on the outermost "Shell" layer (same as the vanilla cape and the chest accessories in KotOR Weapons and Armor).</text>
 			</li>
+			
+			
 		</settings>
 	</XmlExtensions.SettingsMenuDef>
 	
