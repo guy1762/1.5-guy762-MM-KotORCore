@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  
+  
+ 
+  
+  <ThingDef ParentName="ProjectileFoamBase">
+    <defName>guy762_throwngrenade_foam</defName>
+    <projectile>
+      <speed>25</speed>
+      <filthCount>1~3</filthCount>
+    </projectile>
+    <graphicData>
+      <texPath>Things/Mote/FoamSpray</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>2.5</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <ThingDef>
+    <defName>guy762_throwngrenade_kolto</defName>
+	<label>Kolto</label>
+    <thingClass>Projectile_Liquid</thingClass>
+    <category>Projectile</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <texPath>Projectiles/kolto</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>2.5</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>guy762_RangedDamage_kolto</damageDef>
+      <speed>25</speed>
+      <damageAmountBase>30</damageAmountBase>
+	  <numExtraHitCells>3</numExtraHitCells>
+      <arcHeightFactor>0.4</arcHeightFactor>
+      <armorPenetrationBase>0.8</armorPenetrationBase>
+      <stoppingPower>1</stoppingPower>
+      <shadowSize>0</shadowSize>
+      <filth>guy762_filth_kolto</filth>
+      <filthCount>1~3</filthCount>
+    </projectile>
+  </ThingDef>
+  
+  <DamageDef>
+    <defName>guy762_RangedDamage_kolto</defName>
+    <label>Kolto</label>
+    <!--workerClass>guy762_Ionization.DamageWorker_Organics</workerClass-->
+    <workerClass>DamageWorker_AddGlobal</workerClass>
+    <canInterruptJobs>false</canInterruptJobs>
+    <makesBlood>false</makesBlood>
+    <defaultDamage>10</defaultDamage>
+    <hediff>guy762_hediff_kolto</hediff>
+    <harmsHealth>false</harmsHealth>
+    <consideredHelpful>true</consideredHelpful>
+	<modExtensions>
+		<li Class="guy762_Ionization.ModExtension_HediffGiver">
+			<hediffToAdd>guy762_hediff_kolto</hediffToAdd>
+			<severityFixed>1</severityFixed>
+		</li>
+	</modExtensions>
+  </DamageDef>
+  
+  
+  
+	
+	
+	
+	<!--ThingDef ParentName="guy762_DroidGadget_kolto">
+		<defName>guy762_DroidWeapon_kolto</defName>
+		<label>Droid Kolto sprayer (modified)</label>
+		<description>An Adascorp prototype, these units have seen limited field testing during the Corellian campaign. The intent is to reduce the mass of a soldier's kit by replacing bulk quantities of Medpacs with a squad medical droid, though the efficiency of the device's applicator has been reported as "spotty".\n\nThis unit has been specially modified, and is only equipped to an HK-51 unit's "heavy" weapon mount.</description>
+		<descriptionHyperlinks>
+			<AlienRace.ThingDef_AlienRace>guy762_DroidRace_HK51series</AlienRace.ThingDef_AlienRace>
+		</descriptionHyperlinks>
+		<apparel>
+		  <bodyPartGroups Inherit="False">
+			<li>guy762BG_Droid_WeaponMount_adv</li>
+		  </bodyPartGroups>
+		  <tags Inherit="False">
+			<li>KotORDroidGadget_HK51Medic</li>
+		  </tags>
+		</apparel>
+		<tradeTags Inherit="False" />
+	  </ThingDef-->
+
+
+</Defs>

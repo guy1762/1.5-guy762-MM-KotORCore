@@ -154,6 +154,9 @@
     <label>Life Support Pack</label>
 	<hediffClass>HediffWithComps</hediffClass>
     <maxSeverity>1.0</maxSeverity>
+	
+	<preventsDeath>true</preventsDeath>
+	
     <stages>
       <li>
         <naturalHealingFactor>10000</naturalHealingFactor>
