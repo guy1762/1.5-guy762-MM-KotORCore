@@ -50,7 +50,7 @@
 				
 				<li>
 					 <key>guy762_ExplosiveDamage_conc</key>
-					 <value>1</value>
+					 <value>0.1</value>
 				</li>
 				<li>
 					 <key>guy762_GrenadeDamage_thermaldet</key>

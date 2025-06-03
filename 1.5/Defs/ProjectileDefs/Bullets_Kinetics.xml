@@ -406,7 +406,7 @@
 	
 	<ThingDef ParentName="BaseGrenadeProjectile">
 		<defName>guy762_ThrownGrenade_stun</defName>
-		<label>concussion grenade</label>
+		<label>stun grenade</label>
 		<thingClass>Projectile_Explosive</thingClass>
 		<graphicData>
 		  <texPath>Weapons/Projectiles/Grenades/grenade_stun</texPath>

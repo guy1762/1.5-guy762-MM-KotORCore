@@ -582,6 +582,29 @@
 			<speed>100</speed>
 		</projectile>
 	</ThingDef>
+	
+	
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>SWProj_GrenadeLauncherProtonGrenade</defName>
+		<label>proton grenade</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/Grenades/grenade_mortarlauncher_proton</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>0.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_ExplosiveDamage_AntiVehicleEnergy</damageDef>
+		    <damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>0.375</armorPenetrationBase>
+			
+			<speed>25</speed>
+			<explosionRadius>1.9</explosionRadius>
+			<explosionDelay>100</explosionDelay>
+			<soundExplode>kotorsound_RepComDC17MortarExplode</soundExplode>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+	</ThingDef>
 
   
 
