@@ -282,12 +282,12 @@
 			<speed>100</speed>
 			<explosionRadius>2.5</explosionRadius>
 			<soundAmbient>kotorsound_missileflying</soundAmbient>
-			<extraDamages>
-				<li>
-					<def>Stun</def>
-					<amount>6</amount>
-				</li>
-			</extraDamages>
+			<!-- <extraDamages> -->
+				<!-- <li> -->
+					<!-- <def>Stun</def>        doesn't work -->
+					<!-- <amount>6</amount> -->
+				<!-- </li> -->
+			<!-- </extraDamages> -->
 		</projectile>
 		<thingClass>Projectile_Explosive</thingClass>
 		<comps>

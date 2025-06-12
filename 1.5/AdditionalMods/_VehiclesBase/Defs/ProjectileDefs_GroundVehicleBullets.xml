@@ -82,7 +82,7 @@
 	
 	
 	
-	<ThingDef ParentName="guy762_nonAAprojectileBASE">
+	<ThingDef Name="SWVehicleBullet_AIdoublered" ParentName="guy762_nonAAprojectileBASE">
 		<defName>SWVehicleBullet_AIdoublered</defName>
 		<label>laser bolts</label>
 		<graphicData>
@@ -100,6 +100,15 @@
 		</projectile>
 		<thingClass>Projectile_Explosive</thingClass>
 	</ThingDef>
+	
+	<ThingDef ParentName="SWVehicleBullet_AIdoublered">
+		<defName>SWVehicleBullet_AIdoublered_2xSize</defName>
+		<graphicData>
+			<drawSize>3</drawSize>
+		</graphicData>
+	</ThingDef>
+	
+	
 	
 	<ThingDef ParentName="guy762_nonAAprojectileBASE">
 		<defName>SWVehicleBullet_AIdoublegreen</defName>
@@ -373,12 +382,12 @@
 			<speed>100</speed>
 			<explosionRadius>1.9</explosionRadius>
 			<soundAmbient>kotorsound_missileflying</soundAmbient>
-			<extraDamages>
-				<li>
-					<def>Stun</def>
-					<amount>6</amount>
-				</li>
-			</extraDamages>
+			<!-- <extraDamages> -->
+				<!-- <li> -->
+					<!-- <def>Stun</def>        doesn't work -->
+					<!-- <amount>6</amount> -->
+				<!-- </li> -->
+			<!-- </extraDamages> -->
 		</projectile>
 		<thingClass>Projectile_Explosive</thingClass>
 		<comps>
